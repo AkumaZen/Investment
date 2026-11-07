@@ -1,0 +1,161 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"data\": {\n    \"symbol\": \"AUGMONT\",\n    \"quarters\": [\n      \"Jun 2025\",\n      \"Sep 2025\",\n      \"Mar 2026\",\n      \"Jun 2026\",\n      \"Sep 2026\"\n    ],\n    \"rows\": [\n      {\n        \"label\": \"Sales +\",\n        \"values\": [\n          \"14,552\",\n          \"21,692\",\n          \"29,994\",\n          \"18,946\",\n          \"15,836\"\n        ]\n      },\n      {\n        \"label\": \"YoY Sales growth\",\n        \"values\": [\n          \"\",\n          \"\",\n          \"\",\n          \"+30%\",\n          \"-27%\"\n        ]\n      },\n      {\n        \"label\": \"Expenses +\",\n        \"values\": [\n          \"14,451\",\n          \"21,598\",\n          \"29,903\",\n          \"18,893\",\n          \"15,671\"\n        ]\n      },\n      {\n        \"label\": \"Operating Profit\",\n        \"values\": [\n          \"100\",\n          \"94\",\n          \"91\",\n          \"53\",\n          \"164\"\n        ]\n      },\n      {\n        \"label\": \"OPM %\",\n        \"values\": [\n          \"0.7%\",\n          \"0.4%\",\n          \"0.3%\",\n          \"0.3%\",\n          \"1.0%\"\n        ]\n      },\n      {\n        \"label\": \"Other Income +\",\n        \"values\": [\n          \"3\",\n          \"62\",\n          \"2\",\n          \"31\",\n          \"16\"\n        ]\n      },\n      {\n        \"label\": \"Interest\",\n        \"values\": [\n          \"1\",\n          \"0\",\n          \"0\",\n          \"0\",\n          \"18\"\n        ]\n      },\n      {\n        \"label\": \"Depreciation\",\n        \"values\": [\n          \"2\",\n          \"2\",\n          \"2\",\n          \"2\",\n          \"2\"\n        ]\n      },\n      {\n        \"label\": \"Profit before tax\",\n        \"values\": [\n          \"101\",\n          \"154\",\n          \"90\",\n          \"82\",\n          \"161\"\n        ]\n      },\n      {\n        \"label\": \"Tax %\",\n        \"values\": [\n          \"29%\",\n          \"27%\",\n          \"26%\",\n          \"26%\",\n          \"25%\"\n        ]\n      },\n      {\n        \"label\": \"Net Profit +\",\n        \"values\": [\n          \"72\",\n          \"113\",\n          \"67\",\n          \"61\",\n          \"120\"\n        ]\n      },\n      {\n        \"label\": \"EPS in Rs\",\n        \"values\": [\n          \"8.41\",\n          \"12.75\",\n          \"7.87\",\n          \"6.91\",\n          \"12.96\"\n        ]\n      },\n      {\n        \"label\": \"Raw PDF\",\n        \"values\": [\n          \"\",\n          \"\",\n          \"\",\n          \"\",\n          \"\"\n        ]\n      }\n    ]\n  },\n  \"meta\": {\n    \"source_url\": \"https://www.screener.in/company/AUGMONT/consolidated/\",\n    \"fetched_at\": \"2026-11-07T11:14:35Z\",\n    \"financial_type\": \"consolidated\",\n    \"warnings\": []\n  }\n}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "data": {
+        "symbol": "AUGMONT",
+        "quarters": [
+          "Jun 2025",
+          "Sep 2025",
+          "Mar 2026",
+          "Jun 2026",
+          "Sep 2026"
+        ],
+        "rows": [
+          {
+            "label": "Sales +",
+            "values": [
+              "14,552",
+              "21,692",
+              "29,994",
+              "18,946",
+              "15,836"
+            ]
+          },
+          {
+            "label": "YoY Sales growth",
+            "values": [
+              "",
+              "",
+              "",
+              "+30%",
+              "-27%"
+            ]
+          },
+          {
+            "label": "Expenses +",
+            "values": [
+              "14,451",
+              "21,598",
+              "29,903",
+              "18,893",
+              "15,671"
+            ]
+          },
+          {
+            "label": "Operating Profit",
+            "values": [
+              "100",
+              "94",
+              "91",
+              "53",
+              "164"
+            ]
+          },
+          {
+            "label": "OPM %",
+            "values": [
+              "0.7%",
+              "0.4%",
+              "0.3%",
+              "0.3%",
+              "1.0%"
+            ]
+          },
+          {
+            "label": "Other Income +",
+            "values": [
+              "3",
+              "62",
+              "2",
+              "31",
+              "16"
+            ]
+          },
+          {
+            "label": "Interest",
+            "values": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "18"
+            ]
+          },
+          {
+            "label": "Depreciation",
+            "values": [
+              "2",
+              "2",
+              "2",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "label": "Profit before tax",
+            "values": [
+              "101",
+              "154",
+              "90",
+              "82",
+              "161"
+            ]
+          },
+          {
+            "label": "Tax %",
+            "values": [
+              "29%",
+              "27%",
+              "26%",
+              "26%",
+              "25%"
+            ]
+          },
+          {
+            "label": "Net Profit +",
+            "values": [
+              "72",
+              "113",
+              "67",
+              "61",
+              "120"
+            ]
+          },
+          {
+            "label": "EPS in Rs",
+            "values": [
+              "8.41",
+              "12.75",
+              "7.87",
+              "6.91",
+              "12.96"
+            ]
+          },
+          {
+            "label": "Raw PDF",
+            "values": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "source_url": "https://www.screener.in/company/AUGMONT/consolidated/",
+        "fetched_at": "2026-11-07T11:14:35Z",
+        "financial_type": "consolidated",
+        "warnings": []
+      }
+    }
+  },
+  "isError": false
+}

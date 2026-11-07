@@ -1,0 +1,176 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"data\": {\n    \"symbol\": \"AUGMONT\",\n    \"statement\": \"profit_loss\",\n    \"years\": [\n      \"Mar 2021\",\n      \"Mar 2022\",\n      \"Mar 2023\",\n      \"Mar 2024\",\n      \"Mar 2025\",\n      \"Mar 2026\"\n    ],\n    \"rows\": [\n      {\n        \"label\": \"Sales +\",\n        \"values\": [\n          \"20,641\",\n          \"25,865\",\n          \"30,513\",\n          \"34,921\",\n          \"66,231\",\n          \"94,186\"\n        ]\n      },\n      {\n        \"label\": \"Sales growth\",\n        \"values\": [\n          \"\",\n          \"+25%\",\n          \"+18%\",\n          \"+14%\",\n          \"+90%\",\n          \"+42%\"\n        ]\n      },\n      {\n        \"label\": \"Expenses +\",\n        \"values\": [\n          \"20,629\",\n          \"25,829\",\n          \"30,443\",\n          \"34,816\",\n          \"65,926\",\n          \"93,799\"\n        ]\n      },\n      {\n        \"label\": \"Operating Profit\",\n        \"values\": [\n          \"11\",\n          \"37\",\n          \"70\",\n          \"106\",\n          \"305\",\n          \"387\"\n        ]\n      },\n      {\n        \"label\": \"OPM %\",\n        \"values\": [\n          \"0.1%\",\n          \"0.1%\",\n          \"0.2%\",\n          \"0.3%\",\n          \"0.5%\",\n          \"0.4%\"\n        ]\n      },\n      {\n        \"label\": \"Other Income +\",\n        \"values\": [\n          \"26\",\n          \"7\",\n          \"10\",\n          \"27\",\n          \"21\",\n          \"96\"\n        ]\n      },\n      {\n        \"label\": \"Interest\",\n        \"values\": [\n          \"10\",\n          \"2\",\n          \"21\",\n          \"20\",\n          \"13\",\n          \"3\"\n        ]\n      },\n      {\n        \"label\": \"Depreciation\",\n        \"values\": [\n          \"1\",\n          \"1\",\n          \"3\",\n          \"8\",\n          \"8\",\n          \"7\"\n        ]\n      },\n      {\n        \"label\": \"Profit before tax\",\n        \"values\": [\n          \"26\",\n          \"41\",\n          \"57\",\n          \"104\",\n          \"305\",\n          \"473\"\n        ]\n      },\n      {\n        \"label\": \"Tax %\",\n        \"values\": [\n          \"28%\",\n          \"22%\",\n          \"29%\",\n          \"27%\",\n          \"26%\",\n          \"26%\"\n        ]\n      },\n      {\n        \"label\": \"Net Profit +\",\n        \"values\": [\n          \"19\",\n          \"32\",\n          \"40\",\n          \"76\",\n          \"227\",\n          \"348\"\n        ]\n      },\n      {\n        \"label\": \"EPS in Rs\",\n        \"values\": [\n          \"2.36\",\n          \"4.00\",\n          \"4.95\",\n          \"9.08\",\n          \"26.89\",\n          \"39.99\"\n        ]\n      },\n      {\n        \"label\": \"Dividend Payout %\",\n        \"values\": [\n          \"0%\",\n          \"0%\",\n          \"0%\",\n          \"0%\",\n          \"0%\",\n          \"0%\"\n        ]\n      }\n    ]\n  },\n  \"meta\": {\n    \"source_url\": \"https://www.screener.in/company/AUGMONT/consolidated/\",\n    \"fetched_at\": \"2026-11-07T11:14:43Z\",\n    \"financial_type\": \"consolidated\",\n    \"warnings\": []\n  }\n}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "data": {
+        "symbol": "AUGMONT",
+        "statement": "profit_loss",
+        "years": [
+          "Mar 2021",
+          "Mar 2022",
+          "Mar 2023",
+          "Mar 2024",
+          "Mar 2025",
+          "Mar 2026"
+        ],
+        "rows": [
+          {
+            "label": "Sales +",
+            "values": [
+              "20,641",
+              "25,865",
+              "30,513",
+              "34,921",
+              "66,231",
+              "94,186"
+            ]
+          },
+          {
+            "label": "Sales growth",
+            "values": [
+              "",
+              "+25%",
+              "+18%",
+              "+14%",
+              "+90%",
+              "+42%"
+            ]
+          },
+          {
+            "label": "Expenses +",
+            "values": [
+              "20,629",
+              "25,829",
+              "30,443",
+              "34,816",
+              "65,926",
+              "93,799"
+            ]
+          },
+          {
+            "label": "Operating Profit",
+            "values": [
+              "11",
+              "37",
+              "70",
+              "106",
+              "305",
+              "387"
+            ]
+          },
+          {
+            "label": "OPM %",
+            "values": [
+              "0.1%",
+              "0.1%",
+              "0.2%",
+              "0.3%",
+              "0.5%",
+              "0.4%"
+            ]
+          },
+          {
+            "label": "Other Income +",
+            "values": [
+              "26",
+              "7",
+              "10",
+              "27",
+              "21",
+              "96"
+            ]
+          },
+          {
+            "label": "Interest",
+            "values": [
+              "10",
+              "2",
+              "21",
+              "20",
+              "13",
+              "3"
+            ]
+          },
+          {
+            "label": "Depreciation",
+            "values": [
+              "1",
+              "1",
+              "3",
+              "8",
+              "8",
+              "7"
+            ]
+          },
+          {
+            "label": "Profit before tax",
+            "values": [
+              "26",
+              "41",
+              "57",
+              "104",
+              "305",
+              "473"
+            ]
+          },
+          {
+            "label": "Tax %",
+            "values": [
+              "28%",
+              "22%",
+              "29%",
+              "27%",
+              "26%",
+              "26%"
+            ]
+          },
+          {
+            "label": "Net Profit +",
+            "values": [
+              "19",
+              "32",
+              "40",
+              "76",
+              "227",
+              "348"
+            ]
+          },
+          {
+            "label": "EPS in Rs",
+            "values": [
+              "2.36",
+              "4.00",
+              "4.95",
+              "9.08",
+              "26.89",
+              "39.99"
+            ]
+          },
+          {
+            "label": "Dividend Payout %",
+            "values": [
+              "0%",
+              "0%",
+              "0%",
+              "0%",
+              "0%",
+              "0%"
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "source_url": "https://www.screener.in/company/AUGMONT/consolidated/",
+        "fetched_at": "2026-11-07T11:14:43Z",
+        "financial_type": "consolidated",
+        "warnings": []
+      }
+    }
+  },
+  "isError": false
+}

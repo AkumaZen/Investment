@@ -1,0 +1,99 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"data\": {\n    \"symbol\": \"AUGMONT\",\n    \"statement\": \"cash_flow\",\n    \"years\": [\n      \"Mar 2021\",\n      \"Mar 2022\",\n      \"Mar 2023\",\n      \"Mar 2024\",\n      \"Mar 2025\",\n      \"Mar 2026\"\n    ],\n    \"rows\": [\n      {\n        \"label\": \"Cash from Operating Activity +\",\n        \"values\": [\n          \"4\",\n          \"53\",\n          \"-60\",\n          \"50\",\n          \"127\",\n          \"\"\n        ]\n      },\n      {\n        \"label\": \"Cash from Investing Activity +\",\n        \"values\": [\n          \"12\",\n          \"2\",\n          \"-21\",\n          \"17\",\n          \"-28\",\n          \"\"\n        ]\n      },\n      {\n        \"label\": \"Cash from Financing Activity +\",\n        \"values\": [\n          \"2\",\n          \"-4\",\n          \"51\",\n          \"-66\",\n          \"-7\",\n          \"\"\n        ]\n      },\n      {\n        \"label\": \"Net Cash Flow\",\n        \"values\": [\n          \"18\",\n          \"51\",\n          \"-30\",\n          \"2\",\n          \"92\",\n          \"\"\n        ]\n      },\n      {\n        \"label\": \"Free Cash Flow\",\n        \"values\": [\n          \"3\",\n          \"45\",\n          \"-69\",\n          \"49\",\n          \"119\",\n          \"\"\n        ]\n      },\n      {\n        \"label\": \"CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit\",\n        \"values\": [\n          \"106%\",\n          \"205%\",\n          \"-53%\",\n          \"98%\",\n          \"103%\",\n          \"\"\n        ]\n      }\n    ]\n  },\n  \"meta\": {\n    \"source_url\": \"https://www.screener.in/company/AUGMONT/\",\n    \"fetched_at\": \"2026-11-07T11:15:15Z\",\n    \"financial_type\": \"standalone\",\n    \"warnings\": []\n  }\n}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "data": {
+        "symbol": "AUGMONT",
+        "statement": "cash_flow",
+        "years": [
+          "Mar 2021",
+          "Mar 2022",
+          "Mar 2023",
+          "Mar 2024",
+          "Mar 2025",
+          "Mar 2026"
+        ],
+        "rows": [
+          {
+            "label": "Cash from Operating Activity +",
+            "values": [
+              "4",
+              "53",
+              "-60",
+              "50",
+              "127",
+              ""
+            ]
+          },
+          {
+            "label": "Cash from Investing Activity +",
+            "values": [
+              "12",
+              "2",
+              "-21",
+              "17",
+              "-28",
+              ""
+            ]
+          },
+          {
+            "label": "Cash from Financing Activity +",
+            "values": [
+              "2",
+              "-4",
+              "51",
+              "-66",
+              "-7",
+              ""
+            ]
+          },
+          {
+            "label": "Net Cash Flow",
+            "values": [
+              "18",
+              "51",
+              "-30",
+              "2",
+              "92",
+              ""
+            ]
+          },
+          {
+            "label": "Free Cash Flow",
+            "values": [
+              "3",
+              "45",
+              "-69",
+              "49",
+              "119",
+              ""
+            ]
+          },
+          {
+            "label": "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit",
+            "values": [
+              "106%",
+              "205%",
+              "-53%",
+              "98%",
+              "103%",
+              ""
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "source_url": "https://www.screener.in/company/AUGMONT/",
+        "fetched_at": "2026-11-07T11:15:15Z",
+        "financial_type": "standalone",
+        "warnings": []
+      }
+    }
+  },
+  "isError": false
+}

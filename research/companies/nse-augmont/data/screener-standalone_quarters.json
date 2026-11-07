@@ -1,0 +1,161 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"data\": {\n    \"symbol\": \"AUGMONT\",\n    \"quarters\": [\n      \"Jun 2025\",\n      \"Sep 2025\",\n      \"Mar 2026\",\n      \"Jun 2026\",\n      \"Sep 2026\"\n    ],\n    \"rows\": [\n      {\n        \"label\": \"Sales +\",\n        \"values\": [\n          \"10,049\",\n          \"19,163\",\n          \"27,640\",\n          \"15,682\",\n          \"13,107\"\n        ]\n      },\n      {\n        \"label\": \"YoY Sales growth\",\n        \"values\": [\n          \"\",\n          \"\",\n          \"\",\n          \"+56%\",\n          \"-32%\"\n        ]\n      },\n      {\n        \"label\": \"Expenses +\",\n        \"values\": [\n          \"10,012\",\n          \"19,126\",\n          \"27,583\",\n          \"15,672\",\n          \"12,997\"\n        ]\n      },\n      {\n        \"label\": \"Operating Profit\",\n        \"values\": [\n          \"36\",\n          \"37\",\n          \"57\",\n          \"9\",\n          \"109\"\n        ]\n      },\n      {\n        \"label\": \"OPM %\",\n        \"values\": [\n          \"0.4%\",\n          \"0.2%\",\n          \"0.2%\",\n          \"0.1%\",\n          \"0.8%\"\n        ]\n      },\n      {\n        \"label\": \"Other Income +\",\n        \"values\": [\n          \"3\",\n          \"13\",\n          \"1\",\n          \"21\",\n          \"4\"\n        ]\n      },\n      {\n        \"label\": \"Interest\",\n        \"values\": [\n          \"0\",\n          \"0\",\n          \"0\",\n          \"0\",\n          \"0\"\n        ]\n      },\n      {\n        \"label\": \"Depreciation\",\n        \"values\": [\n          \"1\",\n          \"1\",\n          \"1\",\n          \"1\",\n          \"1\"\n        ]\n      },\n      {\n        \"label\": \"Profit before tax\",\n        \"values\": [\n          \"38\",\n          \"49\",\n          \"56\",\n          \"30\",\n          \"112\"\n        ]\n      },\n      {\n        \"label\": \"Tax %\",\n        \"values\": [\n          \"29%\",\n          \"30%\",\n          \"25%\",\n          \"26%\",\n          \"25%\"\n        ]\n      },\n      {\n        \"label\": \"Net Profit +\",\n        \"values\": [\n          \"27\",\n          \"34\",\n          \"42\",\n          \"22\",\n          \"85\"\n        ]\n      },\n      {\n        \"label\": \"EPS in Rs\",\n        \"values\": [\n          \"3.30\",\n          \"4.09\",\n          \"5.03\",\n          \"2.63\",\n          \"9.26\"\n        ]\n      },\n      {\n        \"label\": \"Raw PDF\",\n        \"values\": [\n          \"\",\n          \"\",\n          \"\",\n          \"\",\n          \"\"\n        ]\n      }\n    ]\n  },\n  \"meta\": {\n    \"source_url\": \"https://www.screener.in/company/AUGMONT/\",\n    \"fetched_at\": \"2026-11-07T11:15:19Z\",\n    \"financial_type\": \"standalone\",\n    \"warnings\": []\n  }\n}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "data": {
+        "symbol": "AUGMONT",
+        "quarters": [
+          "Jun 2025",
+          "Sep 2025",
+          "Mar 2026",
+          "Jun 2026",
+          "Sep 2026"
+        ],
+        "rows": [
+          {
+            "label": "Sales +",
+            "values": [
+              "10,049",
+              "19,163",
+              "27,640",
+              "15,682",
+              "13,107"
+            ]
+          },
+          {
+            "label": "YoY Sales growth",
+            "values": [
+              "",
+              "",
+              "",
+              "+56%",
+              "-32%"
+            ]
+          },
+          {
+            "label": "Expenses +",
+            "values": [
+              "10,012",
+              "19,126",
+              "27,583",
+              "15,672",
+              "12,997"
+            ]
+          },
+          {
+            "label": "Operating Profit",
+            "values": [
+              "36",
+              "37",
+              "57",
+              "9",
+              "109"
+            ]
+          },
+          {
+            "label": "OPM %",
+            "values": [
+              "0.4%",
+              "0.2%",
+              "0.2%",
+              "0.1%",
+              "0.8%"
+            ]
+          },
+          {
+            "label": "Other Income +",
+            "values": [
+              "3",
+              "13",
+              "1",
+              "21",
+              "4"
+            ]
+          },
+          {
+            "label": "Interest",
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "label": "Depreciation",
+            "values": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          },
+          {
+            "label": "Profit before tax",
+            "values": [
+              "38",
+              "49",
+              "56",
+              "30",
+              "112"
+            ]
+          },
+          {
+            "label": "Tax %",
+            "values": [
+              "29%",
+              "30%",
+              "25%",
+              "26%",
+              "25%"
+            ]
+          },
+          {
+            "label": "Net Profit +",
+            "values": [
+              "27",
+              "34",
+              "42",
+              "22",
+              "85"
+            ]
+          },
+          {
+            "label": "EPS in Rs",
+            "values": [
+              "3.30",
+              "4.09",
+              "5.03",
+              "2.63",
+              "9.26"
+            ]
+          },
+          {
+            "label": "Raw PDF",
+            "values": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "source_url": "https://www.screener.in/company/AUGMONT/",
+        "fetched_at": "2026-11-07T11:15:19Z",
+        "financial_type": "standalone",
+        "warnings": []
+      }
+    }
+  },
+  "isError": false
+}

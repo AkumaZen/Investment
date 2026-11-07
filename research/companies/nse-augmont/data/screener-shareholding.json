@@ -1,0 +1,58 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"data\": {\n    \"symbol\": \"AUGMONT\",\n    \"quarters\": [\n      \"Sep 2026\"\n    ],\n    \"rows\": [\n      {\n        \"category\": \"Promoters +\",\n        \"values\": [\n          \"81.91%\"\n        ]\n      },\n      {\n        \"category\": \"FIIs +\",\n        \"values\": [\n          \"1.78%\"\n        ]\n      },\n      {\n        \"category\": \"DIIs +\",\n        \"values\": [\n          \"2.92%\"\n        ]\n      },\n      {\n        \"category\": \"Public +\",\n        \"values\": [\n          \"13.37%\"\n        ]\n      },\n      {\n        \"category\": \"No. of Shareholders\",\n        \"values\": [\n          \"62,362\"\n        ]\n      }\n    ],\n    \"promoter_trend\": null\n  },\n  \"meta\": {\n    \"source_url\": \"https://www.screener.in/company/AUGMONT/\",\n    \"fetched_at\": \"2026-11-07T11:14:30Z\",\n    \"financial_type\": null,\n    \"warnings\": []\n  }\n}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "data": {
+        "symbol": "AUGMONT",
+        "quarters": [
+          "Sep 2026"
+        ],
+        "rows": [
+          {
+            "category": "Promoters +",
+            "values": [
+              "81.91%"
+            ]
+          },
+          {
+            "category": "FIIs +",
+            "values": [
+              "1.78%"
+            ]
+          },
+          {
+            "category": "DIIs +",
+            "values": [
+              "2.92%"
+            ]
+          },
+          {
+            "category": "Public +",
+            "values": [
+              "13.37%"
+            ]
+          },
+          {
+            "category": "No. of Shareholders",
+            "values": [
+              "62,362"
+            ]
+          }
+        ],
+        "promoter_trend": null
+      },
+      "meta": {
+        "source_url": "https://www.screener.in/company/AUGMONT/",
+        "fetched_at": "2026-11-07T11:14:30Z",
+        "financial_type": null,
+        "warnings": []
+      }
+    }
+  },
+  "isError": false
+}

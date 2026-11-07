@@ -21,7 +21,7 @@ Use absolute paths in generated prompts and preserve the versioning/no-overwrite
 
 - Screener MCP is registered as `screener`. Its `search_company`, `get_document_list`, and financial tools provide the data this workflow expects. Tool naming varies by client; select the registered server's matching tool instead of depending on Claude's exact `mcp__screener__` prefix.
 - Python and PyMuPDF are available on the installation machine. PDF rendering uses PyMuPDF; most bundled checks use only the standard library.
-- The supplied workflow explicitly requires Sonnet workers, including an evidence verifier. The current Codex worker tools do not expose that model. Installation does not waive this requirement: report the runtime limitation before starting extraction; do not claim that Codex workers satisfy the Sonnet check. A user-approved adaptation or a runtime exposing the required workers is needed for a complete company prompt run.
+- User-approved amendment (2026-11-07): use gpt-6.1-sol workers with reasoning_effort="low" and fork_turns="none" for readers, scanner and verifier. Supply complete task context. This supersedes historical Sonnet assignments.
 - `business-valuation-scenarios` and `dataviz` are referenced but were not bundled and were not found in the standard local skill directories at installation. Obtain the intended originals before a run needing them; do not fabricate the missing valuation table or chart library. Other external design skills are optional under the supplied workflow.
 - Claude-specific `Agent`, `Skill`, and `AskUserQuestion` calls describe capabilities. Use equivalent available tools only when they satisfy the same requirements. Existing `.claude/agents` files are left untouched.
 

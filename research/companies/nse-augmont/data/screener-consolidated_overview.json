@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"data\": {\n    \"name\": \"Augmont Enterprises Ltd\",\n    \"nse_code\": \"AUGMONT\",\n    \"bse_code\": \"544888\",\n    \"sectors\": [\n      \"Metals & Mining\",\n      \"Precious Metals\"\n    ],\n    \"current_price\": \"922\",\n    \"52_week_high\": \"1,405\",\n    \"52_week_low\": \"798\",\n    \"key_ratios\": {\n      \"Market Cap\": \"8,420\",\n      \"Stock P/E\": \"24.4\",\n      \"Book Value\": \"186\",\n      \"Dividend Yield\": \"0.00\",\n      \"ROCE\": \"68.5\",\n      \"ROE\": \"50.9\",\n      \"Face Value\": \"5.00\"\n    },\n    \"about\": \"Augmont operates one of India’s largest gold and silver ecosystems, supporting high‑volume transactions through technology, supply chains, and institutional- grade processes.\"\n  },\n  \"meta\": {\n    \"source_url\": \"https://www.screener.in/company/AUGMONT/consolidated/\",\n    \"fetched_at\": \"2026-11-07T11:14:37Z\",\n    \"financial_type\": \"consolidated\",\n    \"warnings\": []\n  }\n}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "data": {
+        "name": "Augmont Enterprises Ltd",
+        "nse_code": "AUGMONT",
+        "bse_code": "544888",
+        "sectors": [
+          "Metals & Mining",
+          "Precious Metals"
+        ],
+        "current_price": "922",
+        "52_week_high": "1,405",
+        "52_week_low": "798",
+        "key_ratios": {
+          "Market Cap": "8,420",
+          "Stock P/E": "24.4",
+          "Book Value": "186",
+          "Dividend Yield": "0.00",
+          "ROCE": "68.5",
+          "ROE": "50.9",
+          "Face Value": "5.00"
+        },
+        "about": "Augmont operates one of India’s largest gold and silver ecosystems, supporting high‑volume transactions through technology, supply chains, and institutional- grade processes."
+      },
+      "meta": {
+        "source_url": "https://www.screener.in/company/AUGMONT/consolidated/",
+        "fetched_at": "2026-11-07T11:14:37Z",
+        "financial_type": "consolidated",
+        "warnings": []
+      }
+    }
+  },
+  "isError": false
+}

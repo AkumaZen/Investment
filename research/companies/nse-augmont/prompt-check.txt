@@ -1,0 +1,35 @@
+PASS  0A is the first section
+PASS  sections 0A to 9 present and in order
+PASS  0A has all seven parts
+PASS  0B has the 10 rules
+PASS  0B states the real job ('The job is NOT to retell')
+PASS  at least 15 questions
+PASS  at least 12 questions carry a number
+PASS  coverage map has every core topic
+PASS  Business and Products come before peers, financials and valuation
+PASS  anti-thesis section present in the report structure
+PASS  leave-out list present
+PASS  Bear case marked [E]
+PASS  Base case marked [E]
+PASS  Bull case marked [E]
+PASS  bear case linked to the risk cards
+PASS  management guidance table with a Source column
+PASS  citation rule present
+PASS  disclaimer present
+PASS  section 6A matches the locked text
+PASS  section 7 matches the locked text
+PASS  section 8 matches the locked text
+PASS  section 8B matches the locked text
+PASS  staged reference directory is specified
+PASS  one valid report-design family is selected
+PASS  three original references and portable reader are accessible and intact
+PASS  page plan has six complete columns and valid physical source-page IDs
+PASS  visual plan has rows
+PASS  every visual plan row has question, insight, form, section and source
+PASS  no unfilled {{slots}}
+PASS  no em or en dashes
+PASS  no mention of a smaller worker model
+PASS  every local file named in section 1 exists
+WARN  size  :: 71.8 KB, outside the full band of 30 to 55 KB
+
+RESULT: PASS  (32 pass, 0 fail, 1 warn)  research\companies\nse-augmont\prompts\Augmont Enterprises Research Prompt.md

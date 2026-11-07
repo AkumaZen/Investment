@@ -1,0 +1,47 @@
+# Follow-up replay
+
+Historical examples transfer as analytical obligations. Process corrections are recorded in prompt-notes.md as well.
+
+| Learning row | Prompt line | Requirement forced |
+|---|---|---|
+| "Great Research analyst... explains the business and it's products flawlessly... acting like a robot" (04-Oct) | 181 | **S2. The business, simply.** |
+| "avoid sections which are not related" (04-Oct), "sections which are irrelavant" (02-Oct) | 292 | ### Leave out |
+| Types, what's new, capacity, utilisation, capex (04-Oct) | 214 | **S9. Refineries, delivery network and working-capital capacity.** |
+| The 10-point framework, "think bottom-up, question every narrative" (06-Oct) | 27 | ### The 10 rules |
+| "simple and easy to digest" (06-Oct) | 355 | - Simple words. Explain every term before using it. Write for a first-time investor who is smart but new to this industry. |
+| "only use one annual report, all the important annoucements only", RHP, regulator databases (23-Oct) | 135 | Document mode: All documents for the later research run: every available annual report, deck, transcript and results filing, plus DRHP, RHP, final prospectus, material announcements and every upload. Prompt preparation used ONLY t |
+| Concall downloader, then Screener if it fails (26-Sep, 23-Oct) | 147 | 2. Concall transcripts: run the concall downloader once if one is installed. If it fails or returns nothing, use Screener get_document_list and download with fetch_doc.py. Do not retry the downloader. |
+| The design block (04-Oct, 23-Oct) and visual verification (06-Oct) | 444 | ## 7. Design system |
+| "why to read this business?" (24-Oct), the semiconductor trigger "was my first goal to find the company" (09-Oct) | 11 | ## 0A. Why we are covering this business |
+| "what is the moat for Kabra in battery? anyone can do that" | 207 | **S6. Moat and competition.** Who else can do this, product by product; moat cards, each with evidence and a counter-point; switching costs; a plain answer to "can anyone do this?". |
+| "who are the actual customers? is this the only company" | 204 | **S5. Customers and partners.** Named customers and what each buys; concentration; why they buy; what is happening inside the biggest customer; whether large orders repeat; contract terms; every named partner with its relation, st |
+| "Products also be discussed in detail", "types and which types they make", "what are they brining new" | 193 | **S3. Product and service lines, and who bears the risk.** |
+| "production capacity, utilisation, new capex", "Exisiting capaicty, New Capacity Live, Planned capacity" | 215 | - Capacity table: existing, live now and planned, with utilisation, and when the next plant is needed. |
+| "what is take and pay... will it benefit or not" | 186 | - Every contract term explained, with who benefits: Spot pricing, bid-ask spread, gross versus net revenue recognition, title to metal, advance payment, settlement and delivery timing, scrap assay/yield, hedging, custody/trustee r |
+| "margins for Merchant vs Onsite" | 201 | **S4. Segments and entities.** Revenue and margin for each part; which part earns and which part loses; margin by business model, with assumptions marked in brackets. |
+| "only gives plants, then what about recurring revenue... this model is not good" | 185 | - Revenue model: product, project, recurring or service; one-time vs repeat; and a plain judgement on model quality. |
+| "why did BHEL gave this massive order, what is happening inside BHEL" | 204 | **S5. Customers and partners.** Named customers and what each buys; concentration; why they buy; what is happening inside the biggest customer; whether large orders repeat; contract terms; every named partner with its relation, st |
+| "where is the money going in investments" | 228 | - Capital allocation: every rupee raised and where it went vs the stated plan; acquisitions and the returns on them; unrelated ventures; where the cash sits today; dividends and buybacks. |
+| "Has shares really pleged by management?" | 227 | - Skin in the game: holding trend, who sold and at what price, preferential or warrant participation, pledges checked in primary filings, pay vs profit, ESOPs. |
+| "Why is solar cell trigger not mentioned and management talks about solar cell" | 255 | - All triggers listed, including what management talks about that is not yet in the numbers, sector or government moves, and anything the user raised. If an expected trigger is absent, say so. |
+| "what things are assumed and what are actually grounded?", "show the calculation" | 362 | - Assumed vs grounded: every assumption is listed with the reason it is reasonable and what would prove it wrong. |
+| "we cannot value this based on it's past earnings" (Suven) | 335 | - Main metric: Provisional EV/normalised EBITDA accompanied by explicit capital-turn and cash-conversion tests. The consulted business-valuation-scenarios Step 1 table flags working-capital-heavy businesses for cash conversion and |
+| "how many actually patients were happy", "lot of jargon" (Suven) | 295 | - Clinical phases and patient tables: not this business. |
+| "Tell about that minear and europe company... what is the relation" (Anlon) | 205 | For each named jeweller, fintech distributor, lender, exchange, bank or technology partner, establish role, legal counterparty, start date, economics, exclusivity and disclosed exposure. A user reached through a partner is not aut |
+| "list of approvals... how it matches the management guiding 70%" (Anlon) | 241 | **S12. Guidance and outlook.** |
+| "Use their website" (Anlon) | 149 | 4. Company website: https://augmont.com and https://business.augmont.com . Use investor documents, product terms, refining/SPOT pages and dated custody/trustee disclosures. Read the source, not a search snippet or marketing headli |
+| "use this valuation", management's guidance unchanged (Anlon) | 337 | - Management guidance row, with no haircut: |
+| "key trackables consolidated on one page", "Mention the triggers on the first" | 178 | **S1. Why read this business, and snapshot.** The 0A answer with its evidence. What it does, latest numbers, price, diluted share count, rating and value range. One page of key trackables and dated triggers. |
+| "scroll is not working", "I want a light mode theme" (Anlon) | 470 | Scroll and print: native scrolling; never hide overflow on html or body, trap the wheel in charts, or fix section heights. Print hides controls and navigation, preserves all in-scope sections and sources, and avoids clipped exhibi |
+| "Still this report does not explain capex properly" (Ellenbarrie) | 216 | - Capex tracker, one row per project: project, maintenance or growth, status, cost, spent so far, funding (internal, debt or equity), commissioning date and any slippage, capacity added, expected revenue and margin impact, risk, s |
+| "What is expected in the next quarter according to the management" (24-Oct), Q1FY27 outlook (Anlon, Amanta) | 243 | - Next quarter: what management expects, in their words. If they gave no number, say so instead of inferring one. |
+| "future derived growth" (Savita), "Semiconductor trigger is currently not there" (Ellenbarrie) | 252 | - Growth build by driver: each driver sized bottom-up for the next 3 years and capped by capacity and balance sheet. Derived, not quoted. |
+| "this model is not good then" (Ellenbarrie) | 275 | **S19. Risks and anti-thesis.** |
+| "This skill never asked me but which documents to use" (Supreme Power build) | 135 | Document mode: All documents for the later research run: every available annual report, deck, transcript and results filing, plus DRHP, RHP, final prospectus, material announcements and every upload. Prompt preparation used ONLY t |
+| "you didn't use my design format, my design skills mentioned in the research prompt builder at all ... you just gave me a generic sloppy html" (Supreme Power capex one-pager sample | 466 | Section opening: every S-section starts with the answer in one bold line, then evidence, then a short unboxed note titled "What this means for you". Place management explanations beside the relevant numbers. Prefer plain narrative |
+| "My this intruction has key small decisoins from my learnings and thought process which your skill made from this does not have and you have cleveryly omitted it" | 299 | ### Coverage map |
+| "equity-research-html-studio, ignore this then" | 411 | External skills (read if installed, never required): |
+| "equity-research-html-studio is not there so use this library Dataviz for chart decision making" | 411 | External skills (read if installed, never required): |
+| "why are these points which are fine grained thought process not in the V2 skill plan ?" (user pasted the full plan again) | 299 | ### Coverage map |
+| "refer these instead pasting everthing inside the skill"; "Let me verify it before you finally save the skill" | 460 | Process: source manifest and business map, evidence ledgers, reconciled operating/financial model, thesis and contrary evidence, exhibit register, page storyboard, deterministic layout, numerical/editorial review, rendered-page re |
+| "Just replace Sonnet with the gpt 6.1 light models" | 168 | Models: all document readers, financial scanners and evidence verifiers use model="gpt-6.1-sol", reasoning_effort="low", fork_turns="none". Supply complete task context and record actual settings. The lead diagnoses, writes and ch |

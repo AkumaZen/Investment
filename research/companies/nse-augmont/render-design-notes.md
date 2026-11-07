@@ -1,0 +1,13 @@
+# Report reconstruction notes
+
+Read: staged guide; manual sections 3, 6 and 9; selected manual entries and JSON page records CC-01, CC-09, CC-20 and CC-25 through the portable reader. These are design evidence, never Augmont financial evidence.
+
+Measured source pages are 540 x 780 pt, primarily Calibri and Calibri Bold with dominant 9.96/9.98 pt text. Selected source pages include 6.96 pt notes. The manual observes a narrative and facts rail on CC-01, business diagram on CC-09, debt/cash argument on CC-20 and a compact valuation table on CC-25. Region rectangles were not treated as exact CSS geometry. Original brokerage page images have not been inspected by the renderer author, so this is an adaptation, not an exact visual match.
+
+Chosen reconstruction: A4 portrait, 36 pt margins; Calibri with Arial/system sans-serif fallback; print body 10 pt/13 pt, headings 14 pt, tables 8.5 pt/11 pt, sources 7.5 pt/10 pt. Screen body is 16 px. Dark ink, white field, restrained #C00000 accent and hairline rules carry the hierarchy. No broker identity, signature, rating history or financial data is imported.
+
+The source's facts rail becomes a separate desktop contents rail so a long 20-section document stays navigable. Under 768 px the contents become a native details menu. Supplied executive prose may use a compact facts table when the evidence warrants it. Analytical sections start with their supported answer. Each section starts a new printed page and can continue naturally; long tables repeat headers. No fixed content heights are imposed. Static labelled inline SVGs supplied by the analyst remain editable and work offline. No Chart.js dependency is loaded.
+
+Renderer checks: synthetic import/render smoke check, metadata escaping, unsafe source scheme rejection, all supplied section links and IDs, inline style, print rules and mobile table wrappers. Final page transitions, every financial exhibit, numeric reconciliation, normal-size reading and mobile/desktop screenshots must be checked against the actual populated report by the report producer. This note does not mark those final report checks as passed.
+
+Content API: title, subtitle, date, status are plain text; executive, section html and appendix are trusted local analyst HTML. Each section needs id, title, answer and html; answer is plain text. Source records need id and title, with optional https/http url and detail. Source anchors are source-ID. The renderer adds no company figures or analytical sections. All tables are automatically placed inside a keyboard-focusable internal scrolling region. Numeric cells should use class num. Captions and adjacent evidence notes should use source or footnote; interpretation may use meaning.

@@ -65,12 +65,12 @@ Sources, in this order:
 - Always ask which documents to use before any worker reads anything, unless the user already said in this request. Run `get_document_list` and check the cache first, then ask one question (AskUserQuestion) that lists what was found by type and period (annual reports, transcripts, decks, results, RHP) and offers: Default set (recommended, name the exact files), All documents, Pick specific ones, or "I'll upload my own" (uploads are added to the fetched set). Record the answer word for word in `prompt-notes.md`.
 - After that one question, never stop for permission. Ask again only if the ticker is ambiguous or no documents can be found at all.
 
-### Step 3: Extract (Sonnet workers read, you do not)
+### Step 3: Extract (GPT-6.1 Sol workers read, you do not)
 
-- Spawn one worker per document with the `doc-reader` brief in `reference/workers.md`, and one `financials-scanner` worker for the Screener numbers. Use the Agent tool with `subagent_type: "general-purpose"` and `model: "sonnet"` on every call. Run them in parallel.
+- Spawn one worker per document with the `doc-reader` brief in `reference/workers.md`, and one `financials-scanner` worker for the Screener numbers. Use collaboration.spawn_agent with `model: "gpt-6.1-sol", reasoning_effort: "low", fork_turns: "none"` on every call. Run them in parallel.
 - Each worker writes its own `facts-<doc>.md`; you merge them into `facts.md`. Charts, tables and scanned pages are read from page images made by `python SKILL_DIR/scripts/pdf_pages.py <pdf> --render --pages 12-15 --out <dir>`.
-- If a Sonnet worker cannot be started, stop and tell the user. Never fall back to a smaller model.
-- Never edit the agent files in `.claude/agents/` (doc-reader, financials-scanner, evidence-verifier). Other skills such as stock-screen rely on their pinned model. Pass `model: "sonnet"` on each call instead, which overrides the pin for that call only.
+- If a GPT-6.1 Sol worker cannot be started, stop and tell the user. Never substitute another worker model without user approval.
+- Never edit the agent files in `.claude/agents/` (doc-reader, financials-scanner, evidence-verifier). Other skills such as stock-screen rely on their pinned model. Pass `model: "gpt-6.1-sol", reasoning_effort: "low", fork_turns: "none"` on each call instead, which overrides the pin for that call only.
 - Do not read whole documents yourself. Read `facts.md`, and open a specific page only to settle a conflict or check a key number.
 
 ### Step 4: Diagnose (you, before drafting)
@@ -120,9 +120,9 @@ Why read; Business; Revenue model; Products; Customers; Moat; Capacity; Capex tr
 2. Recompute every derived number in the prompt (growth rates, margins, multiples, per-share values) by script, and fix any difference.
 3. Read the prompt as a sceptical fund manager: what obvious question about this company is unanswered? Fix it and re-run the checker.
 4. Follow-up replay: for every row of `reference/learnings.md`, name the prompt line that forces the answer. A row with no line is a FAIL.
-5. Accuracy: an `evidence-verifier` worker (model "sonnet") re-reads 10 random numbers from the prompt against their source pages.
+5. Accuracy: an `evidence-verifier` worker (model "gpt-6.1-sol") re-reads 10 random numbers from the prompt against their source pages.
 6. Adaptation: compare with the closest earlier prompt; 0A, structure, the 15 questions, rules, capex, triggers, anti-thesis, valuation metric and visual plan must truly differ, not only the names.
-7. Model check: confirm every worker ran on Sonnet 5.5 and quote it.
+7. Model check: confirm every worker ran on GPT-6.1 Sol with low reasoning effort and quote it.
 8. Preservation: after ANY change to this skill (not per prompt), run `python SKILL_DIR/scripts/check_skill.py`. It must PASS, so no decision from `reference/plan.md` is ever dropped.
 9. Reference handoff: confirm the three original resources match their manifest, every selected physical source page exists, the prompt carries accessible local paths and one declared family, and the page plan fits this company. Confirm the later report instructions require the manual's model-first process, page storyboard, rendered-page inspection and reader decision test. The checker verifies structure and access; it cannot prove that the agent read the files or produced good analysis.
 
@@ -143,6 +143,8 @@ Paste the full prompt only if the user asks.
 
 - Simple words. Explain a term before using it.
 - No em dashes or en dashes in anything you write.
-- Workers run on Sonnet 5.5 only. The prompt never names any other worker model.
+- Workers run on GPT-6.1 Sol with low reasoning effort only. The prompt never names any other worker model.
 - Facts in the prompt come from documents and carry source tags. Your own estimates are marked `[E]` with the working.
 - When the user corrects a prompt, append the lesson to `reference/learnings.md`: what they asked, why the prompt missed it, and the line that will force it next time.
+
+Codex worker calls must use reasoning_effort="low" and fork_turns="none" with full task context.

@@ -1,0 +1,72 @@
+[
+  {
+    "claim": "Core PAT multiple",
+    "calculated": 2.5,
+    "rounded_expected": 2.5,
+    "source": "Call p.7; INR crore / INR crore",
+    "result": "PASS"
+  },
+  {
+    "claim": "Core PAT growth percent",
+    "calculated": 150.0,
+    "rounded_expected": 150.0,
+    "source": "Call p.7",
+    "result": "PASS"
+  },
+  {
+    "claim": "Core EBITDA multiple",
+    "calculated": 2.26,
+    "rounded_expected": 2.26,
+    "source": "Call p.7",
+    "result": "PASS"
+  },
+  {
+    "claim": "Core EBITDA growth percent",
+    "calculated": 125.99999999999997,
+    "rounded_expected": 126.0,
+    "source": "Call p.7",
+    "result": "PASS"
+  },
+  {
+    "claim": "Scrap procurement share change, percentage points",
+    "calculated": 21.5,
+    "rounded_expected": 21.5,
+    "source": "Call p.14; percentage points, not percent",
+    "result": "PASS"
+  },
+  {
+    "claim": "Scrap procurement share multiple",
+    "calculated": 8.166666666666666,
+    "rounded_expected": 8.17,
+    "source": "Call p.14; not absolute volume growth",
+    "result": "PASS"
+  },
+  {
+    "claim": "Gold4All endpoint revenue multiple",
+    "calculated": 6.0,
+    "rounded_expected": 6.0,
+    "source": "Call p.5; conflicts with stated 5.7x",
+    "result": "PASS"
+  },
+  {
+    "claim": "Fresh issue description difference, INR crore",
+    "calculated": 5,
+    "rounded_expected": 5,
+    "source": "Call pp.7,12; no assumed explanation",
+    "result": "PASS"
+  },
+  {
+    "claim": "Illustrative four-day versus two-day capital turns ratio",
+    "calculated": 0.5,
+    "rounded_expected": 0.5,
+    "source": "[E] equal capital/time; boundary examples, not realised cycles",
+    "result": "PASS"
+  },
+  {
+    "claim": "Illustrative contribution hurdle multiple",
+    "calculated": 2.0,
+    "rounded_expected": 2,
+    "source": "[E] same costs/funds/operating days; not guidance",
+    "result": "PASS"
+  }
+]

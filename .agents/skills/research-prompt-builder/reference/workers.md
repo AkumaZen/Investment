@@ -1,6 +1,6 @@
 # Worker briefs
 
-Spawn with the Agent tool: `subagent_type: "general-purpose"`, `model: "sonnet"`. Never another model. Paste the brief, filled in, as the prompt. Run workers in parallel. If a worker cannot start on Sonnet, stop and tell the user.
+Spawn with collaboration.spawn_agent: `model: "gpt-6.1-sol", reasoning_effort: "low", fork_turns: "none"`. Never another model. Paste the brief, filled in, as the prompt. Run workers in parallel. If a worker cannot start on GPT-6.1 Sol, stop and tell the user.
 
 ## doc-reader
 
@@ -61,3 +61,5 @@ Check these numbers against their source pages. For each, open the cited page (p
 
 Reply with a table: claim | cited | found | result.
 ```
+
+Codex worker calls must use reasoning_effort="low" and fork_turns="none" with full task context.

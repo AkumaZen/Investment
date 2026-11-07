@@ -14,3 +14,15 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
+
+# Re-downloadable Augmont filing cache (about 1 GB, including duplicate filings)
+research/companies/nse-augmont/docs/AUGMONT/*
+!research/companies/nse-augmont/docs/AUGMONT/uploads/
+research/companies/nse-augmont/*-extracted.txt
+research/companies/nse-augmont/*-text.txt
+research/companies/nse-augmont/*-ocr.txt
+research/companies/nse-augmont/augmont-*.js
+research/companies/nse-augmont/stakeholders.html
+research/companies/nse-augmont/ar26-rendered/
+research/companies/nse-augmont/ar26-render/
+research/companies/nse-augmont/ar26-ocr/

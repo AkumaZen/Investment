@@ -1,0 +1,1484 @@
+{
+  "as_of": "2026-11-07",
+  "discovery_source": "https://augmont.com/investors/stakeholders",
+  "concall_downloader": "not installed among available tools; not invoked",
+  "screener_get_document_list": "invoked once AUGMONT; no annual reports or transcripts found",
+  "documents": [
+    {
+      "title": "Investors Presentation for Financial Results - Q2 FY 2026-27",
+      "url": "https://augmont.com/assets/files/stakeholders/board-meetings/Q2 FY 2026-27_Investor Presentation.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\investors-presentation-for-financial-results-q2-fy-2026-27.pdf",
+      "status": "cached",
+      "bytes": 3584168,
+      "type": "investor deck",
+      "period": "2026-27",
+      "date": null
+    },
+    {
+      "title": "Newspaper Advertisement - Unaudited Financial Results Q2 26-27",
+      "url": "https://augmont.com/assets/files/stakeholders/newspaper-advertisements/Newspaper Advertisement - Unaudited Financial Results Q2 26-27.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\newspaper-advertisement-unaudited-financial-results-q2-26-27.pdf",
+      "status": "cached",
+      "bytes": 3942396,
+      "type": "financial results",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Notice of AGM for FY 2025-26",
+      "url": "https://augmont.com/assets/files/stakeholders/agm egm/Notice of AGM for FY 2025-26.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\notice-of-agm-for-fy-2025-26.pdf",
+      "status": "cached",
+      "bytes": 1018514,
+      "type": "supporting filing",
+      "period": "2025-26",
+      "date": null
+    },
+    {
+      "title": "Press Release - Q2 FY 2026-27 Financial Results - 4 November 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/press-releases/Q2_FY 26-27_Financial Results Press Release 04 November 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\press-release-q2-fy-2026-27-financial-results-4-november-2026.pdf",
+      "status": "cached",
+      "bytes": 319490,
+      "type": "financial results",
+      "period": "2026-27",
+      "date": null
+    },
+    {
+      "title": "Annual Report 2025-26",
+      "url": "https://augmont.com/assets/files/stakeholders/financials/Annual Report 2025-26.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\annual-report-2025-26.pdf",
+      "status": "cached",
+      "bytes": 15245382,
+      "type": "annual report",
+      "period": "2025-26",
+      "date": null
+    },
+    {
+      "title": "Consolidated DRHP",
+      "url": "https://augmont.com/assets/files/stakeholders/DRHP/Consolidated DRHP.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\consolidated-drhp.pdf",
+      "status": "cached",
+      "bytes": 17656531,
+      "type": "offer document",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Audit Committee Resolution - Approval of KPIs for Prospectus - 25.08.2026",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Audit Committee Resolution - Approval of KPIs for Prospectus_25.08.2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\audit-committee-resolution-approval-of-kpis-for-prospectus-25-08-2026.pdf",
+      "status": "cached",
+      "bytes": 10093087,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Board Resolution - Approval of Prospectus - 25.08.2026",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Board Resolution - Approval of prospectus_25.08.2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\board-resolution-approval-of-prospectus-25-08-2026.pdf",
+      "status": "cached",
+      "bytes": 1481343,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Consent Letter from Statutory Auditor - Prospectus Stage",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consent Letter from Statutory Auditor_Prospectus Stage.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\consent-letter-from-statutory-auditor-prospectus-stage.pdf",
+      "status": "cached",
+      "bytes": 218650,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Augmont Enterprises Limited Prospectus",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Project Almond - Prospectus (filing version)(signed).pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-enterprises-limited-prospectus.pdf",
+      "status": "cached",
+      "bytes": 12708952,
+      "type": "offer document",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "MGT-7 FY 2025-26",
+      "url": "assets/files/stakeholders/annual-returns/MGT-7 FY 2025-26.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\mgt-7-fy-2025-26.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/stakeholders/annual-returns/MGT-7%20FY%202025-26.pdf'",
+      "type": "supporting filing",
+      "period": "2025-26",
+      "date": null
+    },
+    {
+      "title": "AGTPL Financials 2025-26",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont GoldTech Private Limited/Financials/AGTPL Financials 2025-26.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\agtpl-financials-2025-26.pdf",
+      "status": "cached",
+      "bytes": 1377705,
+      "type": "supporting filing",
+      "period": "2025-26",
+      "date": null
+    },
+    {
+      "title": "Ideal Fiscal Financials 2025-26",
+      "url": "https://augmont.com/assets/files/subsidiaries/Ideal Fiscal Services Limited/Financials/Ideal Financials 2025-26.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ideal-fiscal-financials-2025-26.pdf",
+      "status": "cached",
+      "bytes": 5201525,
+      "type": "supporting filing",
+      "period": "2025-26",
+      "date": null
+    },
+    {
+      "title": "AIL Financials 2025-26",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont International Limited/Financials/AIL Financials 2025-26.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ail-financials-2025-26.pdf",
+      "status": "cached",
+      "bytes": 5292202,
+      "type": "supporting filing",
+      "period": "2025-26",
+      "date": null
+    },
+    {
+      "title": "Augmont IFSC Financials 2025-26",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont IFSC Private Limited/Financials/IFSC Financials 2025-26.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-ifsc-financials-2025-26.pdf",
+      "status": "cached",
+      "bytes": 5375706,
+      "type": "supporting filing",
+      "period": "2025-26",
+      "date": null
+    },
+    {
+      "title": "Augmont Trading Financials 2025-26",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont Trading Limited/Financials/ATL Financials 2025-26.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-trading-financials-2025-26.pdf",
+      "status": "cached",
+      "bytes": 8395466,
+      "type": "supporting filing",
+      "period": "2025-26",
+      "date": null
+    },
+    {
+      "title": "Disclosure of Contact Details of KMP",
+      "url": "https://augmont.com/assets/files/stakeholders/Disclosure-of-Contact-Details-of-KMP.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\disclosure-of-contact-details-of-kmp.pdf",
+      "status": "cached",
+      "bytes": 378158,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Intimation of Board Meeting dated 04 November 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/board-meetings/Intimation of Board Meeting dated 04th November 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\intimation-of-board-meeting-dated-04-november-2026.pdf",
+      "status": "cached",
+      "bytes": 288370,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Intimation of Board Meeting dated 21 September 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/board-meetings/Intimation of Board Meeting dated September 21, 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\intimation-of-board-meeting-dated-21-september-2026.pdf",
+      "status": "cached",
+      "bytes": 574366,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Outcome of Board Meeting dated 04 November 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/board-meetings/Outcome of Board Meeting dated 04 November 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\outcome-of-board-meeting-dated-04-november-2026.pdf",
+      "status": "cached",
+      "bytes": 27351961,
+      "type": "financial results",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Outcome of Board Meeting dated 21 September 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/board-meetings/Outcome of Board Meeting dated 21st September 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\outcome-of-board-meeting-dated-21-september-2026.pdf",
+      "status": "cached",
+      "bytes": 8485369,
+      "type": "financial results",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Intimation of Investors Conference Call - Thursday, 05 November 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/Intimation of Investors Conference Call - Thursday, November 05, 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\intimation-of-investors-conference-call-thursday-05-november-2026.pdf",
+      "status": "cached",
+      "bytes": 438178,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Investors Presentation for Financial Results - June Quarter 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/board-meetings/Investors presentation for financial results_June Quarter 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\investors-presentation-for-financial-results-june-quarter-2026.pdf",
+      "status": "cached",
+      "bytes": 8180892,
+      "type": "investor deck",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Newspaper Advertisement - Unaudited Financial Results Q1 26-27",
+      "url": "https://augmont.com/assets/files/stakeholders/newspaper-advertisements/Newspaper Advertisement-Unaudited Financial Results_Q1 26-27.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\newspaper-advertisement-unaudited-financial-results-q1-26-27.pdf",
+      "status": "cached",
+      "bytes": 5324198,
+      "type": "financial results",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Notice of AGM for FY 2024-25",
+      "url": "https://augmont.com/assets/files/stakeholders/agm egm/Notice of AGM for FY 2024-25.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\notice-of-agm-for-fy-2024-25.pdf",
+      "status": "cached",
+      "bytes": 13353027,
+      "type": "supporting filing",
+      "period": "2024-25",
+      "date": null
+    },
+    {
+      "title": "Intimation for Trading Window Closure - September 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/corporate-announcements/Intimation for trading window closure_September 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\intimation-for-trading-window-closure-september-2026.pdf",
+      "status": "cached",
+      "bytes": 309392,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Intimation for Trading Window Closure - June 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/corporate-announcements/Closure of trading window -30.06.2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\intimation-for-trading-window-closure-june-2026.pdf",
+      "status": "cached",
+      "bytes": 307749,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Press Release - 3 October 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/press-releases/Press Release Dated 03.10.2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\press-release-3-october-2026.pdf",
+      "status": "cached",
+      "bytes": 1331221,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Press Release - 26 September 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/press-releases/Press Release Dated 26-09-2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\press-release-26-september-2026.pdf",
+      "status": "cached",
+      "bytes": 938173,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Annual Report 2022-23",
+      "url": "https://augmont.com/assets/files/stakeholders/financials/Annual Report_2022-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\annual-report-2022-23.pdf",
+      "status": "cached",
+      "bytes": 12297613,
+      "type": "annual report",
+      "period": "2022-23",
+      "date": null
+    },
+    {
+      "title": "Annual Report 2023-24",
+      "url": "https://augmont.com/assets/files/stakeholders/financials/Annual Report_2023-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\annual-report-2023-24.pdf",
+      "status": "cached",
+      "bytes": 15745845,
+      "type": "annual report",
+      "period": "2023-24",
+      "date": null
+    },
+    {
+      "title": "Annual Report 2024-25",
+      "url": "https://augmont.com/assets/files/stakeholders/financials/Annual Report_2024-25.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\annual-report-2024-25.pdf",
+      "status": "cached",
+      "bytes": 62914560,
+      "type": "annual report",
+      "period": "2024-25",
+      "date": null
+    },
+    {
+      "title": "Examination Report + Restated Financial Statements",
+      "url": "https://augmont.com/assets/files/stakeholders/financials/Examination_Report_Restated_Financial_Statements.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\examination-report-restated-financial-statements.pdf",
+      "status": "cached",
+      "bytes": 31448582,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Intimation of Fire Incident at Manufacturing Unit of Material Subsidiary - 22 October 2026",
+      "url": "https://augmont.com/assets/files/stakeholders/stock-company-information/IntimationofFire.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\intimation-of-fire-incident-at-manufacturing-unit-of-material-subsidiary-22-october-2026.pdf",
+      "status": "cached",
+      "bytes": 523485,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Industry Report",
+      "url": "https://augmont.com/assets/files/stakeholders/reports/Industry Report.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\industry-report.pdf",
+      "status": "cached",
+      "bytes": 1423692,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Agreement With Advertising Agency",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Agreement With Advertising Agency.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\agreement-with-advertising-agency.pdf",
+      "status": "cached",
+      "bytes": 5726319,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Material Creditor 31.03.2025",
+      "url": "https://augmont.com/assets/files/stakeholders/Material Creditors/Material Creditor 31.03.2025.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\material-creditor-31-03-2025.pdf",
+      "status": "cached",
+      "bytes": 604068,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Appointment Letter - Ketan Kothari - WTD",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Appointment Letter-Ketan Kothari-WTD.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\appointment-letter-ketan-kothari-wtd.pdf",
+      "status": "cached",
+      "bytes": 3418914,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Appointment Letter - Mahendra Bafna - WTD",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Appointment Letter-Mahendra Bafna-WTD.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\appointment-letter-mahendra-bafna-wtd.pdf",
+      "status": "cached",
+      "bytes": 3454413,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Audit Committee Approval - KPIs",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Audit Commitee Approval - KPIs.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\audit-committee-approval-kpis.pdf",
+      "status": "cached",
+      "bytes": 7900184,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Board Approval - DRHP",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Board Approval - DRHP.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\board-approval-drhp.pdf",
+      "status": "cached",
+      "bytes": 1151220,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Board and Shareholder IPO & OFS Approvals",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Board and Shareholder IPO & OFS approvals.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\board-and-shareholder-ipo-ofs-approvals.pdf",
+      "status": "cached",
+      "bytes": 6425534,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "CDSL - Tripartite Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/CDSL-Tripartite Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\cdsl-tripartite-agreement.pdf",
+      "status": "cached",
+      "bytes": 6887991,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate of Incorporation",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificate of Incorporation.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-of-incorporation.pdf",
+      "status": "cached",
+      "bytes": 710932,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate of Incorporation - RSBL Spot",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificate of Incorporation-RSBL Spot.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-of-incorporation-rsbl-spot.pdf",
+      "status": "cached",
+      "bytes": 273553,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate of Incorporation - To Limited",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificate of Incorporation-to limited.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-of-incorporation-to-limited.pdf",
+      "status": "cached",
+      "bytes": 72298,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate - Special Tax Benefits - AEL, Ideal Fiscal & AGTPL",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificate-Special Tax benefits-AEL-Ideal Fiscal-AGTPL.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-special-tax-benefits-ael-ideal-fiscal-agtpl.pdf",
+      "status": "cached",
+      "bytes": 5560635,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Consent Letter - To Include Name in RHP",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consent Letter-To include name in RHP.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\consent-letter-to-include-name-in-rhp.pdf",
+      "status": "cached",
+      "bytes": 7449288,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Customer Acquisition Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Customer Acquisition Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\customer-acquisition-agreement.pdf",
+      "status": "cached",
+      "bytes": 5397438,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Examination Report - KKC",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Examination Report-KKC.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\examination-report-kkc.pdf",
+      "status": "cached",
+      "bytes": 4089883,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Examination Report - KKC & Associates",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Examination Report-KKC & Associates.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\examination-report-kkc-associates.pdf",
+      "status": "cached",
+      "bytes": 248427,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Industry Research Report - Technopak Advisors",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Industry Research Report-Technopak Advisors.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\industry-research-report-technopak-advisors.pdf",
+      "status": "cached",
+      "bytes": 1509816,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "IPO In-Principle Approval",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/IPO Inprincipal Approval.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ipo-in-principle-approval.pdf",
+      "status": "cached",
+      "bytes": 914861,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "MOA & AOA",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/MOA & AOA.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\moa-aoa.pdf",
+      "status": "cached",
+      "bytes": 3030028,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Monitoring Agency Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Monitoring Agency Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\monitoring-agency-agreement.pdf",
+      "status": "cached",
+      "bytes": 12631166,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "NSDL - Tripartite Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/NSDL-Tripartite Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\nsdl-tripartite-agreement.pdf",
+      "status": "cached",
+      "bytes": 326468,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Observation Letter - SEBI",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Observation Letter-SEBI.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\observation-letter-sebi.pdf",
+      "status": "cached",
+      "bytes": 542493,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "OCRP Share Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/OCRP Share Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ocrp-share-agreement.pdf",
+      "status": "cached",
+      "bytes": 4762569,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Offer Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Offer Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\offer-agreement.pdf",
+      "status": "cached",
+      "bytes": 4421889,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Promoter OFS Consent Letters",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Promoter OFS Consent Letters.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\promoter-ofs-consent-letters.pdf",
+      "status": "cached",
+      "bytes": 27451281,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Registrar Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Registrar Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\registrar-agreement.pdf",
+      "status": "cached",
+      "bytes": 4591439,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Share Purchase Agreement - Purchase of AGTPL",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Share Purchase Agreement - Purchase of AGTPL.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\share-purchase-agreement-purchase-of-agtpl.pdf",
+      "status": "cached",
+      "bytes": 19381569,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Share Purchase Agreement - Purchase of AIL",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Share Purchase Agreement - Purchase of AIL.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\share-purchase-agreement-purchase-of-ail.pdf",
+      "status": "cached",
+      "bytes": 24788800,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Share Purchase Agreement - Purchase of ATL",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Share Purchase Agreement - Purchase of ATL.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\share-purchase-agreement-purchase-of-atl.pdf",
+      "status": "cached",
+      "bytes": 8825286,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Share Purchase Agreement - Purchase of Ideal Fiscal",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Share Purchase Agreement - Purchase of Ideal Fiscal.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\share-purchase-agreement-purchase-of-ideal-fiscal.pdf",
+      "status": "cached",
+      "bytes": 25345391,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "STPL - Valuation Report - Series A OCPS - 31.10.2022",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/STPL-Valuation Report_Series A OCPS_31102022.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\stpl-valuation-report-series-a-ocps-31-10-2022.pdf",
+      "status": "cached",
+      "bytes": 424004,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Valuation Report - AGTPL - Murli Chandak",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Valuation Report- AGTPL-Murli Chandak.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\valuation-report-agtpl-murli-chandak.pdf",
+      "status": "cached",
+      "bytes": 4908949,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Valuation Report - AGTPL Equity Valuation - Aditya Chokhra",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Valuation Report-AGTPL Equity Valuation-Aditya Chokhra.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\valuation-report-agtpl-equity-valuation-aditya-chokhra.pdf",
+      "status": "cached",
+      "bytes": 325577,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Valuation Report - Goldella Customer Valuation",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Valuation Report_Goldella customer valuation.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\valuation-report-goldella-customer-valuation.pdf",
+      "status": "cached",
+      "bytes": 285726,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Audit Committee Resolution - Approval of KPI - 17.08.2026",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/AuditCommittee Resolution_Approval of KPI_17.08.2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\audit-committee-resolution-approval-of-kpi-17-08-2026.pdf",
+      "status": "cached",
+      "bytes": 7697837,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Board Resolution - Approval of RHP - 17.08.2026",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Board Resolution_Approval of RHP_17.08.2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\board-resolution-approval-of-rhp-17-08-2026.pdf",
+      "status": "cached",
+      "bytes": 1673959,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Cash Escrow and Sponsor Bank Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Cash Escrow and Sponsor Bank Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\cash-escrow-and-sponsor-bank-agreement.pdf",
+      "status": "cached",
+      "bytes": 8343142,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Due Diligence Certificate",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Due Diligince Certificate.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\due-diligence-certificate.pdf",
+      "status": "cached",
+      "bytes": 2948726,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Share Escrow Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Share Escrow Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\share-escrow-agreement.pdf",
+      "status": "cached",
+      "bytes": 5182581,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Syndicate Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Syndicate Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\syndicate-agreement.pdf",
+      "status": "cached",
+      "bytes": 17363267,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Underwriting Agreement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Underwriting Agreement.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\underwriting-agreement.pdf",
+      "status": "cached",
+      "bytes": 8918395,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Annual Report 2022-2023",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Annual Reports/Annual Report_2022-2023.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\annual-report-2022-2023.pdf",
+      "status": "cached",
+      "bytes": 15169311,
+      "type": "annual report",
+      "period": "2022-2023",
+      "date": null
+    },
+    {
+      "title": "Annual Report 2023-2024",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Annual Reports/Annual Report_2023-2024.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\annual-report-2023-2024.pdf",
+      "status": "cached",
+      "bytes": 19385553,
+      "type": "annual report",
+      "period": "2023-2024",
+      "date": null
+    },
+    {
+      "title": "Annual Report 2024-2025",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Annual Reports/Annual Report_2024-2025.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\annual-report-2024-2025.pdf",
+      "status": "cached",
+      "bytes": 62914560,
+      "type": "annual report",
+      "period": "2024-2025",
+      "date": null
+    },
+    {
+      "title": "Certificate on Objects; Working Capital Requirements",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificates form K.K. Mankeshwar & Co., Chartered Accountants/Certificate on Objects; Working Capital Requirements.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-on-objects-working-capital-requirements.pdf",
+      "status": "cached",
+      "bytes": 5896259,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate on Basis of Offer Price",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificates form K.K. Mankeshwar & Co., Chartered Accountants/Certificate on Basis of Offer Price.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-on-basis-of-offer-price.pdf",
+      "status": "cached",
+      "bytes": 4202856,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate on Financial Indebtedness",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificates form K.K. Mankeshwar & Co., Chartered Accountants/Certificate on Financial Indebtedness.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-on-financial-indebtedness.pdf",
+      "status": "cached",
+      "bytes": 3925066,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate on Tax Litigation",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificates form K.K. Mankeshwar & Co., Chartered Accountants/Certificate on Tax Litigation.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-on-tax-litigation.pdf",
+      "status": "cached",
+      "bytes": 2277077,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate on Average Cost of Acquisition of Securities of the Company",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificates form K.K. Mankeshwar & Co., Chartered Accountants/Certificate on Average Cost of Acquisition of Securities of the Company.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-on-average-cost-of-acquisition-of-securities-of-the-company.pdf",
+      "status": "download_failed",
+      "error": "HTTP Error 404: Not Found",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Certificate on Outstanding Dues to the Creditors",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificates form K.K. Mankeshwar & Co., Chartered Accountants/Certificate on Outstanding Dues to the Creditors.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\certificate-on-outstanding-dues-to-the-creditors.pdf",
+      "status": "cached",
+      "bytes": 8050135,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "KPI Certificate dated 25.08.2026",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Certificates form K.K. Mankeshwar & Co., Chartered Accountants/KPI Certificate dated 25.08.2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\kpi-certificate-dated-25-08-2026.pdf",
+      "status": "cached",
+      "bytes": 6563851,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Consent from Legal Advisors",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/Consent from Legal Advisors.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\consent-from-legal-advisors.pdf",
+      "status": "cached",
+      "bytes": 38565,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Consent from RTA - MUFG Intime India Private Limited",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/Consent from RTA_MUFG Intime India Private Limited.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\consent-from-rta-mufg-intime-india-private-limited.pdf",
+      "status": "cached",
+      "bytes": 340722,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Intensive Fiscal Services Private Limited",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/BRLM/Intensive Fiscal Services Private Limited.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\intensive-fiscal-services-private-limited.pdf",
+      "status": "cached",
+      "bytes": 1447827,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "JM Financial",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/BRLM/JM Financial.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\jm-financial.pdf",
+      "status": "cached",
+      "bytes": 204521,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Motilal Oswal Investment Advisors Limited",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/BRLM/Motilal Oswal Investment Advisors Limited.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\motilal-oswal-investment-advisors-limited.pdf",
+      "status": "cached",
+      "bytes": 298345,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Nuvama",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/BRLM/Nuvama.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\nuvama.pdf",
+      "status": "cached",
+      "bytes": 666000,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "HDFC Banker",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/Bankers to the Company/HDFC Banker.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\hdfc-banker.pdf",
+      "status": "cached",
+      "bytes": 647704,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "ICBC",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/Bankers to the Company/ICBC.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\icbc.pdf",
+      "status": "cached",
+      "bytes": 215665,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "SBI Banker",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Consents/Bankers to the Company/SBI Banker.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\sbi-banker.pdf",
+      "status": "cached",
+      "bytes": 462186,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Augmont Enterprises Limited RHP",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/AUGMONT ENTERPRISES LIMITED RHP - Signed.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-enterprises-limited-rhp.pdf",
+      "status": "cached",
+      "bytes": 15145648,
+      "type": "offer document",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Basis of Allotment Advertisement",
+      "url": "https://augmont.com/assets/files/stakeholders/ipo disclosures/Basis of Allotment_Augmont.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\basis-of-allotment-advertisement.pdf",
+      "status": "cached",
+      "bytes": 810404,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "AOA",
+      "url": "assets/files/stakeholders/moa-and-aoa/AOA.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\aoa.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/stakeholders/moa-and-aoa/AOA.pdf'",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "MOA 13.06.2025",
+      "url": "assets/files/stakeholders/moa-and-aoa/MOA-13.06.2025.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\moa-13-06-2025.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/stakeholders/moa-and-aoa/MOA-13.06.2025.pdf'",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Altered AOA as on 1 June 2026",
+      "url": "assets/files/stakeholders/moa-and-aoa/Altered AOA as on 1st June 2026.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\altered-aoa-as-on-1-june-2026.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/stakeholders/moa-and-aoa/Altered%20AOA%20as%20on%201st%20June%202026.pdf'",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "MGT-7 FY 2021-22",
+      "url": "assets/files/stakeholders/annual-returns/MGT-7-FY-2021-22.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\mgt-7-fy-2021-22.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/stakeholders/annual-returns/MGT-7-FY-2021-22.pdf'",
+      "type": "supporting filing",
+      "period": "2021-22",
+      "date": null
+    },
+    {
+      "title": "MGT-7 FY 2022-23",
+      "url": "assets/files/stakeholders/annual-returns/MGT-7 FY 2022-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\mgt-7-fy-2022-23.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/stakeholders/annual-returns/MGT-7%20FY%202022-23.pdf'",
+      "type": "supporting filing",
+      "period": "2022-23",
+      "date": null
+    },
+    {
+      "title": "MGT-7 FY 2023-24",
+      "url": "assets/files/stakeholders/annual-returns/MGT-7 FY 2023-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\mgt-7-fy-2023-24.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/stakeholders/annual-returns/MGT-7%20FY%202023-24.pdf'",
+      "type": "supporting filing",
+      "period": "2023-24",
+      "date": null
+    },
+    {
+      "title": "MGT-7 FY 2024-25",
+      "url": "assets/files/stakeholders/annual-returns/MGT-7-FY-2024-25.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\mgt-7-fy-2024-25.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/stakeholders/annual-returns/MGT-7-FY-2024-25.pdf'",
+      "type": "supporting filing",
+      "period": "2024-25",
+      "date": null
+    },
+    {
+      "title": "Directorship of Directors",
+      "url": "https://augmont.com/assets/files/stakeholders/Directorship-of-Directors.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\directorship-of-directors.pdf",
+      "status": "cached",
+      "bytes": 364248,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "AGTPL Financials 2022-23",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont GoldTech Private Limited/Financials/AGTPL Financials 2022-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\agtpl-financials-2022-23.pdf",
+      "status": "cached",
+      "bytes": 866750,
+      "type": "supporting filing",
+      "period": "2022-23",
+      "date": null
+    },
+    {
+      "title": "AGTPL Financials 2023-24",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont GoldTech Private Limited/Financials/AGTPL Financials 2023-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\agtpl-financials-2023-24.pdf",
+      "status": "cached",
+      "bytes": 2499671,
+      "type": "supporting filing",
+      "period": "2023-24",
+      "date": null
+    },
+    {
+      "title": "AGTPL Financials 2024-25",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont GoldTech Private Limited/Financials/AGTPL Financials 2024-25.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\agtpl-financials-2024-25.pdf",
+      "status": "cached",
+      "bytes": 6401249,
+      "type": "supporting filing",
+      "period": "2024-25",
+      "date": null
+    },
+    {
+      "title": "AGTPL Board Composition",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont GoldTech Private Limited/Board Composition/AGTPL_BoardComposition.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\agtpl-board-composition.pdf",
+      "status": "cached",
+      "bytes": 192509,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Ideal Fiscal Financials 2022-23",
+      "url": "https://augmont.com/assets/files/subsidiaries/Ideal Fiscal Services Limited/Financials/Ideal Financials 2022-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ideal-fiscal-financials-2022-23.pdf",
+      "status": "cached",
+      "bytes": 6279136,
+      "type": "supporting filing",
+      "period": "2022-23",
+      "date": null
+    },
+    {
+      "title": "Ideal Fiscal Financials 2023-24",
+      "url": "https://augmont.com/assets/files/subsidiaries/Ideal Fiscal Services Limited/Financials/Ideal Financials 2023-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ideal-fiscal-financials-2023-24.pdf",
+      "status": "cached",
+      "bytes": 23667835,
+      "type": "supporting filing",
+      "period": "2023-24",
+      "date": null
+    },
+    {
+      "title": "Ideal Fiscal Financials 2024-25",
+      "url": "https://augmont.com/assets/files/subsidiaries/Ideal Fiscal Services Limited/Financials/Ideal Financials 2024-25.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ideal-fiscal-financials-2024-25.pdf",
+      "status": "cached",
+      "bytes": 22632502,
+      "type": "supporting filing",
+      "period": "2024-25",
+      "date": null
+    },
+    {
+      "title": "Ideal Board Composition",
+      "url": "https://augmont.com/assets/files/subsidiaries/Ideal Fiscal Services Limited/Board Composition/IFSL_BoardComposition.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ideal-board-composition.pdf",
+      "status": "cached",
+      "bytes": 192091,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "AIL Financials 2022-23",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont International Limited/Financials/AIL Financials 2022-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ail-financials-2022-23.pdf",
+      "status": "cached",
+      "bytes": 6745717,
+      "type": "supporting filing",
+      "period": "2022-23",
+      "date": null
+    },
+    {
+      "title": "AIL Financials 2023-24",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont International Limited/Financials/AIL Financials 2023-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ail-financials-2023-24.pdf",
+      "status": "cached",
+      "bytes": 20257374,
+      "type": "supporting filing",
+      "period": "2023-24",
+      "date": null
+    },
+    {
+      "title": "AIL Financials 2024-25",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont International Limited/Financials/AIL Financials 2024-25.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ail-financials-2024-25.pdf",
+      "status": "cached",
+      "bytes": 20989365,
+      "type": "supporting filing",
+      "period": "2024-25",
+      "date": null
+    },
+    {
+      "title": "AIL Board Composition",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont International Limited/Board Composition/AIL_BoardComposition.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ail-board-composition.pdf",
+      "status": "cached",
+      "bytes": 184530,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Augmont IFSC Financials 2022-23",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont IFSC Private Limited/Financials/IFSC Financials 2022-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-ifsc-financials-2022-23.pdf",
+      "status": "cached",
+      "bytes": 1879044,
+      "type": "supporting filing",
+      "period": "2022-23",
+      "date": null
+    },
+    {
+      "title": "Augmont IFSC Financials 2023-24",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont IFSC Private Limited/Financials/IFSC Financials 2023-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-ifsc-financials-2023-24.pdf",
+      "status": "cached",
+      "bytes": 19299964,
+      "type": "supporting filing",
+      "period": "2023-24",
+      "date": null
+    },
+    {
+      "title": "Augmont IFSC Financials 2024-25",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont IFSC Private Limited/Financials/IFSC Financials 2024-25.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-ifsc-financials-2024-25.pdf",
+      "status": "cached",
+      "bytes": 20143517,
+      "type": "supporting filing",
+      "period": "2024-25",
+      "date": null
+    },
+    {
+      "title": "IFSC Board Composition",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont IFSC Private Limited/Board Composition/AIFSC_BoardComposition.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ifsc-board-composition.pdf",
+      "status": "cached",
+      "bytes": 188265,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Augmont Trading Financials 2023-24",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont Trading Limited/Financials/ATL Financials 2023-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-trading-financials-2023-24.pdf",
+      "status": "cached",
+      "bytes": 2136915,
+      "type": "supporting filing",
+      "period": "2023-24",
+      "date": null
+    },
+    {
+      "title": "Augmont Trading Financials 2024-25",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont Trading Limited/Financials/ATL Financials 2024-25.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\augmont-trading-financials-2024-25.pdf",
+      "status": "cached",
+      "bytes": 2305429,
+      "type": "supporting filing",
+      "period": "2024-25",
+      "date": null
+    },
+    {
+      "title": "ATL Board Composition",
+      "url": "https://augmont.com/assets/files/subsidiaries/Augmont Trading Limited/Board Composition/ATL_BoardComposition.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\atl-board-composition.pdf",
+      "status": "cached",
+      "bytes": 181850,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "RSBL 21-22",
+      "url": "assets/files/group companies/RSBL/RSBL 21-22.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\rsbl-21-22.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/group%20companies/RSBL/RSBL%2021-22.pdf'",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "RSBL 22-23",
+      "url": "assets/files/group companies/RSBL/RSBL 22-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\rsbl-22-23.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/group%20companies/RSBL/RSBL%2022-23.pdf'",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "RSBL 23-24",
+      "url": "assets/files/group companies/RSBL/RSBL 23-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\rsbl-23-24.pdf",
+      "status": "download_failed",
+      "error": "unknown url type: 'assets/files/group%20companies/RSBL/RSBL%2023-24.pdf'",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Goldella 21-22",
+      "url": "https://augmont.com/assets/files/group companies/Goldella/Goldella 21-22.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\goldella-21-22.pdf",
+      "status": "cached",
+      "bytes": 14862124,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Goldella 22-23",
+      "url": "https://augmont.com/assets/files/group companies/Goldella/Goldella 22-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\goldella-22-23.pdf",
+      "status": "cached",
+      "bytes": 22920253,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Goldella 23-24",
+      "url": "https://augmont.com/assets/files/group companies/Goldella/Goldella 23-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\goldella-23-24.pdf",
+      "status": "cached",
+      "bytes": 5314155,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Supama 21-22",
+      "url": "https://augmont.com/assets/files/group companies/Supama/Supama 21-22.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\supama-21-22.pdf",
+      "status": "cached",
+      "bytes": 1579380,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Supama 22-23",
+      "url": "https://augmont.com/assets/files/group companies/Supama/Supama 22-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\supama-22-23.pdf",
+      "status": "cached",
+      "bytes": 1905333,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Supama 23-24",
+      "url": "https://augmont.com/assets/files/group companies/Supama/Supama 23-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\supama-23-24.pdf",
+      "status": "cached",
+      "bytes": 13355427,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Aranath FY 21-22",
+      "url": "https://augmont.com/assets/files/group companies/Aranath/Aranath FY 21-22.PDF",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\aranath-fy-21-22.pdf",
+      "status": "download_failed",
+      "error": "HTTP Error 404: Not Found",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Aranath FY 22-23",
+      "url": "https://augmont.com/assets/files/group companies/Aranath/Aranath FY 22-23.PDF",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\aranath-fy-22-23.pdf",
+      "status": "download_failed",
+      "error": "HTTP Error 404: Not Found",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Aranath FY 23-24",
+      "url": "https://augmont.com/assets/files/group companies/Aranath/Aranath FY 23-24.PDF",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\aranath-fy-23-24.pdf",
+      "status": "download_failed",
+      "error": "HTTP Error 404: Not Found",
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Krish FY 21-22",
+      "url": "https://augmont.com/assets/files/group companies/Krish/Krish FY 21-22.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\krish-fy-21-22.pdf",
+      "status": "cached",
+      "bytes": 1964924,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Krish FY 22-23",
+      "url": "https://augmont.com/assets/files/group companies/Krish/Krish FY 22-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\krish-fy-22-23.pdf",
+      "status": "cached",
+      "bytes": 3936765,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Krish FY 23-24",
+      "url": "https://augmont.com/assets/files/group companies/Krish/Krish FY 23-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\krish-fy-23-24.pdf",
+      "status": "cached",
+      "bytes": 2957025,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Aprikot 23-24",
+      "url": "https://augmont.com/assets/files/group companies/Akoirah/Akoirah(Formerly known as Aprikot) 23-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\aprikot-23-24.pdf",
+      "status": "cached",
+      "bytes": 12269565,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Tec 22-23",
+      "url": "https://augmont.com/assets/files/group companies/Tec City/Tec 22-23.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\tec-22-23.pdf",
+      "status": "cached",
+      "bytes": 3177444,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "Tec 23-24",
+      "url": "https://augmont.com/assets/files/group companies/Tec City/Tec 23-24.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\tec-23-24.pdf",
+      "status": "cached",
+      "bytes": 3617090,
+      "type": "supporting filing",
+      "period": null,
+      "date": null
+    },
+    {
+      "title": "IPO monitoring agency report September 2026",
+      "date": "2026-11-06",
+      "url": "https://nsearchives.nseindia.com/corporate/AEL2012_06112026115309_MonitoringAgencyReport.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\ipo-monitoring-agency-report-september-2026.pdf",
+      "type": "exchange announcement",
+      "period": "2026",
+      "status": "cached",
+      "bytes": 814921
+    },
+    {
+      "title": "Statement of deviation September 2026",
+      "date": "2026-11-04",
+      "url": "https://nsearchives.nseindia.com/corporate/AEL2012_04112026212947_AELtatementofDeviationSeptember2026signed.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\statement-of-deviation-september-2026.pdf",
+      "type": "exchange announcement",
+      "period": "2026",
+      "status": "cached",
+      "bytes": 298837
+    },
+    {
+      "title": "Insider trading disclosure Regulation 7(2)",
+      "date": "2026-10-01",
+      "url": "https://nsearchives.nseindia.com/corporate/AEL2012_01102026171225_AELintimationunderReg7_2_ofSEBIPITSigned.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\insider-trading-disclosure-regulation-7-2.pdf",
+      "type": "exchange announcement",
+      "period": "2026",
+      "status": "cached",
+      "bytes": 3564888
+    },
+    {
+      "title": "Audio recording earnings call announcement Q2 FY27",
+      "date": "2026-11-05",
+      "url": "https://nsearchives.nseindia.com/corporate/AEL2012_05112026201756_AudioRecordingEarningsCall.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\audio-recording-earnings-call-announcement-q2-fy27.pdf",
+      "type": "exchange announcement",
+      "period": "2026",
+      "status": "cached",
+      "bytes": 523479
+    },
+    {
+      "title": "Appointment company secretary compliance officer",
+      "date": "2026-08-31",
+      "url": "https://nsearchives.nseindia.com/corporate/AEL2012_31082026192931_Intimationunderregulation6_1_ofLODRSigned.pdf",
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\appointment-company-secretary-compliance-officer.pdf",
+      "type": "exchange announcement",
+      "period": "2026",
+      "status": "cached",
+      "bytes": 317452
+    }
+  ],
+  "missing": [
+    "Official Q2 FY27 transcript: company site explicitly lists no data; user upload exists separately",
+    "Standalone pledge disclosure or auditor-change announcement not surfaced by inspected post-listing NSE announcements",
+    "Some subsidiary/constitutional filings failed; see per-document errors",
+    "Any older results/decks/transcripts beyond items on company investor page or current NSE list remain unverified"
+  ]
+}

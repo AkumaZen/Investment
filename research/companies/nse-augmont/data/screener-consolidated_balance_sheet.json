@@ -1,0 +1,154 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"data\": {\n    \"symbol\": \"AUGMONT\",\n    \"statement\": \"balance_sheet\",\n    \"years\": [\n      \"Mar 2021\",\n      \"Mar 2022\",\n      \"Mar 2023\",\n      \"Mar 2024\",\n      \"Mar 2025\",\n      \"Mar 2026\",\n      \"Sep 2026\"\n    ],\n    \"rows\": [\n      {\n        \"label\": \"Equity Capital\",\n        \"values\": [\n          \"4\",\n          \"4\",\n          \"154\",\n          \"4\",\n          \"4\",\n          \"42\",\n          \"46\"\n        ]\n      },\n      {\n        \"label\": \"Reserves\",\n        \"values\": [\n          \"55\",\n          \"88\",\n          \"130\",\n          \"180\",\n          \"398\",\n          \"865\",\n          \"1,651\"\n        ]\n      },\n      {\n        \"label\": \"Borrowings +\",\n        \"values\": [\n          \"178\",\n          \"176\",\n          \"198\",\n          \"60\",\n          \"23\",\n          \"18\",\n          \"10\"\n        ]\n      },\n      {\n        \"label\": \"Other Liabilities +\",\n        \"values\": [\n          \"252\",\n          \"113\",\n          \"269\",\n          \"515\",\n          \"1,431\",\n          \"332\",\n          \"331\"\n        ]\n      },\n      {\n        \"label\": \"Total Liabilities\",\n        \"values\": [\n          \"490\",\n          \"381\",\n          \"751\",\n          \"760\",\n          \"1,857\",\n          \"1,257\",\n          \"2,038\"\n        ]\n      },\n      {\n        \"label\": \"Fixed Assets +\",\n        \"values\": [\n          \"5\",\n          \"12\",\n          \"21\",\n          \"26\",\n          \"25\",\n          \"30\",\n          \"32\"\n        ]\n      },\n      {\n        \"label\": \"CWIP\",\n        \"values\": [\n          \"0\",\n          \"0\",\n          \"0\",\n          \"0\",\n          \"0\",\n          \"0\",\n          \"0\"\n        ]\n      },\n      {\n        \"label\": \"Investments\",\n        \"values\": [\n          \"6\",\n          \"5\",\n          \"21\",\n          \"9\",\n          \"25\",\n          \"20\",\n          \"14\"\n        ]\n      },\n      {\n        \"label\": \"Other Assets +\",\n        \"values\": [\n          \"479\",\n          \"364\",\n          \"710\",\n          \"726\",\n          \"1,807\",\n          \"1,208\",\n          \"1,992\"\n        ]\n      },\n      {\n        \"label\": \"Total Assets\",\n        \"values\": [\n          \"490\",\n          \"381\",\n          \"751\",\n          \"760\",\n          \"1,857\",\n          \"1,257\",\n          \"2,038\"\n        ]\n      }\n    ]\n  },\n  \"meta\": {\n    \"source_url\": \"https://www.screener.in/company/AUGMONT/consolidated/\",\n    \"fetched_at\": \"2026-11-07T11:14:41Z\",\n    \"financial_type\": \"consolidated\",\n    \"warnings\": []\n  }\n}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "data": {
+        "symbol": "AUGMONT",
+        "statement": "balance_sheet",
+        "years": [
+          "Mar 2021",
+          "Mar 2022",
+          "Mar 2023",
+          "Mar 2024",
+          "Mar 2025",
+          "Mar 2026",
+          "Sep 2026"
+        ],
+        "rows": [
+          {
+            "label": "Equity Capital",
+            "values": [
+              "4",
+              "4",
+              "154",
+              "4",
+              "4",
+              "42",
+              "46"
+            ]
+          },
+          {
+            "label": "Reserves",
+            "values": [
+              "55",
+              "88",
+              "130",
+              "180",
+              "398",
+              "865",
+              "1,651"
+            ]
+          },
+          {
+            "label": "Borrowings +",
+            "values": [
+              "178",
+              "176",
+              "198",
+              "60",
+              "23",
+              "18",
+              "10"
+            ]
+          },
+          {
+            "label": "Other Liabilities +",
+            "values": [
+              "252",
+              "113",
+              "269",
+              "515",
+              "1,431",
+              "332",
+              "331"
+            ]
+          },
+          {
+            "label": "Total Liabilities",
+            "values": [
+              "490",
+              "381",
+              "751",
+              "760",
+              "1,857",
+              "1,257",
+              "2,038"
+            ]
+          },
+          {
+            "label": "Fixed Assets +",
+            "values": [
+              "5",
+              "12",
+              "21",
+              "26",
+              "25",
+              "30",
+              "32"
+            ]
+          },
+          {
+            "label": "CWIP",
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "label": "Investments",
+            "values": [
+              "6",
+              "5",
+              "21",
+              "9",
+              "25",
+              "20",
+              "14"
+            ]
+          },
+          {
+            "label": "Other Assets +",
+            "values": [
+              "479",
+              "364",
+              "710",
+              "726",
+              "1,807",
+              "1,208",
+              "1,992"
+            ]
+          },
+          {
+            "label": "Total Assets",
+            "values": [
+              "490",
+              "381",
+              "751",
+              "760",
+              "1,857",
+              "1,257",
+              "2,038"
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "source_url": "https://www.screener.in/company/AUGMONT/consolidated/",
+        "fetched_at": "2026-11-07T11:14:41Z",
+        "financial_type": "consolidated",
+        "warnings": []
+      }
+    }
+  },
+  "isError": false
+}

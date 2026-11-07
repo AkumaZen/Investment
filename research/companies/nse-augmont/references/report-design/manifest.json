@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "prepared_on": "2026-11-07",
+  "files": [
+    {
+      "filename": "Equity_Research_Design_Agent_Specification.json",
+      "role": "measured page and typography records",
+      "bytes": 3090537,
+      "sha256": "d194abf87bd4f964f19f3ba92df7a12c0dc422785997aab07158588827b50c30",
+      "source_url": "https://chatgpt.com/library?file_id=libfile_c88a2cdc40888191b557d8c15c8d6caf&account_id=personal"
+    },
+    {
+      "filename": "Equity_Research_Design_Page_by_Page_Manual.md",
+      "role": "authoritative explanatory reference",
+      "bytes": 257744,
+      "sha256": "87b5b8ec00375892d4424e5545fcd201da95dc6ab0275b1b2b0383df1d1c6f99",
+      "source_url": "https://chatgpt.com/library?file_id=libfile_c54d566383d08191ae7b270e6d9bfd56&account_id=personal"
+    },
+    {
+      "filename": "Equity_Research_Design_Page_by_Page_Manual.pdf",
+      "role": "human review of the manual",
+      "bytes": 361749,
+      "sha256": "b8a3ae9cb568e9aaffbb48b3e944527998ff8f626979460de9d512642c1d43fe",
+      "source_url": "https://chatgpt.com/library?file_id=libfile_df9b3b37c3bc8191827784b52db1b8a4&account_id=personal"
+    }
+  ],
+  "expected_reports": 7,
+  "expected_pages": 239,
+  "expected_text_regions": 6417
+}
