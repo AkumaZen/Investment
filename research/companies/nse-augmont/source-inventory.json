@@ -12,7 +12,12 @@
       "bytes": 3584168,
       "type": "investor deck",
       "period": "2026-27",
-      "date": null
+      "date": null,
+      "sha256": "fc996e6c3cb973a59d826f424d1ac57610fd951e18d41114b6b8ae826200c80f",
+      "pages": 32,
+      "pages_with_extractable_text": 32,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Newspaper Advertisement - Unaudited Financial Results Q2 26-27",
@@ -22,7 +27,12 @@
       "bytes": 3942396,
       "type": "financial results",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "7f9d8ef19f64b31a368b4aeeb323281e1d35a5af012814a9877c4f4b89d9d753",
+      "pages": 3,
+      "pages_with_extractable_text": 3,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Notice of AGM for FY 2025-26",
@@ -32,7 +42,12 @@
       "bytes": 1018514,
       "type": "supporting filing",
       "period": "2025-26",
-      "date": null
+      "date": null,
+      "sha256": "4efb4035b8c23087bd87de350f8a7cd37107b7d9b7c3359b82c4a3eb6114c417",
+      "pages": 11,
+      "pages_with_extractable_text": 11,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Press Release - Q2 FY 2026-27 Financial Results - 4 November 2026",
@@ -42,7 +57,12 @@
       "bytes": 319490,
       "type": "financial results",
       "period": "2026-27",
-      "date": null
+      "date": null,
+      "sha256": "0e975075dc165d17494ff8bf241f397a745e6de09357e1b6613e0ab751758c16",
+      "pages": 4,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Annual Report 2025-26",
@@ -52,7 +72,12 @@
       "bytes": 15245382,
       "type": "annual report",
       "period": "2025-26",
-      "date": null
+      "date": null,
+      "sha256": "e8792945796b59d2a959ac70b6325c547e7f861dd917df3db32e0ada8f928321",
+      "pages": 135,
+      "pages_with_extractable_text": 55,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Consolidated DRHP",
@@ -62,7 +87,12 @@
       "bytes": 17656531,
       "type": "offer document",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "065451292aed4e1a010b257a326af9ab9118786d6eb9d072f4a67ea83e0d6752",
+      "pages": 524,
+      "pages_with_extractable_text": 524,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Audit Committee Resolution - Approval of KPIs for Prospectus - 25.08.2026",
@@ -72,7 +102,12 @@
       "bytes": 10093087,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "87397d6293fe997e0bb8c88f4580480f4fa4ae1c69d9b07c4063a79e5806ea45",
+      "pages": 12,
+      "pages_with_extractable_text": 12,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Board Resolution - Approval of Prospectus - 25.08.2026",
@@ -82,7 +117,12 @@
       "bytes": 1481343,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "fe43acaef0423bba11dc668147b079d3dde1f1ad14b35e340eaa20f35f24b14e",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Consent Letter from Statutory Auditor - Prospectus Stage",
@@ -92,7 +132,12 @@
       "bytes": 218650,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "cefe00e87a80c702d6ef85d293b6b651ed41ecd1fa485f9458d0958666065c29",
+      "pages": 4,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Augmont Enterprises Limited Prospectus",
@@ -102,7 +147,12 @@
       "bytes": 12708952,
       "type": "offer document",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "0116fc8243ea648af0a51d504dd8c3babc5ac58f44c57f0c94bcd543d17de046",
+      "pages": 549,
+      "pages_with_extractable_text": 549,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "MGT-7 FY 2025-26",
@@ -122,7 +172,12 @@
       "bytes": 1377705,
       "type": "supporting filing",
       "period": "2025-26",
-      "date": null
+      "date": null,
+      "sha256": "8967e7283f5f9524f3490396eb2195038155e0c8c4f29d4e156f9cb07a72f68c",
+      "pages": 45,
+      "pages_with_extractable_text": 45,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Ideal Fiscal Financials 2025-26",
@@ -132,7 +187,12 @@
       "bytes": 5201525,
       "type": "supporting filing",
       "period": "2025-26",
-      "date": null
+      "date": null,
+      "sha256": "7b9fb0b743ec43fda8f07a5e33b1d078e053835880973fd42f186c3e45f84d46",
+      "pages": 51,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "AIL Financials 2025-26",
@@ -142,7 +202,12 @@
       "bytes": 5292202,
       "type": "supporting filing",
       "period": "2025-26",
-      "date": null
+      "date": null,
+      "sha256": "d194000bcb7458ea412d549fa9fb8ea523e9b05f1860810a20f1a92e259bc9c5",
+      "pages": 44,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Augmont IFSC Financials 2025-26",
@@ -152,7 +217,12 @@
       "bytes": 5375706,
       "type": "supporting filing",
       "period": "2025-26",
-      "date": null
+      "date": null,
+      "sha256": "02a54192e963a7818a9b7036af5bcb78353f8cc16c9e59f16f4ba6b57c9163b5",
+      "pages": 42,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Augmont Trading Financials 2025-26",
@@ -162,7 +232,12 @@
       "bytes": 8395466,
       "type": "supporting filing",
       "period": "2025-26",
-      "date": null
+      "date": null,
+      "sha256": "d7ce8b6f5a483f9eb2afab6594b678626e99c3a94ccd82184ae294c785909256",
+      "pages": 30,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Disclosure of Contact Details of KMP",
@@ -172,7 +247,12 @@
       "bytes": 378158,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "208793f725372f0fc73700700d70d1d84d735908c17977fae857729f8ca7cfa9",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Intimation of Board Meeting dated 04 November 2026",
@@ -182,7 +262,12 @@
       "bytes": 288370,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "f76907ee2a766967b9f25f0571ff4a3eb74b01e48232b270f52afa6952b1ac33",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Intimation of Board Meeting dated 21 September 2026",
@@ -192,7 +277,12 @@
       "bytes": 574366,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "c15faa83fad18ecf8e0a4c564568e63feeb96aa18b67169130ccdef014febca4",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Outcome of Board Meeting dated 04 November 2026",
@@ -202,7 +292,12 @@
       "bytes": 27351961,
       "type": "financial results",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "d574ad2d4dab5f913344df18a9cad0b228762283ae9679ee8fdacdfb3ab08fb1",
+      "pages": 17,
+      "pages_with_extractable_text": 17,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Outcome of Board Meeting dated 21 September 2026",
@@ -212,7 +307,12 @@
       "bytes": 8485369,
       "type": "financial results",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "38e6d709eef633a8dd666bfef2aa57ef871c718c8fc1c97260964c42e894209f",
+      "pages": 10,
+      "pages_with_extractable_text": 10,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Intimation of Investors Conference Call - Thursday, 05 November 2026",
@@ -222,7 +322,12 @@
       "bytes": 438178,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "3bc4791dffed223c75220ea024aad21688f58d8c948c9afbe6e55b56931ece35",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Investors Presentation for Financial Results - June Quarter 2026",
@@ -232,7 +337,12 @@
       "bytes": 8180892,
       "type": "investor deck",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "a019ded36c0ca149b46da9b489e63069d520af6dac45e6a2c085d92bbf55cec4",
+      "pages": 43,
+      "pages_with_extractable_text": 41,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Newspaper Advertisement - Unaudited Financial Results Q1 26-27",
@@ -242,7 +352,12 @@
       "bytes": 5324198,
       "type": "financial results",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "b2fbe9e72949da00225461fc346698c3b383d4eadc481b1310be2b9a204f2544",
+      "pages": 3,
+      "pages_with_extractable_text": 3,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Notice of AGM for FY 2024-25",
@@ -252,7 +367,12 @@
       "bytes": 13353027,
       "type": "supporting filing",
       "period": "2024-25",
-      "date": null
+      "date": null,
+      "sha256": "07fffa784eb3a30c91d11716e7ba6cebac66b80ad3ab4ddc5fa4a91146ad01f9",
+      "pages": 21,
+      "pages_with_extractable_text": 21,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Intimation for Trading Window Closure - September 2026",
@@ -262,7 +382,12 @@
       "bytes": 309392,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "d51ce05ad37ddd2b0dacf0126ed3d36085a45174e6858d0afb9d71af28f1ea3c",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Intimation for Trading Window Closure - June 2026",
@@ -272,7 +397,12 @@
       "bytes": 307749,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "8a9f8d28d3da1fa3be7b2ae6e6d9b09c68b53ac79e2f963cda290b8bdc25b831",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Press Release - 3 October 2026",
@@ -282,7 +412,12 @@
       "bytes": 1331221,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "117e94a901bd9800bf8fc53c0cc646505583dafa1fef39eeec718a45e083dfc4",
+      "pages": 4,
+      "pages_with_extractable_text": 3,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Press Release - 26 September 2026",
@@ -292,7 +427,12 @@
       "bytes": 938173,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "404682e62cf26577f734d7dd6805cabdd94480af37a608fc6233bfa1add7039a",
+      "pages": 3,
+      "pages_with_extractable_text": 3,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Annual Report 2022-23",
@@ -302,7 +442,12 @@
       "bytes": 12297613,
       "type": "annual report",
       "period": "2022-23",
-      "date": null
+      "date": null,
+      "sha256": "64d050d5c8bcb165487ec66c42e01309cdfeaa1d78aeb2f806e1a82c42cba773",
+      "pages": 52,
+      "pages_with_extractable_text": 17,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Annual Report 2023-24",
@@ -312,7 +457,12 @@
       "bytes": 15745845,
       "type": "annual report",
       "period": "2023-24",
-      "date": null
+      "date": null,
+      "sha256": "f4cf701da8e5a8e56817bf63169dbfda195f15a5e605244d0912dcd70d52b04d",
+      "pages": 74,
+      "pages_with_extractable_text": 19,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Annual Report 2024-25",
@@ -322,7 +472,12 @@
       "bytes": 62914560,
       "type": "annual report",
       "period": "2024-25",
-      "date": null
+      "date": null,
+      "sha256": "5ce16292a68a8050ecba9aba0848a3f5683cea0dac144d382fea131be0d66698",
+      "pages": 0,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Examination Report + Restated Financial Statements",
@@ -332,7 +487,12 @@
       "bytes": 31448582,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "d4e1949726fd50befcbf3c2b9f1b23d5ccce1285fd60d0ea7d88ba86d957e7ab",
+      "pages": 51,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Intimation of Fire Incident at Manufacturing Unit of Material Subsidiary - 22 October 2026",
@@ -342,7 +502,12 @@
       "bytes": 523485,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "1df04658ba5ddc0506b284b1906b9773be9206f5e7a18c68a9828f93c116ffa1",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Industry Report",
@@ -352,7 +517,12 @@
       "bytes": 1423692,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "a206c6fae4c7fcadd8c07d3ad9827c8ff0fa5f65267f6c1d4aaace8b82c819b7",
+      "pages": 72,
+      "pages_with_extractable_text": 72,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Agreement With Advertising Agency",
@@ -362,7 +532,12 @@
       "bytes": 5726319,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "4713fcf5e1d78bc23637bacce66aafc91c79832771233873d8797643c7cf0729",
+      "pages": 96,
+      "pages_with_extractable_text": 96,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Material Creditor 31.03.2025",
@@ -372,7 +547,12 @@
       "bytes": 604068,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "887ef3ef4a0977dfa67514108ff0157fd3fb03f27177294b2680690b07e30447",
+      "pages": 24,
+      "pages_with_extractable_text": 18,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Appointment Letter - Ketan Kothari - WTD",
@@ -382,7 +562,12 @@
       "bytes": 3418914,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "61f528adfa7bc95cff25190cd83de014d1f253f8a0a10f59c7130bc180cfc06b",
+      "pages": 5,
+      "pages_with_extractable_text": 5,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Appointment Letter - Mahendra Bafna - WTD",
@@ -392,7 +577,12 @@
       "bytes": 3454413,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "9f4b7acf9c59eef24a4e3e3b25e619e1dc7a228985789eb4dfe74d2277a27d39",
+      "pages": 5,
+      "pages_with_extractable_text": 5,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Audit Committee Approval - KPIs",
@@ -402,7 +592,12 @@
       "bytes": 7900184,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "845768346ef1dedc4d2724af4becc5fca59803cba44513537fa5b4dd35ec1598",
+      "pages": 41,
+      "pages_with_extractable_text": 26,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Board Approval - DRHP",
@@ -412,7 +607,12 @@
       "bytes": 1151220,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "e4e01d55a662d975c9c6dc2e86ca13be24735ec86bb211b00bf35a7f213c104f",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Board and Shareholder IPO & OFS Approvals",
@@ -422,7 +622,12 @@
       "bytes": 6425534,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "9d02a090769f1fd6b015df34e2c2e9509ec88947d4d294a84c383bdfb9373e1e",
+      "pages": 22,
+      "pages_with_extractable_text": 12,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "CDSL - Tripartite Agreement",
@@ -432,7 +637,12 @@
       "bytes": 6887991,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "0df3c84f2226bd660dabfc81c7f0ca56ce6ae00f98e7bd11b6f0fdb72bb0d497",
+      "pages": 11,
+      "pages_with_extractable_text": 7,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Certificate of Incorporation",
@@ -442,7 +652,12 @@
       "bytes": 710932,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "44c39807154fb27b19d95131ea9e2e3bcf4e23e03f21d22c2e3373c7c7fe3c4a",
+      "pages": 3,
+      "pages_with_extractable_text": 3,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Certificate of Incorporation - RSBL Spot",
@@ -452,7 +667,12 @@
       "bytes": 273553,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "5c045294067a6774a783518a629f3ff96285780ac6236020d681e053c1cbf465",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Certificate of Incorporation - To Limited",
@@ -462,7 +682,12 @@
       "bytes": 72298,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "f550528d19ee827e0594b5790cb9eaafbc1622e3114394390cb9aae31b2ab66d",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Certificate - Special Tax Benefits - AEL, Ideal Fiscal & AGTPL",
@@ -472,7 +697,12 @@
       "bytes": 5560635,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "5315e104c3c08c6e485d45acbda6b6b946351e42baed0f921883d0a104544e49",
+      "pages": 9,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Consent Letter - To Include Name in RHP",
@@ -482,7 +712,12 @@
       "bytes": 7449288,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "7bb4e87ba899099926463e63e766145c0889cc0ea35670231abfe5c7962730e8",
+      "pages": 33,
+      "pages_with_extractable_text": 22,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Customer Acquisition Agreement",
@@ -492,7 +727,12 @@
       "bytes": 5397438,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "572d95d6aa5b745daca67cc862b25b53e9f57bf8729b96a9b382ad08cda20928",
+      "pages": 7,
+      "pages_with_extractable_text": 7,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Examination Report - KKC",
@@ -502,7 +742,12 @@
       "bytes": 4089883,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "4e1cdf45fd11a7d1d36195528e1d646566ed033891ca601e56e8df67a9b9c03e",
+      "pages": 6,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Examination Report - KKC & Associates",
@@ -512,7 +757,12 @@
       "bytes": 248427,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "7ee5f53f5fba0c8647441114e54b64d1c2af947eaf32dfaced2ccb7a00f7c00d",
+      "pages": 6,
+      "pages_with_extractable_text": 6,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Industry Research Report - Technopak Advisors",
@@ -522,7 +772,12 @@
       "bytes": 1509816,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "22424bf3bf05b80d1a1857b1348a19a5af6eda890b8c99b4caa93d9376fa449b",
+      "pages": 75,
+      "pages_with_extractable_text": 75,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "IPO In-Principle Approval",
@@ -532,7 +787,12 @@
       "bytes": 914861,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "f778ac580179a51d2ba0d31f60c95e98e87f04d2eb5a16f3e0616f25681d9d7e",
+      "pages": 5,
+      "pages_with_extractable_text": 3,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "MOA & AOA",
@@ -542,7 +802,12 @@
       "bytes": 3030028,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "d346f3036daeda2dc6e6ef62add218481b9dd1c79f5fed3102e0402147ed6072",
+      "pages": 57,
+      "pages_with_extractable_text": 41,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Monitoring Agency Agreement",
@@ -552,7 +817,12 @@
       "bytes": 12631166,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "6793ddfe34414e616d22a13e2c0db63dcc18811669472d790859cc4f9b64b747",
+      "pages": 28,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "NSDL - Tripartite Agreement",
@@ -562,7 +832,12 @@
       "bytes": 326468,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "5d1aa01f2c502dabcfe0d9fec1b5b83440c1a0084d24d34847e62f350f60a65b",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Observation Letter - SEBI",
@@ -572,7 +847,12 @@
       "bytes": 542493,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "d53dcdaca0e32361160d4cef227fefd40eefda5ee38d67184e9fab61af84aa99",
+      "pages": 12,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "OCRP Share Agreement",
@@ -582,7 +862,12 @@
       "bytes": 4762569,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "7a5eab8f33d917abcc6101d12afeb64672cc2c584bf34b4148a3488fcfea5953",
+      "pages": 12,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Offer Agreement",
@@ -592,7 +877,12 @@
       "bytes": 4421889,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "7976dcf8ff5254151c19ef51836c8572a66c48f9fb26e64fc7593756748d8daf",
+      "pages": 73,
+      "pages_with_extractable_text": 73,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Promoter OFS Consent Letters",
@@ -602,7 +892,12 @@
       "bytes": 27451281,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "ca2c8c92d3ffc580ff743bb4a7d5198f6570fc345954f52a365fdc4068638930",
+      "pages": 39,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Registrar Agreement",
@@ -612,7 +907,12 @@
       "bytes": 4591439,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "c103414260ca36ceff14f87c6ce55a1eb1ef0b71af34e2d6d3ea4de74f206180",
+      "pages": 72,
+      "pages_with_extractable_text": 72,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Share Purchase Agreement - Purchase of AGTPL",
@@ -622,7 +922,12 @@
       "bytes": 19381569,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "63c03ec21adb40cf7351156f6386dc0386324f8b2a06026a7a692a1b0c162c60",
+      "pages": 32,
+      "pages_with_extractable_text": 32,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Share Purchase Agreement - Purchase of AIL",
@@ -632,7 +937,12 @@
       "bytes": 24788800,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "08e2f1ac83449ca664a8d1bf6aed445efa3fa3fa84c42a80592e93dcbfe4c8f5",
+      "pages": 42,
+      "pages_with_extractable_text": 42,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Share Purchase Agreement - Purchase of ATL",
@@ -642,7 +952,12 @@
       "bytes": 8825286,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "4d6c6e87d9ddafd9eda2fee9c897e7daf95bc4eb177030873fd21e457fc15a38",
+      "pages": 18,
+      "pages_with_extractable_text": 18,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Share Purchase Agreement - Purchase of Ideal Fiscal",
@@ -652,7 +967,12 @@
       "bytes": 25345391,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "79d7ae56ee80fe0dbbbd2ae6227843dd0a9097f812c9c9f9be674f6ff2d57f61",
+      "pages": 26,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "STPL - Valuation Report - Series A OCPS - 31.10.2022",
@@ -662,7 +982,12 @@
       "bytes": 424004,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "66e830878f7f959131e54c6c8c66ecca439bf17bce164c462864140194f4ed37",
+      "pages": 24,
+      "pages_with_extractable_text": 24,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Valuation Report - AGTPL - Murli Chandak",
@@ -672,7 +997,12 @@
       "bytes": 4908949,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "4d354e5b9163eff0cda865c62111938ee45546fa9679b0b50c7e563be67948d7",
+      "pages": 20,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Valuation Report - AGTPL Equity Valuation - Aditya Chokhra",
@@ -682,7 +1012,12 @@
       "bytes": 325577,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "2fdbe82db39b94720c8e0b2a529d1a61b97cc35d68ff1df87c7eadd2a93b55b3",
+      "pages": 13,
+      "pages_with_extractable_text": 13,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Valuation Report - Goldella Customer Valuation",
@@ -692,7 +1027,12 @@
       "bytes": 285726,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "367b92a70c897de237602aea1776de2bd171c342e4c47d7187b444beca14074a",
+      "pages": 13,
+      "pages_with_extractable_text": 13,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Audit Committee Resolution - Approval of KPI - 17.08.2026",
@@ -702,7 +1042,12 @@
       "bytes": 7697837,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "78abdab1bc45810d5b78e53b40556b9ab70de6183277bbb2cf1bf3ee71c29362",
+      "pages": 10,
+      "pages_with_extractable_text": 10,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Board Resolution - Approval of RHP - 17.08.2026",
@@ -712,7 +1057,12 @@
       "bytes": 1673959,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "11c2a3bb97a5709d23a73f66ba4a2b720ca1712605e7d51d777bb819e059f8ac",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Cash Escrow and Sponsor Bank Agreement",
@@ -722,7 +1072,12 @@
       "bytes": 8343142,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "25bfc52a82be7b5eca723012cbfc42618ca6da8be5458a250f04dd7b2c7d82b4",
+      "pages": 134,
+      "pages_with_extractable_text": 127,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Due Diligence Certificate",
@@ -732,7 +1087,12 @@
       "bytes": 2948726,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "c313692a460eff109ccba204ab71c1f351f8b49ae894071c9557e233731f3e7f",
+      "pages": 68,
+      "pages_with_extractable_text": 68,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Share Escrow Agreement",
@@ -742,7 +1102,12 @@
       "bytes": 5182581,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "248b0bb1189c02ed29c70e0b0263f007688bafa76a13f6ffc7a0b460d16c774a",
+      "pages": 58,
+      "pages_with_extractable_text": 56,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Syndicate Agreement",
@@ -752,7 +1117,12 @@
       "bytes": 17363267,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "14baadd40afbacebf423a958493591afcc33f346339322a6c475d4a12b6dfdfe",
+      "pages": 90,
+      "pages_with_extractable_text": 85,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Underwriting Agreement",
@@ -762,7 +1132,12 @@
       "bytes": 8918395,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "6dd68b808300295decbd2f119c390222f6d504a948d11ae344b2e1c2ea02deec",
+      "pages": 78,
+      "pages_with_extractable_text": 73,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Annual Report 2022-2023",
@@ -772,7 +1147,12 @@
       "bytes": 15169311,
       "type": "annual report",
       "period": "2022-2023",
-      "date": null
+      "date": null,
+      "sha256": "df5af941feac6ac8410fcc6d050e5836727f4cebf5093e01db272a2b84682b6a",
+      "pages": 84,
+      "pages_with_extractable_text": 17,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Annual Report 2023-2024",
@@ -782,7 +1162,12 @@
       "bytes": 19385553,
       "type": "annual report",
       "period": "2023-2024",
-      "date": null
+      "date": null,
+      "sha256": "eec1c0b91aae9d05a1a5db364d0094c7fb2ada50a08f3f5f3c82d0e3ce6b1363",
+      "pages": 119,
+      "pages_with_extractable_text": 19,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Annual Report 2024-2025",
@@ -792,7 +1177,12 @@
       "bytes": 62914560,
       "type": "annual report",
       "period": "2024-2025",
-      "date": null
+      "date": null,
+      "sha256": "5ce16292a68a8050ecba9aba0848a3f5683cea0dac144d382fea131be0d66698",
+      "pages": 0,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Certificate on Objects; Working Capital Requirements",
@@ -802,7 +1192,12 @@
       "bytes": 5896259,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "5c00b3548325a66f65d454fcb414ca6ceefc2dc2ea4e45c7656d8986a3e8c203",
+      "pages": 11,
+      "pages_with_extractable_text": 11,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Certificate on Basis of Offer Price",
@@ -812,7 +1207,12 @@
       "bytes": 4202856,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "65b494075b472550d7af52c3ab9d03f0259769ab8518b29f0b2653ad02e5cae9",
+      "pages": 5,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Certificate on Financial Indebtedness",
@@ -822,7 +1222,12 @@
       "bytes": 3925066,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "bf67f4458e8e3256ad9fcdc4e1150061798f0bedb3ef35e1a5e4c020293d1946",
+      "pages": 7,
+      "pages_with_extractable_text": 7,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Certificate on Tax Litigation",
@@ -832,7 +1237,12 @@
       "bytes": 2277077,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "7a142e42121b2029f14f465c2ee5bc9b5a66f7b02bb1cd712e53492fa7168a55",
+      "pages": 4,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Certificate on Average Cost of Acquisition of Securities of the Company",
@@ -852,7 +1262,12 @@
       "bytes": 8050135,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "283add975d330ba7b204116ceafa0af48f1343c103b495a8a5a8a23f0311b084",
+      "pages": 13,
+      "pages_with_extractable_text": 13,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "KPI Certificate dated 25.08.2026",
@@ -862,7 +1277,12 @@
       "bytes": 6563851,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "2fbe6de04419c4eff1d8d36a2f942ed5336dc4a1a0f170d9a92584fb57757c42",
+      "pages": 8,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Consent from Legal Advisors",
@@ -872,7 +1292,12 @@
       "bytes": 38565,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "74a9cdb8e6d9741a81e952d11dd8bba5b3559a1dba78f706eae20ddccacdf1d6",
+      "pages": 1,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Consent from RTA - MUFG Intime India Private Limited",
@@ -882,7 +1307,12 @@
       "bytes": 340722,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "d509637a424c3f41d9e1eb1d02ac05184bd7e2a97ccaa48f1121e20075c5a1f2",
+      "pages": 4,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Intensive Fiscal Services Private Limited",
@@ -892,7 +1322,12 @@
       "bytes": 1447827,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "e54867cc274d0e37b9d8b77923cefa3f1a9e86ee0b679deee8811e40fb468655",
+      "pages": 5,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "JM Financial",
@@ -902,7 +1337,12 @@
       "bytes": 204521,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "bf70de2a175b399e7b26b4e82df8a97b7a380f9e53f3a63601f164236fd06c27",
+      "pages": 3,
+      "pages_with_extractable_text": 3,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Motilal Oswal Investment Advisors Limited",
@@ -912,7 +1352,12 @@
       "bytes": 298345,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "7a7843633894b46e9a4ea11d2d8e2686c2606a2a3d3571edda385dc0b883f872",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Nuvama",
@@ -922,7 +1367,12 @@
       "bytes": 666000,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "989465a3ec6aefb069f8db1ec09bc6ac3f4e360049e447fea6d2383e5da45f19",
+      "pages": 3,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "HDFC Banker",
@@ -932,7 +1382,12 @@
       "bytes": 647704,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "85289bee08f819b14e80840e3a5869553cf55e29a39c4f40343ad694b6220790",
+      "pages": 3,
+      "pages_with_extractable_text": 3,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "ICBC",
@@ -942,7 +1397,12 @@
       "bytes": 215665,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "e82b2f689b8d015d4a83cdcb6f0e22e18e7a6e4195d7a5f89ecdf3c64edff63a",
+      "pages": 2,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "SBI Banker",
@@ -952,7 +1412,12 @@
       "bytes": 462186,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "a42ebea8a7911308b05600557ecfc90d0e04cbdff6d46a0dc6cac1aed361e572",
+      "pages": 3,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Augmont Enterprises Limited RHP",
@@ -962,7 +1427,12 @@
       "bytes": 15145648,
       "type": "offer document",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "6f8a6776c2fa36a01fb85390c39b516adea9466ac38d1a4e225a62b01cb42219",
+      "pages": 549,
+      "pages_with_extractable_text": 549,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Basis of Allotment Advertisement",
@@ -972,7 +1442,12 @@
       "bytes": 810404,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "b3a4e282f2d40abca5a2651b28d9192dabd8d3cd6b47da19a2d54f167f79c4d7",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AOA",
@@ -1052,7 +1527,12 @@
       "bytes": 364248,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "612a873a7df6b14052fc762ba2d3a4d06e85e448b80fb8a06174a79efa9798e0",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AGTPL Financials 2022-23",
@@ -1062,7 +1542,12 @@
       "bytes": 866750,
       "type": "supporting filing",
       "period": "2022-23",
-      "date": null
+      "date": null,
+      "sha256": "673c1ca3f05624249d4aa1ef9e0704dc6c2761e452dacab658edeee1b2a8b89b",
+      "pages": 13,
+      "pages_with_extractable_text": 11,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AGTPL Financials 2023-24",
@@ -1072,7 +1557,12 @@
       "bytes": 2499671,
       "type": "supporting filing",
       "period": "2023-24",
-      "date": null
+      "date": null,
+      "sha256": "b55f36e495252dcceeb5f91589ae1f94accdad4fbbe217bc8fc4c1afbbf82472",
+      "pages": 33,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AGTPL Financials 2024-25",
@@ -1082,7 +1572,12 @@
       "bytes": 6401249,
       "type": "supporting filing",
       "period": "2024-25",
-      "date": null
+      "date": null,
+      "sha256": "df5fc93bf18fb0f0e3cbd9b480cf6d0d7f59f79355066f7f949c22b11079d4c0",
+      "pages": 47,
+      "pages_with_extractable_text": 47,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AGTPL Board Composition",
@@ -1092,7 +1587,12 @@
       "bytes": 192509,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "b2a1fd5dc590c9d7f9bd14f2bf174139e7d5e18788e594b7f2c4ee5ce45a9a95",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Ideal Fiscal Financials 2022-23",
@@ -1102,7 +1602,12 @@
       "bytes": 6279136,
       "type": "supporting filing",
       "period": "2022-23",
-      "date": null
+      "date": null,
+      "sha256": "5c42f3064f97a8a724c2d349dd714142dc82abb1521129d717c335c8e5d613f5",
+      "pages": 38,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Ideal Fiscal Financials 2023-24",
@@ -1112,7 +1617,12 @@
       "bytes": 23667835,
       "type": "supporting filing",
       "period": "2023-24",
-      "date": null
+      "date": null,
+      "sha256": "345fe9db7e0e8d94fa3897412e325faeeedf5dbbdcc4b8b925365accc72999f3",
+      "pages": 48,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Ideal Fiscal Financials 2024-25",
@@ -1122,7 +1632,12 @@
       "bytes": 22632502,
       "type": "supporting filing",
       "period": "2024-25",
-      "date": null
+      "date": null,
+      "sha256": "e5bf806c01be06dc5f63162c07b4d158ee9c9f006d2ec507b4e30d45c05d8fd9",
+      "pages": 44,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Ideal Board Composition",
@@ -1132,7 +1647,12 @@
       "bytes": 192091,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "a02c438808bd3e3dd60b950157ea6d8eee9fb14058acc0a825913aa434af9d32",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AIL Financials 2022-23",
@@ -1142,7 +1662,12 @@
       "bytes": 6745717,
       "type": "supporting filing",
       "period": "2022-23",
-      "date": null
+      "date": null,
+      "sha256": "fdd328bf7e37e5b9860f34cd3190708f300ec1c095034fe5ad73126eb30199d7",
+      "pages": 14,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AIL Financials 2023-24",
@@ -1152,7 +1677,12 @@
       "bytes": 20257374,
       "type": "supporting filing",
       "period": "2023-24",
-      "date": null
+      "date": null,
+      "sha256": "6017cc42195f7980681acad2e6da6d18604463001a11d1d0297d26ed1a7f8c23",
+      "pages": 41,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AIL Financials 2024-25",
@@ -1162,7 +1692,12 @@
       "bytes": 20989365,
       "type": "supporting filing",
       "period": "2024-25",
-      "date": null
+      "date": null,
+      "sha256": "49c3e4a602370c6bd81580ca885eabcc2eac4a1aba588496f8fd1df0954ac8d1",
+      "pages": 44,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "AIL Board Composition",
@@ -1172,7 +1707,12 @@
       "bytes": 184530,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "fa527a48beb21ae5f718534f9489db04a997e67bfdd5a8459d891217071daaab",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Augmont IFSC Financials 2022-23",
@@ -1182,7 +1722,12 @@
       "bytes": 1879044,
       "type": "supporting filing",
       "period": "2022-23",
-      "date": null
+      "date": null,
+      "sha256": "0f3a9bc2dc59d59904f77d319bebfbf4d8910de03f03dea949a2231bfe2f5ca3",
+      "pages": 31,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Augmont IFSC Financials 2023-24",
@@ -1192,7 +1737,12 @@
       "bytes": 19299964,
       "type": "supporting filing",
       "period": "2023-24",
-      "date": null
+      "date": null,
+      "sha256": "9f7b29ed1d5c3d50e6f0316f0aff0268643117e08c33cc09183ced9a780518d0",
+      "pages": 39,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Augmont IFSC Financials 2024-25",
@@ -1202,7 +1752,12 @@
       "bytes": 20143517,
       "type": "supporting filing",
       "period": "2024-25",
-      "date": null
+      "date": null,
+      "sha256": "1e0d2369fbadfb64a28fa08397f1d24e29fdd55ff7824c02c0ff4410b1b2e156",
+      "pages": 41,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "IFSC Board Composition",
@@ -1212,7 +1767,12 @@
       "bytes": 188265,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "eba76ed25470825e7b23cb6fb9d7780c5cbac8148e4458fb00a0ac0e3431f37c",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Augmont Trading Financials 2023-24",
@@ -1222,7 +1782,12 @@
       "bytes": 2136915,
       "type": "supporting filing",
       "period": "2023-24",
-      "date": null
+      "date": null,
+      "sha256": "3afa07632570f95cee0e097807b05a91f48ed0d7afe4eafa16f91115af1cc1a6",
+      "pages": 19,
+      "pages_with_extractable_text": 19,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Augmont Trading Financials 2024-25",
@@ -1232,7 +1797,12 @@
       "bytes": 2305429,
       "type": "supporting filing",
       "period": "2024-25",
-      "date": null
+      "date": null,
+      "sha256": "ee66933d6c1bea5176446b9ae9b9f545afdbf93ecdcb8fdcc68d38c6db70d678",
+      "pages": 19,
+      "pages_with_extractable_text": 19,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "ATL Board Composition",
@@ -1242,7 +1812,12 @@
       "bytes": 181850,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "f7fb10b5ea3bc4183aecccf6504d452c59a0ca27725ea4e2583f4364a55ad0bc",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "RSBL 21-22",
@@ -1282,7 +1857,12 @@
       "bytes": 14862124,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "19371396141f06938224abf72ab988461ce61ffa1a66dd75f0b545e686cb7e7d",
+      "pages": 28,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Goldella 22-23",
@@ -1292,7 +1872,12 @@
       "bytes": 22920253,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "757eca7f462ee4af51a1a90967d913f8d31e708a3e5bef3cf7910440df40e972",
+      "pages": 25,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Goldella 23-24",
@@ -1302,7 +1887,12 @@
       "bytes": 5314155,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "6285e145f79214c9b40a6e18fcd419109b8d25a50eb8b9bbc4881b221f6c8052",
+      "pages": 30,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Supama 21-22",
@@ -1312,7 +1902,12 @@
       "bytes": 1579380,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "f4e65f288240ea2133be0bab9fe6eb4e077107fb194feaea1b34b7db276c3665",
+      "pages": 21,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Supama 22-23",
@@ -1322,7 +1917,12 @@
       "bytes": 1905333,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "14226b91e72f4cd4876568cb4e55ca943dbbabdd5ba19271d9e80ebde6a27e84",
+      "pages": 23,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Supama 23-24",
@@ -1332,7 +1932,12 @@
       "bytes": 13355427,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "4df26683a7b48453df0411d07cc7c2ab0c8ad915896cfb77c599791fb2feff7c",
+      "pages": 26,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Aranath FY 21-22",
@@ -1372,7 +1977,12 @@
       "bytes": 1964924,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "3e2563d9e51704c23c261c9130d7e7fe93aed45292f4e62860df8bb86227a872",
+      "pages": 14,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Krish FY 22-23",
@@ -1382,7 +1992,12 @@
       "bytes": 3936765,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "b88835d3cd4963a82a22f6e344672d0d65f9a5a839389fa6e7beb2ab2425b643",
+      "pages": 15,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Krish FY 23-24",
@@ -1392,7 +2007,12 @@
       "bytes": 2957025,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "2f69733c6791452bd3bd0ca4a1a002a9a38cb3daf7d16a93e5cb5f33c5899087",
+      "pages": 15,
+      "pages_with_extractable_text": 15,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Aprikot 23-24",
@@ -1402,7 +2022,12 @@
       "bytes": 12269565,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "d8c5616a6dece7a3c87a52a640eb44df6e7007ea76a8d57f7250c4d111640b68",
+      "pages": 19,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Tec 22-23",
@@ -1412,7 +2037,12 @@
       "bytes": 3177444,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "af5c1f6ece1a9f55822409198105722f93e32672c343b5deefb80cbd550f392a",
+      "pages": 14,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Tec 23-24",
@@ -1422,7 +2052,12 @@
       "bytes": 3617090,
       "type": "supporting filing",
       "period": null,
-      "date": null
+      "date": null,
+      "sha256": "9013bf906c91ed7fe20dc2ec590152d044341380913867128294b2808e7c6af5",
+      "pages": 10,
+      "pages_with_extractable_text": 0,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "IPO monitoring agency report September 2026",
@@ -1432,7 +2067,12 @@
       "type": "exchange announcement",
       "period": "2026",
       "status": "cached",
-      "bytes": 814921
+      "bytes": 814921,
+      "sha256": "219bc267347b51328f64f971933bde3f7788466fa28b0e9cd2e8d80fa3bfa656",
+      "pages": 10,
+      "pages_with_extractable_text": 10,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Statement of deviation September 2026",
@@ -1442,7 +2082,12 @@
       "type": "exchange announcement",
       "period": "2026",
       "status": "cached",
-      "bytes": 298837
+      "bytes": 298837,
+      "sha256": "76911b35016e88c62c0b43be09b1988740527d2aeb0b3dd0f1500e91bae6b4db",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Insider trading disclosure Regulation 7(2)",
@@ -1452,7 +2097,12 @@
       "type": "exchange announcement",
       "period": "2026",
       "status": "cached",
-      "bytes": 3564888
+      "bytes": 3564888,
+      "sha256": "b76a444cb231b25052fb3e963c4db47aaa1dfb4de5774fd19fa911bb37b7159d",
+      "pages": 4,
+      "pages_with_extractable_text": 4,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "core"
     },
     {
       "title": "Audio recording earnings call announcement Q2 FY27",
@@ -1462,7 +2112,12 @@
       "type": "exchange announcement",
       "period": "2026",
       "status": "cached",
-      "bytes": 523479
+      "bytes": 523479,
+      "sha256": "2f48285df8e5e792b7a8792d0444adb1fec53a2e60ded2d3c1e3bc2d2d355d1d",
+      "pages": 1,
+      "pages_with_extractable_text": 1,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     },
     {
       "title": "Appointment company secretary compliance officer",
@@ -1472,7 +2127,12 @@
       "type": "exchange announcement",
       "period": "2026",
       "status": "cached",
-      "bytes": 317452
+      "bytes": 317452,
+      "sha256": "5cad01b37dfc490acc0f15e05b16acccc43282feb890f5f3548c7cca4ad76e2b",
+      "pages": 2,
+      "pages_with_extractable_text": 2,
+      "text_coverage_note": "Mechanical text availability count only; document not substantively read by inventory agent",
+      "priority": "support archive"
     }
   ],
   "missing": [
@@ -1480,5 +2140,25 @@
     "Standalone pledge disclosure or auditor-change announcement not surfaced by inspected post-listing NSE announcements",
     "Some subsidiary/constitutional filings failed; see per-document errors",
     "Any older results/decks/transcripts beyond items on company investor page or current NSE list remain unverified"
+  ],
+  "duplicate_groups": [
+    [
+      "Annual Report 2024-25",
+      "Annual Report 2024-2025"
+    ]
+  ],
+  "user_uploads": [
+    {
+      "title": "Q2 FY27 earnings call transcript supplied by user",
+      "type": "transcript",
+      "period": "Q2 FY27",
+      "date": "2026-11-05",
+      "url": null,
+      "local_path": "C:\\Users\\RNEGI\\Desktop\\Investment\\Investment\\research\\companies\\nse-augmont\\docs\\AUGMONT\\uploads\\Augmont_Enterprises_Ltd_Nov_2026_Transcript.pdf",
+      "status": "cached user upload",
+      "pages": 20,
+      "sha256": "01759f7ea305e7c6009841c843777c90e14f25d079552114d573e176ddd7dabc",
+      "pages_with_extractable_text": 20
+    }
   ]
 }

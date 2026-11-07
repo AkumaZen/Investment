@@ -32,3 +32,9 @@
 The worker service returned a usage-limit error during the DRHP, prospectus, RHP, AR26 and latest-results reader turns. Their work is incomplete. The error indicated availability again at 9:03 PM; this has not been independently verified as a reliable resume time. Do not repeatedly retry or substitute a different worker model without authorisation.
 
 The user authorised step-by-step Git pushes and requested automatic compaction at 40% token use. Project .codex/config.toml now sets model_auto_compact_token_limit=200000, total scope, and model_post_turn_compact_threshold_percent=40. Local model metadata reports500000 context tokens. TOML was validated. Active-session reload has not been verified; maintain HANDOFF.md regardless.
+
+## Published checkpoints
+
+- Commit5e7944f pushed to origin/main: prompt, completed evidence notes, renderer, source inventory and continuation files.
+- Filing hashes/deduplication completed after the first push; see filing-discovery.md. Exhaustive page/text coverage is not claimed.
+- All final report checks remain NOT RUN. The worker quota is still the unresolved blocker to completing the required document reviews.
