@@ -1,0 +1,16 @@
+# Secrets and private financial records
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+private/
+research/private/
+
+# Local tooling
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+node_modules/
