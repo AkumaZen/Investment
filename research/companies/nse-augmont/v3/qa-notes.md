@@ -25,7 +25,6 @@
 
 - Q3 FY26 quarter is derived (FY26 less the other three quarters) and marked with * on every chart.
 - The earnings call is a machine transcript; quotes are shown as transcribed.
-- Full-width charts are small on phones (they scale down). Readable, but tighter than desktop.
 - No verdict, rating or fair value (user instruction). Valuation page shows dated facts only.
 - Disclaimer has a placeholder for the publisher's SEBI RA registration details. The user must fill it in before distribution.
 - PDF export not done (user asked for HTML first). `@media print` rules exist but print layout was not reviewed.
