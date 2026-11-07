@@ -1,5 +1,7 @@
 # Prompt-builder state
 
+CURRENT RESEARCH CHECKPOINT: readable interim report.html and23-page report-draft.pdf now generated, with20sections and model.py. Desktop/mobile/print/arithmetic checks PASS; independent source audit and full document coverage incomplete. Latest detailed state is STATUS.md and HANDOFF.md. Earlier prompt-only and pending-model entries below are chronological history, not current completion claims.
+
 Completed: 7 November 2026, Asia/Calcutta.
 Deliverable: prompts/Augmont Enterprises Research Prompt.md.
 Prompt preparation: only user-uploaded Q2 FY27 transcript, all 20 pages read by gpt-6.1-sol with low reasoning effort and fork_turns none.

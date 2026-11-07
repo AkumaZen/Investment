@@ -1,5 +1,15 @@
 # Compact handoff
 
+## Latest checkpoint supersedes older pending-stage notes below
+
+`report.html` and `report-draft.pdf` now exist:20sections,23PDFpages,6142sectionwords,PartA55.6%. Build via `python model.py` then `python build_report.py`; renderer input saved as `report-content.json`. `check_report.py` uses installed Edge, captures every section at1440/390px and exports PDF. Browser/arithmetic/fragment/offline/print-presence checks PASS in `qa-results.json`. Screenshot samples reviewed:desktopcover,mobileS2,printpage3; mobile diagram enlarged after finding tiny labels. Full independent evidence audit and every screenshot review NOT complete.
+
+New saved facts:AR26,Q1deck,Q2results,finalprospectus; primary-results-inputs.json. Finalprospectus549pages extracted but onlyselectedsections substantivelyread. AR135physicalpages,80scans processed; exactpay/denseRPTrowexceptions retained. DRHP/RHP/IPOmonitor readers hitquota again9:50PM. OlderAR/subaccounts/materialfilings remain unfinished. Avoid claiming full requested scope complete.
+
+Model:postofferterms91373505shares (allotment/currentESOPunclosed),secondaryquote921.50 (timestampunclosed),marketcap8420.06848575,ownerTTM335.412,P/E25.104...; FY26EBITDAexOI385.95 is mechanical not hedge-normalised. Debtincleases9.614,NCIbookproxy30.881,surpluscashcredit0. ScenarioEBITDAfactors.75/1/1.25,multiples12/18/24 areanalystillustrations,notguidedbase or price target. H1CFO-578.168 vsownerPAT176.146; CFsubtotalsleave0.002crroundingresidual, retainedexplicitly.
+
+Stage only requested research outputs and documentation; do not indiscriminately add caches. A tracked ar26-ocr.ps1 deletion was observed before report work and left unstaged. Do not revert others' changes. Update STATUS and push incremental authorised checkpoints. User's last estimate was20–30minutes for a readable draft, not fullcompletion.
+
 ## Objective and authority
 
 Build the full Augmont report from `prompts/Augmont Enterprises Research Prompt.md`, then verify it and push the completed work. User also authorises incremental Git pushes so status survives quota/context exhaustion. No extra approval is required for those scoped pushes. No trades, messages or unrelated external writes are authorised.

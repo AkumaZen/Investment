@@ -1,0 +1,248 @@
+{
+  "sections_expected": 20,
+  "arithmetic": "PASS",
+  "independent_source_verification": "NOT COMPLETE; checks use primary-reader inputs, not a fresh independent reading",
+  "cash_rounding_residual_crore": 0.0019999999999527063,
+  "title": "Augmont Enterprises | Equity research",
+  "bad_fragment_links": [],
+  "duplicate_ids": [],
+  "viewports": {
+    "desktop": {
+      "body_overflow": false,
+      "sections": [
+        {
+          "id": "S1",
+          "width": 920,
+          "height": 749.8125
+        },
+        {
+          "id": "S2",
+          "width": 920,
+          "height": 922.78125
+        },
+        {
+          "id": "S3",
+          "width": 920,
+          "height": 1273.296875
+        },
+        {
+          "id": "S4",
+          "width": 920,
+          "height": 785.921875
+        },
+        {
+          "id": "S5",
+          "width": 920,
+          "height": 880.375
+        },
+        {
+          "id": "S6",
+          "width": 920,
+          "height": 816.375
+        },
+        {
+          "id": "S7",
+          "width": 920,
+          "height": 818.8125
+        },
+        {
+          "id": "S8",
+          "width": 920,
+          "height": 963.484375
+        },
+        {
+          "id": "S9",
+          "width": 920,
+          "height": 905.140625
+        },
+        {
+          "id": "S10",
+          "width": 920,
+          "height": 629.984375
+        },
+        {
+          "id": "S11",
+          "width": 920,
+          "height": 588.375
+        },
+        {
+          "id": "S12",
+          "width": 920,
+          "height": 411.984375
+        },
+        {
+          "id": "S13",
+          "width": 920,
+          "height": 531.703125
+        },
+        {
+          "id": "S14",
+          "width": 920,
+          "height": 621.59375
+        },
+        {
+          "id": "S15",
+          "width": 920,
+          "height": 514.703125
+        },
+        {
+          "id": "S16",
+          "width": 920,
+          "height": 561.703125
+        },
+        {
+          "id": "S17",
+          "width": 920,
+          "height": 1276.421875
+        },
+        {
+          "id": "S18",
+          "width": 920,
+          "height": 918.9375
+        },
+        {
+          "id": "S19",
+          "width": 920,
+          "height": 733.8125
+        },
+        {
+          "id": "S20",
+          "width": 920,
+          "height": 989.890625
+        }
+      ]
+    },
+    "mobile": {
+      "body_overflow": false,
+      "sections": [
+        {
+          "id": "S1",
+          "width": 354,
+          "height": 1327.40625
+        },
+        {
+          "id": "S2",
+          "width": 354,
+          "height": 1511.046875
+        },
+        {
+          "id": "S3",
+          "width": 354,
+          "height": 3491.15625
+        },
+        {
+          "id": "S4",
+          "width": 354,
+          "height": 1476.484375
+        },
+        {
+          "id": "S5",
+          "width": 354,
+          "height": 1830.296875
+        },
+        {
+          "id": "S6",
+          "width": 354,
+          "height": 1829.234375
+        },
+        {
+          "id": "S7",
+          "width": 354,
+          "height": 1528.96875
+        },
+        {
+          "id": "S8",
+          "width": 354,
+          "height": 1953.46875
+        },
+        {
+          "id": "S9",
+          "width": 354,
+          "height": 1770.4375
+        },
+        {
+          "id": "S10",
+          "width": 354,
+          "height": 1177.5625
+        },
+        {
+          "id": "S11",
+          "width": 354,
+          "height": 975.984375
+        },
+        {
+          "id": "S12",
+          "width": 354,
+          "height": 691.96875
+        },
+        {
+          "id": "S13",
+          "width": 354,
+          "height": 952.015625
+        },
+        {
+          "id": "S14",
+          "width": 354,
+          "height": 1163.90625
+        },
+        {
+          "id": "S15",
+          "width": 354,
+          "height": 925.609375
+        },
+        {
+          "id": "S16",
+          "width": 354,
+          "height": 1035.53125
+        },
+        {
+          "id": "S17",
+          "width": 354,
+          "height": 2020.5
+        },
+        {
+          "id": "S18",
+          "width": 354,
+          "height": 1559.0625
+        },
+        {
+          "id": "S19",
+          "width": 354,
+          "height": 1362.640625
+        },
+        {
+          "id": "S20",
+          "width": 354,
+          "height": 1685.8125
+        }
+      ]
+    }
+  },
+  "page_errors": [],
+  "external_requests": [],
+  "print_pages": 23,
+  "print_blank_pages": [],
+  "print_section_presence": {
+    "S1": true,
+    "S2": true,
+    "S3": true,
+    "S4": true,
+    "S5": true,
+    "S6": true,
+    "S7": true,
+    "S8": true,
+    "S9": true,
+    "S10": true,
+    "S11": true,
+    "S12": true,
+    "S13": true,
+    "S14": true,
+    "S15": true,
+    "S16": true,
+    "S17": true,
+    "S18": true,
+    "S19": true,
+    "S20": true
+  },
+  "visual_inspection": "Pending human/model inspection of saved screenshot samples; screenshots for all sections captured."
+}
