@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Prompt Builder"
+  short_description: "Build company-specific Indian equity research prompts"
+  default_prompt: "Use $research-prompt-builder to prepare a research prompt for the company I specify, starting with CODEX.md and checking the required tools and skills."

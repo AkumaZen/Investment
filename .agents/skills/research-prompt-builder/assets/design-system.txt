@@ -1,0 +1,33 @@
+## 7. Design system
+
+Locked reference contract. Fill only the reference handoff, family, page-plan table and company lines. The 7 November 2026 reference-design amendment supersedes the historical neo-brutalist styling in the approved plan.
+
+Report-design reference directory: {{REPORT_REFERENCE_DIR}}
+Reference handoff:
+{{REPORT_REFERENCE_FILES}}
+Reference family selected for this company:
+Report design family: {{REPORT_PROFILE}}
+
+Before planning pages, open the staged guide and applicable Markdown sections, then query the selected JSON page records. Use the PDF manual for formatted review. These design and analytical-method references are separate from primary evidence for the new company. Source IDs such as BF-04 mean physical PDF pages, not printed numbers. Log what was actually read; links alone do not establish compliance.
+Read selectively: use the guide's chapter and page routing. Query coordinates only for a selected layout. Never paste the full manuals, 239-page audit or all 6,417 rectangles into this prompt or every worker context. If a required file cannot be read, recover it or report the exact blocker; do not silently substitute a generic design.
+Process: source manifest and business map, evidence ledgers, reconciled operating/financial model, thesis and contrary evidence, exhibit register, page storyboard, deterministic layout, numerical/editorial review, rendered-page review and reader decision test. Write the executive summary last. The later report agent uses manual section 9's page-specification schema. The prompt builder itself stops at the prompt.
+Depth: connect each material thesis through driver, mechanism, primary evidence, timing, earnings/cash effect, capital need and a disconfirming signal. Preserve the existing coverage and valuation rules. Historical broker forecasts, recommendations and prose are never evidence for the new company.
+Output: one self-contained HTML file, report.html, in the research folder. Keep Chart.js 4.4.1 from https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js plus inline SVG, with no new chart library. The pinned CDN remains the existing offline exception; disclose unavailable dependencies. Use local/system fonts or embedded licensed font files.
+Theme: light by default, white analytical field, dark ink, one restrained family accent and neutral fills. No shadows, thick card borders, oversized KPI grids or decorative backgrounds. Use the new report's own identity, never broker logos, signatures, registrations or invented recommendation history.
+Type and geometry: declare the family's measured values separately from chosen reconstruction values, using manual section 3 and the JSON. Name font substitutes and recheck wrapping. Recommended A4 starting values: 595.28 x 841.89 pt; 36 pt side margins; 10 pt body with 13 pt leading; 13-14 pt headings; 8.5-9 pt tables; 7.5-8 pt sources; 0.35-0.6 pt rules. These are recommendations, not measurements of every source page. Keep screen text readable, about 15px where needed, while retaining the declared print sizes. Split dense content before shrinking labels below the chosen floor.
+Layout: one coherent family and a document-width field with aligned narrative, exhibits and captions. Desktop contents sit outside that field and become a top menu under 768px. Every S-section has an id and a contents entry. Business and Products precede peers and financials; detailed valuation and verdict remain last. Borrow analytical components without mixing publishers' visual systems. Page and chart counts follow evidence, never a source quota.
+Section opening: every S-section starts with the answer in one bold line, then evidence, then a short unboxed note titled "What this means for you". Place management explanations beside the relevant numbers. Prefer plain narrative, tables and source notes over repeated cards.
+Tables: restrained header bands and hairline total rules; right-aligned comparable numbers; units and fiscal periods in headers; consistent precision; negative numbers in brackets. Use the chosen face's tabular numerals. Mobile overflow stays inside the table container. Repeat headers for long printed tables and split deliberately when needed.
+Charts: one y-axis, honest scales, units, periods and adjacent sources. Distinguish reported, guidance [G] and estimates [E] with text and pattern or line treatment. Interactive charts have working hover tooltips; static SVG has labelled values or a table view. Every chart must remain intelligible in print and match the reconciled model.
+Diagrams and images: editable inline SVG text for exact flows; real company deck, annual report or website images with source captions only. Never stock or generated imagery for company evidence, financial tables or precise charts.
+Scroll and print: native scrolling; never hide overflow on html or body, trap the wheel in charts, or fix section heights. Print hides controls and navigation, preserves all in-scope sections and sources, and avoids clipped exhibits, orphaned headings and accidental blank pages. Inspect the actual page transitions.
+Accessibility and tags: colour is never the only signal; text contrast at least 4.5 to 1; labelled values or tables make charts accessible. [E] shows working; [G], [Inferred], [Not Disclosed] and source tags remain compact textual labels. OK, WATCH and RED include the word as well as colour. Avoid a pill around every number or source.
+
+Report page plan:
+{{REPORT_PAGE_PLAN}}
+
+Each row connects a company decision, evidence/calculation task, physical source precedents, form and justified adaptation. The later report agent expands it into page specifications and compares actual rendered pages with the selected precedents. Report departures and missing evidence.
+Accent mapping: {{ACCENT_MAPPING}}
+Company tags: {{TAG_LIST}}
+Diagrams to draw: {{DIAGRAMS}}
+Must-have charts: {{MUST_HAVE_CHARTS}}

@@ -1,0 +1,11 @@
+{
+  "source_archive": "research-prompt-builder-review.zip",
+  "sha256": "5e9a58ce13b58636bba81415c870df81009fa0455a5a5372e59de68bef976720",
+  "installed_on": "2026-11-07",
+  "scope": "repository",
+  "changes": [
+    "Added Codex compatibility pointer to SKILL.md",
+    "Added CODEX.md, agents/openai.yaml and this installation record"
+  ],
+  "preservation": "All other archive files retained byte-for-byte"
+}

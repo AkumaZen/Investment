@@ -1,0 +1,16 @@
+## 8. Visual verification
+
+Locked. Run every check below on the finished report.html before the final reply. Fix and re-run until all pass.
+
+1. Desktop: open at 1440px wide, screenshot every section, and confirm nothing overlaps, clips or overflows.
+2. Mobile: open at 390px wide, screenshot every section, and confirm there is no sideways page scroll, tables scroll inside their own container, and text is readable without zooming.
+3. Console: zero errors and zero failed network requests on load.
+4. Interaction: every table-of-contents link jumps to its section; every interactive chart shows a tooltip on hover; static SVG charts have labelled values or a table view; every toggle and tab works.
+5. Charts: every chart renders with data, axis labels and a source line. No empty canvas.
+6. Numbers: the numbers in every chart match the table they come from.
+7. Print: print preview shows every section in order, with no cut tables and no blank pages.
+8. Scroll: the page scrolls from top to bottom with mouse wheel, trackpad and touch, including when the pointer is over a chart or a table. No nested scroll traps. html and body do not have overflow hidden.
+9. Theme: the report loads in the light theme.
+10. References: open the three files, log the family and physical source pages consulted, and compare declared typography, exhibit grammar and page plan against every rendered page. Record font substitutes and justified departures. Design references are not company evidence.
+11. Reader test: can a first-time reader explain the business, reproduce one unit or forecast calculation, identify the capital constraint and name a thesis-break signal?
+12. Report each check as PASS or FAIL with screenshot file names and reference-use notes. Unrun checks are NOT RUN, never PASS. Fix every FAIL before claiming completion.

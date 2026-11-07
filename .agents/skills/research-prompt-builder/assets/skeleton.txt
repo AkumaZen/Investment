@@ -1,0 +1,299 @@
+RESEARCH PROMPT
+Company: {{COMPANY}}
+Research type: {{RESEARCH_TYPE: Initiating coverage deep dive, or Update}}
+NSE: {{NSE}} | BSE: {{BSE}}
+Lead analyst: Claude Opus 5.5 as a senior equity research analyst; Sonnet 5.5 workers read the documents
+Output: one self-contained HTML report using the supplied report-design references in section 7, light theme, saved as report.html in the research folder
+Document mode: {{DOC_MODE: Default, or All documents}}
+Size: {{SIZE: Full, or Concise}}
+Prompt version: {{VERSION: V1}}, built {{BUILD_DATE: Sat, 07 Nov 2026}}
+
+## 0A. Why we are covering this business
+
+Written from the documents in plain words, in under 15 lines.
+
+- What it is: {{WHAT_IT_IS: two sentences a first-time investor can follow}}
+- Why it caught our attention: {{ATTENTION: the user's own reason if given, otherwise the specific number or event in the filings, with source}}
+- Why now: {{WHY_NOW: what changed recently, with dates}}
+- The core debate: {{CORE_DEBATE: the one question that decides whether this is worth owning}}
+- What the market seems to believe: {{MARKET_BELIEF: what the price implies vs the numbers, with the arithmetic}}
+- What would make us care, and what would make us drop it: {{CARE_DROP: one specific, checkable condition each way}}
+- What the reader will be able to decide: {{READER_DECISION}}
+
+## 0B. How to think
+
+{{FRAME: 3 to 5 lines on what the company is and the real job of this research. Must include a sentence that starts "The job is NOT to retell" and says what the job really is for this company.}}
+
+### The 10 rules
+
+1. Start simple: {{RULE_1: what it makes or sells, who buys it, and how it earns money, in this company's terms}}
+2. Explain every technical term before using it: {{RULE_2: the terms this company needs explained}}
+3. Split the business into its parts: {{RULE_3: the segments, entities or formats to split by}}
+4. Go product by product: {{RULE_4: the product, format, molecule or service lines to cover one by one}}
+5. Separate quantity from quality: {{RULE_5: the company-specific split, such as organic vs acquired, same-store vs new-store, volume vs price, recurring vs one-time}}
+6. Separate profit from cash: {{RULE_6: where profit and cash could diverge here}}
+7. Separate reality from optionality: {{RULE_7: what earns today vs what is announced or only an idea}}
+8. Check every management promise against what happened: {{RULE_8: the promises to track}}
+9. Follow the causal chain and mark the first unproven link: {{RULE_9: the chain for the main growth driver}}
+10. Never fill gaps with assumptions. Every key number is marked Disclosed, Inferred or Not Disclosed.
+
+### The 15 questions
+
+{{QUESTIONS: 15 numbered questions (1. to 15.), each specific to this company and each carrying a real number or name from the documents}}
+
+### Connecting the dots
+
+{{DOTS: one worked example that links two or more facts with real numbers and sources, and shows what the link means for the thesis}}
+
+## 1. What we already know
+
+### Local files and fact pack
+
+{{LOCAL_FILES: one line per file, each absolute path in backticks, only files that exist: facts.md, the docs folder, and each document used}}
+
+### The business in brief
+
+{{BUSINESS_BRIEF: what it does, segments, plants or stores, customers, with source tags}}
+
+### Multi-year trend
+
+{{ANNUAL_TABLE: sales, EBITDA, EBITDA margin, PAT, EPS, OCF, capex, net debt, for at least 5 years, with source tags}}
+
+### Quarterly trend
+
+{{QUARTERLY_TABLE: last 6 to 8 quarters, with source tags}}
+
+### Latest quarter by segment
+
+{{SEGMENT_TABLE: or "Single segment, no split disclosed [Not Disclosed]"}}
+
+### Balance sheet and cash
+
+{{BALANCE_SHEET: debt, cash and where it sits, working capital days, contingent liabilities}}
+
+### Capital and control
+
+{{CAPITAL_CONTROL: shares outstanding, warrants, ESOPs, promoter holding trend, pledge status with primary source or "to verify", recent raises}}
+
+### Guidance quotes
+
+{{GUIDANCE_QUOTES: verbatim quotes with speaker, date and source; or "No numeric guidance found in the documents read"}}
+
+### Data conflicts
+
+{{CONFLICTS: numbers that differ between documents, with both sources; or "None found"}}
+
+### To find
+
+{{TO_FIND: what the research run must still find, including every document listed as missing}}
+
+## 2. Tools and sources
+
+Document mode: {{DOC_MODE_DETAIL: Default (the fixed set below) or All documents (every annual report, deck, transcript and results filing, newest wins on conflicts), plus every file the user uploaded}}
+
+Document set:
+{{DOC_SET: one line per document with type, period, date and local path or URL; mark user uploads as such}}
+
+Order of sources:
+1. Local files first: the files in section 1. Read them before fetching anything.
+2. Concall transcripts: run the concall downloader once if one is installed. If it fails or returns nothing, use Screener get_document_list and download with fetch_doc.py. Do not retry the downloader.
+3. Screener tools: get_company_overview, get_financials, get_quarterly_results, get_shareholding_pattern, get_peer_comparison, get_company_announcements, get_document_list.
+4. Company website: {{WEBSITE: URL, and which pages hold the product list, brochures and investor presentations}}
+5. Important announcements only: {{ANNOUNCEMENTS: the material announcement types for this company, such as orders, capex, fund raises, acquisitions, rating actions, auditor changes}}. Skip routine filings such as trading-window closures, newspaper advertisements and compliance certificates.
+6. Primary checks for this company: {{PRIMARY_CHECKS: such as pledge disclosures under SEBI SAST, regulator databases, credit rating rationales, RHP sections, court or tribunal records}}
+
+Not allowed: broker reports or analyst estimates presented as guidance; a news article as the only source for a number; invented numbers; any number without a source.
+Citation rule: every number carries a source tag in brackets, such as [AR FY26 p.112], [Q2 FY27 call, CFO] or [Screener], and every estimate is marked [E] with its working shown.
+
+## 3. Working method
+
+Research folder: `{{RESEARCH_FOLDER}}`
+
+Steps, in order. After each step, update state.md in the research folder with what was done, what was found and what is next. Run to completion without stopping for permission. Stop only if a primary document needed for a core section cannot be found anywhere, and say which.
+[0] Set up: create the research folder, copy in the files from section 1, start state.md.
+[1] Read: Sonnet 5.5 workers read each document and write page-tagged facts to facts.md, covering business, products, customers, management, capex projects, guidance quotes, growth triggers, risks, and analyst questions with management's answers. Charts, tables and scanned pages are read from rendered page images. Opus does not read documents in bulk.
+[2] Numbers: pull the financials from Screener into financials.md and recompute every ratio by script.
+[3] Diagnose: Opus answers the 15 questions in notes.md, writes the anti-thesis before the bull case hardens, and closes the "To find" list.
+[4] Model: model.py builds the valuation in section 5; every derived number is recomputed by script.
+[5] Write: report.html, following sections 4, 6, 6A and 7.
+[6] Check: the checks in section 6, then section 8, then section 8B, then the final reply in section 9.
+Models: Sonnet 5.5 workers read (pass model "sonnet" on every worker call). Opus 5.5 decides, writes and checks. If Sonnet 5.5 is unavailable, stop and say so; never fall back to a smaller model.
+
+## 4. Report structure
+
+Every S-section opens with the answer in one bold line, then the evidence, then "What this means for you". Understanding the business (Part A) takes at least half the report.
+
+{{STRUCTURE_NOTE: two or three lines on how this structure was tailored: business model, story and sector, what leads, what was added, renamed, swapped or dropped}}
+
+### Part A: understand the business
+
+**S1. Why read this business, and snapshot.** The 0A answer with its evidence. What it does, latest numbers, price, diluted share count, rating and value range. One page of key trackables and dated triggers.
+{{S1_TRACKABLES: the 6 to 10 trackables and dated triggers for this company}}
+
+**S2. The business, simply.**
+- An everyday picture of what it does, and how the money is made step by step.
+- The revenue equation: {{REVENUE_EQUATION: such as units x price, or stores x sales per day x 365}}
+- What happens to ₹100 of sales: costs, what is left, and what is kept as cash.
+- Revenue model: product, project, recurring or service; one-time vs repeat; and a plain judgement on model quality.
+- Every contract term explained, with who benefits: {{CONTRACT_TERMS: such as take-or-pay, royalty, pass-through, or "none disclosed"}}
+- Value chain diagram, and the history in 5 or 6 milestones.
+- End markets and demand drivers, each mapped to this company's revenue. Figures from the company are labelled company-provided.
+- Growth derived from real drivers and capped by capacity and balance sheet, not quoted.
+- A glossary box.
+{{S2_SPECIFIC: company-specific questions this section must answer}}
+
+**S3. {{S3_TITLE: Products, or Pipeline, or Formats and menu, or Service lines}}.**
+- Type grid: type x application x technology, each marked MAKES AND SELLS, FIRST ORDERS, IN DEVELOPMENT, DOES NOT MAKE or NOT DISCLOSED.
+- One card per product: what it is, the problem it solves and what it replaces; where it is used and who buys it; the technology and why it is hard to copy; stage, and approvals held vs applied for; size today and room to grow; competitors and how it differs; margin and how it makes money; what could go wrong; a real image from the deck or website.
+- What's new: past, now and the next 2 years, each with date, status, and firm orders vs "likely".
+- Biggest product threat: {{PRODUCT_THREAT}}
+- Sector versions keep the same depth: stores, formats and menu for a restaurant chain; molecule cards with plain phase tables and evidence grades for a biotech; service lines for a services company.
+{{S3_SPECIFIC: the products, formats or molecules to cover, by name}}
+
+**S4. Segments and entities.** Revenue and margin for each part; which part earns and which part loses; margin by business model, with assumptions marked in brackets.
+{{S4_SPECIFIC}}
+
+**S5. Customers and partners.** Named customers and what each buys; concentration; why they buy; what is happening inside the biggest customer; whether large orders repeat; contract terms; every named partner with its relation, status and what is unverified.
+{{S5_SPECIFIC}}
+
+**S6. Moat and competition.** Who else can do this, product by product; moat cards, each with evidence and a counter-point; switching costs; a plain answer to "can anyone do this?".
+{{S6_SPECIFIC}}
+
+**S7. Quantity vs quality.** {{S7_SPLIT: rule 5 applied, such as organic vs acquired growth}}
+
+**S8. {{S8_TITLE: the biggest company-specific question}}.** {{S8_SPECIFIC: what this deep dive must establish, and with which documents}}
+
+**S9. {{S9_TITLE: Capability, capacity and capex, or the sector version}}.**
+- Capacity table: existing, live now and planned, with utilisation, and when the next plant is needed.
+- Capex tracker, one row per project: project, maintenance or growth, status, cost, spent so far, funding (internal, debt or equity), commissioning date and any slippage, capacity added, expected revenue and margin impact, risk, source.
+- Promised vs actual: every date and cost first given, later changes, and what happened.
+- Did past capex earn anything? Revenue and return on each rupee spent; asset turnover before and after.
+- Can it be paid for? Capex vs operating cash flow vs depreciation, and whether more debt or equity is needed.
+- Sector versions: store capex and payback for a chain; R&D centre and trial spend for a biotech; capitalised R&D where relevant.
+{{S9_SPECIFIC: the projects and capacities to track, by name}}
+
+### Part B: management
+
+**S10. Management analysis.**
+- Who they are: founders, KMP and board; background and tenure from filings; succession and key-person risk; board independence.
+- Skin in the game: holding trend, who sold and at what price, preferential or warrant participation, pledges checked in primary filings, pay vs profit, ESOPs.
+- Capital allocation: every rupee raised and where it went vs the stated plan; acquisitions and the returns on them; unrelated ventures; where the cash sits today; dividends and buybacks.
+- Do they deliver? Links to S11, with a credibility score as % of promises met. An annual-report-only company gets a statements register instead (as in Kabra), and a biotech gets a timeline tracker (as in Suven).
+- How they communicate: tone per call (BULLISH, CAUTIOUSLY OPTIMISTIC, NEUTRAL, CAUTIOUS or DEFENSIVE); guidance direction across calls; what they repeat and what they stop mentioning; how they answer hard analyst questions, verbatim with speakers; what they talk about that is not yet in the numbers.
+- Fair to minorities? Related parties, promoter-linked deals, valuation reports, disclosure quality, auditor remarks, ratings, litigation.
+- Hard red flags: qualified audit, going-concern language, rising pledge, deviation in use of proceeds, loans to promoter entities, active investigation, repeated guidance misses.
+- Verdict: OK, WATCH or RED, with one line of reasoning. A RED caps the rating.
+{{S10_SPECIFIC: the people, raises, deals and claims to check, by name}}
+
+**S11. {{S11_TITLE: Management claims checked, or Statements register}}.** Claim, date, speaker, what happened, status, and credibility in one line.
+{{S11_SPECIFIC}}
+
+### Part C: the future
+
+**S12. Guidance and outlook.**
+- Current guidance table: metric, number or range, period, speaker, verbatim quote, source. Covers revenue, margin, PAT, volume, capex, order book, exports and new products wherever given.
+- Next quarter: what management expects, in their words. If they gave no number, say so instead of inferring one.
+- Direction across calls: first given, later changes, current; each marked raised, held or cut.
+- What must be true: the growth and margin the remaining quarters need for guidance to hold.
+- Conflicts: deck vs call. Analyst claims are never presented as guidance, and broker numbers stay out.
+- No guidance: said plainly, with the statements register used instead.
+- S11 checks past promises and S12 sets out what is promised now. Together they feed the management guidance row in section 5.
+{{S12_SPECIFIC}}
+
+**S13. Future growth and triggers.**
+- Growth build by driver: each driver sized bottom-up for the next 3 years and capped by capacity and balance sheet. Derived, not quoted.
+- Trigger table: catalyst, timing, what management said, ₹ impact, bias, Confirmed or Probable, source.
+- Strength: STRONG only if it appears in 2 or more primary filings with numbers and a date; otherwise MODERATE or WEAK.
+- All triggers listed, including what management talks about that is not yet in the numbers, sector or government moves, and anything the user raised. If an expected trigger is absent, say so.
+- Near-term (next 2 quarters) kept separate from long-term (next 2 to 3 years).
+- Trigger dates: results, commissioning, approvals, warrant deadlines, each with what would confirm or break it.
+{{S13_SPECIFIC: the drivers and triggers to size, by name, and any expected trigger to test for absence}}
+
+### Part D: proof
+
+**S14. Peers, granularly.** Business comparison first (who can do what, and how close), then numbers. Where it can and cannot compete, and whether it deserves a higher or lower multiple.
+{{S14_PEERS: the listed and unlisted peers to compare, and on which metrics}}
+
+**S15. Reality vs optionality.** Earning today, ramping, announced, and idea, with ₹ in each.
+
+**S16. The causal chain.** One row per growth driver, proven or unproven at each link, with the first unproven link marked.
+
+**S17. Financials and quality of earnings.** P&L, cash vs profit, working capital, debt, share count, and the sector metrics: {{SECTOR_METRICS}}. Verdict OK, WATCH or RED.
+
+**S18. Governance and filings.** Material filings in date order, promoters, related parties, auditor, credit rating, and data conflicts.
+
+### Part E: risks, value and verdict
+
+**S19. Risks and anti-thesis.**
+- Anti-thesis: the strongest case against owning this stock, argued as a sceptic would, with real numbers. Not a list of generic risks.
+- Bull claim vs rebuttal: each main bull point, the best counter-evidence, and which side the evidence favours today.
+- What if we are wrong? If the stock halves in 2 years, what most likely caused it?
+- Risk cards, 6 to 8, ranked: specific and falsifiable, each with likely ₹ or per-share impact and a "signal that confirms it" with a threshold, such as debtor days above 150.
+- Link to value: the bear case in section 5 is built from these risk cards, and the signals feed the dated watch list.
+- What would change our mind: the evidence that would kill the anti-thesis, and the evidence that would kill the thesis.
+{{S19_SPECIFIC: the anti-thesis to test, in one or two lines, and the risks expected}}
+
+**S20. Valuation and verdict.** Bear, base and bull; bull vs bear side by side; the 15 questions answered in one line each; the assumed vs grounded list; dated signals to watch.
+
+**Appendix. Sources.** Every source with its link; the Disclosed, Inferred and Not Disclosed list for key numbers.
+
+{{EXTRA_SECTIONS: any added, renamed or swapped sections, or "None"}}
+
+{{OPTIONAL_MODULES: the optional modules used and where, such as forensic first pass, concall checklist, metrics checklist, catalyst scoring, price move map, sum of the parts, rNPV, comparable deals, dilution maths; or "None"}}
+
+### Leave out
+
+{{LEAVE_OUT: what was left out and why, one line each, such as "Order book: none reported"; or "Nothing left out"}}
+
+### Coverage map
+
+| Core topic | Where covered |
+|---|---|
+{{COVERAGE_MAP: one row for every core topic listed in the skill, giving the section (such as S9) or "Not covered: reason"}}
+
+## 5. Valuation
+
+- Share count: {{SHARES: basic shares plus dilution from warrants, ESOPs and convertibles, with source}}
+- Main metric: {{METRIC_AND_REASON: the metric, and why it fits this business, chosen with the business-valuation-scenarios Step 1 table}}. The method follows the business: when there are no earnings yet, value the asset (such as rNPV, replacement cost or sum of the parts), never past earnings. Cross-check: {{CROSS_CHECK}}
+- Revenue build, bottom-up: {{REVENUE_BUILD: the driver arithmetic, such as capacity x utilisation x realisation}}
+- Management guidance row, with no haircut:
+
+| Metric | Management guidance | Period | Source |
+|---|---|---|---|
+{{GUIDANCE_ROWS: or a single row stating "No numeric guidance given"}}
+
+- Bear case [E]: built from the S19 risk cards. {{BEAR: guidance missed, lower revenue or margin, and a lower multiple, with the risk cards it comes from}}
+- Base case [E]: management guidance exactly, never a more conservative number of our own. {{BASE: the guided revenue and margin path, and the multiple (the user's multiple if one was given)}}
+- Bull case [E]: the same earnings as the base case, valued at a higher multiple. Revenue is never modelled above guidance in the bull case. {{BULL: the multiple and why the market could pay it}}
+- Reverse check: what today's price of {{PRICE}} implies about growth and margin, worked out.
+- Rating bands: BUY if the base value is 20% or more above the price; HOLD if within 20%; SELL if 20% or more below. A RED management verdict caps the rating at HOLD.
+- Show the working for every estimate, and keep the interest, depreciation and tax bridge marked [E].
+
+## 6. Writing, design, checks
+
+- Simple words. Explain every term before using it. Write for a first-time investor who is smart but new to this industry.
+- Answer first, then evidence.
+- Every number has its unit, period and source tag.
+- Human dates in the reader's time zone, such as "Thu, 22 Oct 2026".
+- No em dashes or en dashes anywhere; use commas, colons or full stops.
+- Re-check 10 random numbers against their source pages and list them with PASS or FAIL in the final reply.
+- Re-run all model maths by script, and fix any number that differs.
+- Assumed vs grounded: every assumption is listed with the reason it is reasonable and what would prove it wrong.
+
+{{INCLUDE:6A}}
+
+{{INCLUDE:7}}
+
+{{INCLUDE:8}}
+
+{{INCLUDE:8B}}
+
+## 9. Final reply
+
+Reply in this order:
+1. Rating, and value range vs today's price.
+2. Three key findings, the first of which answers: {{FINAL_FINDING: the core debate from 0A, as a question}}
+3. Checks run with results: the 10-number re-check, model re-run, section 8 and section 8B.
+4. Known gaps: what could not be found or verified.
+5. Disclaimer: this is research for learning, not investment advice, and the author is not a licensed financial advisor.
+6. Progress line: steps [0] to [6] with done or not done, and the report file path.

@@ -1,0 +1,26 @@
+## 8B. Visual quality review
+
+Locked. Run this after section 8. Every section 8 check stays in force.
+
+Answer each question for the whole report, and fix every NO before the final reply:
+1. Does each chart answer a meaningful research question?
+2. Is the chart type right for the data?
+3. Are all figures consistent with the source data?
+4. Are historical and projected figures easy to tell apart?
+5. Are units, periods and legends clear?
+6. Are titles insight-led?
+7. Is management's explanation placed next to the financial data it explains?
+8. Are tables readable on desktop and on mobile?
+9. Are axes and scales honest?
+10. Can every source be traced?
+11. Is the report consistent with the locked design system in section 7?
+12. Does every visual improve understanding rather than add length?
+13. Does the report follow one declared reference family, with physical source-page precedents and justified departures documented?
+14. Can each material thesis be traced from primary evidence through an operating driver to earnings, cash, capital needs and a falsification signal?
+15. Were the reference patterns applied to actual page construction with readable typography, source notes and no unexplained geometry copied from text rectangles?
+
+Final review, done twice:
+- As an equity research analyst: is anything important missing, unsupported or misleading? Would a fund manager's first question be answered?
+- As a report designer: is the hierarchy clear, is the key finding visible first, and is there any visual that repeats data shown elsewhere?
+
+Put the findings of both reviews in the final reply, with what was fixed.

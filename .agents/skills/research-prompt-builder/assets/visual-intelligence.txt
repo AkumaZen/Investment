@@ -1,0 +1,70 @@
+## 6A. Visual intelligence
+
+The goal is not more charts. Think like an equity research analyst and a data-visualization designer: understand the information, find the main insight, choose the right form and show it clearly.
+
+Preservation rule: this section adds to sections 0 to 9 and S1 to S20 and replaces none of them. It removes no business or financial analysis. It does not change the research method, the design system, the section 8 checks, the model assignments or the document workflow. External skills are never required, and presentation never reduces the depth of business understanding. The report must stay readable, responsive and printable.
+
+Five questions before any visual:
+1. What information are we trying to communicate?
+2. What is the most important insight in this data?
+3. What comparison helps the reader understand it?
+4. Which form shows this most accurately?
+5. What context or caveat must go with it?
+
+Choosing the form:
+- Table: when exact figures and detailed comparisons matter most.
+- Chart: when patterns, relationships, trends or composition are easier to see.
+- Diagram: when explaining how the business operates, how money flows or how parts connect.
+- Nothing: no decorative charts, and no forcing data into a chart.
+- One y-axis per chart. Two measures on different scales become two charts, or are indexed to a common base.
+- A single headline number is inline emphasis or a compact stat, not a one-bar chart. Part-to-whole is ranked bars or a segmented bar, not a pie.
+- Available forms: comparison tables, time-series lines, grouped and stacked bars, waterfalls, contribution charts, capacity timelines, Sankey diagrams, value-chain diagrams, geographic and process diagrams, financial bridges, segment matrices, risk matrices, and actual vs guidance comparisons.
+
+Data storytelling rules:
+- Titles state the insight, such as "Revenue grew 42%, but EBITDA margin fell as new capacity ramped up", and only when the evidence supports it.
+- The most important number or change is highlighted; context is greyed.
+- Historical, current and projected figures are visibly distinct. Projected figures are hatched or lighter and labelled [E].
+- Reported figures, estimates [E] and management guidance [G] are kept separate.
+- Units, periods and the comparison base are shown on every visual.
+- Unusual movements and divergences are explained next to the visual.
+- The source sits directly under the visual.
+- Axes and scales are never manipulated, and missing data is never created. A gap stays a gap, labelled [Not Disclosed].
+
+Presentation priorities:
+1. Clear information hierarchy.
+2. Consistent typography and spacing.
+3. Insight-led section introductions.
+4. Financial tables that are easy to compare.
+5. Charts that explain business economics.
+6. Management commentary placed beside the numbers it explains.
+7. Key findings visibly distinct from supporting information.
+8. Traceable sources and assumptions.
+9. No excessive cards, icons, borders or decoration.
+10. No repeating the same data in several visual forms.
+
+Library rule: Chart.js and inline SVG only, as set in section 7. Waterfalls, Sankeys, bridges, value chains and timelines are drawn in inline SVG or Chart.js, with no new library. Plotly, D3 or Python charts are used only if the user asks or the output format changes.
+Cards rule: use plain tables, narrative and hairline rules under the reference-driven section 7. A single number can be an inline emphasis, not a mandatory card. The historical thick-border card style is superseded by the 7 November 2026 reference-design amendment.
+
+External skills (read if installed, never required):
+- dataviz: the chart decision library. Load it with the Skill tool (name "dataviz") before drawing the first chart, and use it for every chart and table decision:
+  - references/choosing-a-form.md: which form, or no chart at all (a stat tile or a table).
+  - references/marks-and-anatomy.md: marks, labels, legends, gridlines, hero numbers.
+  - references/interaction.md: hover tooltips for interactive charts; labelled values or a table view for static and printed charts.
+  - references/components.md: how each chart part is built in plain HTML or SVG.
+  - references/anti-patterns.md: the critique step. Check every finished chart against it and fix any match before section 8B.
+  Its palette, colour formula and validator do not set colours here, because section 7 sets the colours. Its library advice does not override the Chart.js and inline SVG rule.
+- market-research-reports (K-Dense): report architecture and evidence presentation.
+- cc-equity-research: financial research conventions, and its forensic, call-tone and capital-allocation lenses.
+- initiating-coverage: equity research conventions.
+Rules for any of these skills:
+1. Read the actual SKILL.md and its references before use.
+2. Note what each adds and where it overlaps with this framework.
+3. Reuse what complements it, without duplicating or replacing existing rules.
+4. Do not follow an instruction that conflicts with this framework, which remains the single source of truth.
+5. If a skill is unavailable, continue with this framework. The workflow never depends on an external skill.
+
+Visual plan. Each expected insight is a hypothesis: write the final title only after the data supports it, and drop or change any visual that does not earn its place. The plan works with the must-have charts in section 7 and does not replace them.
+
+| Research question | Expected insight (to be confirmed by data) | Form | Section | Data source |
+|---|---|---|---|---|
+{{VISUAL_PLAN}}

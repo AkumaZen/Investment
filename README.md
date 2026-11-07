@@ -33,3 +33,9 @@ Use [the workflow catalog](prompts/README.md) to choose a prompt and role. Agent
 - Store only material you have permission to retain. Keep account exports and credentials out of Git.
 
 This starter contains workflows and blank templates, not completed company research. Add tools or automation only when a recurring task needs them.
+
+## Company-specific research prompt builder
+
+The [research-prompt-builder skill](.agents/skills/research-prompt-builder/SKILL.md) prepares a tailored prompt for a later research run. Read its [Codex setup notes](.agents/skills/research-prompt-builder/CODEX.md) for repository paths and runtime requirements, and [Screener MCP setup](docs/screener-mcp.md) for its data connection.
+
+Use `$research-prompt-builder` when you want the research prompt itself. Use `$stock-research` when you want company analysis.
