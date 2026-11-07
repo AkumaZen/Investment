@@ -29,7 +29,7 @@
 | 4 | Page plan / storyboard (headline + exhibit per page) | `v3/storyboard.md` | DONE |
 | 5 | Chart helpers (dependency-free SVG) | `v3/charts.py` | DONE |
 | 6 | Build script + HTML | `v3/build_v3.py` -> `v3/augmont-report.html` | DONE (23 pages, 43 exhibits) |
-| 7 | QA: number checks, desktop/mobile screenshots | `v3/qa-notes.md`, `v3/qa_shots.py` | DONE |
+| 7 | QA: number checks, screenshots, Playwright design lint | `v3/qa-notes.md`, `v3/qa_shots.py`, `v3/playwright/review.mjs` | DONE (0 issues desktop + mobile) |
 | 8 | Local commit (no push) | git log | DONE |
 
 ## How to continue

@@ -13,6 +13,23 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import charts as C  # noqa: E402
 
+
+def _responsive(fn):
+    """Full-width charts get a second, phone-sized drawing so labels stay readable on small screens."""
+    def wrap(*a, **kw):
+        w = kw.get("w", 520)
+        if w < 600:
+            return fn(*a, **kw)
+        mk = dict(kw, w=360)
+        if kw.get("h"):
+            mk["h"] = int(kw["h"] * 0.95)
+        return f'<div class="cw-d">{fn(*a, **kw)}</div><div class="cw-m">{fn(*a, **mk)}</div>'
+    return wrap
+
+
+for _n in ("bars", "grouped", "stacked", "bar_line", "hbars", "waterfall", "diverging"):
+    setattr(C, _n, _responsive(getattr(C, _n)))
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # ---------------------------------------------------------------- sources
@@ -963,7 +980,7 @@ h2{font-size:25px;line-height:1.2;margin:0 0 12px;color:var(--navy)}
 h3{font-size:16px;margin:14px 0 4px;color:var(--navy)}
 h4{font-size:15px;margin:16px 0 6px;color:var(--navy)}
 .grid{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:24px}
-.notes{border-left:3px solid var(--gold);background:var(--goldlt);padding:10px 14px;align-self:start;font-size:13.5px;position:sticky;top:10px}
+.notes{border-left:3px solid var(--gold);background:var(--goldlt);padding:10px 14px;align-self:start;font-size:13.5px}
 .notes .nh{font-weight:700;color:var(--navy);text-transform:uppercase;font-size:12px;letter-spacing:.06em;margin:0 0 6px}
 .notes p{margin:0 0 9px}
 .foot{display:flex;justify-content:space-between;border-top:1px solid var(--line);margin:10px 26px 0;padding:7px 0 10px;font-size:11.5px;color:var(--muted)}
@@ -992,6 +1009,7 @@ figcaption{font-weight:700;color:var(--navy);font-size:14px;margin-bottom:6px}
 .callout{background:#F4F6F9;border-left:4px solid var(--navy);padding:9px 14px;margin:12px 0;font-size:14px}
 .callout p{margin:0}.callout.warn{border-left-color:var(--red);background:#FBF1F1}
 .small{font-size:13px}
+.cw-m{display:none}
 .figt{font-weight:700;color:var(--navy);font-size:14px;margin:0 0 6px}
 .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 6px}
 .kpi{border:1px solid var(--line);border-top:3px solid var(--navy);padding:7px 10px;background:#FAFBFC}
@@ -1062,14 +1080,15 @@ figcaption{font-weight:700;color:var(--navy);font-size:14px;margin-bottom:6px}
  .kpis{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
  .band span:last-child{display:none}
  .toc{columns:1}
+ .cw-d{display:none}.cw-m{display:block}
+ .t.fin td,.t.fin th{font-size:11px;padding:3px 3px}
  .t{font-size:12.5px}.t th,.t td{padding:4px 5px}
- .notes{position:static}
  .flow,.cycle{flex-direction:column}.farrow,.carrow{transform:rotate(90deg)}
  .gkids{grid-template-columns:1fr 1fr}.tl{grid-template-columns:1fr 1fr}
  h2{font-size:21px}.ctitle{font-size:27px}
 }
 @media (max-width:480px){.grid3{grid-template-columns:minmax(0,1fr)}}
-@media print{body{background:#fff}.page{margin:0;border:0;max-width:none}.notes{position:static}}
+@media print{body{background:#fff}.page{margin:0;border:0;max-width:none}}
 """
 
 

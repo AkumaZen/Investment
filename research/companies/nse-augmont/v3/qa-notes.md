@@ -29,3 +29,14 @@
 - No verdict, rating or fair value (user instruction). Valuation page shows dated facts only.
 - Disclaimer has a placeholder for the publisher's SEBI RA registration details. The user must fill it in before distribution.
 - PDF export not done (user asked for HTML first). `@media print` rules exist but print layout was not reviewed.
+
+## Playwright design review (added 7 Nov 2026)
+
+- Tool: `playwright/review.mjs` (npm `playwright@1.49.1`, runs the installed Edge; no browser download).
+  Run `npm install` once in `v3/playwright/`, then `node review.mjs`. Output: `qa/pw/<desktop|mobile>-pNN.png` and `qa/pw/report.json`.
+- Automated checks: page sideways scroll, sticky/fixed elements, elements wider than their container, tables that need scrolling,
+  chart labels smaller than 9px, clipped chart labels, overlapping chart labels, body text under 11px, console errors.
+- First run: desktop clean; mobile had 12 charts with labels under 9px and 1 table needing scroll.
+- Fixes: "In short" box no longer sticky (user request). Full-width charts now also render a phone-sized version (CSS swaps them under 820px).
+  Statement tables tighter on phones.
+- Final run: desktop 0 issues, mobile 0 issues, 0 console errors across all 23 pages.
