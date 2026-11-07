@@ -1,0 +1,44 @@
+# Augmont report v3 - plain-language, chart-led rebuild
+
+**Read this file first when resuming.** Tick a stage only when its output file exists.
+
+## Brief (fixed by the user, 2026-11-07)
+
+- Readers: paid clients. Language must be light and plain. Every page needs real visuals of metrics, like the reference broker reports.
+- Output: one HTML file `v3/augmont-report.html`. No PDF yet.
+- No verdict, rating or price target for now (added later by the user).
+- Refresh price and financials with the Screener MCP tool.
+- Do not push. Local commits are OK. Do not stage the two root PDFs (`Augmont_Equity_Research_Revamped.pdf`, `Augmont_Report_Critique.pdf`).
+- References: `references/equity-reports/` (7 PDFs + README with design lessons). Do not ask the user about them.
+- ChatGPT share conversation was read (5 user turns; last attempt hit usage limit, no output). Nothing in it beyond the request already captured here.
+
+## Inputs to reuse (already verified in earlier work)
+
+- `../facts-research-q2-deck.md` (32-page Q2 FY27 deck), `../facts-q2-fy27-call.md` (call), `../facts-research-ar26.md` (FY26 AR),
+  `../facts-research-q2-results.md`, `../facts-research-q1-deck.md`, `../facts-research-prospectus.md`, `../regulatory-and-competition.md`,
+  `../research-financials.md`, `../data/*.json`, `../model.py` / `../data/model-output.json`.
+- Earlier caveats in `../HANDOFF.md` still hold (owner vs standalone profit, negative CFO, unverified items).
+
+## Stages
+
+| # | Stage | Output | Status |
+|---|---|---|---|
+| 1 | Download + study references | `references/equity-reports/README.md` | DONE |
+| 2 | Refresh Screener data | `v3/data/screener-refresh-2026-11-07.md` | DONE |
+| 3 | Facts with sources (kept inside the build script per exhibit, dumped to chart-data.json) | `v3/build_v3.py`, `v3/chart-data.json` | DONE |
+| 4 | Page plan / storyboard (headline + exhibit per page) | `v3/storyboard.md` | DONE |
+| 5 | Chart helpers (dependency-free SVG) | `v3/charts.py` | DONE |
+| 6 | Build script + HTML | `v3/build_v3.py` -> `v3/augmont-report.html` | DONE (23 pages, 43 exhibits) |
+| 7 | QA: number checks, desktop/mobile screenshots | `v3/qa-notes.md`, `v3/qa_shots.py` | DONE |
+| 8 | Local commit (no push) | git log | DONE |
+
+## How to continue
+
+- Edit text or data in `v3/build_v3.py`, then run `python -I build_v3.py` from `v3/`.
+- Re-check visuals: `python -I qa_shots.py desktop 1 4` (or `mobile 1 2`); PNGs land in `v3/qa/`.
+- Next edition (when the user asks): add verdict / bear-base-bull fair value on page 19, PDF export, fill the SEBI RA disclaimer placeholder, update with Q3 FY27 results.
+
+## Log
+
+- 2026-11-07: Stage 1 done. Chrome extension unavailable (account mismatch); ChatGPT share read via headless Edge.
+- 2026-11-07: Stages 2-8 done. Report built and reviewed at desktop and phone widths; 9 defects fixed (see qa-notes.md).

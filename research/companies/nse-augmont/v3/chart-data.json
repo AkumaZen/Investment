@@ -1,0 +1,224 @@
+{
+ "data": {
+  "price": {
+   "cmp": 922,
+   "mcap": 8420.07,
+   "hi52": 1405,
+   "lo52": 798,
+   "ipo_price": 788,
+   "shares_cr": 9.1373505,
+   "fv": 5
+  },
+  "share_sep26": {
+   "Promoters": 81.91,
+   "FIIs": 1.78,
+   "DIIs": 2.92,
+   "Public": 13.37,
+   "holders": 62362
+  },
+  "years": [
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "rev": [
+   20641,
+   25865,
+   30513,
+   34921,
+   66231,
+   94186
+  ],
+  "op": [
+   11,
+   37,
+   70,
+   106,
+   305,
+   387
+  ],
+  "oi": [
+   26,
+   7,
+   10,
+   27,
+   21,
+   96
+  ],
+  "pat": [
+   19,
+   32,
+   40,
+   76,
+   227,
+   348
+  ],
+  "sa_pat": [
+   18,
+   32,
+   39,
+   57,
+   111,
+   153
+  ],
+  "cfo": [
+   null,
+   53,
+   -55,
+   97,
+   105,
+   -42
+  ],
+  "deck31": {
+   "cats": [
+    "FY24",
+    "FY25",
+    "FY26",
+    "H1 FY27"
+   ],
+   "ebitda": [
+    131,
+    325,
+    482,
+    265
+   ],
+   "pat": [
+    76,
+    227,
+    348,
+    181
+   ],
+   "equity": [
+    187,
+    415,
+    933,
+    1728
+   ],
+   "roe": [
+    49.9,
+    74.2,
+    51.0,
+    27.1
+   ],
+   "roce": [
+    49.3,
+    70.1,
+    40.3,
+    24.6
+   ]
+  },
+  "q": [
+   "Q1 FY26",
+   "Q2 FY26",
+   "Q3 FY26*",
+   "Q4 FY26",
+   "Q1 FY27",
+   "Q2 FY27"
+  ],
+  "q_rev": [
+   14551.6,
+   21692.2,
+   27948.6,
+   29993.8,
+   18945.6,
+   15835.5
+  ],
+  "q_pat": [
+   72.0,
+   112.7,
+   97.1,
+   66.6,
+   60.9,
+   120.3
+  ],
+  "q_ebitda": [
+   103.2,
+   155.8,
+   130.6,
+   92.5,
+   84.1,
+   180.8
+  ],
+  "q_sa_pat": [
+   26.7,
+   34.2,
+   49.9,
+   42.0,
+   21.9,
+   84.6
+  ]
+ },
+ "calc": {
+  "pat_per100": [
+   0.09,
+   0.12,
+   0.13,
+   0.22,
+   0.34,
+   0.37
+  ],
+  "q_margin": [
+   0.71,
+   0.72,
+   0.47,
+   0.31,
+   0.44,
+   1.14
+  ],
+  "owner_ttm": 335.4,
+  "pe": 25.1,
+  "owner_eq": 1696.7,
+  "bvps": 186.0,
+  "pb": 5.0,
+  "cash_less_debt": 161.1,
+  "ev": 8259.0,
+  "ttm_ebitda_ex_oi": 408.6,
+  "ev_ebitda": 20.2,
+  "vs_ipo": 17.0,
+  "rev_x": 4.6,
+  "pat_x": 18.0,
+  "sum_pat": 723,
+  "sum_cfo": 158
+ },
+ "sources": {
+  "deck": [
+   "Company Q2 FY27 investor presentation, 4 Nov 2026",
+   "https://augmont.com/assets/files/stakeholders/board-meetings/Q2%20FY%202026-27_Investor%20Presentation.pdf"
+  ],
+  "deck1": [
+   "Company Q1 FY27 investor presentation, 21 Sep 2026",
+   "https://augmont.com/assets/files/stakeholders/board-meetings/Investors%20presentation%20for%20financial%20results_June%20Quarter%202026.pdf"
+  ],
+  "res": [
+   "Q2 FY27 results filing (board outcome), 4 Nov 2026",
+   "https://augmont.com/assets/files/stakeholders/board-meetings/Outcome%20of%20Board%20Meeting%20dated%2004%20November%202026.pdf"
+  ],
+  "ar": [
+   "Annual Report FY2025-26",
+   "https://augmont.com/assets/files/stakeholders/financials/Annual%20Report%202025-26.pdf"
+  ],
+  "pros": [
+   "IPO prospectus, 25 Aug 2026",
+   "https://augmont.com/assets/files/stakeholders/ipo%20disclosures/Project%20Almond%20-%20Prospectus%20%28filing%20version%29%28signed%29.pdf"
+  ],
+  "scr": [
+   "Screener.in (consolidated and standalone), fetched 7 Nov 2026",
+   "https://www.screener.in/company/AUGMONT/consolidated/"
+  ],
+  "call": [
+   "Q2 FY27 earnings call transcript, 5 Nov 2026 (machine transcript)",
+   null
+  ],
+  "sebi": [
+   "SEBI caution on digital gold, 8 Nov 2025",
+   "https://www.sebi.gov.in/sebi_data/attachdocs/nov-2025/1762580259409.pdf"
+  ],
+  "nse": [
+   "NSE press release on EGR partner, 26 Sep 2026",
+   "https://nsearchives.nseindia.com//web/pressrelease/2026-09/PR_cc_26092026_20260926125056.pdf"
+  ]
+ }
+}
