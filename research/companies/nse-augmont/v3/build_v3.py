@@ -176,8 +176,8 @@ f0 = lambda v: f"{v:,.0f}"  # noqa: E731
 # ================================================================= PAGE 1
 rail = f"""
 <div class="rail">
-  <div class="rbox verdict"><p class="rk">Verdict</p><p class="rv">Not rated in this edition</p>
-  <p class="rs">Rating and fair value will be added in the next edition.</p></div>
+  <div class="rbox verdict"><p class="rk">Base case FY29 value</p><p class="rv">Rs __BASE29__</p>
+  <p class="rs">Scenario value at 20x FY29 owner EPS (page 20). Bear Rs __BEAR29__, bull Rs __BULL29__. No rating in this edition.</p></div>
   <div class="rbox"><p class="rh">Company data</p>
   {table(["", ""], [
       ["NSE / BSE", "AUGMONT / 544888"],
@@ -834,20 +834,157 @@ vt = table(["Measure", "Value", "How it is worked out"], [
     ["Price vs IPO price", f"+{CALC['vs_ipo']:.0f}%", "922 vs 788"],
 ], cls="std")
 body = f"""
-<p>This edition gives no rating or target price. The table below only shows where the share price stands today, using reported numbers.</p>
+<p>First, where the share price stands today, using reported numbers only. The next two pages build bear, base and bull cases to FY29.</p>
 {vt}
 <p class="src">{src("scr", ("res", "6, 8"), ("ar", 84))} All ratios are calculated (calc.).</p>
 <h4>Which yardstick fits this business?</h4>
-<p><b>Price to sales is not useful</b>: revenue mostly reflects the gold price. <b>Price to earnings</b> works, but only on profit that belongs to shareholders,
-and after checking how much came from one-off items (the Q2 silver gain, FY26 derivative gains of Rs 77 cr in other income).
-<b>Price to book</b> is useful because profit depends on how much capital is in the business.
-The next edition will build bear, base and bull cases on these lines.</p>
+<p><b>Price to sales is not useful</b>: revenue mostly reflects the gold price, and Augmont keeps under Rs 1 of every Rs 100 of sales.
+<b>EV/EBITDA adds little</b>: the company has almost no debt and tiny depreciation, so EBITDA and profit move together.
+<b>Price to earnings (P/E) is our main yardstick</b>, on profit that belongs to Augmont's shareholders (after the minority partners' share),
+and on the full 9.14 cr shares in issue after the IPO.
+<b>Price to book is the cross-check</b>: profit is capped by how much capital the company has, because banks do not fund gold stock for trading.
+So a P/E only makes sense if the return on equity behind it does too.</p>
 """
-page("Valuation snapshot", "Where the stock stands today (facts only, no target)", body,
+page("Valuation snapshot", "Where the stock stands today", body,
      [f"About {CALC['pe']}x the last 12 months' owner profit.",
       f"About {CALC['pb']}x book value after the IPO.",
       "Price is 17% above the IPO price and 34% below the 52-week high.",
-      "Rating and fair value: next edition."])
+      "Main yardstick: P/E on owner profit. Cross-check: price to book."])
+
+# ================================================================= PAGES 20-21: scenarios
+import valuation as V  # noqa: E402
+VAL = V.run()
+SC = VAL["scenarios"]
+FYS = ["FY27E", "FY28E", "FY29E"]
+B29 = SC["Base"]["rows"]["FY29E"]
+CALC["base_fy29_target"] = round(B29["target"], 0)
+CALC["base_fy29_eps"] = round(B29["eps"], 1)
+SC_COL = {"Bear": C.RED, "Base": C.NAVY, "Bull": C.GREEN}
+
+tp = exhibit("FY29 value per share in each case vs today's price (Rs)",
+             C.bars(["Today (7 Nov 2026)", "Bear FY29", "Base FY29", "Bull FY29"],
+                    [VAL["cmp"]] + [SC[k]["rows"]["FY29E"]["target"] for k in ("Bear", "Base", "Bull")],
+                    "FY29 scenario values", colors=[C.GREY, C.RED, C.NAVY, C.GREEN], w=660, h=250,
+                    value_labels=[f"{VAL['cmp']:,.0f}"] + [
+                        f"{SC[k]['rows']['FY29E']['target']:,.0f} ({SC[k]['rows']['FY29E']['ret']:+.0f}%)"
+                        for k in ("Bear", "Base", "Bull")]),
+             "Source: our estimates (calc.) on owner earnings per share x P/E (Bear 14x, Base 20x, Bull 26x). "
+             "Price from Screener, 7 Nov 2026.")
+epsx = exhibit("Owner earnings per share (Rs)",
+               C.grouped(["FY25", "FY26"] + FYS,
+                         [(k, [None, None] + [SC[k]["rows"][f]["eps"] for f in FYS], SC_COL[k]) for k in SC]
+                         + [("Reported", [VAL["hist"]["FY25"]["eps"], VAL["hist"]["FY26"]["eps"], None, None, None], C.GREY)],
+                         "EPS path", dec=0, w=360, h=230),
+               "Source: FY25 Screener; FY26 results filing p.6; FY27E-FY29E our estimates on 9.14 cr shares.")
+opmx = exhibit("Operating margin: reported vs FY29 assumed (% of sales)",
+               C.bars(["FY25", "FY26", "H1 FY27", "Bear FY29", "Base FY29", "Bull FY29"],
+                      [305 / 66231 * 100, 385.95 / 94186.2 * 100, 217.4 / 34781.1 * 100]
+                      + [SC[k]["rows"]["FY29E"]["opm"] for k in ("Bear", "Base", "Bull")],
+                      "Margin path", dec=2, w=360, h=230,
+                      colors=[C.GREY, C.GREY, C.GREY, C.RED, C.NAVY, C.GREEN]),
+               "Source: Screener; results filing p.6; our estimates.")
+drv = table(["What we assume", "Bear", "Base", "Bull"], [
+    ["H2 FY27 sales (Rs cr); H1 actual 34,781", *[f0(SC[k]["h2"]["sales"]) for k in SC]],
+    ["H2 FY27 operating margin; H1 actual 0.63%", *[f'{SC[k]["h2"]["opm"]:.2f}%' for k in SC]],
+    ["Sales growth FY28 / FY29", *[f'{SC[k]["drivers"]["FY28E"]["growth"]}% / {SC[k]["drivers"]["FY29E"]["growth"]}%' for k in SC]],
+    ["Operating margin FY28 / FY29", *[f'{SC[k]["drivers"]["FY28E"]["opm"]:.2f}% / {SC[k]["drivers"]["FY29E"]["opm"]:.2f}%' for k in SC]],
+    ["Finance cost per year, FY28-29 (Rs cr)", *[f0(SC[k]["drivers"]["FY29E"]["interest"]) for k in SC]],
+    ["P/E applied (held flat across years)", *[f'{SC[k]["pe"]}x' for k in SC]],
+    ["FY29 return on equity (calc.)", *[f'{SC[k]["rows"]["FY29E"]["roe"]:.0f}%' for k in SC]],
+    ["FY29 price to book at the value (calc.)", *[f'{SC[k]["rows"]["FY29E"]["pb_at_target"]:.1f}x' for k in SC]],
+    ["FY29 value per share (Rs)", *[(f'{SC[k]["rows"]["FY29E"]["target"]:,.0f}', "bold") for k in SC]],
+    ["Yearly return from Rs 922 to Mar 2029", *[f'{SC[k]["rows"]["FY29E"]["cagr"]:+.1f}%' for k in SC]],
+], cls="fin")
+body = f"""
+<p>Management gives no numerical guidance ("we'll just not be able to provide any specific numerical guidance", call p.14).
+So all three cases are our own estimates, built from what the business has already shown. FY27 starts from the actual first half and adds our estimate for the second half.</p>
+<div class="callout"><p><b>Base case FY29 value: Rs {B29['target']:,.0f} per share</b>, which is {B29['eps']:.1f} of owner earnings per share in FY29 x 20 P/E.
+That is {B29['ret']:+.0f}% from Rs 922, or about {B29['cagr']:.0f}% a year to March 2029. This is a scenario value, not a rating or a recommendation.</p></div>
+{tp}
+{duo(epsx, opmx)}
+<h4>The three cases at a glance</h4>
+{drv}
+<p class="src">Source: our estimates (calc.); H1 FY27 actuals from the results filing p.6. Full year-wise tables on the next page.</p>
+<h4>What each case means</h4>
+<p><b style="color:{C.RED}">Bear.</b> {SC['Bear']['why']}</p>
+<p><b style="color:{C.NAVY}">Base.</b> {SC['Base']['why']}</p>
+<p><b style="color:{C.GREEN}">Bull.</b> {SC['Bull']['why']}</p>
+<div class="callout warn"><p><b>Why the base value is below today's price for FY27 and only a little above it for FY28.</b>
+At 20x, the stock needs about Rs {VAL['cmp']/20:.0f} of earnings per share to justify Rs 922. The base case gets there only in FY28.
+Today's 25x P/E already prices in part of the base-case growth.</p></div>
+"""
+page("Valuation scenarios", f"Base case puts Augmont at Rs {B29['target']:,.0f} by FY29, {B29['ret']:.0f}% above today", body,
+     [f"Base FY29: EPS Rs {B29['eps']:.1f} x 20 = Rs {B29['target']:,.0f}.",
+      f"Bear FY29: Rs {SC['Bear']['rows']['FY29E']['target']:,.0f}, if old-gold margins fade back to FY26 levels.",
+      f"Bull FY29: Rs {SC['Bull']['rows']['FY29E']['target']:,.0f}, if cash turns faster and margins rise.",
+      f"The case hinges on margin: each 0.1% of sales is about Rs {B29['sales']*0.001*(1-VAL['tax_pct']/100)*(1-VAL['nci_pct']/100):.0f} cr of owner profit at FY29 base sales.",
+      "No guidance from management; all projections are ours."])
+
+
+def sc_table(name):
+    s = SC[name]
+    h = VAL["hist"]
+    cols = ["FY25", "FY26"] + FYS
+    rows_all = [h["FY25"], h["FY26"]] + [s["rows"][f] for f in FYS]
+    prev_owner = [None, h["FY25"]["owner"]]
+
+    def line(label, fn, bold=False):
+        cells = [fn(r, i) for i, r in enumerate(rows_all)]
+        return [label] + [((c, "bold") if bold else c) for c in cells]
+
+    def est(i):
+        return i >= 2
+    tax = lambda r: (r["pbt"] - r["pat"]) / r["pbt"] * 100  # noqa: E731
+    out = [
+        line("Sales", lambda r, i: f0(r["sales"]), True),
+        line("Expenses", lambda r, i: f0(r["sales"] - r["op"])),
+        line("Operating profit", lambda r, i: f0(r["op"]), True),
+        line("OPM %", lambda r, i: f'{r["op"] / r["sales"] * 100:.2f}'),
+        line("Other income", lambda r, i: f0(r["oi"])),
+        line("Interest", lambda r, i: f0(r["interest"])),
+        line("Depreciation", lambda r, i: f0(r["dep"])),
+        line("Profit before tax", lambda r, i: f0(r["pbt"])),
+        line("Tax %", lambda r, i: f"{tax(r):.1f}"),
+        line("Net profit", lambda r, i: f0(r["pat"]), True),
+        line("Owner profit (after minority)", lambda r, i: f0(r["owner"])),
+        line("EPS, Rs", lambda r, i: f'{r["eps"]:.1f}', True),
+        line("Owner profit growth %", lambda r, i: "" if i == 0 else
+             f'{(r["owner"] / (prev_owner[1] if i == 1 else rows_all[i - 1]["owner"]) - 1) * 100:.0f}'),
+        line("Net profit margin %", lambda r, i: f'{r["pat"] / r["sales"] * 100:.2f}'),
+        line(f"Value per share at {s['pe']}x P/E, Rs", lambda r, i: f'{r["target"]:,.0f}' if est(i) else "", True),
+        line("Return vs Rs 922", lambda r, i: f'{r["ret"]:+.0f}%' if est(i) else ""),
+        line("Yearly return (CAGR) from 7 Nov 2026", lambda r, i: (f'{r["cagr"]:+.1f}%' if r.get("cagr") is not None
+                                                                   else "under 1 yr") if est(i) else ""),
+    ]
+    return table([f"{name} case, Rs cr"] + cols, out, cls=f"fin wide sc {name.lower()}")
+
+
+body = f"""
+<p>Laid out like a Screener profit and loss table. FY25 and FY26 are reported; FY27E to FY29E are our estimates.
+FY27E = H1 FY27 actual + our H2 estimate. EPS uses the full 9.14 cr shares for every projected year.</p>
+<h4 style="color:{C.RED}">Bear case (P/E 14x)</h4>{sc_table("Bear")}
+<h4 style="color:{C.NAVY}">Base case (P/E 20x)</h4>{sc_table("Base")}
+<h4 style="color:{C.GREEN}">Bull case (P/E 26x)</h4>{sc_table("Bull")}
+<p class="src">Source: FY25 Screener (rounded); FY26 Annual Report p.84 and results filing p.6; H1 FY27 results filing p.6; FY27E-FY29E our estimates (calc.).
+Reported FY25/FY26 EPS use the weighted share count before the IPO, so they are not exactly comparable with the projected EPS.</p>
+<h4>Key assumptions and caveats</h4>
+<ul class="small">
+<li><b>Guided vs estimated.</b> Nothing here is company guidance. Management declined to give FY27 numbers (call p.14).
+Sales, margins, other income, interest, depreciation, tax ({VAL['tax_pct']}%) and minority share ({VAL['nci_pct']}% of profit) are all our estimates.
+Interest, depreciation and tax are the least certain bridge lines. The Q2 FY27 finance cost of Rs 18 cr is not explained in the filings, so we keep a similar cost in every case.</li>
+<li><b>Capital check.</b> Banks do not fund gold stock for trading (call p.12), so growth must come from retained profit.
+We assume no dividend and no new shares. In every case, sales per rupee of equity stays at about 36-43x, close to the Q2 FY27 level of about 37x (annualised).
+Faster growth than this would need more equity, which would dilute EPS.</li>
+<li><b>Shares.</b> 9.14 cr shares after the IPO (prospectus p.107). No further dilution is disclosed. ESOPs or options, if any, are not captured.</li>
+<li><b>Multiples.</b> P/E is held flat across the years within each case and differs between cases (bear 14x, base 20x, bull 26x vs about 25x today).
+That is a simplification. In reality the multiple moves with sentiment and with proof of cash conversion.</li>
+<li><b>Gold price.</b> We assume no big change in the rupee gold price. Higher prices raise sales but cut the tonnes the same capital can buy, so profit moves much less than sales.</li>
+<li><b>One-offs.</b> No repeat of the Q2 FY27 silver import gain is assumed. Other income includes derivative gains that can swing either way.</li>
+<li><b>Not modelled.</b> A sum-of-the-parts view (SPOT, Gold For All, refining, EGR) is possible but segment profit is not disclosed. EGR income is not included in any case.</li>
+<li>These are scenario bands, not forecasts. This is not investment advice, and the author is not acting as a licensed financial adviser.</li>
+</ul>
+"""
+page("Scenario tables", "Bear, base and bull: year-wise projections to FY29", body, None, cls="fs")
 
 # ================================================================= PAGE 20: triggers
 trig = table(["When", "What to watch", "Status (7 Nov 2026)"], [
@@ -894,7 +1031,7 @@ body = f"""
 """
 page("Risks", "Key risks", body,
      ["The three biggest: thin margins, weak cash conversion and related-party concentration.",
-      "Several risks are checkable every quarter (see page 20)."])
+      "Several risks are checkable every quarter (see page 22)."])
 
 # ================================================================= PAGE 22: statements
 pl = table(["Rs cr", "FY21", "FY22", "FY23", "FY24", "FY25", "FY26", "H1 FY27"], [
@@ -957,7 +1094,7 @@ body = ('<div class="cols2"><div><h4>Glossary</h4><dl class="gl">'
 Consolidated figures unless marked standalone or parent. Screener rounds to whole crore; filings are used where they differ.
 Q3 FY26 quarterly figures are derived as FY26 less the other three quarters.</p>
 <h4>Disclaimer</h4><p class="small">This report is for information and education only. It is not an offer or a recommendation to buy or sell any security.
-It does not contain a rating or price target. Figures come from public filings and data providers believed to be reliable, but accuracy is not guaranteed.
+It does not contain a rating. The bear, base and bull values are scenario estimates built on stated assumptions, not forecasts or price targets for trading. Figures come from public filings and data providers believed to be reliable, but accuracy is not guaranteed.
 Past performance does not guarantee future results. Readers should make their own decisions or consult a registered adviser.
 [Add the publisher's SEBI research analyst registration and disclosure details here before distribution.]</p>
 </div></div>""")
@@ -1119,6 +1256,8 @@ def render():
         cnt[0] += 1
         return f"<figcaption>Exhibit {cnt[0]}:"
     body_html = re.sub(r"<figcaption>Exhibit \d+:", _renum, body_html)
+    for k, v in (("__BASE29__", "Base"), ("__BEAR29__", "Bear"), ("__BULL29__", "Bull")):
+        body_html = body_html.replace(k, f'{SC[v]["rows"]["FY29E"]["target"]:,.0f}')
     html = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>Augmont Enterprises Study</title>'

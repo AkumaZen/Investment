@@ -25,7 +25,7 @@
 
 - Q3 FY26 quarter is derived (FY26 less the other three quarters) and marked with * on every chart.
 - The earnings call is a machine transcript; quotes are shown as transcribed.
-- No verdict, rating or fair value (user instruction). Valuation page shows dated facts only.
+- No rating (user instruction). Scenario values on pages 20-21 are modeller estimates; management gave no guidance.
 - Disclaimer has a placeholder for the publisher's SEBI RA registration details. The user must fill it in before distribution.
 - PDF export not done (user asked for HTML first). `@media print` rules exist but print layout was not reviewed.
 
@@ -39,3 +39,10 @@
 - Fixes: "In short" box no longer sticky (user request). Full-width charts now also render a phone-sized version (CSS swaps them under 820px).
   Statement tables tighter on phones.
 - Final run: desktop 0 issues, mobile 0 issues, 0 console errors across all 23 pages.
+
+## Valuation scenarios (added 8 Nov 2026)
+
+- `python -I valuation.py` prints all three cases; asserts PBT = operating profit + other income - interest - depreciation and FY27E base sales.
+- First Playwright pass after adding pages 20-21: 0 flagged issues, but a visual check found overlapping labels in the grouped margin chart. Replaced with single bars (FY25, FY26, H1 FY27, Bear/Base/Bull FY29).
+- Final run: desktop 0 issues, mobile 0 issues, 0 console errors across 25 pages.
+- Limit: the automated overlap check did not catch the grouped-bar label collision; check grouped charts by eye.

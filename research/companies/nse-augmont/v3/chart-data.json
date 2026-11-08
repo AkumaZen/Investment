@@ -181,7 +181,9 @@
   "rev_x": 4.6,
   "pat_x": 18.0,
   "sum_pat": 723,
-  "sum_cfo": 158
+  "sum_cfo": 158,
+  "base_fy29_target": 1134.0,
+  "base_fy29_eps": 56.7
  },
  "sources": {
   "deck": [

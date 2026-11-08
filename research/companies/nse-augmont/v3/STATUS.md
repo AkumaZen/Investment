@@ -6,7 +6,7 @@
 
 - Readers: paid clients. Language must be light and plain. Every page needs real visuals of metrics, like the reference broker reports.
 - Output: one HTML file `v3/augmont-report.html`. No PDF yet.
-- No verdict, rating or price target for now (added later by the user).
+- No rating for now. Bear/base/bull scenario values to FY29 added 2026-11-08 on user request (`valuation.py`, pages 20-21).
 - Refresh price and financials with the Screener MCP tool.
 - Do not push. Local commits are OK. Do not stage the two root PDFs (`Augmont_Equity_Research_Revamped.pdf`, `Augmont_Report_Critique.pdf`).
 - References: `references/equity-reports/` (7 PDFs + README with design lessons). Do not ask the user about them.
@@ -31,14 +31,17 @@
 | 6 | Build script + HTML | `v3/build_v3.py` -> `v3/augmont-report.html` | DONE (23 pages, 43 exhibits) |
 | 7 | QA: number checks, screenshots, Playwright design lint | `v3/qa-notes.md`, `v3/qa_shots.py`, `v3/playwright/review.mjs` | DONE (0 issues desktop + mobile) |
 | 8 | Local commit (no push) | git log | DONE |
+| 9 | Bear/base/bull scenarios to FY29 (business-valuation-scenarios skill) | `v3/valuation.py`, `v3/data/valuation-scenarios.json`, pages 19-21 | DONE (awaiting user approval of numbers; dashboard JSON only after approval) |
 
 ## How to continue
 
 - Edit text or data in `v3/build_v3.py`, then run `python -I build_v3.py` from `v3/`.
 - Re-check visuals: `python -I qa_shots.py desktop 1 4` (or `mobile 1 2`); PNGs land in `v3/qa/`.
-- Next edition (when the user asks): add verdict / bear-base-bull fair value on page 19, PDF export, fill the SEBI RA disclaimer placeholder, update with Q3 FY27 results.
+- Scenario drivers live in `SCEN` in `valuation.py`; rebuild with `python -I build_v3.py`.
+- Next edition (when the user asks): rating, PDF export, fill the SEBI RA disclaimer placeholder, update with Q3 FY27 results.
 
 ## Log
 
 - 2026-11-07: Stage 1 done. Chrome extension unavailable (account mismatch); ChatGPT share read via headless Edge.
+- 2026-11-08: Stage 9 done. Base FY29 value Rs 1,134 (20x FY29E owner EPS 56.7); bear 397 (14x); bull 2,191 (26x). 25 pages, 46 exhibits.
 - 2026-11-07: Stages 2-8 done. Report built and reviewed at desktop and phone widths; 9 defects fixed (see qa-notes.md).

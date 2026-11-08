@@ -25,7 +25,9 @@ All numbers come from `chart-data.json` (each block carries its source). Derived
 | 16 | IPO money went into working capital | Waterfall 825 -> 573; use-of-funds bar | Prospectus p107-130, results p13/16 |
 | 17 | Concentration: one related customer bought 27% of sales | Customer & supplier concentration bars; related-party table; state mix | Prospectus p32-35, 251, 364-365 |
 | 18 | Management and ownership | Board table; shareholding donut; promoter holders bar | Deck p22-23, prospectus p125, Screener |
-| 19 | Valuation snapshot (facts only, no target) | Multiples table with formulas | Screener, results |
+| 19 | Valuation snapshot + which yardstick fits | Multiples table with formulas | Screener, results |
+| 20 | Valuation scenarios: base FY29 value | FY29 value bars, EPS path, margin bars, drivers table | valuation.py |
+| 21 | Scenario tables to FY29 | Screener-style bear/base/bull tables + caveats | valuation.py |
 | 20 | Growth triggers to watch | Trigger timeline with dates/status | Call, NSE, prospectus |
 | 21 | Key risks | Risk table with "what to watch" | AR, prospectus, SEBI |
 | 22 | Financial statements | P&L, balance sheet, cash flow tables | Screener, results, AR |
