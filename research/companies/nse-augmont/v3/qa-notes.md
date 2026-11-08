@@ -31,8 +31,8 @@
 
 ## Playwright design review (added 7 Nov 2026)
 
-- Tool: `playwright/review.mjs` (npm `playwright@1.49.1`, runs the installed Edge; no browser download).
-  Run `npm install` once in `v3/playwright/`, then `node review.mjs`. Output: `qa/pw/<desktop|mobile>-pNN.png` and `qa/pw/report.json`.
+- Tool: moved on 8 Nov 2026 to the shared `tools/report-visual-check/review.mjs` (npm `playwright@1.49.1`, runs the installed Edge; no browser download).
+  Run `npm install` once there, then `node review.mjs ../../research/companies/nse-augmont/v3/augmont-report.html`. Output: `v3/qa/pw/` page shots, contact sheets and `report.json`.
 - Automated checks: page sideways scroll, sticky/fixed elements, elements wider than their container, tables that need scrolling,
   chart labels smaller than 9px, clipped chart labels, overlapping chart labels, body text under 11px, console errors.
 - First run: desktop clean; mobile had 12 charts with labels under 9px and 1 table needing scroll.
@@ -46,3 +46,13 @@
 - First Playwright pass after adding pages 20-21: 0 flagged issues, but a visual check found overlapping labels in the grouped margin chart. Replaced with single bars (FY25, FY26, H1 FY27, Bear/Base/Bull FY29).
 - Final run: desktop 0 issues, mobile 0 issues, 0 console errors across 25 pages.
 - Limit: the automated overlap check did not catch the grouped-bar label collision; check grouped charts by eye.
+
+## Visual verification pass (8 Nov 2026)
+
+- Script upgraded: new `chart-text-on-bar` check (a label spilling onto a neighbouring bar). Regression test: the old grouped margin chart is flagged 6 times per viewport; the current report is clean.
+- By-eye pass over all 25 pages at desktop and phone (contact sheets, then full-size pages 1, 20, 21) found 4 issues the script did not flag:
+  1. Exhibit 45: grey "Reported" bars sat off-centre in grouped slots. Redrawn as single bars (FY25, FY26, FY29 by case).
+  2. Page 21: "under 1 yr" wrapped badly in the narrow CAGR column on phones. Now "-" with a footnote.
+  3. Cover contents: list numbers 1-24 clashed with page numbers 2-25. Now page number first, no list numbers.
+  4. Cover contents: wrapped lines were indented a few pixels off (em width at two font sizes). Fixed with a pixel hanging indent.
+- Final: script clean on desktop and mobile, 0 console errors; by-eye pass clean.

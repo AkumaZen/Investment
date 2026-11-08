@@ -36,7 +36,7 @@
 ## How to continue
 
 - Edit text or data in `v3/build_v3.py`, then run `python -I build_v3.py` from `v3/`.
-- Re-check visuals: `python -I qa_shots.py desktop 1 4` (or `mobile 1 2`); PNGs land in `v3/qa/`.
+- Re-check visuals (mandatory after each build): `node review.mjs ../../research/companies/nse-augmont/v3/augmont-report.html` from `tools/report-visual-check/`, then the by-eye pass in `learnings/concepts/equity-report-quality-process.md`. Quick single pages: `python -I qa_shots.py desktop 1 4`.
 - Scenario drivers live in `SCEN` in `valuation.py`; rebuild with `python -I build_v3.py`.
 - Next edition (when the user asks): rating, PDF export, fill the SEBI RA disclaimer placeholder, update with Q3 FY27 results.
 

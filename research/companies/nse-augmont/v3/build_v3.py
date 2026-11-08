@@ -870,12 +870,13 @@ tp = exhibit("FY29 value per share in each case vs today's price (Rs)",
                         for k in ("Bear", "Base", "Bull")]),
              "Source: our estimates (calc.) on owner earnings per share x P/E (Bear 14x, Base 20x, Bull 26x). "
              "Price from Screener, 7 Nov 2026.")
-epsx = exhibit("Owner earnings per share (Rs)",
-               C.grouped(["FY25", "FY26"] + FYS,
-                         [(k, [None, None] + [SC[k]["rows"][f]["eps"] for f in FYS], SC_COL[k]) for k in SC]
-                         + [("Reported", [VAL["hist"]["FY25"]["eps"], VAL["hist"]["FY26"]["eps"], None, None, None], C.GREY)],
-                         "EPS path", dec=0, w=360, h=230),
-               "Source: FY25 Screener; FY26 results filing p.6; FY27E-FY29E our estimates on 9.14 cr shares.")
+epsx = exhibit("Owner earnings per share: reported vs FY29 by case (Rs)",
+               C.bars(["FY25", "FY26", "Bear FY29", "Base FY29", "Bull FY29"],
+                      [VAL["hist"]["FY25"]["eps"], VAL["hist"]["FY26"]["eps"]]
+                      + [SC[k]["rows"]["FY29E"]["eps"] for k in ("Bear", "Base", "Bull")],
+                      "EPS path", dec=1, w=360, h=230,
+                      colors=[C.GREY, C.GREY, C.RED, C.NAVY, C.GREEN]),
+               "Source: FY25 Screener; FY26 results filing p.6; FY29 our estimates on 9.14 cr shares. Year-by-year on page 21.")
 opmx = exhibit("Operating margin: reported vs FY29 assumed (% of sales)",
                C.bars(["FY25", "FY26", "H1 FY27", "Bear FY29", "Base FY29", "Bull FY29"],
                       [305 / 66231 * 100, 385.95 / 94186.2 * 100, 217.4 / 34781.1 * 100]
@@ -954,7 +955,7 @@ def sc_table(name):
         line(f"Value per share at {s['pe']}x P/E, Rs", lambda r, i: f'{r["target"]:,.0f}' if est(i) else "", True),
         line("Return vs Rs 922", lambda r, i: f'{r["ret"]:+.0f}%' if est(i) else ""),
         line("Yearly return (CAGR) from 7 Nov 2026", lambda r, i: (f'{r["cagr"]:+.1f}%' if r.get("cagr") is not None
-                                                                   else "under 1 yr") if est(i) else ""),
+                                                                   else "-") if est(i) else ""),
     ]
     return table([f"{name} case, Rs cr"] + cols, out, cls=f"fin wide sc {name.lower()}")
 
@@ -966,7 +967,8 @@ FY27E = H1 FY27 actual + our H2 estimate. EPS uses the full 9.14 cr shares for e
 <h4 style="color:{C.NAVY}">Base case (P/E 20x)</h4>{sc_table("Base")}
 <h4 style="color:{C.GREEN}">Bull case (P/E 26x)</h4>{sc_table("Bull")}
 <p class="src">Source: FY25 Screener (rounded); FY26 Annual Report p.84 and results filing p.6; H1 FY27 results filing p.6; FY27E-FY29E our estimates (calc.).
-Reported FY25/FY26 EPS use the weighted share count before the IPO, so they are not exactly comparable with the projected EPS.</p>
+Reported FY25/FY26 EPS use the weighted share count before the IPO, so they are not exactly comparable with the projected EPS.
+No yearly return is shown for FY27E because March 2027 is less than a year away.</p>
 <h4>Key assumptions and caveats</h4>
 <ul class="small">
 <li><b>Guided vs estimated.</b> Nothing here is company guidance. Management declined to give FY27 numbers (call p.14).
@@ -1207,7 +1209,8 @@ figcaption{font-weight:700;color:var(--navy);font-size:14px;margin-bottom:6px}
 .cols2 ul{padding-left:18px;margin:4px 0}.cols2 li{margin:0 0 6px;font-size:14px}
 .gl dt{font-weight:700;color:var(--navy);margin-top:6px}.gl dd{margin:0 0 0 0;font-size:13.5px}
 .srcs{font-size:13px;padding-left:18px}
-.toc{columns:2;column-gap:36px;font-size:13.5px;margin:6px 0 0;padding-left:18px}
+.toc{columns:2;column-gap:36px;font-size:13.5px;margin:6px 0 0;padding-left:0;list-style:none}
+.toc li{padding-left:38px;text-indent:-38px;break-inside:avoid}.toc .tiny{display:inline-block;width:38px;text-indent:0}
 @media (max-width:820px){
  body{font-size:15px}
  .page{margin:0 0 12px;border-left:0;border-right:0}
@@ -1232,7 +1235,7 @@ figcaption{font-weight:700;color:var(--navy);font-size:14px;margin-bottom:6px}
 def render():
     out = []
     total = len(PAGES)
-    toc = [f"<li>{h} <span class='tiny'>p.{i+1}</span></li>" for i, (_, h, *_r) in enumerate(PAGES) if h]
+    toc = [f"<li><span class='tiny'>p.{i+1}</span>{h}</li>" for i, (_, h, *_r) in enumerate(PAGES) if h]
     for i, (kicker, headline, body, notes, cls) in enumerate(PAGES):
         n = i + 1
         band = (f'<div class="band"><span><b>AUGMONT ENTERPRISES</b> &nbsp;|&nbsp; Initiating coverage: company study</span>'
