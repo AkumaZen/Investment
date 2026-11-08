@@ -8,3 +8,4 @@ Use [the learning template](../templates/learning.md) for a concept or process l
 
 | Date | Topic | Lesson file | Evidence or review | Next check |
 | --- | --- | --- | --- | --- |
+| 2026-11-08 | Building client-grade research reports, with mandatory visual verification | [equity-report-quality-process.md](concepts/equity-report-quality-process.md) | [Augmont v3 QA notes](../research/companies/nse-augmont/v3/qa-notes.md) | Next company report: compare script vs by-eye defects |

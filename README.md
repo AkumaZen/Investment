@@ -12,6 +12,7 @@ A simple home for stock research, reusable AI workflows, and lessons from invest
 | `research/` | Company notes, watchlist, and source records |
 | `learnings/` | Concepts, decision reviews, and lessons |
 | `templates/` | Starting documents for consistent notes |
+| `tools/report-visual-check/` | Playwright visual check for HTML reports (screenshots, contact sheets, layout and chart-label lint) |
 
 ## Start here
 

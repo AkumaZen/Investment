@@ -18,6 +18,7 @@ Use this repository for stock research, analysis prompts, analyst role briefs, a
 Use `.agents/skills/stock-research/SKILL.md` for company analysis, `.agents/skills/stock-valuation/SKILL.md` for valuation, and `.agents/skills/investment-review/SKILL.md` for decision reviews.
 Read a role in `agents/` when its perspective is needed. Role briefs are instructions, not installed agent configurations; use them in the current session unless delegation is requested.
 Use templates for saved output and keep reusable lessons separate from dated company observations.
+For any client report or valuation page in HTML, follow `learnings/concepts/equity-report-quality-process.md`; its visual verification step (`tools/report-visual-check` plus a by-eye pass at desktop and phone width) is required before calling the report done.
 
 ## Boundaries
 
