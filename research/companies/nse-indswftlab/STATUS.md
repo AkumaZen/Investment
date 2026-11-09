@@ -32,16 +32,23 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 |---|---|---|
 | [0] Set up, documents collected, text extracted | Done | docs/INDSWFTLAB, data/doc-index.json |
 | [1] Evidence files | Done | evidence/ (q2fy27-call, q1fy27-call, q2fy27-deck, ar-fy26, care-ma, claims-ledger) |
-| [2] Screener numbers | In progress | data/ |
-| [3] Diagnose, 15 questions, anti-thesis | Not started | notes.md |
+| [2] Screener numbers, peers, source manifest | Done | data/screener-2026-11-09.md, data/source-manifest.md |
+| [3] Diagnose, 15 questions, anti-thesis | In progress | notes.md |
 | [4] Model | Not started | model/valuation.py |
 | [5] Report | Not started | report/report.html |
 | [6] Checks, PDF, final reply | Not started | report/qa/ |
 
 ## Step [1] findings to carry forward
 
-- New warrant issue: 70,00,000 at Rs 196 allotted 17 Sep 2026 (Rs 137.20 cr; Rs 34.30 cr received). Diluted shares 9,39,61,558; Rs 102.90 cr still to come.
+- New warrant issue: 70,00,000 at Rs 196 allotted 17 Sep 2026 to Essix Biosciences (promoter) [NSE-A]; 14,00,000 converted 8 Oct 2026 [NSE-C]. Shares 8,69,61,558; 56,00,000 warrants left; diluted 9,25,61,558; Rs 54.88 cr received, Rs 82.32 cr still to come (step [2] correction of the step [1] figures).
 - Synthimed 7.80% stake appears to be held as CCDs carried at Rs 32 cr (FVTPL, unchanged).
 - About Rs 308 cr in related or unlisted instruments (Khandelwal OCRPS, SFRE loan, Ashok NCDs, Essix shares, Fortune, small caps).
 - Essix conversion conflict in AR FY26: 51 lakh (chairman) vs 80 lakh (directors' report).
 - Guidance drift and claims ledger in evidence/q2fy27-deck.md and evidence/claims-ledger.md.
+
+## Step [2] findings to carry forward
+
+- Peer median market cap / TTM operating profit 17.9x (eight peers, range 10.4x to 25.9x); see data/screener-2026-11-09.md.
+- Operating cash flow negative FY24 to FY26 (Rs -260 cr in total) [Screener].
+- NSE-C filing's own share counts move by 2,50,000, not the 14,00,000 it says were allotted: data conflict.
+- Ind-Swift holds Rs 28.85 cr of Essix shares while Essix funds the company through warrants (circular flow, governance point).
