@@ -1,0 +1,688 @@
+{
+ "inputs": {
+  "price": [
+   349.0,
+   "[Screener] close, 9 Nov 2026"
+  ],
+  "shares_printed": [
+   8.6961558,
+   "8,69,61,558 shares [deck p31, NSE-C]; used for the market-value check"
+  ],
+  "shares_diluted": [
+   9.3961558,
+   "8,83,61,558 after the 8 Oct conversion [E, Inferred] + 56,00,000 warrants [evidence/care-ma.md]"
+  ],
+  "shares_diluted_alt": [
+   9.2561558,
+   "8,69,61,558 printed + 56,00,000 warrants (sensitivity)"
+  ],
+  "fy26_revenue": [
+   635.89,
+   "[deck p23] FY26 operating revenue"
+  ],
+  "h1_revenue_op": [
+   420.97,
+   "[deck p3, call p2] H1 FY27 operating revenue"
+  ],
+  "h1_revenue_line": [
+   416.35,
+   "[deck p29] H1 FY27 revenue from operations line"
+  ],
+  "q2_revenue_op": [
+   234.89,
+   "[call p2] Q2 FY27 operating revenue"
+  ],
+  "h1_ebitda": [
+   75.65,
+   "[deck p29] H1 FY27 operating EBITDA"
+  ],
+  "h1_pat": [
+   55.47,
+   "[deck p29]"
+  ],
+  "h1_tax": [
+   17.2,
+   "[deck p29]"
+  ],
+  "h1_pbt": [
+   73.49,
+   "[deck p29]"
+  ],
+  "h1_depreciation": [
+   15.35,
+   "[deck p29]"
+  ],
+  "h1_finance_cost": [
+   2.04,
+   "[deck p29]"
+  ],
+  "h1_nonop_other_income": [
+   15.23,
+   "[deck p29]"
+  ],
+  "cash_sep26": [
+   322.81,
+   "[deck p30]"
+  ],
+  "current_investments_sep26": [
+   45.03,
+   "[deck p30]"
+  ],
+  "borrowings_sep26": [
+   19.48,
+   "[deck p30] long-term 15.14 + short-term 4.34"
+  ],
+  "inventory_sep26": [
+   168.35,
+   "[deck p30]"
+  ],
+  "receivables_sep26": [
+   234.79,
+   "[deck p30]"
+  ],
+  "payables_sep26": [
+   133.7,
+   "[deck p30]"
+  ],
+  "ppe_cwip_sep26": [
+   351.43,
+   "[deck p30] PP&E 309.61 + CWIP 41.82"
+  ],
+  "oct26_conversion_cash": [
+   20.58,
+   "[NSE-C] 14,00,000 x Rs 147, received 8 Oct 2026"
+  ],
+  "warrant_cash_to_come": [
+   82.32,
+   "56,00,000 x Rs 147 [E, evidence/care-ma.md]"
+  ],
+  "stake_pct": [
+   0.078,
+   "[deck p6, AR26 p10] 7.80% of Synthimed"
+  ],
+  "stake_cost": [
+   32.0,
+   "[AR26 p80] 32,00,000 CCDs at Rs 32.00 cr, FVTPL"
+  ],
+  "treasury_book_excluded": [
+   307.6,
+   "[AR26 p80-p81, E] promoter-linked or unlisted instruments, not counted"
+  ],
+  "land_receivable_excluded": [
+   15.54,
+   "[CARE-F p10, E] Behra land, not counted"
+  ],
+  "mgmt_wc_at_1500": [
+   350.0,
+   "[call p13] CFO: about Rs 350 cr of working capital at Rs 1,500 cr"
+  ],
+  "fy26_ocf": [
+   -68.0,
+   "[Screener]"
+  ]
+ },
+ "assumptions": {
+  "cost_of_equity": 0.13,
+  "tax_rate": 0.2517,
+  "stake_tax": 0.1495,
+  "years_to_value_date": 0.38904109589041097,
+  "other_income_year": 30.0,
+  "finance_cost_year": 4.0,
+  "depreciation_base": 30.7,
+  "dep_rate_on_new": 0.08,
+  "capex": {
+   "H2FY27": 60.0,
+   "FY28": 120.0,
+   "FY29": 120.0,
+   "FY30": 20.0
+  }
+ },
+ "derived": {
+  "net_cash_sep26": 348.36,
+  "nwc_sep26": 269.44,
+  "nwc_days_sep26": 118.10447940434729,
+  "mgmt_wc_days": 85.16666666666667,
+  "base_fy27": 953.835,
+  "base_growth_fy28_30": 0.16289187159963436,
+  "bear_fy27": 890.75,
+  "receivable_days": 102.91623633961811,
+  "inventory_days": 73.793382971058,
+  "h2_need": 532.865,
+  "h2_need_q": 266.4325,
+  "h2_margin_needed_19": 0.19813395512934798,
+  "fy26_fy30_cagr": 0.23930247188820597
+ },
+ "scenarios": {
+  "Bear": {
+   "assumptions": {
+    "fy27_revenue": 890.75,
+    "growth": [
+     null,
+     0.12,
+     0.12,
+     0.12
+    ],
+    "margin": [
+     0.175,
+     0.175,
+     0.175,
+     0.175
+    ],
+    "wc_days": [
+     118.10447940434729,
+     118.10447940434729,
+     118.10447940434729,
+     118.10447940434729
+    ],
+    "multiple": 10.0,
+    "stake_equity": 7000.0,
+    "stake_discount": 0.5
+   },
+   "why": "Risk cards R1 (partner concentration), R2 (H2 FY27 miss), R3 (working capital keeps eating cash), R5 (stake sale does not happen) and R7 (multiple stays at contract-maker levels): H2 FY27 at the Q2 run rate, FY27 Rs 891 cr (+40%), margin 17.5%, 12% growth after FY27 as partner volumes flatten, working capital held at today's 118 days, 10x (Lincoln, Indoco), stake at Rs 7,000 cr less tax and a 50% discount",
+   "rows": [
+    {
+     "year": "FY27",
+     "revenue": 890.75,
+     "growth": 0.40079258991334976,
+     "ebitda": 155.88125,
+     "margin": 0.175,
+     "depreciation": 35.5,
+     "pbt": 146.38125,
+     "pat": 109.537089375,
+     "eps_diluted": 11.657649330910411,
+     "nwc": 288.22346583403385,
+     "nwc_days": 118.10447940434729,
+     "delta_nwc": 18.783465834033848,
+     "capex": 60.0,
+     "fcf": -4.550846459033863,
+     "fcf_period": "H2 FY27 (Oct-Mar)"
+    },
+    {
+     "year": "FY28",
+     "revenue": 997.6400000000001,
+     "growth": 0.1200000000000001,
+     "ebitda": 174.58700000000002,
+     "margin": 0.175,
+     "depreciation": 45.1,
+     "pbt": 155.48700000000002,
+     "pat": 116.3509221,
+     "eps_diluted": 12.382821717366586,
+     "nwc": 322.8102817341179,
+     "nwc_days": 118.10447940434729,
+     "delta_nwc": 34.58681590008405,
+     "capex": 120.0,
+     "fcf": 6.864106199915966,
+     "fcf_period": "FY28"
+    },
+    {
+     "year": "FY29",
+     "revenue": 1117.3568000000002,
+     "growth": 0.1200000000000001,
+     "ebitda": 195.53744000000003,
+     "margin": 0.175,
+     "depreciation": 54.7,
+     "pbt": 166.83744000000002,
+     "pat": 124.84445635200001,
+     "eps_diluted": 13.286758862810682,
+     "nwc": 361.5475155422121,
+     "nwc_days": 118.10447940434729,
+     "delta_nwc": 38.73723380809423,
+     "capex": 120.0,
+     "fcf": 20.807222543905795,
+     "fcf_period": "FY29"
+    },
+    {
+     "year": "FY30",
+     "revenue": 1251.4396160000003,
+     "growth": 0.1200000000000001,
+     "ebitda": 219.00193280000005,
+     "margin": 0.175,
+     "depreciation": 56.3,
+     "pbt": 188.70193280000007,
+     "pat": 141.20565631424003,
+     "eps_diluted": 15.0280241536906,
+     "nwc": 404.9332174072776,
+     "nwc_days": 118.10447940434729,
+     "delta_nwc": 43.38570186506547,
+     "capex": 20.0,
+     "fcf": 134.11995444917457,
+     "fcf_period": "FY30"
+    }
+   ],
+   "value": {
+    "fy28_ebitda": 174.58700000000002,
+    "multiple": 10.0,
+    "core_ev": 1745.8700000000001,
+    "net_cash_sep26": 348.36,
+    "h2fy27_fcf": -4.550846459033863,
+    "net_cash_mar27": 364.38915354096616,
+    "warrant_cash": 82.32,
+    "stake": {
+     "gross": 546.0,
+     "tax": 76.843,
+     "after_tax": 469.157,
+     "discount": 0.5,
+     "net": 234.5785
+    },
+    "stake_counted": 234.5785,
+    "treasury_counted": 0.0,
+    "equity_mar27": 2427.1576535409667,
+    "shares": 9.3961558,
+    "value_ps_mar27": 258.3139004081825,
+    "value_ps": 246.31909557396983,
+    "vs_price": -0.29421462586255065,
+    "parts_ps": {
+     "core": 177.1788984379907,
+     "cash": 45.334094604154735,
+     "stake": 23.80610253182436
+    }
+   }
+  },
+  "Base": {
+   "assumptions": {
+    "fy27_revenue": 953.835,
+    "growth": [
+     null,
+     0.16289187159963436,
+     0.16289187159963436,
+     0.16289187159963436
+    ],
+    "margin": [
+     0.19,
+     0.2,
+     0.2,
+     0.2
+    ],
+    "wc_days": [
+     110.0,
+     100.0,
+     92.0,
+     85.16666666666667
+    ],
+    "multiple": 15.0,
+    "stake_equity": 8000.0,
+    "stake_discount": 0.25
+   },
+   "why": "Management guidance exactly: FY27 +50% to Rs 954 cr at 19%, then 16.29% a year to Rs 1,500 cr in FY30 at 20%; working capital falling to the CFO's Rs 350 cr (85 days) at Rs 1,500 cr; 15x forward EBITDA (Unichem 15.1x, a discount to the 17.9x peer median for ROCE of 4.9%, negative OCF and concentration); stake at management's Rs 8,000 cr less tax and a 25% discount",
+   "rows": [
+    {
+     "year": "FY27",
+     "revenue": 953.835,
+     "growth": 0.5,
+     "ebitda": 181.22865000000002,
+     "margin": 0.19,
+     "depreciation": 35.5,
+     "pbt": 171.72865000000002,
+     "pat": 128.504548795,
+     "eps_diluted": 13.676289700837016,
+     "nwc": 287.4571232876712,
+     "nwc_days": 110.0,
+     "delta_nwc": 18.01712328767121,
+     "capex": 60.0,
+     "fcf": 15.1829555073288,
+     "fcf_period": "H2 FY27 (Oct-Mar)"
+    },
+    {
+     "year": "FY28",
+     "revenue": 1109.2069683472373,
+     "growth": 0.16289187159963436,
+     "ebitda": 221.84139366944748,
+     "margin": 0.2,
+     "depreciation": 45.1,
+     "pbt": 202.7413936694475,
+     "pat": 151.71138488284754,
+     "eps_diluted": 16.146112102871637,
+     "nwc": 303.89232009513347,
+     "nwc_days": 100.0,
+     "delta_nwc": 16.435196807462262,
+     "capex": 120.0,
+     "fcf": 60.3761880753853,
+     "fcf_period": "FY28"
+    },
+    {
+     "year": "FY29",
+     "revenue": 1289.8877674126752,
+     "growth": 0.16289187159963436,
+     "ebitda": 257.97755348253503,
+     "margin": 0.2,
+     "depreciation": 54.7,
+     "pbt": 229.27755348253504,
+     "pat": 171.56839327098098,
+     "eps_diluted": 18.259424058398537,
+     "nwc": 325.12239616977024,
+     "nwc_days": 92.0,
+     "delta_nwc": 21.23007607463677,
+     "capex": 120.0,
+     "fcf": 85.0383171963442,
+     "fcf_period": "FY29"
+    },
+    {
+     "year": "FY30",
+     "revenue": 1499.9999999999998,
+     "growth": 0.16289187159963436,
+     "ebitda": 299.99999999999994,
+     "margin": 0.2,
+     "depreciation": 56.3,
+     "pbt": 269.69999999999993,
+     "pat": 201.81650999999994,
+     "eps_diluted": 21.47862533313889,
+     "nwc": 349.99999999999994,
+     "nwc_days": 85.16666666666667,
+     "delta_nwc": 24.877603830229702,
+     "capex": 20.0,
+     "fcf": 213.23890616977025,
+     "fcf_period": "FY30"
+    }
+   ],
+   "value": {
+    "fy28_ebitda": 221.84139366944748,
+    "multiple": 15.0,
+    "core_ev": 3327.6209050417124,
+    "net_cash_sep26": 348.36,
+    "h2fy27_fcf": 15.1829555073288,
+    "net_cash_mar27": 384.1229555073288,
+    "warrant_cash": 82.32,
+    "stake": {
+     "gross": 624.0,
+     "tax": 88.50399999999999,
+     "after_tax": 535.496,
+     "discount": 0.25,
+     "net": 401.62199999999996
+    },
+    "stake_counted": 401.62199999999996,
+    "treasury_counted": 0.0,
+    "equity_mar27": 4195.6858605490415,
+    "shares": 9.3961558,
+    "value_ps_mar27": 446.5321722899743,
+    "value_ps": 425.79745282520014,
+    "vs_price": 0.2200500080951293,
+    "parts_ps": {
+     "core": 337.7022380672789,
+     "cash": 47.33677137527377,
+     "stake": 40.75844338264744
+    }
+   }
+  },
+  "Bull": {
+   "assumptions": {
+    "fy27_revenue": 953.835,
+    "growth": [
+     null,
+     0.16289187159963436,
+     0.16289187159963436,
+     0.16289187159963436
+    ],
+    "margin": [
+     0.19,
+     0.2,
+     0.2,
+     0.2
+    ],
+    "wc_days": [
+     110.0,
+     100.0,
+     92.0,
+     85.16666666666667
+    ],
+    "multiple": 18.0,
+    "stake_equity": 9000.0,
+    "stake_discount": 0.15
+   },
+   "why": "Same earnings and working capital as the base case (revenue is never modelled above guidance); 18x, the peer median, for a proven regulated-market exporter that collects its cash; stake at the top of management's range, Rs 9,000 cr, less tax and a 15% discount",
+   "rows": [
+    {
+     "year": "FY27",
+     "revenue": 953.835,
+     "growth": 0.5,
+     "ebitda": 181.22865000000002,
+     "margin": 0.19,
+     "depreciation": 35.5,
+     "pbt": 171.72865000000002,
+     "pat": 128.504548795,
+     "eps_diluted": 13.676289700837016,
+     "nwc": 287.4571232876712,
+     "nwc_days": 110.0,
+     "delta_nwc": 18.01712328767121,
+     "capex": 60.0,
+     "fcf": 15.1829555073288,
+     "fcf_period": "H2 FY27 (Oct-Mar)"
+    },
+    {
+     "year": "FY28",
+     "revenue": 1109.2069683472373,
+     "growth": 0.16289187159963436,
+     "ebitda": 221.84139366944748,
+     "margin": 0.2,
+     "depreciation": 45.1,
+     "pbt": 202.7413936694475,
+     "pat": 151.71138488284754,
+     "eps_diluted": 16.146112102871637,
+     "nwc": 303.89232009513347,
+     "nwc_days": 100.0,
+     "delta_nwc": 16.435196807462262,
+     "capex": 120.0,
+     "fcf": 60.3761880753853,
+     "fcf_period": "FY28"
+    },
+    {
+     "year": "FY29",
+     "revenue": 1289.8877674126752,
+     "growth": 0.16289187159963436,
+     "ebitda": 257.97755348253503,
+     "margin": 0.2,
+     "depreciation": 54.7,
+     "pbt": 229.27755348253504,
+     "pat": 171.56839327098098,
+     "eps_diluted": 18.259424058398537,
+     "nwc": 325.12239616977024,
+     "nwc_days": 92.0,
+     "delta_nwc": 21.23007607463677,
+     "capex": 120.0,
+     "fcf": 85.0383171963442,
+     "fcf_period": "FY29"
+    },
+    {
+     "year": "FY30",
+     "revenue": 1499.9999999999998,
+     "growth": 0.16289187159963436,
+     "ebitda": 299.99999999999994,
+     "margin": 0.2,
+     "depreciation": 56.3,
+     "pbt": 269.69999999999993,
+     "pat": 201.81650999999994,
+     "eps_diluted": 21.47862533313889,
+     "nwc": 349.99999999999994,
+     "nwc_days": 85.16666666666667,
+     "delta_nwc": 24.877603830229702,
+     "capex": 20.0,
+     "fcf": 213.23890616977025,
+     "fcf_period": "FY30"
+    }
+   ],
+   "value": {
+    "fy28_ebitda": 221.84139366944748,
+    "multiple": 18.0,
+    "core_ev": 3993.1450860500545,
+    "net_cash_sep26": 348.36,
+    "h2fy27_fcf": 15.1829555073288,
+    "net_cash_mar27": 384.1229555073288,
+    "warrant_cash": 82.32,
+    "stake": {
+     "gross": 702.0,
+     "tax": 100.16499999999999,
+     "after_tax": 601.835,
+     "discount": 0.15,
+     "net": 511.55975
+    },
+    "stake_counted": 511.55975,
+    "treasury_counted": 0.0,
+    "equity_mar27": 4971.147791557383,
+    "shares": 9.3961558,
+    "value_ps_mar27": 529.0618735331509,
+    "value_ps": 504.49488775257447,
+    "vs_price": 0.44554409098158865,
+    "parts_ps": {
+     "core": 405.24268568073467,
+     "cash": 47.33677137527377,
+     "stake": 51.915430696566126
+    }
+   }
+  }
+ },
+ "mgmt_verdict": "WATCH",
+ "readout": "ATTRACTIVE",
+ "value_range": {
+  "bear": 246.31909557396983,
+  "base": 425.79745282520014,
+  "bull": 504.49488775257447
+ },
+ "fragility": {
+  "no_stake": {
+   "value_ps": 385.0390094425527,
+   "vs_price": 0.10326363737121125,
+   "readout": "FAIR"
+  },
+  "alt_shares": {
+   "value_ps": 432.2376689023246,
+   "vs_price": 0.23850334929032835,
+   "readout": "ATTRACTIVE"
+  },
+  "treasury_50": {
+   "value_ps": 441.4057825288797,
+   "vs_price": 0.26477301584206203,
+   "readout": "ATTRACTIVE"
+  },
+  "stake_50pct_discount": {
+   "value_ps": 412.2113050309843,
+   "vs_price": 0.1811212178538233,
+   "readout": "FAIR"
+  },
+  "multiple_12": {
+   "value_ps": 358.2570052117443,
+   "vs_price": 0.02652437023422438,
+   "readout": "FAIR"
+  },
+  "bear_wc_days": {
+   "value_ps": 423.64811041704803,
+   "vs_price": 0.2138914338597364,
+   "readout": "ATTRACTIVE"
+  }
+ },
+ "reverse": [
+  {
+   "label": "Simple: printed shares, stake at Rs 624 cr gross",
+   "mcap": 3034.9583742,
+   "cash": 348.36,
+   "stake": 624.0,
+   "core_ev": 2062.5983742,
+   "x_fy27": 11.381193725164314,
+   "x_fy28": 9.297626290940787,
+   "ebitda_at_15x": 137.50655827999998
+  },
+  {
+   "label": "Fully diluted: 9,39,61,558 shares, all warrant cash, stake at Rs 624 cr gross",
+   "mcap": 3279.2583742,
+   "cash": 451.26,
+   "stake": 624.0,
+   "core_ev": 2203.9983742000004,
+   "x_fy27": 12.16142356189267,
+   "x_fy28": 9.935018608312774,
+   "ebitda_at_15x": 146.93322494666668
+  },
+  {
+   "label": "Fully diluted, stake after tax and 25% discount",
+   "mcap": 3279.2583742,
+   "cash": 451.26,
+   "stake": 401.62199999999996,
+   "core_ev": 2426.3763742000006,
+   "x_fy27": 13.388481204268754,
+   "x_fy28": 10.937437482093166,
+   "ebitda_at_15x": 161.7584249466667
+  }
+ ],
+ "sensitivity": {
+  "multiples": [
+   10.0,
+   12.0,
+   15.0,
+   18.0,
+   20.0
+  ],
+  "rows": [
+   {
+    "fy28_ebitda": 150.0,
+    "values": [
+     240.32209743359923,
+     270.76747396873486,
+     316.4355387714383,
+     362.1036035741417,
+     392.5489801092773
+    ]
+   },
+   {
+    "fy28_ebitda": 175.0,
+    "values": [
+     265.69324454621227,
+     301.2128505038704,
+     354.49225944035777,
+     407.7716683768451,
+     443.2912743345033
+    ]
+   },
+   {
+    "fy28_ebitda": 221.84,
+    "values": [
+     313.228625776404,
+     358.25530798010055,
+     425.7953312856454,
+     493.3353545911902,
+     538.3620367948868
+    ]
+   },
+   {
+    "fy28_ebitda": 250.0,
+    "values": [
+     341.8066858840513,
+     392.5489801092773,
+     468.66242144711634,
+     544.7758627849554,
+     595.5181570101814
+    ]
+   },
+   {
+    "fy28_ebitda": 275.0,
+    "values": [
+     367.1778329966643,
+     422.9943566444129,
+     506.71914211603587,
+     590.4439275876588,
+     646.2604512354073
+    ]
+   }
+  ]
+ },
+ "bottom_up_fy28": {
+  "own_brand_run_rate": 500.0,
+  "new_registrations": 58.125,
+  "cmo_run_rate": 260.0,
+  "viatris_ibuprofen": 90.0,
+  "domestic_run_rate": 179.55999999999995,
+  "domestic_fy28": 210.98299999999995,
+  "total": 1119.108,
+  "base_fy28": 1109.2069683472373,
+  "export_fy28": 908.125
+ },
+ "cross_checks": {
+  "pe_fy28_base": 21.615110670384187,
+  "eps_fy28_base": 16.146112102871637,
+  "pat_fy30_base": 201.81650999999994,
+  "fcf_fy28_base": 60.3761880753853,
+  "fcf_yield_fy28_base": 0.018411537361740983,
+  "fcf_fy28_bear": 6.864106199915966,
+  "nwc_fy30_base": 349.99999999999994,
+  "nwc_fy30_at_today_days": 485.36087426444084,
+  "asset_turnover_now": 2.3694619127564525,
+  "asset_turnover_fy30": 2.4940558335965943,
+  "ttm_pe_screener": 33.0
+ }
+}

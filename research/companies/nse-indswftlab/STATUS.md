@@ -34,8 +34,8 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 | [1] Evidence files | Done | evidence/ (q2fy27-call, q1fy27-call, q2fy27-deck, ar-fy26, care-ma, claims-ledger) |
 | [2] Screener numbers, peers, source manifest | Done | data/screener-2026-11-09.md, data/source-manifest.md |
 | [3] Diagnose, 15 questions, anti-thesis | Done | notes.md |
-| [4] Model | In progress | model/valuation.py |
-| [5] Report | Not started | report/report.html |
+| [4] Model | Done | model/valuation.py |
+| [5] Report | In progress | report/report.html |
 | [6] Checks, PDF, final reply | Not started | report/qa/ |
 
 ## Step [1] findings to carry forward
@@ -56,5 +56,5 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 ## Resume point (2026-11-09)
 
 - Step [3]: done. notes.md holds the 15 answers, headline answer, anti-thesis, bull case, management verdict input (WATCH) and the closed To-find list.
-- AR FY26 facts found but not yet in notes.md: Synthimed is not a related party [AR26 p92]; promoter-linked loans Rs 25.17 cr (ar-fy26.md says Rs 10.65 cr, conflict); Sahil Munjal pay +72.13%, Rishav Mehta +100.08% vs median employee +8.07% [AR26 p64]; unmodified audit opinion with two emphasis-of-matter items; Rs 16.00 cr FDs pledged, Rs 15 cr against the Rs 66.34 cr sales tax demand.
-- Step [4]: in progress (model/valuation.py). Steps [5] and [6] not started.
+- Step [4]: done. Value range Rs 246 / 426 / 504 (bear / base / bull) vs Rs 349; base +22.0%, ATTRACTIVE, but FAIR if the stake is counted at zero (Rs 385) or at 12x (Rs 358). Risk cards used by the bear case: R1, R2, R3, R5, R7 (S19 must use these numbers).
+- Step [5]: in progress (report/build.py, charts.py, report.html). Step [6] not started.
