@@ -30,7 +30,7 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 - Decks: 14, Q1 FY24 to Q2 FY27.
 - Annual reports: FY24, FY25, FY26.
 - Other: results press release Q2 FY27, bonus allotment (Nov 4, 2026, 1:1, 10,46,16,204 shares), call recording notice Q2 FY27.
-- Not yet found: RHP (Aug 2023 IPO), company IR site copies, NSE filings.
+- RHP located on BSE (not text-extracted); IR site, NSE copies and USFDA records not checked. See data/source-manifest.md.
 
 ## Stages
 
@@ -38,12 +38,13 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 |---|---|---|
 | Documents collected and text extracted | Done | docs/CONCORDBIO |
 | Latest deck and transcript facts | Done | facts-latest.md |
-| Phase 1 prompt build | In progress | prompts/Concord Biotech Research Prompt.md |
-| Screener data pull | Pending | data/screener-*.json |
-| RHP and IR site check | Pending | data/source-manifest.md |
-| Promises-vs-delivery ledger (14 calls) | Pending | evidence/guidance-ledger.md |
-| Deck history (capacity, utilisation, segments) | Pending | evidence/deck-history.md |
-| FY26 annual report extraction | Pending | evidence/ar-fy26.md |
+| Phase 1 prompt build | Done (67a4583) | prompts/Concord Biotech Research Prompt.md |
+| Screener data pull | Done | data/screener-2026-11-09.md |
+| Source manifest; RHP located, IR site and USFDA not checked | Done | data/source-manifest.md |
+| Promises-vs-delivery ledger (14 calls) | Done (6d3ce1d), verdict AMBER | evidence/guidance-ledger.md |
+| Deck history (capacity, utilisation, segments) | Done (f33973f) | evidence/deck-history.md |
+| FY26 annual report extraction | Done (9024b4c) | evidence/ar-fy26.md |
+| Peers and notes (15 questions) | Pending | notes.md |
 | Model and valuation | Pending | model/valuation.py |
 | HTML report build | Pending | report/ |
 | Visual check and by-eye pass | Pending | qa-notes.md |
