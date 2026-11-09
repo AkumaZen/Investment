@@ -185,7 +185,7 @@ def grouped(cats, series, label, *, dec=0, unit="", w=520, h=240, hatch_series=N
     return _svg(w, h, "".join(out), label)
 
 
-def lines(cats, series, label, *, dec=0, unit="", w=520, h=240, band=None, ymin=None, ymax=None,
+def lines(cats, series, label, *, dec=0, unit="", w=520, h=240, band=None, ymin=None, ymax=None, grid=4,
           end_labels=True, all_labels=False):
     """Line chart on one axis. series: list of (name, values, color, dashed).
     band: (lo, hi, text) drawn as an outlined guidance band [G]. None values leave gaps."""
@@ -209,16 +209,16 @@ def lines(cats, series, label, *, dec=0, unit="", w=520, h=240, band=None, ymin=
         return pad_t + ph * (hi - v) / (hi - lo)
 
     out = []
-    # gridlines: 4 steps
-    for t in range(5):
-        gv = lo + (hi - lo) * t / 4
+    # gridlines: `grid` equal steps
+    for t in range(grid + 1):
+        gv = lo + (hi - lo) * t / grid
         out.append(f'<line x1="{pad_l}" x2="{w-pad_r}" y1="{Y(gv):.1f}" y2="{Y(gv):.1f}" stroke="{GREY_LT}"/>')
         out.append(_text(pad_l - 5, Y(gv) + 3.5, _fmt(gv, 0) + unit, 9.5, MUTED, anchor="end"))
     if band:
         b0, b1, bt = band
         out.append(f'<rect x="{pad_l}" y="{Y(b1):.1f}" width="{pw:.1f}" height="{Y(b0)-Y(b1):.1f}" fill="{SECOND}" '
                    f'fill-opacity=".10" stroke="{SECOND}" stroke-dasharray="4,3" stroke-width="1">{_tip(bt)}</rect>')
-        out.append(_text(pad_l + 4, Y(b1) - 4, bt, 9.5, "#8A520C", anchor="start", weight="bold"))
+        out.append(_text(pad_l + 4, Y(b0) + 12, bt, 9.5, "#8A520C", anchor="start", weight="bold"))  # under the band, clear of points above it
     for i, c in enumerate(cats):
         out.append(_text(X(i), h - 11, c, 10.5 if step > 50 else 9, MUTED))
     ends = []   # end labels, spread apart after all series are drawn
@@ -297,7 +297,7 @@ def waterfall(steps, label, *, dec=1, w=520, h=250):
             tops.append((run, run + v)); run += v
         else:
             tops.append((run - v, run)); run -= v
-    hi = _nice_max(max(max(a, b) for a, b in tops) * 1.08)
+    hi = max(max(a, b) for a, b in tops) * 1.04   # no value axis, so no need to round the ceiling
     ph, pw = h - pad_t - pad_b, w - pad_l - pad_r
     slot = pw / len(steps)
     bw = min(54, slot * 0.62)

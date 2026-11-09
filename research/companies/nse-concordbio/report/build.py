@@ -57,7 +57,7 @@ SRC = {
              "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ec74e0d2-8c48-4a0b-9961-f4be126f5dda.pdf"),
     "bonus": ("Bonus allotment filing, 4 Nov 2026", BSE.format("2f88d61b-23a5-4e8e-adfb-82ac09d13ff7")),
     "press27": ("Q2 FY27 results filing, 28 Oct 2026", BSE.format("efd072c7-89b4-40ce-a718-eeaf8374dcdb")),
-    "rhp": ("IPO red herring prospectus, Aug 2023",
+    "rhp": ("IPO red herring prospectus, Aug 2023 (located on BSE; text not extracted)",
             "https://www.bseindia.com/corporates/download/383248/IPO%20Open/RHP_20230802171607.pdf"),
     "scr": ("Screener.in consolidated data, fetched 9 Nov 2026", "https://www.screener.in/company/CONCORDBIO/consolidated/"),
     "decks": ("Company investor presentations Q1 FY24 to Q2 FY27 (our extraction)", None),
@@ -288,7 +288,7 @@ def chip(word):
     cls = {"OK": "ok", "WATCH": "watch", "RED": "red", "MET": "ok", "MISSED": "red", "LATE": "watch",
            "OPEN": "open", "SOFTENED": "watch", "STRONG": "ok", "MODERATE": "watch", "WEAK": "red",
            "MAKES AND SELLS": "ok", "FIRST ORDERS": "watch", "IN DEVELOPMENT": "open",
-           "NOT DISCLOSED": "nd", "DOES NOT MAKE": "nd", "FAIR": "watch"}.get(word, "open")
+           "NOT DISCLOSED": "nd", "DOES NOT MAKE": "nd", "NOT VERIFIED": "nd", "FAIR": "watch"}.get(word, "open")
     return f'<span class="chip {cls}">{word}</span>'
 
 
@@ -338,9 +338,9 @@ rail = f"""<aside class="rail">
 </aside>"""
 
 annual = C.bars(D["years"] + ["TTM"], D["sales"] + [D["sales_ttm"]], "Annual sales FY20 to TTM",
-                highlight={6, 7}, w=460, h=230, hatch=set(), notes={5: "bulk Q4"})
+                highlight={6, 7}, w=600, h=200, hatch=set(), notes={5: "bulk Q4"})
 annual_pat = C.bars(D["years"] + ["TTM"], D["pat"] + [D["pat_ttm"]], "Annual profit after tax FY20 to TTM",
-                    highlight={6, 7}, w=460, h=230)
+                    highlight={6, 7}, w=600, h=200)
 
 s1_main = f"""<p class="lede">Concord Biotech makes complex drug ingredients by fermentation, the way beer or yoghurt is made but in steel tanks under drug-plant rules.
 Few companies can do this well, which is why it earned 40%+ operating margins for years.</p>
@@ -354,10 +354,10 @@ That price needs close to management's full plan: about 19% sales growth a year 
 For FY27 alone, 19% growth needs second-half sales of about Rs {f0(n19)} cr, {pc(n19g, 0, True)} on last year's second half.</p>
 <p>Management has met 10 of 23 promises that have come due across 14 earnings calls.
 It is open about what went wrong but late on timing, so we rate it WATCH, not RED.</p>"""
-s1_charts = duo(exhibit("Sales fell in FY26 after six years of growth (Rs cr)", annual, src("scr"), "FY25 was lifted by a Rs 430 cr fourth quarter of bulk buying; see S8."),
-                exhibit("Profit fell 30% in FY26 and is recovering slowly (Rs cr)", annual_pat, src("scr")))
+s1_charts = (exhibit("Sales fell in FY26 after six years of growth (Rs cr)", annual, src("scr"), "FY25 was lifted by a Rs 430 cr fourth quarter of bulk buying; see S8.")
+              + exhibit("Profit fell 30% in FY26 and is recovering slowly (Rs cr)", annual_pat, src("scr")))
 
-s1_body = f'<div class="cover"><div class="cmain">{s1_main}</div>{rail}</div>{s1_charts}'
+s1_body = f'<div class="cover"><div class="cmain">{s1_main}{s1_charts}</div>{rail}</div>'
 section("s1", "A", "Why read this", "S1 | Summary", "A strong niche business on a pause, priced for a full recovery",
         f"Concord is a high-quality fermentation API maker; FY26 looks like a pause in buying, not lost customers, but the margin has not come back and the price already assumes it will.",
         s1_body,
@@ -514,8 +514,14 @@ section("s5", "A", "Customers and partners", "S5 | Customers", "No customer is b
 
 # ================================================================= S6 moat & competition
 peers = D["peers"]
-opm_chart = C.hbars([p_[0] for p_ in peers], [p_[7] for p_ in peers], "Operating margin, trailing twelve months, peers",
-                    unit="%", w=460, highlight={0}, lab_w=150)
+def _ranked(col):
+    """Peers sorted high to low on one column, with Concord's new position for the highlight."""
+    rk = sorted(peers, key=lambda p_: -p_[col])
+    return [p_[0] for p_ in rk], [p_[col] for p_ in rk], {next(i for i, p_ in enumerate(rk) if p_ is peers[0])}
+
+
+_n, _v, _h = _ranked(7)
+opm_chart = C.hbars(_n, _v, "Operating margin, trailing twelve months, peers", unit="%", w=460, highlight=_h, lab_w=150)
 s6 = f"""<p>Three things protect Concord: 1,250 m3 of fermentation tanks that took 20 years to build, 150+ drug master files that tie customers in, and a cost position that still gives the best margin among Indian API makers except Divi's.</p>
 {duo(exhibit("Concord still earns one of the highest margins among listed API makers", opm_chart, src("peers"), "Divi's leads on the last twelve months; Concord led in FY25 (42%)."),
      '<div><h3>Competition, as management describes it</h3>' + ul([
@@ -605,9 +611,9 @@ capex_t = table(["When said", "Capex guidance", "What happened"], [
     ["Q4 FY25", "Maintenance Rs 20-30 cr", ("FY26 capex Rs 65 cr (call); Rs 95 cr cash basis [E]", "flag")],
     ["Q3 FY26", "Maintenance restated to Rs 30-40 cr", "Restated up"],
     ["Q4 FY26", "FY27 general capex Rs 20-30 cr", "Q1 FY27 capex Rs 9.5 cr"],
-    ["Q2 FY27", "Rs 20-30 cr plus Rs 50-60 cr in each of FY27 and FY28", "Raised two quarters after the last guide"],
-    ["Q1 FY27", "New API capacity at Unit III once it reaches 80-85%", "Unit III at 55%"]], "std",
-    caption="Capex guidance has moved up four times in two years", source=src("ledger", ("tr27", 13), ("tr127", 14)))
+    ["Q1 FY27", "New API capacity at Unit III once it reaches 80-85%", "Unit III at 55%"],
+    ["Q2 FY27", "Rs 20-30 cr plus Rs 50-60 cr in each of FY27 and FY28", "Raised two quarters after the last guide"]], "std",
+    caption="Capex guidance has been raised three times in two years", source=src("ledger", ("tr27", 13), ("tr127", 14)))
 s9 = f"""<p>Concord has four plants in Gujarat. The two fermentation plants make almost all the API; the two Valthera plants make finished medicines and are mostly empty.</p>
 <figure class="ex"><figcaption>Exhibit 0: Four plants, two of them mostly idle</figcaption>{plants}<p class="src">{src(("deck27", 9), ("tr27", 19), ("tr127", 14), ("tr425", 5), ("deck226", 5))[8:]}</p></figure>
 {duo(exhibit("Unit III has room to grow; Units II and IV are mostly empty (% used)", util, src(("tr27", 19))),
@@ -694,7 +700,7 @@ section("s11", "B", "Claims ledger", "S11 | Promises vs delivery", "10 of 23 pro
 mm = C.lines(D["ql"], [("Reported", [round(x, 1) for x in CALC["q_opm"]], C.PRIMARY, False),
                        ("Without injectables and Stellon", D["q_adj"], C.SECOND, True)],
              "EBITDA margin by quarter with the 38-40% guide", unit="%", dec=1, w=760, h=260, band=(38, 40, "Guide 38-40% [G]"),
-             ymin=25, ymax=50)
+             ymin=20, ymax=50, grid=6)
 wmt = table(["What must be true", "Needed", "Latest", "Check"], [
     ["FY27 sales growth 19% [G path]", f"H2 FY27 Rs {f0(n19)} cr ({pc(n19g, 0, True)})", "H1 FY27 +26%", chip("OPEN")],
     ["EBITDA margin back to 38% by FY29", "Base case 35% / 36.5% / 38%", "Q2 FY27 33.8%", chip("WATCH")],
@@ -732,8 +738,8 @@ section("s13", "C", "Triggers", "S13 | Triggers", "The next two results matter m
         "Mark mid-February 2027 (Q3 FY27) and end-May 2027 (FY27) in your diary. Those two releases settle most of the debate in this report.")
 
 # ================================================================= S14 peers
-pe_chart = C.hbars([p_[0] for p_ in peers], [p_[8] for p_ in peers], "P/E, trailing, peers", dec=1, unit="x",
-                   w=460, highlight={0}, lab_w=150)
+_n, _v, _h = _ranked(8)
+pe_chart = C.hbars(_n, _v, "P/E, trailing, peers", dec=1, unit="x", w=460, highlight=_h, lab_w=150)
 pt = table(["Company", "Sales FY26", "Growth FY26", "Growth TTM", "OPM FY26", "OPM TTM", "P/E", "ROCE"],
            [[(n, "bold" if i == 0 else ""), f0(s_), (f"{g26:+d}%", "flag" if g26 < 0 else ""), f"{gt:+d}%{' [E]' if i == 0 else ''}",
              f"{o26}%", f"{ot}%", f1(pe_), f1(rc)]
@@ -807,9 +813,11 @@ pl = table(["Rs cr"] + D["years"] + ["TTM"], [
     ["Investments"] + [f0(v) for v in D["inv_book"]] + ["-"],
     ["Return on capital"] + ["-"] + [f"{v}%" for v in D["roce"][1:]] + ["-"]], "fin",
     caption="Ten-line financial summary", source=src("scr") + " Net worth is reserves plus about Rs 10 cr of share capital (pre-bonus) [E]; negatives in brackets.")
+_cfo_pat = round(100 * D["cfo"][-1] / D["pat"][-1])
+_cfo_ebitda_all = round(100 * sum(D["cfo"]) / sum(D["op"]))
 s17 = f"""{pl}
 {exhibit("Inventory days jumped back to 485 in FY26; FY25's 286 was the low point (days)", wc, src("scr"), "FY21-FY23 inventory days were 430-503, so FY26 is high but not new. Inventory rose again to Rs 398 cr at Sep-26 from Rs 326 cr at Mar-26.")}
-{duo(exhibit("Profits turn into cash: operating cash flow was 100% of EBITDA in FY26", cfe, src("scr"), "Our calculation [E]."),
+{duo(exhibit(f"Profits turn into cash: operating cash flow was {round(CALC['cfo_ebitda'][-1])}% of EBITDA in FY26 and {_cfo_pat}% of profit after tax", cfe, src("scr"), f"Our calculation [E]. FY20-FY26 together: {_cfo_ebitda_all}% of EBITDA."),
      '<div><h3>Quality-of-earnings verdict</h3>' + table(["Test", "Result"], [
         ["Cash conversion (CFO / EBITDA, FY20-FY26)", chip("OK")],
         ["Debt", chip("OK")],
@@ -819,7 +827,7 @@ s17 = f"""{pl}
         ["Palvella gain kept out of profit (through OCI)", chip("OK")]], "std") +
      '<p class="small">Overall: <b>OK on cash, WATCH on working capital.</b> Profits are real cash; the risk is that stock building ties up more of it.</p></div>')}"""
 section("s17", "D", "Financials and earnings quality", "S17 | Financials", "Profits are real cash; stock is the soft spot",
-        "Earnings quality is good: operating cash matched EBITDA in FY26, there is no debt and the audit is clean; the weak spot is a 485-day inventory cycle that rose again in H1 FY27.",
+        f"Earnings quality is good: operating cash flow exceeded profit after tax in FY26 ({_cfo_pat}%), there is no debt and the audit is clean; the weak spot is a 485-day inventory cycle that rose again in H1 FY27.",
         s17,
         "If inventory does not fall by March 2027, the 'customers delayed shipments' explanation for FY26 weakens. That is one number in the FY27 balance sheet worth checking.")
 
@@ -835,11 +843,11 @@ gov = table(["Item", "Finding", "Level"], [
     ["Contingent liabilities", "Rs 3.76 cr disputed excise; immaterial", chip("OK")],
     ["Credit rating", "ICRA AA- (Stable) / A1+, Jul 2025", chip("OK")],
     ["Pledge", "None shown on Screener or in the annual report; exchange filing not checked", ("<span class='chip nd'>NOT VERIFIED</span>", "c")],
-    ["US FDA record", "Company-reported only; FDA database not checked; no warning letter or import alert in any document read", chip("OK")]], "std",
+    ["US FDA record", "Company-reported only; FDA database not checked; no warning letter or import alert in any document read", chip("NOT VERIFIED")]], "std",
     caption="Governance checklist: no red flags, five watch items", source=src(("ar26", 79), ("ar26", 123), ("ar26", 186), ("ar26", 243), ("ar26", 244), ("ar26", 245), ("ar26", 233), ("ar26", 77)))
 s18 = f"""{gov}"""
 section("s18", "D", "Governance and filings", "S18 | Governance", "No red flags; five things to keep an eye on",
-        "The filings are clean on audit, debt and contingent liabilities; the watch items are the Stellon ownership, management turnover, an earlier audit-trail gap and a small purchase from a director.",
+        "The filings are clean on audit, debt and contingent liabilities; the five watch items are the Stellon ownership, management turnover, an earlier audit-trail gap, a small purchase from a director and promoter pay.",
         s18,
         "None of this changes the numbers. It is a reason to read the FY27 annual report's related-party note, especially who owns the rest of Stellon and whether Concord lends it more.")
 
