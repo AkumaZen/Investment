@@ -36,7 +36,7 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 | [3] Diagnose, 15 questions, anti-thesis | Done | notes.md |
 | [4] Model | Done | model/valuation.py |
 | [5] Report | Done (first build; visual fixes in [6]) | report/report.html, report/build.py, report/charts.py |
-| [6] Checks, PDF, final reply | In progress | report/qa/ |
+| [6] Checks, PDF, final reply | Done 10 Nov 2026 | report/qa/qa-notes.md, report/qa/pdf/report.pdf (32 pages, gitignored) |
 
 ## Step [1] findings to carry forward
 
@@ -58,4 +58,4 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 - Step [3]: done. notes.md holds the 15 answers, headline answer, anti-thesis, bull case, management verdict input (WATCH) and the closed To-find list.
 - Step [4]: done. Value range Rs 246 / 426 / 504 (bear / base / bull) vs Rs 349; base +22.0%, ATTRACTIVE, but FAIR if the stake is counted at zero (Rs 385) or at 12x (Rs 358). Risk cards used by the bear case (report numbering): R1 second-half miss, R2 working capital, R5 no stake value, R6 lower multiple.
 - Step [5]: done 10 Nov 2026; 21 pages, 55 exhibits. First visual check flagged desktop 1 overlap; phone 4 scrolling tables, 11 overlaps, 5 clipped labels.
-- Step [6]: in progress. Fixing visual flags, then PDF, re-checks, qa-notes.
+- Step [6]: done 10 Nov 2026. review.mjs clean (21 pages desktop and phone, 0 console errors), 1440px pass clean, PDF 32 A4 pages, model re-run matches (246 / 426 / 504), 10-number re-check PASS with one citation fixed (H1 Rs 420.97 cr to deck p3), S1 lede aligned with the readout; results in report/qa/qa-notes.md.

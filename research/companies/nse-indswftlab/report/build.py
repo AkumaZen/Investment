@@ -439,7 +439,7 @@ s1_charts = exhibit("After the FY25 break, sales and profit are rebuilding from 
                     "FY20 to FY24 include the API business that was sold in FY24; FY25 onward is the finished-medicine business. The two periods are not comparable.")
 s1_body = f'<div class="cover"><div class="cmain">{s1_main}{s1_charts}</div>{rail}</div>'
 section("s1", "A", "Why read this", "S1 | Summary", "A real step-up in sales that still has to turn into cash",
-        "The first-half jump is real, but it rests on new partner launches and has not yet produced cash; at Rs 349 the price is fair to slightly cheap if the second half delivers, and fragile if it does not.",
+        f"The first-half jump is real, but it rests on new partner launches and has not yet produced cash; at Rs {f0(D['price'])} our base value is {f0(V['Base']['vs_price'] * 100)}% higher, just past the attractive line, but only if the second half delivers; without that the bear case is {f0(-V['Bear']['vs_price'] * 100)}% lower.",
         s1_body,
         f"Our base value of Rs {f0(base_v)} is {pc(V['Base']['vs_price'], 0, True)} above the price, just past the line we call attractive. "
         f"It drops to Rs {f0(FRAG['no_stake']['value_ps'])} if the stake is never sold and to Rs {f0(FRAG['multiple_12']['value_ps'])} if the market keeps paying 12 times profit. "
@@ -507,9 +507,9 @@ s2 = f"""<h3>The revenue equation</h3>
 <h3>The value chain</h3>
 {chain}
 <p class="src">{src(("deck", 7), ("deck", 8), ("call", 15))}</p>
-<h3>Six milestones</h3>
+<div class="keep"><h3>Six milestones</h3>
 {tl}
-<p class="src">{src(("deck", 6), ("ar26", 40), ("caref", 4), "nsea", ("trq1", 9))}</p>
+<p class="src">{src(("deck", 6), ("ar26", 40), ("caref", 4), "nsea", ("trq1", 9))}</p></div>
 <h3>Words used in this report</h3>
 {glossary}"""
 section("s2", "A", "The business simply", "S2 | The everyday picture", "A medicine maker that sells abroad, mostly through other people's hands",
@@ -1130,7 +1130,7 @@ srcs = []
 for k, (name, url) in SRC.items():
     srcs.append(f'<li><a href="{url}">{name}</a></li>' if url else f"<li>{name}</li>")
 dil = table(["Key number", "Label", "Where"], [
-    ["Operating revenue H1 FY27 Rs 420.97 cr", "Disclosed", "[deck p29]"], ["Net cash Rs 348.36 cr", "Inferred from disclosed balance sheet", "[deck p30]"],
+    ["Operating revenue H1 FY27 Rs 420.97 cr", "Disclosed", "[deck p3], [deck p29]"], ["Net cash Rs 348.36 cr", "Inferred from disclosed balance sheet", "[deck p30]"],
     ["Stake value Rs 624 cr", "Inferred from management's company value", "[deck p6]"], ["Stake carrying value Rs 32 cr", "Disclosed", "[AR26 p80]"],
     ["Partner molecule Rs 25 cr / Rs 58 cr", "Disclosed (spoken)", "[Q1 call p14], [call p5]"], ["New-customer revenue Rs 80-90 cr", "Disclosed (spoken)", "[call p11]"],
     ["Registrations earning revenue", "Not Disclosed", "[call p11]"], ["Viatris contract terms", "Not Disclosed", "[call p16]"],
@@ -1298,6 +1298,7 @@ blockquote.q p{margin:0 0 4px;font-style:italic}blockquote.q cite{font-size:12.5
  .inner{padding:8pt 0 0}.band{padding:5pt 8pt;font-size:8.5pt}.foot{margin:6pt 0 0;font-size:7.5pt}
  h2{font-size:14pt}h3{font-size:11.5pt}h4{font-size:10.5pt}.ctitle{font-size:22pt}.csub{font-size:13pt}
  .answer{font-size:10.5pt}.lede{font-size:11pt}
+ .srcs{columns:2;column-gap:18pt}.srcs li{break-inside:avoid}
  .t{font-size:8.5pt}.t.fin td,.t.fin th{font-size:8pt}.t.kv td{font-size:8.5pt}
  .src,.tiny,.foot{font-size:7.5pt}.xnote,.small{font-size:8.5pt}
  figcaption{font-size:10pt}
