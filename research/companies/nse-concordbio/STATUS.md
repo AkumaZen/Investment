@@ -46,7 +46,7 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 | FY26 annual report extraction | Done (9024b4c) | evidence/ar-fy26.md |
 | Peers and notes (15 questions) | Done | notes.md, evidence/peers.md |
 | Model and valuation | Done (base Rs 696, FAIR) | model/valuation.py, valuation.md, valuation.json |
-| HTML report build | Pending | report/ |
-| Visual check and by-eye pass | Pending | qa-notes.md |
-| PDF export and page inspection | Pending | report/*.pdf |
-| QA summary | Pending | qa-notes.md |
+| HTML report build | Done (4a403a0, aa5b781) | report/build.py, report/report.html |
+| Visual check and by-eye pass | Done (aa5b781); touch scroll NOT RUN | report/qa/qa-notes.md |
+| PDF export and page inspection | Done (a029a48), 26 pages | report/Concord_Biotech_Company_Study.pdf |
+| QA summary | Done | report/qa/qa-notes.md |
