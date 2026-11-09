@@ -39,19 +39,19 @@ SCENARIOS = {
         "growth": [0.10, 0.11, 0.11],
         "margin": [0.33, 0.34, 0.34],
         "pe": 25.0,
-        "why": "FY24-FY26 pattern continues: low-teens growth, price-led share gains keep margin near the H1 FY27 level, injectables slow",
+        "why": "Built from risk cards R1 (destocking repeats), R2 (price erosion), R4 (injectables stuck) and R6 (multiple de-rates): 10-11% growth, margin held at 33-34%, 25x for a slower API maker",
     },
     "Base": {
         "growth": [0.19, 0.19, 0.19],
         "margin": [0.35, 0.365, 0.38],
         "pe": 35.0,
-        "why": "Guided path: about 19% growth, margin back to the bottom of the 38-40% guide by FY29 as Unit IV and Stellon fill",
+        "why": "Management guidance with no haircut: 19% growth a year, margin rising to 38% (bottom of the 38-40% guide) by FY29, tax 24.5%; 35x one-year-forward, a discount to the API and CDMO peer group (44-102x trailing) for the FY24-FY26 delivery record",
     },
     "Bull": {
-        "growth": [0.20, 0.23, 0.23],
-        "margin": [0.36, 0.385, 0.40],
-        "pe": 42.0,
-        "why": "Injectable contracts and Stellon add on top of the API base; margin reaches the top of the guide; market keeps a premium multiple",
+        "growth": [0.19, 0.19, 0.19],
+        "margin": [0.35, 0.365, 0.38],
+        "pe": 45.0,
+        "why": "Same earnings as the base case (revenue is never modelled above guidance); the market pays 45x, today's trailing multiple and Gland Pharma's, for a proven 18-19% compounder with Unit IV filling",
     },
 }
 OTHER_INCOME = [45.0, 50.0, 55.0]      # Screener TTM Rs 46 cr; rises with the cash pile
@@ -107,7 +107,7 @@ def main():
 
     base_gap = out["scenarios"]["Base"]["value"]["vs_price"]
     out["readout"] = readout(base_gap)
-    md += [f"## Readout", "", f"Base value is {base_gap*100:+.0f}% vs price: **{out['readout']}** (ATTRACTIVE at +20% or more, STRETCHED at -20% or worse; management verdict AMBER, so no cap applies).", ""]
+    md += [f"## Readout", "", f"Base value is {base_gap*100:+.0f}% vs price: **{out['readout']}** (ATTRACTIVE at +20% or more, STRETCHED at -20% or worse; management verdict WATCH (AMBER in the ledger), so no cap applies).", ""]
 
     # Reverse: what FY29 PAT does today's price need at each multiple
     mcap = V["price"] * V["shares_cr"] - V["palvella_mar26"]

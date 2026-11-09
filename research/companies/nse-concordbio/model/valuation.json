@@ -69,7 +69,7 @@
      0.34
     ],
     "pe": 25.0,
-    "why": "FY24-FY26 pattern continues: low-teens growth, price-led share gains keep margin near the H1 FY27 level, injectables slow"
+    "why": "Built from risk cards R1 (destocking repeats), R2 (price erosion), R4 (injectables stuck) and R6 (multiple de-rates): 10-11% growth, margin held at 33-34%, 25x for a slower API maker"
    },
    "rows": [
     {
@@ -123,7 +123,7 @@
      0.38
     ],
     "pe": 35.0,
-    "why": "Guided path: about 19% growth, margin back to the bottom of the 38-40% guide by FY29 as Unit IV and Stellon fill"
+    "why": "Management guidance with no haircut: 19% growth a year, margin rising to 38% (bottom of the 38-40% guide) by FY29, tax 24.5%; 35x one-year-forward, a discount to the API and CDMO peer group (44-102x trailing) for the FY24-FY26 delivery record"
    },
    "rows": [
     {
@@ -167,55 +167,55 @@
   "Bull": {
    "assumptions": {
     "growth": [
-     0.2,
-     0.23,
-     0.23
+     0.19,
+     0.19,
+     0.19
     ],
     "margin": [
-     0.36,
-     0.385,
-     0.4
+     0.35,
+     0.365,
+     0.38
     ],
-    "pe": 42.0,
-    "why": "Injectable contracts and Stellon add on top of the API base; margin reaches the top of the guide; market keeps a premium multiple"
+    "pe": 45.0,
+    "why": "Same earnings as the base case (revenue is never modelled above guidance); the market pays 45x, today's trailing multiple and Gland Pharma's, for a proven 18-19% compounder with Unit IV filling"
    },
    "rows": [
     {
      "year": "FY27",
-     "revenue": 1265.88,
-     "ebitda": 455.71680000000003,
-     "margin": 0.36,
-     "pbt": 421.71680000000003,
-     "pat": 318.396184,
-     "eps": 15.217345488849894
+     "revenue": 1255.3310000000001,
+     "ebitda": 439.36585,
+     "margin": 0.35,
+     "pbt": 405.36585,
+     "pat": 306.05121675000004,
+     "eps": 14.627333292938065
     },
     {
      "year": "FY28",
-     "revenue": 1557.0324,
-     "ebitda": 599.457474,
-     "margin": 0.385,
-     "pbt": 565.457474,
-     "pat": 426.92039287000006,
-     "eps": 20.404123670459313
+     "revenue": 1493.84389,
+     "ebitda": 545.25301985,
+     "margin": 0.365,
+     "pbt": 511.25301985,
+     "pat": 385.99602998675,
+     "eps": 18.448195175708634
     },
     {
      "year": "FY29",
-     "revenue": 1915.149852,
-     "ebitda": 766.0599408,
-     "margin": 0.4,
-     "pbt": 732.0599408,
-     "pat": 552.705255304,
-     "eps": 26.415853097862357
+     "revenue": 1777.6742291,
+     "ebitda": 675.5162070580001,
+     "margin": 0.38,
+     "pbt": 641.5162070580001,
+     "pat": 484.3447363287901,
+     "eps": 23.14864800145062
     }
    ],
    "value": {
-    "fy29_eps": 26.415853097862357,
-    "pe": 42.0,
-    "price_mar28": 1109.465830110219,
-    "pv_today": 947.7654649116517,
+    "fy29_eps": 23.14864800145062,
+    "pe": 45.0,
+    "price_mar28": 1041.689160065278,
+    "pv_today": 889.8669830909672,
     "palvella_ps": 4.019453812336758,
-    "value_ps": 951.7849187239885,
-    "vs_price": 0.6023315130033478
+    "value_ps": 893.886436903304,
+    "vs_price": 0.5048593213860337
    }
   }
  },

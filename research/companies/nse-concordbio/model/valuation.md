@@ -6,7 +6,7 @@ Method: FY29 EPS x P/E gives a value at 31 Mar 2028 (one year forward), discount
 
 ## Bear
 
-FY24-FY26 pattern continues: low-teens growth, price-led share gains keep margin near the H1 FY27 level, injectables slow.
+Built from risk cards R1 (destocking repeats), R2 (price erosion), R4 (injectables stuck) and R6 (multiple de-rates): 10-11% growth, margin held at 33-34%, 25x for a slower API maker.
 
 | Year | Revenue | Growth | EBITDA | Margin | PBT | PAT | EPS (Rs) |
 |---|---|---|---|---|---|---|---|
@@ -18,7 +18,7 @@ FY29 EPS Rs 16.31 x 25 = Rs 408 at Mar-28; today Rs 348 + Palvella Rs 4 = **Rs 3
 
 ## Base
 
-Guided path: about 19% growth, margin back to the bottom of the 38-40% guide by FY29 as Unit IV and Stellon fill.
+Management guidance with no haircut: 19% growth a year, margin rising to 38% (bottom of the 38-40% guide) by FY29, tax 24.5%; 35x one-year-forward, a discount to the API and CDMO peer group (44-102x trailing) for the FY24-FY26 delivery record.
 
 | Year | Revenue | Growth | EBITDA | Margin | PBT | PAT | EPS (Rs) |
 |---|---|---|---|---|---|---|---|
@@ -30,19 +30,19 @@ FY29 EPS Rs 23.15 x 35 = Rs 810 at Mar-28; today Rs 692 + Palvella Rs 4 = **Rs 6
 
 ## Bull
 
-Injectable contracts and Stellon add on top of the API base; margin reaches the top of the guide; market keeps a premium multiple.
+Same earnings as the base case (revenue is never modelled above guidance); the market pays 45x, today's trailing multiple and Gland Pharma's, for a proven 18-19% compounder with Unit IV filling.
 
 | Year | Revenue | Growth | EBITDA | Margin | PBT | PAT | EPS (Rs) |
 |---|---|---|---|---|---|---|---|
-| FY27 | 1,266 | 20% | 456 | 36.0% | 422 | 318 | 15.22 |
-| FY28 | 1,557 | 23% | 599 | 38.5% | 565 | 427 | 20.40 |
-| FY29 | 1,915 | 23% | 766 | 40.0% | 732 | 553 | 26.42 |
+| FY27 | 1,255 | 19% | 439 | 35.0% | 405 | 306 | 14.63 |
+| FY28 | 1,494 | 19% | 545 | 36.5% | 511 | 386 | 18.45 |
+| FY29 | 1,778 | 19% | 676 | 38.0% | 642 | 484 | 23.15 |
 
-FY29 EPS Rs 26.42 x 42 = Rs 1109 at Mar-28; today Rs 948 + Palvella Rs 4 = **Rs 952** (+60% vs price).
+FY29 EPS Rs 23.15 x 45 = Rs 1042 at Mar-28; today Rs 890 + Palvella Rs 4 = **Rs 894** (+50% vs price).
 
 ## Readout
 
-Base value is +17% vs price: **FAIR** (ATTRACTIVE at +20% or more, STRETCHED at -20% or worse; management verdict AMBER, so no cap applies).
+Base value is +17% vs price: **FAIR** (ATTRACTIVE at +20% or more, STRETCHED at -20% or worse; management verdict WATCH (AMBER in the ledger), so no cap applies).
 
 ## What the price implies
 
