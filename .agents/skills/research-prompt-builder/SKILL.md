@@ -34,7 +34,7 @@ Never overwrite an existing prompt. If `<Company> Research Prompt.md` exists, sa
 - `reference/report-design/guide.md`: how to consult the three separately bundled design references. Read this router, then only the relevant manual chapters and JSON page records. The PDF is the reading/review copy. Do not paste the manuals or full JSON into the skill or generated prompt.
 - `reference/workers.md`: the worker briefs for step 3.
 - `reference/examples.md`: which saved prompt to read for which case.
-- The valuation metric table lives in the `business-valuation-scenarios` skill, Step 1. Read it there; do not copy it.
+- Valuation modelling follows the `business-valuation-scenarios` skill (`~/.claude/skills/business-valuation-scenarios/SKILL.md`): its Step 1 metric table, Step 2 guidance-anchored scenarios, Step 3 three separate year-wise tables and Step 4 caveats. Read it there; do not copy it. Section 5 of every prompt points the research run to it.
 
 ## Workflow
 
@@ -101,7 +101,7 @@ Write these to `prompt-notes.md` first. This is the core of the skill.
 3. Write a slots file (JSON) with seven keys: `ACCENT_MAPPING`, `TAG_LIST`, `DIAGRAMS`, `MUST_HAVE_CHARTS`, `VISUAL_PLAN`, `REPORT_PROFILE`, `REPORT_PAGE_PLAN`. `VISUAL_PLAN` is markdown table rows only, five cells each. `REPORT_PROFILE` is one family ID. `REPORT_PAGE_PLAN` is the six-column table specified in `reference/report-design/guide.md`, including its header and explicit physical source IDs such as BF-06. No full reference content is inlined.
 4. Assemble: `python SKILL_DIR/scripts/assemble.py <draft> <slots.json> "<final prompt path>" --references-dir "<staged reference folder>"`. This pastes the current locked sections 6A, 7, 8 and 8B in word for word and inserts verified absolute paths to the staged references. The later report agent reads those files; copying links without a page plan is not sufficient.
 5. Section 1 holds cited facts, conflicts and the "To find" list. Every local path in section 1 is absolute, in backticks, and exists.
-6. Section 5: bear, base and bull are each marked `[E]`; base equals management guidance exactly; bull has the same earnings as base at a higher multiple; bear is built from the S19 risk cards; a management guidance table with a Source column sits alongside.
+6. Section 5: keep the skeleton's pointer to the `business-valuation-scenarios` skill; bear, base and bull are each marked `[E]`; base equals management guidance exactly; bull is guidance realised faster or better from disclosed triggers only (the skill's Step 2); bear is built from the S19 risk cards; a management guidance table with a Source column sits alongside.
 
 Override rules:
 - Locked, never overridden: section order 0A, 0B, 1 to 6, 6A, 7, 8, 8B, 9; 0A first; the 10 rules; the 15 questions; the citation rule; sections 6A, 7, 8 and 8B; Business and Products before peers and numbers; management, capex, guidance, growth triggers and the anti-thesis always covered; valuation and verdict last.

@@ -59,5 +59,5 @@ How to make each core part of the prompt specific. The skeleton holds the defaul
 ## Valuation (section 5)
 
 - Metric from the `business-valuation-scenarios` Step 1 table.
-- Base equals guidance exactly; bull is the same earnings at a higher multiple; bear misses guidance at a lower multiple.
+- Scenario build and layout follow the `business-valuation-scenarios` skill, Steps 2 to 4 (read it there): base equals guidance exactly; bull is guidance realised faster or better from disclosed triggers; bear misses guidance for named risks; three separate year-wise tables with two historical years, then the caveats.
 - Diluted share count always.

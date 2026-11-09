@@ -182,6 +182,7 @@ def main():
     for case in ("Bear case", "Base case", "Bull case"):
         gate(any(case.lower() in l.lower() and "[E]" in l for l in s5), "%s marked [E]" % case)
     gate(any("bear" in l.lower() and "risk" in l.lower() for l in s5), "bear case linked to the risk cards")
+    gate("business-valuation-scenarios" in "\n".join(s5), "section 5 points to the business-valuation-scenarios skill")
     gate(any(r and "source" in " ".join(r).lower() for r in table_rows(s5)[:1]),
          "management guidance table with a Source column")
 

@@ -7,6 +7,7 @@ Known later changes by the user (also recorded in learnings.md). These are the o
 - Sat, 07 Nov 2026: step 2 now asks which documents to use before any worker reads (the plan below says "The skill never stops for permission").
 - Sat, 07 Nov 2026: the user said to ignore `equity-research-html-studio` (it is not public and not on this machine). It is dropped from the external skills; the others stay.
 - Sat, 07 Nov 2026: the user said to use the `dataviz` library for chart decision making in place of equity-research-html-studio. dataviz is loaded with the Skill tool before the visual plan (builder) and before the first chart (research run), and its anti-patterns.md is the chart critique step.
+- Tue, 10 Nov 2026: valuation modelling follows the `business-valuation-scenarios` skill, Steps 1 to 4, by reference. The bull case becomes guidance realised faster or better from disclosed triggers (the skill's Step 2), in place of "same earnings at a higher multiple" in the valuation rules below.
 - Path on this machine is `C:\Users\RNEGI\.claude\skills\research-prompt-builder\` (the plan was written on a machine with `C:\Users\Rohit Negi\`).
 - The user's request that came with the plan: install all the skills this skill needs, read them, and ask clarifying questions before building.
 

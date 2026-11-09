@@ -233,7 +233,7 @@ Every S-section opens with the answer in one bold line, then the evidence, then 
 - What would change our mind: the evidence that would kill the anti-thesis, and the evidence that would kill the thesis.
 {{S19_SPECIFIC: the anti-thesis to test, in one or two lines, and the risks expected}}
 
-**S20. Valuation and verdict.** Bear, base and bull; bull vs bear side by side; the 15 questions answered in one line each; the assumed vs grounded list; dated signals to watch.
+**S20. Valuation and verdict.** Bear, base and bull as three separate year-wise tables per the `business-valuation-scenarios` skill, with its caveats; bull vs bear side by side; the 15 questions answered in one line each; the assumed vs grounded list; dated signals to watch.
 
 **Appendix. Sources.** Every source with its link; the Disclosed, Inferred and Not Disclosed list for key numbers.
 
@@ -253,6 +253,7 @@ Every S-section opens with the answer in one bold line, then the evidence, then 
 
 ## 5. Valuation
 
+- Method: build the valuation by following the `business-valuation-scenarios` skill (`C:\Users\Rohit Negi\.claude\skills\business-valuation-scenarios\SKILL.md`), Steps 1 to 4: metric diagnosis, projections anchored to disclosed guidance, three separate year-wise Bear, Base and Bull tables in its Screener P&L layout with its added rows, and its caveats section. Read the skill there before building the model; it is not copied here. Where this section and the skill differ on how scenarios are built or laid out, the skill wins. The tables and caveats go in S20. Its Step 5 dashboard JSON is not part of the report: it is produced in chat only after the user approves the tables.
 - Share count: {{SHARES: basic shares plus dilution from warrants, ESOPs and convertibles, with source}}
 - Main metric: {{METRIC_AND_REASON: the metric, and why it fits this business, chosen with the business-valuation-scenarios Step 1 table}}. The method follows the business: when there are no earnings yet, value the asset (such as rNPV, replacement cost or sum of the parts), never past earnings. Cross-check: {{CROSS_CHECK}}
 - Revenue build, bottom-up: {{REVENUE_BUILD: the driver arithmetic, such as capacity x utilisation x realisation}}
@@ -262,9 +263,10 @@ Every S-section opens with the answer in one bold line, then the evidence, then 
 |---|---|---|---|
 {{GUIDANCE_ROWS: or a single row stating "No numeric guidance given"}}
 
-- Bear case [E]: built from the S19 risk cards. {{BEAR: guidance missed, lower revenue or margin, and a lower multiple, with the risk cards it comes from}}
+- Bear case [E]: built from the S19 risk cards, as the skill's Step 2 bear case: guidance not fully realised, grounded in specific risks. {{BEAR: which guidance lines are missed and by how much, and the risk cards they come from}}
 - Base case [E]: management guidance exactly, never a more conservative number of our own. {{BASE: the guided revenue and margin path, and the multiple (the user's multiple if one was given)}}
-- Bull case [E]: the same earnings as the base case, valued at a higher multiple. Revenue is never modelled above guidance in the bull case. {{BULL: the multiple and why the market could pay it}}
+- Bull case [E]: guidance realised faster or better, grounded only in upside triggers already disclosed (S13), as the skill's Step 2 bull case; no speculative moonshots. {{BULL: which disclosed triggers lift which lines, and the multiple}}
+- Multiple: state whether it is held flat across years and scenarios, and why that is a simplification.
 - Reverse check: what today's price of {{PRICE}} implies about growth and margin, worked out.
 - Rating bands: BUY if the base value is 20% or more above the price; HOLD if within 20%; SELL if 20% or more below. A RED management verdict caps the rating at HOLD.
 - Show the working for every estimate, and keep the interest, depreciation and tax bridge marked [E].

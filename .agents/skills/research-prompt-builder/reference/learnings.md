@@ -48,7 +48,7 @@ What the user had to ask after a report was built. Every new prompt must force e
 ## Valuation rules (from memory, 29-Sep)
 
 - Base = management guidance exactly, never a more conservative number.
-- Bull = the same earnings as base at a higher multiple. Never revenue above guidance.
+- Bull = the same earnings as base at a higher multiple. Never revenue above guidance. (Superseded 10 Nov 2026: see the last row of the corrections table.)
 - Bear = guidance missed and a lower multiple.
 - A multiple the user names is used for base.
 
@@ -68,3 +68,4 @@ Append here: date, what the user asked, why the prompt missed it, the line that 
 | Sat, 07 Nov 2026, DRAFT for review | "refer these instead pasting everthing inside the skill"; "Let me verify it before you finally save the skill" | Links alone would leave the locked neo-brutalist block and boxed dashboard conventions in force. A later research run might also lack the actual references | Proposed reference-design amendment: keep the three original files separately bundled; read them selectively through the guide; stage them beside each company prompt; require a family and physical-page plan in section 7; use the manuals for typography, model-first depth and rendered-page review. Supersede only the conflicting decoration, boxed-note and chart-quota defaults. Preserve the approved plan body and all unrelated research, source, model and valuation decisions. Deliver a review ZIP; do not install before approval |
 
 | 2026-11-07 | "Just replace Sonnet with the gpt 6.1 light models" | Sonnet was unavailable in Codex | User-approved amendment: use gpt-6.1-sol with low reasoning effort and fork_turns none for all workers, including verification. Supersedes historical model assignments only. |
+| Tue, 10 Nov 2026 | "add this skill of business valuation scenarios for valuation modelling in the research prompt so valuation is always structured the way I want, I want you to refer to that skill not pasted" | Section 5 used only the skill's Step 1 metric table, so scenario build and layout were improvised per report | Section 5 and S20 point to `business-valuation-scenarios` Steps 1 to 4 (three separate year-wise tables, caveats); check_prompt.py gates the pointer. User-approved supersession: bull is now guidance realised faster or better from disclosed triggers (the skill's Step 2), replacing "same earnings at a higher multiple". Base = guidance and bear from risk cards are unchanged |

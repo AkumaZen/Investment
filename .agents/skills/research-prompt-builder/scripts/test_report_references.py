@@ -22,7 +22,8 @@ SCRIPTS = ROOT / "scripts"
 class ReferenceHandoffTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="report reference test ")
-        self.work = Path(self.temp.name)
+        # resolve() expands Windows 8.3 short names (ROHITN~1), matching the resolved paths assemble.py writes
+        self.work = Path(self.temp.name).resolve()
         self.addCleanup(self.temp.cleanup)
 
     def run_script(self, script, *args, success=True):
