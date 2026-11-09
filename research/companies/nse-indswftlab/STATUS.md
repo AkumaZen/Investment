@@ -35,8 +35,8 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 | [2] Screener numbers, peers, source manifest | Done | data/screener-2026-11-09.md, data/source-manifest.md |
 | [3] Diagnose, 15 questions, anti-thesis | Done | notes.md |
 | [4] Model | Done | model/valuation.py |
-| [5] Report | In progress | report/report.html |
-| [6] Checks, PDF, final reply | Not started | report/qa/ |
+| [5] Report | Done (first build; visual fixes in [6]) | report/report.html, report/build.py, report/charts.py |
+| [6] Checks, PDF, final reply | In progress | report/qa/ |
 
 ## Step [1] findings to carry forward
 
@@ -56,5 +56,6 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 ## Resume point (2026-11-09)
 
 - Step [3]: done. notes.md holds the 15 answers, headline answer, anti-thesis, bull case, management verdict input (WATCH) and the closed To-find list.
-- Step [4]: done. Value range Rs 246 / 426 / 504 (bear / base / bull) vs Rs 349; base +22.0%, ATTRACTIVE, but FAIR if the stake is counted at zero (Rs 385) or at 12x (Rs 358). Risk cards used by the bear case: R1, R2, R3, R5, R7 (S19 must use these numbers).
-- Step [5]: in progress (report/build.py, charts.py, report.html). Step [6] not started.
+- Step [4]: done. Value range Rs 246 / 426 / 504 (bear / base / bull) vs Rs 349; base +22.0%, ATTRACTIVE, but FAIR if the stake is counted at zero (Rs 385) or at 12x (Rs 358). Risk cards used by the bear case (report numbering): R1 second-half miss, R2 working capital, R5 no stake value, R6 lower multiple.
+- Step [5]: done 10 Nov 2026; 21 pages, 55 exhibits. First visual check flagged desktop 1 overlap; phone 4 scrolling tables, 11 overlaps, 5 clipped labels.
+- Step [6]: in progress. Fixing visual flags, then PDF, re-checks, qa-notes.

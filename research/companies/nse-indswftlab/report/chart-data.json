@@ -1,0 +1,784 @@
+{
+ "data": {
+  "price": 349.0,
+  "shares_printed": 8.6961558,
+  "shares_diluted": 9.3961558,
+  "hi52": 427,
+  "lo52": 87,
+  "bv": 170,
+  "years": [
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "sales": [
+   780,
+   891,
+   1039,
+   1207,
+   1281,
+   574,
+   649
+  ],
+  "sales_ttm": 753,
+  "op": [
+   144,
+   183,
+   202,
+   229,
+   252,
+   -7,
+   47
+  ],
+  "op_ttm": 104,
+  "oi": [
+   33,
+   23,
+   37,
+   7,
+   434,
+   292,
+   36
+  ],
+  "oi_ttm": 33,
+  "pat": [
+   -21,
+   -3,
+   -2,
+   48,
+   421,
+   250,
+   43
+  ],
+  "pat_ttm": 84,
+  "pbt": [
+   -20,
+   18,
+   13,
+   87,
+   582,
+   258,
+   51
+  ],
+  "dep": [
+   90,
+   87,
+   131,
+   57,
+   53,
+   24,
+   31
+  ],
+  "ocf": [
+   125,
+   135,
+   150,
+   195,
+   -163,
+   -29,
+   -68
+  ],
+  "fcf": [
+   114,
+   131,
+   137,
+   182,
+   -205,
+   -54,
+   -155
+  ],
+  "debt": [
+   1031,
+   1005,
+   953,
+   862,
+   17,
+   33,
+   18
+  ],
+  "debt_sep26": 20,
+  "fa": [
+   843,
+   753,
+   630,
+   587,
+   8,
+   273,
+   304
+  ],
+  "q": [
+   "Dec-24",
+   "Mar-25",
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "q_sales": [
+   129,
+   138,
+   153,
+   159,
+   151,
+   170,
+   191,
+   240
+  ],
+  "q_op": [
+   -7,
+   -9,
+   4,
+   7,
+   4,
+   21,
+   33,
+   45
+  ],
+  "q_opm": [
+   -5,
+   -7,
+   2.4,
+   4.7,
+   2.8,
+   12,
+   17,
+   19
+  ],
+  "q_pat": [
+   -5,
+   222,
+   9,
+   8,
+   10,
+   15,
+   25,
+   34
+  ],
+  "promoter": [
+   42.01,
+   40.94,
+   40.94,
+   39.49,
+   39.49,
+   43.0,
+   42.93,
+   42.93
+  ],
+  "fii": [
+   0.46,
+   3.07,
+   4.27,
+   14.8,
+   14.33,
+   13.88,
+   10.7,
+   10.78
+  ],
+  "holders": [
+   28752,
+   28117,
+   28709,
+   43780,
+   42121,
+   39222,
+   40881,
+   42667
+  ],
+  "dq": [
+   "Q4 FY26",
+   "Q1 FY27",
+   "Q2 FY27"
+  ],
+  "dq_rev": [
+   164.72,
+   186.12,
+   230.23
+  ],
+  "dq_ooi": [
+   7.98,
+   -0.03,
+   4.66
+  ],
+  "dq_rm": [
+   64.86,
+   75.21,
+   106.04
+  ],
+  "dq_emp": [
+   37.2,
+   38.95,
+   37.36
+  ],
+  "dq_oth": [
+   51.94,
+   38.59,
+   49.16
+  ],
+  "dq_ebitda": [
+   18.69,
+   33.32,
+   42.33
+  ],
+  "dq_margin": [
+   10.82,
+   17.91,
+   18.02
+  ],
+  "dq_dep": [
+   8.08,
+   7.58,
+   7.77
+  ],
+  "dq_tax": [
+   -3.22,
+   7.98,
+   9.21
+  ],
+  "dq_pat": [
+   14.94,
+   24.44,
+   31.03
+  ],
+  "q2_op": 234.89,
+  "q2fy26_op": 156.43,
+  "h1": {
+   "rev": [
+    298.43,
+    416.35
+   ],
+   "op_rev": [
+    310.02,
+    420.97
+   ],
+   "ebitda": [
+    16.98,
+    75.65
+   ],
+   "margin": [
+    5.47,
+    17.97
+   ],
+   "pbt": [
+    20.88,
+    73.49
+   ],
+   "pat": [
+    16.88,
+    55.47
+   ],
+   "nonop_oi": [
+    20.86,
+    15.23
+   ]
+  },
+  "fy26_op_rev": 635.89,
+  "bs": {
+   "share_cap": [
+    81.61,
+    86.96
+   ],
+   "equity": [
+    1298.66,
+    1460.59
+   ],
+   "lt_debt": [
+    8.78,
+    15.14
+   ],
+   "st_debt": [
+    12.77,
+    4.34
+   ],
+   "payables": [
+    117.09,
+    133.7
+   ],
+   "ppe": [
+    282.84,
+    309.61
+   ],
+   "cwip": [
+    0,
+    41.82
+   ],
+   "oth_nca": [
+    428.64,
+    434.22
+   ],
+   "inventory": [
+    102.83,
+    168.35
+   ],
+   "receivables": [
+    168.53,
+    234.79
+   ],
+   "cash": [
+    388.31,
+    322.81
+   ],
+   "cur_inv": [
+    19.37,
+    45.03
+   ],
+   "total": [
+    1530.06,
+    1754.29
+   ]
+  },
+  "mix_lines": [
+   "Own brands (export)",
+   "Contract manufacturing (export)",
+   "Branded generics (India)",
+   "Ethical (India)",
+   "P2P (India)"
+  ],
+  "mix_q1": [
+   56.72,
+   26.64,
+   6.41,
+   6.62,
+   3.61
+  ],
+  "mix_q2": [
+   55.75,
+   26.99,
+   6.84,
+   5.43,
+   5.0
+  ],
+  "geo": {
+   "Europe": 47,
+   "Southeast Asia": 18,
+   "Australia": 10,
+   "Africa": 5,
+   "Canada": 4,
+   "Middle East": 4,
+   "UAE": 3,
+   "Latin America": 3,
+   "CIS": 2,
+   "French West Africa": 2,
+   "Mexico": 1,
+   "South Africa": 1
+  },
+  "reg_regions": [
+   "Africa",
+   "Southeast Asia",
+   "Europe",
+   "CIS and Central Asia",
+   "Latin America",
+   "Middle East and GCC",
+   "Australia and NZ",
+   "Canada"
+  ],
+  "reg_held": [
+   228,
+   177,
+   170,
+   125,
+   86,
+   98,
+   40,
+   11
+  ],
+  "reg_exp": [
+   109,
+   144,
+   18,
+   21,
+   19,
+   17,
+   4,
+   1
+  ],
+  "top9": [
+   [
+    "Atorvastatin",
+    4795.71,
+    8549.74
+   ],
+   [
+    "Ezetimibe + Atorvastatin",
+    2328.13,
+    8077.82
+   ],
+   [
+    "Fexofenadine",
+    7967.32,
+    7432.38
+   ],
+   [
+    "Metformin",
+    2571.26,
+    2833.61
+   ],
+   [
+    "Quetiapine",
+    990.1,
+    1975.22
+   ],
+   [
+    "Famciclovir",
+    890.97,
+    1864.06
+   ],
+   [
+    "Spagulax",
+    2230.09,
+    1450.49
+   ],
+   [
+    "Aripiprazole",
+    1095.34,
+    755.11
+   ],
+   [
+    "Ramipril",
+    2353.62,
+    593.13
+   ]
+  ],
+  "launches": [
+   [
+    "Ibuprofen sachet",
+    12.0,
+    "Commercialised",
+    "FY27"
+   ],
+   [
+    "Clarithromycin dry suspension",
+    6.0,
+    "Validated; partner variation awaited",
+    "FY27"
+   ],
+   [
+    "Macrogol sachet",
+    5.5,
+    "Commercialised",
+    "FY27"
+   ],
+   [
+    "Esomeprazole",
+    10.0,
+    "Planned",
+    "FY28"
+   ],
+   [
+    "Clarithromycin (second line)",
+    9.9,
+    "Planned",
+    "FY29"
+   ],
+   [
+    "Ibuprofen (second line)",
+    0.4,
+    "Planned",
+    "FY29"
+   ]
+  ],
+  "usd_inr": 88,
+  "pipeline13": [
+   "Rosuvastatin",
+   "Spironolactone",
+   "Mirabegron PR",
+   "Rifaximin",
+   "Dapagliflozin",
+   "Sitagliptin",
+   "Linagliptin",
+   "Edoxaban",
+   "Mesalamine PR",
+   "Sulfasalazine EC",
+   "Nitazoxanide",
+   "Sacubitril + Valsartan",
+   "Empagliflozin"
+  ],
+  "exp_dom": {
+   "FY25": [
+    399.23,
+    150.41
+   ],
+   "FY26": [
+    484.39,
+    128.24
+   ]
+  },
+  "kmp_pay": [
+   12.65,
+   16.26
+  ],
+  "pat_standalone_fy26": 42.56,
+  "w1": {
+   "n": 2.6,
+   "price": 121,
+   "amt": 314.6,
+   "lapsed_n": 0.65,
+   "lapsed_amt": 58.99
+  },
+  "w2": {
+   "n": 0.7,
+   "price": 196,
+   "amt": 137.2,
+   "upfront": 34.3,
+   "conv_n": 0.14,
+   "conv_amt": 20.58
+  },
+  "stake_pct": 0.078
+ },
+ "calc": {
+  "mcap": 3034.9583742,
+  "mcap_dil": 3279.2583742,
+  "net_cash": 348.36,
+  "stake_624": 624.0,
+  "stake_vals": {
+   "7000": 546.0,
+   "8000": 624.0,
+   "9000": 702.0
+  },
+  "core_ev": 2062.5983742,
+  "cash_stake_share": 0.32038660176230893,
+  "h1_g": 0.3578801367653701,
+  "h1_rev_g": 0.39513453741245863,
+  "h1_inc": 110.95000000000005,
+  "q2_yoy": 0.5015661957425044,
+  "q_op_rev": [
+   172.7,
+   186.09,
+   234.89
+  ],
+  "h2fy26": 325.87,
+  "q3fy26": 153.17000000000002,
+  "q1fy26": 153.58999999999997,
+  "h2_need": 532.865,
+  "h2_need_g": 0.6352072912511124,
+  "h2_need_vs_q2": 0.1342862616543914,
+  "h2_1000": 579.03,
+  "h2_1000_g": 0.7768742136434774,
+  "h2_margin_1000_20": 0.2147557121392674,
+  "inv_rec_up": 131.77999999999997,
+  "inv_g": 0.6371681415929202,
+  "rec_g": 0.3931644217646708,
+  "cash_fall": 65.5,
+  "nwc": [
+   154.27,
+   269.44
+  ],
+  "rec_days": [
+   103.06177328016621,
+   102.91623633961811
+  ],
+  "inv_days": [
+   62.884009650504304,
+   73.793382971058
+  ],
+  "nwc_days": [
+   94.34130281808129,
+   118.10447940434729
+  ],
+  "h1_costs": [
+   181.25,
+   76.31,
+   87.75
+  ],
+  "per100": {
+   "rm": 43.05532460745421,
+   "emp": 18.127182459557687,
+   "oth": 20.844715775470934,
+   "ebitda": 17.970401691331926,
+   "dep_int": 4.130935696130365,
+   "oi": 3.617835000118773,
+   "pbt": 17.45730099532033,
+   "tax": 4.085801838610827,
+   "pat": 13.176710929519917,
+   "other": 0.19478822718958433
+  },
+  "h1_other_items": 0.8199999999999932,
+  "fy26_ocf_per100": -10.477657935285054,
+  "rm_pct": [
+   39.37591063623118,
+   40.4094132817537,
+   46.05828953655041
+  ],
+  "emp_pct": [
+   22.58377853326858,
+   20.92735869331614,
+   16.227251009859707
+  ],
+  "oth_pct": [
+   31.532297231665858,
+   20.733935095637225,
+   21.352560482995266
+  ],
+  "top9_cr": [
+   [
+    "Atorvastatin",
+    47.9571,
+    85.4974
+   ],
+   [
+    "Ezetimibe + Atorvastatin",
+    23.2813,
+    80.7782
+   ],
+   [
+    "Fexofenadine",
+    79.6732,
+    74.3238
+   ],
+   [
+    "Metformin",
+    25.712600000000002,
+    28.336100000000002
+   ],
+   [
+    "Quetiapine",
+    9.901,
+    19.752200000000002
+   ],
+   [
+    "Famciclovir",
+    8.9097,
+    18.6406
+   ],
+   [
+    "Spagulax",
+    22.300900000000002,
+    14.5049
+   ],
+   [
+    "Aripiprazole",
+    10.953399999999998,
+    7.5511
+   ],
+   [
+    "Ramipril",
+    23.536199999999997,
+    5.9313
+   ]
+  ],
+  "top9_tot": 335.3156,
+  "top9_share": 0.5273169887873689,
+  "ator2": 166.2756,
+  "ator2_share": 0.26148484800830335,
+  "launch_usd": 43.8,
+  "launch_inr": 385.43999999999994,
+  "q2_line_rs": [
+   130.95117499999998,
+   63.39681099999999,
+   16.066475999999998,
+   12.754526999999998,
+   11.7445
+  ],
+  "export_share_q2": 82.74,
+  "own_cmo_split": 67.37974377568287,
+  "reg_held_tot": 935,
+  "reg_exp_tot": 333,
+  "per_reg": 0.9259259259259259,
+  "capex_hist": [
+   11,
+   4,
+   13,
+   13,
+   42,
+   25,
+   87
+  ],
+  "ocf_3y": -260,
+  "kmp_pct": 38.204887218045116,
+  "w1_raised": 255.61,
+  "w2_left_n": 0.5599999999999999,
+  "w2_to_come": 82.32,
+  "exp_g": 0.21331062294917702,
+  "dom_g": -0.14739711455355353,
+  "at_now": 2.3694619127564525,
+  "new_cust_share": [
+   0.7210455159981971,
+   0.8111762054979718
+  ],
+  "peer_med": 17.9
+ },
+ "sources": {
+  "deck": [
+   "Q2 FY27 investor presentation, filed Wed, 4 Nov 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6385edbd-a83b-4fd6-9885-0743f7cb9a2e.pdf"
+  ],
+  "call": [
+   "Q2 FY27 call transcript, Wed, 4 Nov 2026 (machine transcript supplied by the reader; BSE carries the audio)",
+   null
+  ],
+  "audio": [
+   "Q2 FY27 call audio link on BSE",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3c6a2f5f-35f6-41c7-9c0f-7b7ea47c9ea3.pdf"
+  ],
+  "trq1": [
+   "Q1 FY27 call transcript, Aug 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=20e51151-92d1-4584-b075-38946d071365.pdf"
+  ],
+  "dq1": [
+   "Q1 FY27 investor presentation, Aug 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=53bc6695-3b3b-4d54-9e49-fd338cb7b144.pdf"
+  ],
+  "dq3": [
+   "Q3 FY26 investor presentation, Wed, 4 Feb 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b38c0cc9-6ef5-4074-a68b-0d45a9dfcee5.pdf"
+  ],
+  "djan": [
+   "Corporate presentation, Wed, 14 Jan 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1aea0d8d-53f1-4c67-9417-9110bc29ff21.pdf"
+  ],
+  "ar26": [
+   "Annual Report FY2025-26",
+   "https://www.bseindia.com/xml-data/corpfiling/AttachHis/1030038a-682c-455c-9ee3-7f2c273fa639.pdf"
+  ],
+  "ar25": [
+   "Annual Report FY2024-25",
+   "https://www.bseindia.com/xml-data/corpfiling/AttachHis/00dc7b70-03cb-4573-99ed-0b3e05ebf276.pdf"
+  ],
+  "ar24": [
+   "Annual Report FY2023-24",
+   "https://www.bseindia.com/xml-data/corpfiling/AttachHis/255c9918-ec21-425b-9dbb-88eaf0bd13a1.pdf"
+  ],
+  "caref": [
+   "CARE monitoring agency final report, warrant issue 1 (Rs 314.60 cr), filed Tue, 3 Nov 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e0af5fc1-e457-4aa2-abdd-655b65463742.pdf"
+  ],
+  "careq2": [
+   "CARE monitoring agency Q2 FY27 report, warrant issue 2 (Rs 137.20 cr), filed Tue, 3 Nov 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e6ff1c5d-b9c5-4e88-a6a8-2662fb3398e5.pdf"
+  ],
+  "carer24": [
+   "CARE Ratings rationale, Mar 2024 (history)",
+   "https://www.careratings.com/upload/CompanyFiles/PR/202403130346_Ind-Swift_Laboratories_Limited.pdf"
+  ],
+  "nsea": [
+   "NSE filing: allotment of 70,00,000 warrants at Rs 196, Thu, 17 Sep 2026",
+   "https://nsearchives.nseindia.com/corporate/INDSWFTLAB_17092026174502_Outcome_Allotment.pdf"
+  ],
+  "nsec": [
+   "NSE filing: conversion of 14,00,000 warrants, Thu, 8 Oct 2026",
+   "https://nsearchives.nseindia.com/corporate/INDSWFTLAB_08102026183706_Committee_Meeting_Outcome_08102026.pdf"
+  ],
+  "scr": [
+   "Screener.in consolidated data, fetched 9 Nov 2026",
+   "https://www.screener.in/company/INDSWFTLAB/consolidated/"
+  ],
+  "peers": [
+   "Screener.in peer pages and compare tool, fetched 9 Nov 2026",
+   "https://www.screener.in/company/INDSWFTLAB/consolidated/"
+  ],
+  "ledger": [
+   "Our claims ledger, Jan 2026 to Nov 2026 (evidence/claims-ledger.md)",
+   null
+  ],
+  "model": [
+   "Our valuation model (model/valuation.py)",
+   null
+  ]
+ },
+ "valuation_readout": "ATTRACTIVE"
+}

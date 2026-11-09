@@ -22,7 +22,7 @@ Verdict for step [3]: a business in the making on top of cash and a stake; the e
 
 - FY26 operating revenue Rs 635.89 cr [deck p23] (Disclosed); Screener consolidated sales Rs 649 cr [Screener]; standalone AR revenue Rs 612.64 cr: export Rs 484.39 cr, domestic Rs 128.24 cr [AR26 p93] (Disclosed).
 - By line, FY26 rupee revenue is Not Disclosed; only Q1 and Q2 FY27 percentage shares are given [deck p20].
-- Top nine products were Rs 334.32 cr in FY26, 52.6% of Rs 635.89 cr [deck p19, E]; Atorvastatin plus Ezetimibe+Atorvastatin Rs 166.28 cr, 26.1% [E].
+- Top nine products were Rs 335.32 cr in FY26, 52.7% of Rs 635.89 cr (corrected from 334.32 on 10 Nov 2026; addition slip) [deck p19, E]; Atorvastatin plus Ezetimibe+Atorvastatin Rs 166.28 cr, 26.1% [E].
 - Domestic fell 14.7% in FY26 (Rs 150.41 cr to Rs 128.24 cr) while export rose 21.3% (Rs 399.23 cr to Rs 484.39 cr) [AR26 p93, E].
 - Ind-Swift Ltd's pre-merger formulation accounts (FY22 to FY24): Not Disclosed in the documents read; the merger scheme was not collected. The only bridge is FY25 standalone revenue of Rs 549.64 cr [AR26 p93, E] and the 45,15,495 shares issued to its promoter-group holders [AR26 p40].
 - What the old API business earned when sold: revenue about Rs 1,200 cr and EBITDA Rs 250-300 cr [tr-q1 p9] (Disclosed, spoken).
