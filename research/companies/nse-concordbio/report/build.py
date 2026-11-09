@@ -984,7 +984,7 @@ appendix = f"""{dis}
 <h3>Sources</h3><ol class="srcs">{src_list}</ol>
 <p class="small">Also read but not cited above: all 14 call transcripts and 14 investor presentations from Q1 FY24 to Q2 FY27, and annual reports FY24 and FY25 (listed in the source manifest). Not checked: the company's investor-relations site, NSE copies of filings, the IPO prospectus text, and US FDA databases. Images inside the decks were not extracted; all charts here are redrawn from the numbers.</p>
 <h3>Disclaimer</h3>
-<p class="small">This report is research for learning and discussion. It is not investment advice, a recommendation, or an offer to buy or sell any security. The author is not a SEBI-registered investment adviser or research analyst. The valuation readout describes where the price sits against our scenarios; it is not a rating. Figures come from company filings and Screener.in as of 9 November 2026 and may contain errors; estimates marked [E] are ours and guidance marked [G] is management's. Past performance does not guarantee future results. Make your own decisions or consult a registered adviser.</p>"""
+<p class="small disc">This report is research for learning and discussion. It is not investment advice, a recommendation, or an offer to buy or sell any security. The author is not a SEBI-registered investment adviser or research analyst. The valuation readout describes where the price sits against our scenarios; it is not a rating. Figures come from company filings and Screener.in as of 9 November 2026 and may contain errors; estimates marked [E] are ours and guidance marked [G] is management's. Past performance does not guarantee future results. Make your own decisions or consult a registered adviser.</p>"""
 SECTIONS.append(("appendix", "", "Sources and disclaimer", "Appendix", "Sources, disclosures and disclaimer", appendix))
 
 # ================================================================= render
@@ -1119,12 +1119,18 @@ blockquote.q p{margin:0 0 4px;font-style:italic}blockquote.q cite{font-size:12.5
  h2{font-size:21px}.ctitle{font-size:27px}
 }
 @media screen and (max-width:480px){.plants{grid-template-columns:minmax(0,1fr)}}
-@page{size:A4;margin:36pt}
+@page:first{@top-left{content:none}@top-right{content:none}}
+@page{size:A4;margin:40pt 36pt 40pt;@top-left{content:"CONCORD BIOTECH | NSE: CONCORDBIO | Company study";font:bold 7.5pt Calibri,Carlito,sans-serif;color:#0E5A63}@top-right{content:"9 November 2026";font:7.5pt Calibri,Carlito,sans-serif;color:#0E5A63}@bottom-left{content:"Concord Biotech | Company study | Not investment advice";font:7.5pt Calibri,Carlito,sans-serif;color:#5F6873}@bottom-right{content:counter(page) " / " counter(pages);font:7.5pt Calibri,Carlito,sans-serif;color:#5F6873}}
 @media print{
  body{background:#fff;font-size:10pt;line-height:1.3}
  .wrap{display:block;padding:0}.side,.topnav{display:none}
- .page{margin:0;border:0;break-before:page}
- .page:first-child{break-before:auto}
+ .page{margin:0 0 18pt;border:0;break-before:auto}
+ .page:first-child,#appendix{break-before:page}
+ .band,.rule,.kicker,h2,.answer,.mfy{break-after:avoid}
+ .ex,.means,.mfy,.duo,.risk,.answer,.keep,.disc{break-inside:avoid}
+ .foot{display:none}
+ .page:not(#s1) .band,.page:not(#s1) .rule{display:none}
+ .page:not(#s1) .inner{border-top:1.5pt solid #0E5A63;padding-top:6pt}
  .inner{padding:8pt 0 0}.band{padding:5pt 8pt;font-size:8.5pt}.foot{margin:6pt 0 0;font-size:7.5pt}
  h2{font-size:14pt}h3{font-size:11.5pt}h4{font-size:10.5pt}.ctitle{font-size:22pt}.csub{font-size:13pt}
  .answer{font-size:10.5pt}.lede{font-size:11pt}
@@ -1138,6 +1144,25 @@ blockquote.q p{margin:0 0 4px;font-style:italic}blockquote.q cite{font-size:12.5
  a{color:inherit;text-decoration:none}
 }
 """
+
+
+_VOID = {"br", "img", "hr", "meta", "input", "col", "wbr", "source"}  # HTML void tags; SVG tags close explicitly or with />
+
+
+def _split_top(html, n):
+    """Return (first n top-level elements, rest) of an HTML fragment; used to keep a section's opening together in print."""
+    depth, count = 0, 0
+    for m in re.finditer(r"<(/?)([a-zA-Z0-9]+)[^>]*?(/?)>", html):
+        close, tag, selfclose = m.group(1), m.group(2).lower(), m.group(3)
+        if close:
+            depth -= 1
+            if depth == 0:
+                count += 1
+                if count == n:
+                    return html[:m.end()], html[m.end():]
+        elif not selfclose and tag not in _VOID:
+            depth += 1
+    return html, ""
 
 
 def render():
@@ -1167,7 +1192,8 @@ def render():
                     '<p class="cmeta">Company study, not a recommendation &nbsp;|&nbsp; Data as of 9 November 2026 &nbsp;|&nbsp; Rs crore unless stated &nbsp;|&nbsp; Per-share figures after the 1:1 bonus</p>')
             inner = head + f'<p class="kicker">{kicker}</p><h2>{headline}</h2>' + html
         else:
-            inner = f'<p class="kicker">{kicker}</p><h2>{headline}</h2>{html}'
+            lead, rest = _split_top(html, 2)  # answer plus the first block after it
+            inner = f'<div class="keep"><p class="kicker">{kicker}</p><h2>{headline}</h2>{lead}</div>{rest}'
         out.append(f'<section class="page" id="{sid}">{band}<div class="inner">{inner}</div>'
                    f'<div class="foot"><span>Concord Biotech | Company study | Not investment advice</span><span>{i + 1} / {total}</span></div></section>')
     body = "".join(out)
