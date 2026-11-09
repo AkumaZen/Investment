@@ -30,7 +30,7 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 - Decks: 14, Q1 FY24 to Q2 FY27.
 - Annual reports: FY24, FY25, FY26.
 - Other: results press release Q2 FY27, bonus allotment (Nov 4, 2026, 1:1, 10,46,16,204 shares), call recording notice Q2 FY27.
-- RHP located on BSE (not text-extracted); IR site, NSE copies and USFDA records not checked. See data/source-manifest.md.
+- RHP text-extracted; IR-site filings, the US FDA Orange Book and Trendlyne pledge history checked in the gap-research round; NSE copies did not load. See data/source-manifest.md and evidence/gap-research.md.
 
 ## Stages
 
@@ -40,7 +40,7 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 | Latest deck and transcript facts | Done | facts-latest.md |
 | Phase 1 prompt build | Done (67a4583) | prompts/Concord Biotech Research Prompt.md |
 | Screener data pull | Done | data/screener-2026-11-09.md |
-| Source manifest; RHP located, IR site and USFDA not checked | Done | data/source-manifest.md |
+| Source manifest | Done; updated after gap research | data/source-manifest.md |
 | Promises-vs-delivery ledger (14 calls) | Done (6d3ce1d), verdict AMBER | evidence/guidance-ledger.md |
 | Deck history (capacity, utilisation, segments) | Done (f33973f) | evidence/deck-history.md |
 | FY26 annual report extraction | Done (9024b4c) | evidence/ar-fy26.md |
@@ -50,3 +50,4 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 | Visual check and by-eye pass | Done (aa5b781); touch scroll NOT RUN | report/qa/qa-notes.md |
 | PDF export and page inspection | Done (a029a48), 26 pages | report/Concord_Biotech_Company_Study.pdf |
 | QA summary | Done | report/qa/qa-notes.md |
+| Gap research (11 known gaps) | Done: 7 closed, 4 narrowed; report rebuilt, visual check clean, PDF 26 pages | evidence/gap-research.md |

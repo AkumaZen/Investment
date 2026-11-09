@@ -26,8 +26,8 @@ Content:
 
 - Cash from operations was stated as 100% of EBITDA; the correct figure is 73% (it is 103% of profit after tax).
 - The capex caption said capex was "four" times depreciation when it was three, and the table rows were out of year order.
-- The USFDA row in the regulatory table was marked OK although the USFDA database was not checked; it now says NOT VERIFIED.
-- The RHP was cited as read when its text had not been extracted; the citation now says located, not read.
+- The USFDA row in the regulatory table was marked OK although the USFDA database was not checked; it was set to NOT VERIFIED, and after the gap-research round (Orange Book and inspection filings checked) it is OK with sources.
+- The RHP was cited as read when its text had not been extracted; the citation was corrected, and the RHP has since been text-extracted and is cited by page.
 - The governance summary in S18 listed four of the five watch items; the fifth (promoter pay) was added.
 
 Visual:
@@ -59,7 +59,7 @@ Print and PDF:
 | 10 | FY26 revenue Rs 1,054.9 cr (1,05,489.07 lakh) | Annual report FY26 p196, p230, p247 | PASS |
 
 Extra checks: Palvella stake Rs 84.1 cr (AR FY26 p238) PASS; promoter pay Rs 14.05 cr (AR FY26 p244) PASS.
-Japan JV sales of Rs 29.1 cr could not be re-found by text search and is listed as a gap.
+Japan JV sales of Rs 29.1 cr were re-found in the FY26 related-party note; the RHP (p21) gives Rs 29.0 cr, Rs 46.2 cr and Rs 54.0 cr for FY21 to FY23.
 
 ## 4. Model re-run
 
@@ -118,7 +118,7 @@ As an equity research analyst:
 
 - The fund manager's first question (pause or step down?) is answered on the cover and in S8: volumes look like a pause, margin and pricing have stepped down.
 - Unsupported claims found and fixed: the CFO-to-EBITDA ratio, the FDA status and the RHP citation (section 2 above).
-- Still open and disclosed rather than hidden: who owns the other 25% of Stellon, the largest customer's name, and contract terms (section 9 below).
+- Still open and disclosed rather than hidden: the name of Stellon's 25% partner, the Neocubes link, the largest customer's name, and contract length and price resets (section 9 below).
 
 As a report designer:
 
@@ -126,19 +126,26 @@ As a report designer:
 - No visual repeats data shown elsewhere; the peer table and peer charts show different measures.
 - Hierarchy is section band, headline, answer line, exhibits, then "what it means".
 
-## 9. Known gaps
+## 9. Known gaps (after the gap-research round of 9 Nov 2026)
 
-- Owner of the other 25% of Stellon not found.
-- USFDA inspection database and Orange Book not checked.
-- Promoter pledge status not verified in exchange filings.
-- Reasons for the CFO and company secretary exits not disclosed in the documents read.
-- Molecule-level and therapy-area sales splits not disclosed.
-- Project-level returns on Units III and IV not disclosed.
-- Largest customer's name and contract terms not disclosed.
-- Images inside decks were not extracted; only text was read.
-- Company IR site, NSE copies of filings and the RHP text were not checked.
-- Q1 FY27 adjusted margin is not given by the company.
-- Japan JV sales of Rs 29.1 cr not re-found in the extracted text.
+Full findings and sources: `evidence/gap-research.md`.
+
+| # | Gap | Status | What was found |
+|---|---|---|---|
+| 1 | Owner of Stellon's other 25% | NARROWED | Unnamed US "local partner", USD 500 for 25%; filing says no promoter interest, AR says "directors interested"; name still undisclosed |
+| 2 | USFDA records and Orange Book | CLOSED | Orange Book: 5 ANDAs under Concord, 2 under Neocubes Pharma LLP; Dholka 2025 four procedural 483 observations then EIR; no warning letter or import alert |
+| 3 | Promoter pledge | CLOSED (secondary) | 0% every quarter Dec 2023 to Sep 2026 per Trendlyne's copy of exchange filings; NSE did not load |
+| 4 | CFO and CS exit reasons | CLOSED | CFO early retirement, personal reasons (secondary quoting the filing); CS left for an outside opportunity (filing p1) |
+| 5 | Molecule and therapy splits | NARROWED | RHP product split FY21-FY23 and therapy API counts only; current revenue split undisclosed |
+| 6 | Project returns | NARROWED | Revenue potential and asset-turn guidance per plant; no ROCE, IRR or payback disclosed |
+| 7 | Largest customer and contract terms | NARROWED | IPO top 5 at 33-35%, named customers Intas and Glenmark, purchase-order model, LTSA share, penalty and buyback terms; largest customer and price resets undisclosed |
+| 8 | Deck images | CLOSED | Deck pages read as images; ANDA conflict resolved by Q2 FY27 deck p22 |
+| 9 | IR site, NSE, RHP text | CLOSED (NSE did not load) | IR-site filings used; RHP text-extracted and cited by page |
+| 10 | Q1 FY27 adjusted margin | CLOSED | 37% (Q1 FY27 deck p6, call p5); stated H1 37.8% does not reconcile with Q1 37% and Q2 37.1% |
+| 11 | Japan JV sales | CLOSED | Rs 29.1 cr FY26 (AR p244); Rs 54.0 cr FY23 (RHP p21) |
+
+Still undisclosed by the company: the Stellon partner's name, the Neocubes relationship, the largest customer, price-reset terms, current sales by molecule or therapy, and project ROCE or payback.
+Report re-check after the update: `python -I -X utf8 build.py` printed `base 696 bear 352 bull 894`; review.mjs printed 0 console errors at desktop and mobile; the PDF re-export has 26 pages, no dash characters and embedded Calibri; changed pages S2, S5, S10, S12, S18 and the appendix were inspected by eye.
 
 ## 10. Disclosure
 
