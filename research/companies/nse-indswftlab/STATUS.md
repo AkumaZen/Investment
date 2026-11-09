@@ -40,7 +40,7 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 
 ## Step [1] findings to carry forward
 
-- New warrant issue: 70,00,000 at Rs 196 allotted 17 Sep 2026 to Essix Biosciences (promoter) [NSE-A]; 14,00,000 converted 8 Oct 2026 [NSE-C]. Shares 8,69,61,558; 56,00,000 warrants left; diluted 9,25,61,558; Rs 54.88 cr received, Rs 82.32 cr still to come (step [2] correction of the step [1] figures).
+- New warrant issue: 70,00,000 at Rs 196 allotted 17 Sep 2026 to Essix Biosciences (promoter) [NSE-A]; 14,00,000 converted 8 Oct 2026 [NSE-C]. Shares likely 8,83,61,558 after conversion (filing and Q2 deck print 8,69,61,558, which the Q1 deck already showed before the conversion; data conflict in evidence/care-ma.md); 56,00,000 warrants left; diluted 9,39,61,558 used in the model, 9,25,61,558 as sensitivity; Rs 54.88 cr received, Rs 82.32 cr still to come.
 - Synthimed 7.80% stake appears to be held as CCDs carried at Rs 32 cr (FVTPL, unchanged).
 - About Rs 308 cr in related or unlisted instruments (Khandelwal OCRPS, SFRE loan, Ashok NCDs, Essix shares, Fortune, small caps).
 - Essix conversion conflict in AR FY26: 51 lakh (chairman) vs 80 lakh (directors' report).
@@ -52,3 +52,9 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 - Operating cash flow negative FY24 to FY26 (Rs -260 cr in total) [Screener].
 - NSE-C filing's own share counts move by 2,50,000, not the 14,00,000 it says were allotted: data conflict.
 - Ind-Swift holds Rs 28.85 cr of Essix shares while Essix funds the company through warrants (circular flow, governance point).
+
+## Resume point (2026-11-09)
+
+- Step [3]: share-count conflict recorded. notes.md (15 answers, anti-thesis, closed To-find list, AR FY26 related-party, pay, ESOP, pledged FD and pledge Not Disclosed facts) still to write.
+- AR FY26 facts found but not yet in notes.md: Synthimed is not a related party [AR26 p92]; promoter-linked loans Rs 25.17 cr (ar-fy26.md says Rs 10.65 cr, conflict); Sahil Munjal pay +72.13%, Rishav Mehta +100.08% vs median employee +8.07% [AR26 p64]; unmodified audit opinion with two emphasis-of-matter items; Rs 16.00 cr FDs pledged, Rs 15 cr against the Rs 66.34 cr sales tax demand.
+- Steps [4] to [6] not started.
