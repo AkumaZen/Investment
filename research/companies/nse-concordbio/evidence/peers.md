@@ -14,6 +14,23 @@ Ratios as printed by Screener on that date; trailing twelve months for P/E; noth
 | Aarti Drugs | 4,508 | 19.6 | 12.0 | 13.4 | 0.42 | Commodity API benchmark (low end) |
 | Neuland Laboratories | 26,318 | 58.2 | 26.5 | 21.2 | 0.17 | Niche API plus CDMO |
 
+## Growth and margin (Screener get_financials, consolidated, fetched 2026-11-09T09:16Z)
+
+| Company | Sales FY26 (Rs cr) | Sales growth FY25 | Sales growth FY26 | Sales growth TTM | OPM FY25 | OPM FY26 | OPM TTM |
+|---|---|---|---|---|---|---|---|
+| Concord Biotech | 1,055 | +18% | -12% | +4% [E] | 42% | 35% | 34% |
+| Biocon | 16,927 | +3% | +11% | +6% | 21% | 21% | 20% |
+| Gland Pharma | 6,431 | -1% | +14% | +22% | 23% | 25% | 27% |
+| Divi's Laboratories | 10,560 | +19% | +13% | +22% | 32% | 33% | 38% |
+| Laurus Labs | 6,813 | +10% | +23% | +23% | 19% | 26% | 30% |
+| Sai Life Sciences | 2,192 | +16% | +29% | +16% | 24% | 29% | 29% |
+| Aarti Drugs | 2,565 | -6% | +7% | +15% | 12% | 12% | 13% |
+| Neuland Laboratories | 2,023 | -5% | +37% | +50% | 22% | 29% | 31% |
+
+- Concord TTM growth [E]: TTM Sep-26 sales Rs 1,170 cr vs TTM Sep-25 Rs 1,125 cr (244+430+204+247 from the Screener quarterly table).
+- Peer TTM growth is Screener's printed figure (TTM vs the prior fiscal year column basis Screener uses); treat it as indicative.
+- Reading [E]: Concord still has the highest operating margin in the group (34% TTM vs 38% for Divi's, next best), but it is the only name whose FY26 sales fell; every peer grew 7-37% in FY26.
+
 Notes:
 - Biocon's P/E and ROCE are distorted by its biosimilars business and acquisition debt; it is not a clean multiple comparison for Concord, only a named competitor.
 - Supriya Lifescience returned blank fields and is left out; get_peer_comparison returned no rows.
