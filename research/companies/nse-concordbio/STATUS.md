@@ -44,7 +44,7 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 | Promises-vs-delivery ledger (14 calls) | Done (6d3ce1d), verdict AMBER | evidence/guidance-ledger.md |
 | Deck history (capacity, utilisation, segments) | Done (f33973f) | evidence/deck-history.md |
 | FY26 annual report extraction | Done (9024b4c) | evidence/ar-fy26.md |
-| Peers and notes (15 questions) | Pending | notes.md |
+| Peers and notes (15 questions) | Done | notes.md, evidence/peers.md |
 | Model and valuation | Pending | model/valuation.py |
 | HTML report build | Pending | report/ |
 | Visual check and by-eye pass | Pending | qa-notes.md |
