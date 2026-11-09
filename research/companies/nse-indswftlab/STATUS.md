@@ -33,8 +33,8 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 | [0] Set up, documents collected, text extracted | Done | docs/INDSWFTLAB, data/doc-index.json |
 | [1] Evidence files | Done | evidence/ (q2fy27-call, q1fy27-call, q2fy27-deck, ar-fy26, care-ma, claims-ledger) |
 | [2] Screener numbers, peers, source manifest | Done | data/screener-2026-11-09.md, data/source-manifest.md |
-| [3] Diagnose, 15 questions, anti-thesis | In progress | notes.md |
-| [4] Model | Not started | model/valuation.py |
+| [3] Diagnose, 15 questions, anti-thesis | Done | notes.md |
+| [4] Model | In progress | model/valuation.py |
 | [5] Report | Not started | report/report.html |
 | [6] Checks, PDF, final reply | Not started | report/qa/ |
 
@@ -55,6 +55,6 @@ Prompt being executed: prompts/Ind-Swift Laboratories Research Prompt.md (V1, co
 
 ## Resume point (2026-11-09)
 
-- Step [3]: share-count conflict recorded. notes.md (15 answers, anti-thesis, closed To-find list, AR FY26 related-party, pay, ESOP, pledged FD and pledge Not Disclosed facts) still to write.
+- Step [3]: done. notes.md holds the 15 answers, headline answer, anti-thesis, bull case, management verdict input (WATCH) and the closed To-find list.
 - AR FY26 facts found but not yet in notes.md: Synthimed is not a related party [AR26 p92]; promoter-linked loans Rs 25.17 cr (ar-fy26.md says Rs 10.65 cr, conflict); Sahil Munjal pay +72.13%, Rishav Mehta +100.08% vs median employee +8.07% [AR26 p64]; unmodified audit opinion with two emphasis-of-matter items; Rs 16.00 cr FDs pledged, Rs 15 cr against the Rs 66.34 cr sales tax demand.
-- Steps [4] to [6] not started.
+- Step [4]: in progress (model/valuation.py). Steps [5] and [6] not started.
