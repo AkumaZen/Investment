@@ -31,3 +31,7 @@ research/companies/nse-augmont/q1-deck-pages/
 research/companies/nse-augmont/rhp-pypdf.txt
 research/companies/nse-augmont/rhp-text-stream.txt
 research/companies/nse-augmont/qa/
+
+# Re-downloadable Concord Biotech filing cache and staged design references
+research/companies/nse-concordbio/docs/
+research/companies/nse-concordbio/references/
