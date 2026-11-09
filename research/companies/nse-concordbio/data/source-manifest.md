@@ -7,12 +7,12 @@ Pages are the page count of the BSE PDF, including the cover letter.
 
 ## Order of sources and what was checked
 
-1. Company IR site (concordbiotech.com): not used for documents; every deck, transcript and annual report used here is the copy the company itself filed on BSE, which is the primary record. The IR site was not crawled in this run.
+1. Company IR site (concordbiotech.com): decks, transcripts and annual reports are the BSE copies; the IR site was used in the gap-research round for the Stellon investment filing and the Dholka USFDA inspection filing (links in section 5).
 2. BSE filings: used for all 34 documents below.
-3. NSE filings: not separately downloaded; NSE carries the same company filings.
+3. NSE filings: tried in the gap-research round; NSE pages and PDFs did not load (connection reset or timeout), so BSE copies and a Business Standard mirror of a BSE filing were used.
 4. Screener.in: used only for multi-year tables (data/screener-2026-11-09.md), tagged [Screener] wherever used.
-5. RHP dated 27 Jul 2023: located on BSE (link in section 5); facts used from it are limited to the offer terms listed there and are tagged [RHP].
-6. USFDA databases (Orange Book, inspection classification): not checked in this run; the ANDA count conflict is left open in qa-notes.md.
+5. RHP dated 27 Jul 2023: text-extracted in the gap-research round; used for offer terms, customer concentration, contract terms, inspection history and the Japan JV sales trend, with page numbers.
+6. USFDA Orange Book data files: checked on 9 Nov 2026; 5 ANDAs under Concord Biotech, 2 under Neocubes Pharma LLP; the ANDA count conflict is resolved. The FDA inspection classification dashboard was not queried; inspection outcomes come from company filings and the RHP.
 
 ## 1. Earnings call transcripts
 
@@ -72,13 +72,20 @@ Pages are the page count of the BSE PDF, including the cover letter.
 
 | Document | Use | URL |
 |---|---|---|
-| Red Herring Prospectus, 27 Jul 2023 | Offer terms only: 100% offer for sale of up to 2,09,25,652 shares by Helix Investment Holdings (Quadria Capital), price Rs 741 | https://www.bseindia.com/corporates/download/383248/IPO%20Open/RHP_20230802171607.pdf |
+| Red Herring Prospectus, 27 Jul 2023 | Offer terms (100% offer for sale of up to 2,09,25,652 shares by Helix Investment Holdings, price Rs 741); customers p35, p146, p150; contracts p37, p46, p161; inspections p33; Japan JV sales p21 | https://www.bseindia.com/corporates/download/383248/IPO%20Open/RHP_20230802171607.pdf |
 | Kotak abridged prospectus | Cross-check of the offer terms | https://investmentbank.kotak.com/downloads/concord-biotech-limited-abridged-prospectus.pdf |
 | Quadria Capital press release (2016 entry) | Background: Helix-led consortium bought about 20% in 2016 | https://quadriacapital.com/publications/press-releases/quadria-capital-led-consortium-acquires-stake-in-concord-biotech |
+| Stellon investment filing, Jul 2025 | Partner stake and price, promoter-interest statement | https://concordbiotech.com/wp-content/uploads/2025/07/Intimation-of-Investment-in-Stellon-Biotech-Inc.pdf |
+| USFDA inspection filing, Dholka, May 2025 | Four procedural 483 observations | https://concordbiotech.com/wp-content/uploads/2025/07/concord-USFDA-Inspection.pdf |
+| Company secretary resignation, 24 Dec 2025 (Business Standard mirror of the BSE filing) | Exit reason | https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/24122025/55d6c936-9fe4-433d-9b17-0cb45106c684.pdf |
+| ScanX report on the CFO exit (secondary) | Exit reason quoted from the filing | https://scanx.trade/stock-market-news/stocks/concord-biotech-cfo-lalit-sethi-announces-early-retirement-effective-january-2026/26728108 |
+| US FDA Orange Book data files | ANDA holders | https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files |
+| Trendlyne shareholding history (secondary, from exchange filings) | Promoter pledge by quarter | https://trendlyne.com/equity/share-holding/1587026/CONCORDBIO/latest/concord-biotech-ltd |
 | Screener.in company page, pulled 2026-11-09 | P&L, balance sheet, cash flow, ratios, shareholding, price | https://www.screener.in/company/CONCORDBIO/consolidated/ |
 
 ## 6. Gaps
 
-- The full RHP was located but not text-extracted; RHP-only facts (pre-IPO history, product-level revenue) are not used.
-- The company IR site, NSE copies and USFDA records were not checked; nothing in the report depends on them except the ANDA count, which is flagged.
+- The RHP is now text-extracted and cited by page.
+- NSE copies did not load; the pledge history rests on Trendlyne's copy of the exchange shareholding filings (secondary).
+- The FDA inspection classification dashboard was not queried.
 - Quarterly results filings (statutory results PDFs) were not downloaded separately; quarterly numbers come from the decks and Screener.

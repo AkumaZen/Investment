@@ -17,7 +17,8 @@ Consolidated unless stated; the AR reports in Rs lakh, converted here to Rs cror
 - Sudhir Vaid, Chairman and MD; Ankur Vaid, JMD and CEO [p243].
 - CFO change: Lalit Sethi left on 5 Jan 2026 and Raviraj Karia joined on 18 Dec 2025 [p243].
 - Company Secretary changed twice in one year: Prakash Sajnani until May 2025, Hina Patel from 30 May 2025 to 21 Jan 2026, and Paritosh Trivedi from 9 Feb 2026 [p243].
-- Reading [E]: three company secretaries and a new CFO in twelve months, during the first down year since listing, counts as a governance watch item, not a red flag; no reason is given for the exits.
+- Reading [E]: three company secretaries and a new CFO in twelve months, during the first down year since listing, counts as a governance watch item, not a red flag.
+- Exit reasons, found outside the annual report: Lalit Sethi took early retirement for personal reasons (resignation filing of 8 Dec 2025, reported by ScanX and Informist; secondary); Hina Patel resigned "to pursue opportunities outside the Organization" (BSE filing of 24 Dec 2025, p1). No reason was found for the change from Prakash Sajnani. See evidence/gap-research.md, gap 4.
 
 ## 3. Pay and related-party transactions (Rs crore)
 
@@ -48,7 +49,7 @@ Consolidated unless stated; the AR reports in Rs lakh, converted here to Rs cror
 | Celliimune Biotech Pvt Ltd | 100% from 2 Apr 2026 (after year end) | Incorporated 15 Jan 2025 | Rs 1.2 lakh paid by 31 Mar 2026 out of Rs 66 lakh consideration; shares bought from director Ravi Kapoor | p245, p251 |
 
 - Loans from Concord to Stellon: Rs 14.19 cr given in FY26, Rs 14.55 cr outstanding (USD 15.41 lakh) [p79, p173]; the AR lists Stellon as a "subsidiary in which directors are interested" [p79].
-  Who owns the other 25% of Stellon is not disclosed in the pages read; this is an open item.
+  The Jul 2025 investment filing shows the other 25% was issued before the deal to an unnamed US "local partner" for USD 500 (5,000,000 shares at USD 0.0001); Concord paid USD 1,500 for 75%; the filing says no promoter or group company has any interest, which sits awkwardly with the annual report's "directors interested" label [p79]. The partner's name is still not disclosed. See evidence/gap-research.md, gap 1.
 - Stellon is to run end-to-end US commercial operations and may market third-party products too (Q1 FY26 call, transcript p4); it is the US commercial front-end (the business moving from partner Advergent to Stellon, per the Q2 FY27 call); it had no revenue in FY26 and is the source of the negative NCI.
 - Celliimune is a cell and gene therapy start-up; the amounts are immaterial but it was bought from a director, so it is a related-party purchase [p245].
 
@@ -97,6 +98,6 @@ Consolidated unless stated; the AR reports in Rs lakh, converted here to Rs cror
 
 ## 9. Open items from this file
 
-1. Owner of the 25% of Stellon not held by Concord, and which directors are "interested" in it [p79].
+1. Name of the 25% Stellon partner and which directors are "interested" in Stellon [p79]: partly answered (unnamed US partner, USD 500); name still open.
 2. Nature of the Rs 20.43 cr "payable to customers" [p229], stable versus Rs 22.51 cr a year earlier.
-3. Reason for the CFO and Company Secretary exits.
+3. Reason for the CFO and Company Secretary exits: answered (CFO early retirement, personal reasons; CS left for an outside opportunity).

@@ -60,7 +60,7 @@ Data conflict: Q4 FY24 domestic/export is 159.7/159.3 in deck-q4fy24 p6 and 159.
 | Q2 FY27 | 30+ | 150+ | 180+ | 7 approved (p5, p14); "12 / 7" on p20 | 300+ | 70+ | deck-q2fy27 p5, p14, p20 |
 
 Conflict: deck-q2fy27 p20 reads "12 / 7 Approved ANDAs / finished products"; facts-latest.md reads this as 12 approved ANDAs with 7 products marketed, while p5 and p14 say 7 ANDA approvals.
-The report uses "7 ANDA approvals (the deck also shows 12 on one page)" and flags it; the USFDA Orange Book check is listed as not done in qa-notes.md.
+Resolved (gap research, 9 Nov 2026): deck-q2fy27 p22 lists exactly 7 "United States ANDA approved products", and the US FDA Orange Book shows 5 of them under Concord Biotech and 2 (teriflunomide, MMF oral suspension) under Neocubes Pharma LLP; the 12 on p20 counts finished products approved across markets. The report now says 7 US approvals, 5 in Concord's name. See evidence/gap-research.md, gap 2.
 
 ## 5. Capacity
 
