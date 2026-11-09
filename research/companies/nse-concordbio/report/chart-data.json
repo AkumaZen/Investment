@@ -264,7 +264,7 @@
    41,
    40,
    39,
-   null,
+   37,
    37.1
   ],
   "seg_years": [
@@ -674,8 +674,32 @@
    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=efd072c7-89b4-40ce-a718-eeaf8374dcdb.pdf"
   ],
   "rhp": [
-   "IPO red herring prospectus, Aug 2023 (located on BSE; text not extracted)",
+   "IPO red herring prospectus, 27 Jul 2023",
    "https://www.bseindia.com/corporates/download/383248/IPO%20Open/RHP_20230802171607.pdf"
+  ],
+  "stl": [
+   "Stellon Biotech investment filing, Jul 2025",
+   "https://concordbiotech.com/wp-content/uploads/2025/07/Intimation-of-Investment-in-Stellon-Biotech-Inc.pdf"
+  ],
+  "fda483": [
+   "USFDA inspection outcome filing, Dholka, May 2025",
+   "https://concordbiotech.com/wp-content/uploads/2025/07/concord-USFDA-Inspection.pdf"
+  ],
+  "cs": [
+   "Company secretary resignation filing, 24 Dec 2025 (Business Standard copy of the BSE filing)",
+   "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/24122025/55d6c936-9fe4-433d-9b17-0cb45106c684.pdf"
+  ],
+  "cfo": [
+   "CFO early-retirement report, Dec 2025 (secondary, quotes the filing)",
+   "https://scanx.trade/stock-market-news/stocks/concord-biotech-cfo-lalit-sethi-announces-early-retirement-effective-january-2026/26728108"
+  ],
+  "ob": [
+   "US FDA Orange Book data files, checked 9 Nov 2026",
+   "https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files"
+  ],
+  "tl": [
+   "Trendlyne shareholding and pledge history, from exchange filings (secondary), fetched 9 Nov 2026",
+   "https://trendlyne.com/equity/share-holding/1587026/CONCORDBIO/latest/concord-biotech-ltd"
   ],
   "scr": [
    "Screener.in consolidated data, fetched 9 Nov 2026",

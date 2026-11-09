@@ -57,8 +57,14 @@ SRC = {
              "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ec74e0d2-8c48-4a0b-9961-f4be126f5dda.pdf"),
     "bonus": ("Bonus allotment filing, 4 Nov 2026", BSE.format("2f88d61b-23a5-4e8e-adfb-82ac09d13ff7")),
     "press27": ("Q2 FY27 results filing, 28 Oct 2026", BSE.format("efd072c7-89b4-40ce-a718-eeaf8374dcdb")),
-    "rhp": ("IPO red herring prospectus, Aug 2023 (located on BSE; text not extracted)",
+    "rhp": ("IPO red herring prospectus, 27 Jul 2023",
             "https://www.bseindia.com/corporates/download/383248/IPO%20Open/RHP_20230802171607.pdf"),
+    "stl": ("Stellon Biotech investment filing, Jul 2025", "https://concordbiotech.com/wp-content/uploads/2025/07/Intimation-of-Investment-in-Stellon-Biotech-Inc.pdf"),
+    "fda483": ("USFDA inspection outcome filing, Dholka, May 2025", "https://concordbiotech.com/wp-content/uploads/2025/07/concord-USFDA-Inspection.pdf"),
+    "cs": ("Company secretary resignation filing, 24 Dec 2025 (Business Standard copy of the BSE filing)", "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/24122025/55d6c936-9fe4-433d-9b17-0cb45106c684.pdf"),
+    "cfo": ("CFO early-retirement report, Dec 2025 (secondary, quotes the filing)", "https://scanx.trade/stock-market-news/stocks/concord-biotech-cfo-lalit-sethi-announces-early-retirement-effective-january-2026/26728108"),
+    "ob": ("US FDA Orange Book data files, checked 9 Nov 2026", "https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files"),
+    "tl": ("Trendlyne shareholding and pledge history, from exchange filings (secondary), fetched 9 Nov 2026", "https://trendlyne.com/equity/share-holding/1587026/CONCORDBIO/latest/concord-biotech-ltd"),
     "scr": ("Screener.in consolidated data, fetched 9 Nov 2026", "https://www.screener.in/company/CONCORDBIO/consolidated/"),
     "decks": ("Company investor presentations Q1 FY24 to Q2 FY27 (our extraction)", None),
     "ledger": ("Our promises-vs-delivery ledger of all 14 calls, Q1 FY24 to Q2 FY27", None),
@@ -110,7 +116,7 @@ D = {
     "q_op": [98, 189, 61, 88, 98, 118, 82, 104],
     "q_pat": [76, 140, 44, 63, 64, 88, 58, 70],
     # margin excluding injectables and Stellon, as stated on calls (ledger M4, Q2 FY27 p5/p7)
-    "q_adj": [None, None, 37, 41, 40, 39, None, 37.1],
+    "q_adj": [None, None, 37, 41, 40, 39, 37, 37.1],
     # segments (decks)
     "seg_years": ["FY23", "FY24", "FY25", "FY26"],
     "api": [761.3, 828.0, 940.1, 828.8], "form": [91.9, 188.9, 260.0, 226.1],
@@ -414,7 +420,7 @@ s2 = f"""<h3>The revenue equation</h3>
     ["Formulations", "Tablets, capsules (Unit II); own brands in India; partner supply in emerging markets and the US", "Distributors, hospitals, partners; US via ANDAs", "21% FY26; 17% H1 FY27"],
     ["Injectables", "Vials from Unit IV", "Contract and government buyers; no contract signed yet", "Not disclosed (plant at 5%)"],
     ["CDMO", "One molecule made exclusively for an innovator", "One unnamed partner", "About USD 2 mn a year"]], "std")}
-<p class="small">Contract terms: the only terms disclosed are that API supply runs against Concord's DMF and that the CDMO project makes Concord the exclusive supplier of a new drug. Contract length, minimum volumes and price-reset clauses are not disclosed.</p>
+<p class="small">Contract terms: most sales are on purchase orders; long-term supply agreements with a few customers gave 12.6% of sales in FY23. A late delivery can cancel the order or end the agreement, and some contracts carry delay penalties. In 2022 a distributor ended an exclusive agreement and Concord had to buy back its unsold stock. The CDMO project makes Concord the exclusive supplier of a new drug. Contract length and price-reset clauses are not disclosed. {src(('rhp', 37), ('rhp', 46), ('rhp', 150), ('rhp', 161))}</p>
 <h3>From microbe to medicine</h3>
 {exhibit("The fermentation value chain: Concord earns most at steps 2 to 4", chain, src(("deck27", 7), ("tr27", 4)), "Shaded steps are where most of the value and the difficulty sit.")}
 <h3>Why this business is hard to copy</h3>
@@ -442,8 +448,8 @@ fam = [
     ("Anti-fungals", "Anidulafungin, Caspofungin, Micafungin, Amphotericin B; Nystatin", "MAKES AND SELLS",
      "Nystatin is qualified with US customers on validation quantities only (FIRST ORDERS)."),
     ("Statins", "Lovastatin, Pravastatin", "MAKES AND SELLS", "Older, cholesterol molecules."),
-    ("US generics (ANDAs)", "12 approved ANDAs, 7 marketed; Tofacitinib and MMF oral suspension approved in Q2 FY27", "MAKES AND SELLS",
-     "US business moving from partner Advergent to Stellon."),
+    ("US generics (ANDAs)", "7 US approvals: 5 held by Concord, 2 (teriflunomide, MMF oral suspension) by Neocubes Pharma LLP; Tofacitinib and MMF oral suspension added in Q2 FY27", "MAKES AND SELLS",
+     "Checked against the US FDA Orange Book. US business moving from partner Advergent to Stellon."),
     ("Injectables (Unit IV)", "Vials and lyophilised products", "IN DEVELOPMENT",
      "Plant built and WHO-GMP certified; 5% used; contracts 'expected in H2' FY27."),
     ("Dermatology brand (Inspira)", "Own-brand India skin products", "FIRST ORDERS",
@@ -477,7 +483,7 @@ segh1 = C.grouped(["H1 FY26", "H1 FY27"], [("API", D["api_h1"], C.PRIMARY), ("Fo
 ent = table(["Entity", "Stake", "What it does", "FY26 numbers"], [
     ["Concord Biotech Ltd", "Parent", "All four plants, all APIs and formulations", "Almost all group sales"],
     ["Stellon Biotech Inc. (US)", "75%", "US sales and marketing front end, from Jul 2025", ("Nil sales; loss Rs 7.2 cr; owes Concord Rs 14.6 cr", "flag")],
-    ["Concord Biotech Japan K.K.", "50% JV", "Sells into Japan", "Bought Rs 29.1 cr from Concord"],
+    ["Concord Biotech Japan K.K.", "50% JV", "Sells into Japan", "Bought Rs 29.1 cr from Concord, down from Rs 54.0 cr in FY23"],
     ["Concord Lifegen Ltd", "100%", "New Indian subsidiary, Jul 2025", "Sales Rs 0.4 cr"],
     ["Clean Max Everglades", "26%", "Captive power supply", "Investment Rs 0.8 cr"],
     ["Celliimune Biotech", "100% from Apr 2026", "Cell and gene therapy start-up, bought from a director", "Rs 0.66 cr price"]], "std",
@@ -488,7 +494,7 @@ API fell 11.8% in FY26 and rebounded {pc(CALC['api_h1_g'])} in H1 FY27. Formulat
      exhibit("In H1 FY27 API rose 36%, formulations fell 8% (Rs cr)", segh1, src(("deck27", 10))))}
 <h3>Margin with and without the start-ups</h3>
 <p>Management now reports a second margin that leaves out the injectables plant and Stellon.
-In Q2 FY27 it was 37.1% against 33.8% reported; for H1 FY27, 37.8% against 33.0%; for FY26, 39% against 35% (Q2 FY27 call p5, p7; Q4 FY26 call p5).
+In Q2 FY27 it was 37.1% against 33.8% reported; for H1 FY27, 37.8% against 33.0% (Q1 at 37% and Q2 at 37.1% average about 37.1%, so the stated H1 figure does not reconcile); for FY26, 39% against 35% (Q2 FY27 call p5, p7; Q4 FY26 call p5).
 That gap is about Rs {f0(CALC['adj_gap_fy26'])} cr of EBITDA in FY26 and Rs {f0(CALC['adj_gap_h1'])} cr in H1 FY27 [E].
 But the adjusted margin itself fell from 41% in Q2 FY26 to 37.1% in Q2 FY27, so the core business is also earning less, not only the start-ups.</p>
 {ent}"""
@@ -502,10 +508,12 @@ top10 = C.bars(list(D["top10"].keys()), list(D["top10"].values()), "Top-10 custo
                unit="%", dec=1, highlight={4}, w=460, h=230)
 s5 = f"""{duo(exhibit("Top-10 customers fell from 48% to 38% of sales in four years", top10, src(("deck27", 23))),
      '<div><h3>Who buys</h3>' + ul(["300+ customers in 70+ countries; no single customer is above 10% of sales in FY26 or FY25 (annual report p247).",
-        "The 50% Japan joint venture bought Rs 29.1 cr in FY26, 2.8% of sales, and is the only named related customer (annual report p244).",
-        "The largest customer is not named. Customer churn is not disclosed."]) +
+        "The 50% Japan joint venture bought Rs 29.1 cr in FY26, 2.8% of sales, down from Rs 54.0 cr in FY23; it is the only named related customer (annual report p244; IPO prospectus p21).",
+        "At the IPO the top 5 customers took 33-35% of sales and the top 10 took 44%, all API buyers; named long-term API customers are Intas and Glenmark; the top 10 had bought for eight years on average (IPO prospectus p35, p146, p150).",
+        "The single largest customer is not named. No top-10 customer stopped buying in FY21-FY23 (IPO prospectus p35); later churn is not disclosed."]) +
      '<h3>Who partners</h3>' + ul(["<b>Advergent</b>: the US partner for Concord's ANDA products; the business is moving to Concord's own Stellon (Q2 FY27 call p4).",
-        "<b>Stellon Biotech</b>: 75% owned US arm; commercial operations began Q1 FY27; contribution now expected in H2 FY27, one half later than first said.",
+        "<b>Stellon Biotech</b>: 75% owned US arm; the other 25% belongs to an unnamed US partner that paid USD 500 (Jul 2025 filing); commercial operations began Q1 FY27; contribution now expected in H2 FY27, one half later than first said.",
+        "<b>Neocubes Pharma LLP</b>: holds two of the seven US approvals the company counts (teriflunomide, MMF oral suspension) in the US FDA Orange Book; its link to Concord is not disclosed.",
         "<b>CDMO partner</b>: one unnamed innovator; Concord is the exclusive supplier of its new drug, about USD 2 mn a year."]) + '</div>')}"""
 section("s5", "A", "Customers and partners", "S5 | Customers", "No customer is big enough to hurt; the US hand-over is the open question",
         "Customer risk is low and falling: the top 10 buy 38% of sales and none buys more than 10%; the open item is the hand-over of US formulation sales from Advergent to Stellon.",
@@ -642,8 +650,8 @@ idx = C.bars(["Profit after tax", "Top pay (KMP and relatives)", "Median employe
 people = table(["Person", "Role", "Note"], [
     ["Sudhir Vaid", "Chairman and MD; founder", "Holds 28.84%; FY26 pay Rs 7.07 cr, 111.9x the median employee"],
     ["Ankur Vaid", "Joint MD and CEO", "Runs the calls; FY26 pay Rs 3.91 cr, 66.3x median"],
-    ["Raviraj Karia", "CFO from 18 Dec 2025", "Replaced Lalit Sethi (left 5 Jan 2026); no reason given"],
-    ["Company Secretary", "Three in 12 months", "Prakash Sajnani, Hina Patel, Paritosh Trivedi"]], "std")
+    ["Raviraj Karia", "CFO from 18 Dec 2025", "Replaced Lalit Sethi, who took early retirement for personal reasons (left 5 Jan 2026)"],
+    ["Company Secretary", "Three in 12 months", "Prakash Sajnani, Hina Patel (left 21 Jan 2026 for an outside opportunity), Paritosh Trivedi"]], "std")
 s10 = f"""{people}
 <p class="src">{src(("ar26", 243), ("ar26", 244), ("ar26", 61))[8:]}</p>
 {tone}
@@ -711,8 +719,8 @@ wmt = table(["What must be true", "Needed", "Latest", "Check"], [
     ["Rs 3,000 cr peak (5-6 years)", f"{pc(CALC['peak3000_cagr'], 0)} a year from FY26", "TTM Rs 1,170 cr", chip("OPEN")]], "std",
     caption="What has to happen for the price to be right", source=src(("tr27", 13), ("tr27", 16), ("deck27", 11), "model"))
 s12 = f"""<p>Current guidance, from the Q2 FY27 call: FY27 growth "slightly better than our historical growth of 18%"; EBITDA margin 38-40% "over the next few years"; tax 24-25%; capex Rs 20-30 cr plus Rs 50-60 cr a year in FY27 and FY28.</p>
-{exhibit("Margin is still below the guided band, with or without the start-ups (%)", mm, src("scr", ("tr27", 5), ("tr27", 7), "ledger"),
-         "Reported margin is our calculation from Screener quarterly figures; the company's deck shows 33.8% for Q2 FY27. The adjusted margin was not given for Q3 FY25, Q4 FY25 or Q1 FY27, so the line has gaps.")}
+{exhibit("Margin is still below the guided band, with or without the start-ups (%)", mm, src("scr", ("tr27", 5), ("tr27", 7), ("tr127", 5), "ledger"),
+         "Reported margin is our calculation from Screener quarterly figures; the company's deck shows 33.8% for Q2 FY27. The adjusted margin was not given for Q3 FY25 or Q4 FY25, so the line starts in Q1 FY26; Q1 FY27 is 37% (Q1 FY27 call p5).")}
 {wmt}"""
 section("s12", "C", "Guidance and must-be-true", "S12 | Guidance", f"A 19% year needs a 14% better second half",
         f"For FY27 growth of 19%, H2 sales must reach about Rs {f0(n19)} cr, up {pc(n19g)} on H2 FY26; margin must then climb about 4 points over three years to reach the bottom of the 38-40% guide.",
@@ -835,21 +843,21 @@ section("s17", "D", "Financials and earnings quality", "S17 | Financials", "Prof
 gov = table(["Item", "Finding", "Level"], [
     ["Audit", "Unmodified opinion from B S R &amp; Co. (KPMG network); key audit matter is revenue timing", chip("OK")],
     ["Audit trail", "Operated all of FY26; had not been enabled for part of earlier years (note 44)", chip("WATCH")],
-    ["CFO and company secretary", "New CFO in Dec 2025; three company secretaries in a year; no reasons given", chip("WATCH")],
-    ["Stellon (75% US arm)", "Lists 'directors interested'; owner of the other 25% not disclosed; Rs 14.6 cr loan from Concord", chip("WATCH")],
+    ["CFO and company secretary", "New CFO in Dec 2025 (predecessor retired early, personal reasons); three company secretaries in a year (last one left for an outside opportunity)", chip("WATCH")],
+    ["Stellon (75% US arm)", "Other 25% held by an unnamed US partner for USD 500; the deal filing says no promoter interest, the annual report says 'directors interested'; Rs 14.6 cr loan from Concord", chip("WATCH")],
     ["Celliimune", "Bought from director Ravi Kapoor for Rs 0.66 cr (immaterial, but a related purchase)", chip("WATCH")],
-    ["Related-party trading", "Japan JV sales Rs 29.1 cr; rent to promoters Rs 2.0 cr; stated at arm's length", chip("OK")],
+    ["Related-party trading", "Japan JV sales Rs 29.1 cr (Rs 54.0 cr in FY23); rent to promoters Rs 2.0 cr; stated at arm's length", chip("OK")],
     ["Promoter pay", "Rs 14.05 cr incl. relatives, 5.4% of profit; flat while profit fell 30%", chip("WATCH")],
     ["Contingent liabilities", "Rs 3.76 cr disputed excise; immaterial", chip("OK")],
     ["Credit rating", "ICRA AA- (Stable) / A1+, Jul 2025", chip("OK")],
-    ["Pledge", "None shown on Screener or in the annual report; exchange filing not checked", ("<span class='chip nd'>NOT VERIFIED</span>", "c")],
-    ["US FDA record", "Company-reported only; FDA database not checked; no warning letter or import alert in any document read", chip("NOT VERIFIED")]], "std",
-    caption="Governance checklist: no red flags, five watch items", source=src(("ar26", 79), ("ar26", 123), ("ar26", 186), ("ar26", 243), ("ar26", 244), ("ar26", 245), ("ar26", 233), ("ar26", 77)))
+    ["Pledge", "0% pledged in every quarter, Dec 2023 to Sep 2026 (Trendlyne, from exchange shareholding filings)", chip("OK")],
+    ["US FDA record", "Orange Book: 5 approvals in Concord's name, 2 with Neocubes Pharma; Dholka May 2025: four procedural observations, then clearance; no warning letter or import alert", chip("OK")]], "std",
+    caption="Governance checklist: no red flags, five watch items", source=src(("ar26", 79), ("ar26", 123), ("ar26", 186), ("ar26", 243), ("ar26", 244), ("ar26", 245), ("ar26", 233), ("ar26", 77), ("stl", 2), ("cs", 1), "cfo", "tl", "ob", ("fda483", 1), ("rhp", 33)))
 s18 = f"""{gov}"""
 section("s18", "D", "Governance and filings", "S18 | Governance", "No red flags; five things to keep an eye on",
         "The filings are clean on audit, debt and contingent liabilities; the five watch items are the Stellon ownership, management turnover, an earlier audit-trail gap, a small purchase from a director and promoter pay.",
         s18,
-        "None of this changes the numbers. It is a reason to read the FY27 annual report's related-party note, especially who owns the rest of Stellon and whether Concord lends it more.")
+        "None of this changes the numbers. It is a reason to read the FY27 annual report's related-party note, especially who the Stellon partner is, whether Concord lends it more, and how Neocubes is linked to Concord.")
 
 # ================================================================= S19 anti-thesis and risks
 bvr = table(["The bull says", "The rebuttal"], [
@@ -933,12 +941,12 @@ qs15 = [
     ("When is a new plant needed?", "About FY29-FY30 [E], when Limbasi nears 80%."),
     ("What do the start-ups cost?", "About Rs 42 cr of EBITDA in FY26 and Rs 27 cr in H1 FY27 [E]; breakeven not given."),
     ("Why did formulations fall?", "Customers buying API instead, and the US move to Stellon; size not disclosed."),
-    ("What has past capex earned?", "Limbasi paid back; Unit IV has earned almost nothing yet; project returns not disclosed."),
+    ("What has past capex earned?", "Limbasi paid back; Unit IV has earned almost nothing yet; no project ROCE or payback is disclosed."),
     ("Why are inventory days 485?", "Delayed shipments and long cycles; FY25's 286 was the outlier."),
     ("How often is guidance met?", "10 of 23 promises; verdict WATCH."),
     ("What is in the investment book?", f"Rs {f0(CALC['inv_book_sep26'])} cr, mostly mutual funds, plus Palvella; Stellon loan is the related item."),
-    ("Who owns it; any pledge?", "Promoters 44.09%, no sale since listing; pledge not verified in the exchange filing."),
-    ("What is the US FDA record?", "No warning letters disclosed; Unit I had 483s then EIR; FDA database not checked."),
+    ("Who owns it; any pledge?", "Promoters 44.09%, no sale since listing; 0% pledged in every quarter since listing."),
+    ("What is the US FDA record?", "No warning letter or import alert; Unit I had four procedural observations in 2025, then clearance; Orange Book confirms the 7 approvals."),
     ("What does Rs 594 imply?", f"About Rs {f0(imp[1]['pat_flat'])} cr of FY29 profit at 30x, against Rs {f0(ROWS['Base'][2]['pat'])} cr on guidance.")]
 q15 = table(["#", "Question", "One-line answer"], [[str(i + 1), q, a] for i, (q, a) in enumerate(qs15)], "std",
             caption="The 15 research questions, answered in one line each", source="Source: notes.md, with sources cited in each section above.")
@@ -973,16 +981,16 @@ section("s20", "E", "Valuation", "S20 | Valuation", f"Base value Rs {f0(base_v)}
 # ================================================================= Appendix
 src_list = "".join(f'<li>{("<a href=" + chr(34) + u + chr(34) + ">" + n + "</a>") if u else n}</li>' for n, u in SRC.values())
 dis = table(["Disclosed (company documents)", "Inferred (our calculation or reading) [E]", "Not disclosed or not checked"], [
-    ["FY26 reasons for the fall; segment and market splits", "Q4 FY25 was bulk buying", "Sales by molecule; largest customer"],
-    ["Utilisation by unit each call", "Start-up drag Rs 42 cr in FY26", "Revenue by plant; project returns"],
-    ["Margin without injectables and Stellon", "Capex from cash flow (Rs 95 cr FY26)", "Owner of Stellon's other 25%"],
-    ["Top-10 customer share; no customer above 10%", "Unit III reaches 80% by FY29-FY30", "Reasons for CFO and company secretary exits"],
-    ["Inspection outcomes as reported by the company", "H1 FY25 sales Rs 526 cr", "US FDA database, Orange Book; pledge filing"],
-    ["Guidance on growth, margin, capex, tax", "All valuation projections", "Injectables break-even date; contract terms"]], "std",
+    ["FY26 reasons for the fall; segment and market splits", "Q4 FY25 was bulk buying", "Sales by molecule or therapy; largest customer"],
+    ["Utilisation by unit each call", "Start-up drag Rs 42 cr in FY26", "Revenue by plant; project ROCE or payback"],
+    ["Margin without injectables and Stellon", "Capex from cash flow (Rs 95 cr FY26)", "Name of Stellon's 25% partner; Neocubes link"],
+    ["Top-10 customer share; no customer above 10%", "Unit III reaches 80% by FY29-FY30", "Price-reset clauses in supply contracts"],
+    ["Inspection outcomes; Orange Book; exit reasons; IPO customer data", "H1 FY25 sales Rs 526 cr", "Sales by customer after the IPO"],
+    ["Guidance on growth, margin, capex, tax", "All valuation projections", "Injectables break-even date; contract length"]], "std",
     caption="What is disclosed, inferred and missing", source="Source: this report.")
 appendix = f"""{dis}
 <h3>Sources</h3><ol class="srcs">{src_list}</ol>
-<p class="small">Also read but not cited above: all 14 call transcripts and 14 investor presentations from Q1 FY24 to Q2 FY27, and annual reports FY24 and FY25 (listed in the source manifest). Not checked: the company's investor-relations site, NSE copies of filings, the IPO prospectus text, and US FDA databases. Images inside the decks were not extracted; all charts here are redrawn from the numbers.</p>
+<p class="small">Also read but not cited above: all 14 call transcripts and 14 investor presentations from Q1 FY24 to Q2 FY27, and annual reports FY24 and FY25 (listed in the source manifest). Also checked: the company's investor-relations site, the IPO prospectus text and the US FDA Orange Book; deck pages were read as images as well as text. NSE copies of filings did not load and were not used. All charts here are redrawn from the numbers.</p>
 <h3>Disclaimer</h3>
 <p class="small disc">This report is research for learning and discussion. It is not investment advice, a recommendation, or an offer to buy or sell any security. The author is not a SEBI-registered investment adviser or research analyst. The valuation readout describes where the price sits against our scenarios; it is not a rating. Figures come from company filings and Screener.in as of 9 November 2026 and may contain errors; estimates marked [E] are ours and guidance marked [G] is management's. Past performance does not guarantee future results. Make your own decisions or consult a registered adviser.</p>"""
 SECTIONS.append(("appendix", "", "Sources and disclaimer", "Appendix", "Sources, disclosures and disclaimer", appendix))
