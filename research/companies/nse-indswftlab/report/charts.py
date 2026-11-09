@@ -46,10 +46,27 @@ def _svg(w, h, body, label):
             f'<title>{escape(label)}</title>{body}</svg>')
 
 
-def _text(x, y, s, size=11, fill=INK, anchor="middle", weight="normal", italic=False):
+def _text(x, y, s, size=11, fill=INK, anchor="middle", weight="normal", italic=False, halo=False):
     st = ' font-style="italic"' if italic else ""
+    if halo:   # white outline so a label stays legible where it crosses a line
+        st += ' stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" paint-order="stroke"'
     return (f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{fill}" '
             f'text-anchor="{anchor}" font-weight="{weight}"{st}>{escape(str(s))}</text>')
+
+
+def _wrap(s, max_chars, max_lines=3):
+    """Split a label into lines of at most max_chars characters at spaces ('|' forces a break)."""
+    out = []
+    for part in s.split("|"):
+        line = ""
+        for wd in part.split():
+            if line and len(line) + 1 + len(wd) > max_chars:
+                out.append(line); line = wd
+            else:
+                line = f"{line} {wd}".strip()
+        out.append(line)
+    assert len(out) <= max_lines, ("label would be cut", s, out)   # never drop words silently
+    return out
 
 
 def _tip(s):
@@ -162,9 +179,12 @@ def grouped(cats, series, label, *, dec=0, unit="", w=520, h=240, hatch_series=N
     lo = -_nice_max(-min(allv) * 1.1) if min(allv) < 0 else 0
     if lo < 0:
         pad_b += 14
+    k = len(series)
+    axis = min(30, (w - pad_l - pad_r) / len(cats) * 0.76 / k) < 15   # too narrow for value labels: show a y-axis
+    if axis:
+        pad_l = 38
     ph, pw = h - pad_t - pad_b, w - pad_l - pad_r
     slot = pw / len(cats)
-    k = len(series)
     bw = min(30, slot * 0.76 / k)
 
     def y(v):
@@ -176,6 +196,18 @@ def grouped(cats, series, label, *, dec=0, unit="", w=520, h=240, hatch_series=N
             pats[nm] = _uid("g")
             defs.append(_hatch(pats[nm], col))
     out = [f"<defs>{''.join(defs)}</defs>"]
+    if axis:
+        step = _nice_max((hi - lo) / 4)
+        gv = 0.0
+        ticks = []
+        while gv <= hi + 1e-9:
+            ticks.append(gv); gv += step
+        gv = -step
+        while gv >= lo - 1e-9:
+            ticks.append(gv); gv -= step
+        for gv in ticks:
+            out.append(f'<line x1="{pad_l}" x2="{w-pad_r}" y1="{y(gv):.1f}" y2="{y(gv):.1f}" stroke="{GREY_LT}"/>')
+            out.append(_text(pad_l - 5, y(gv) + 3.5, _fmt(gv, 0) + unit, 9.5, MUTED, anchor="end"))
     for i, c in enumerate(cats):
         cx = pad_l + slot * (i + 0.5)
         for j, (nm, vs, col) in enumerate(series):
@@ -234,6 +266,7 @@ def lines(cats, series, label, *, dec=0, unit="", w=520, h=240, band=None, ymin=
     for i, c in enumerate(cats):
         out.append(_text(X(i), h - 11, c, 10.5 if step > 50 else 9, MUTED))
     ends = []   # end labels, spread apart after all series are drawn
+    pts = {}    # all_labels by x index, de-collided after all series are drawn
     for nm, vs, col, dashed in series:
         segs, cur = [], []
         for i, v in enumerate(vs):
@@ -257,9 +290,16 @@ def lines(cats, series, label, *, dec=0, unit="", w=520, h=240, band=None, ymin=
             out.append(f'<circle cx="{X(i):.1f}" cy="{Y(v):.1f}" r="4" fill="#fff" stroke="{col}" stroke-width="2">'
                        f'{_tip(f"{cats[i]}, {nm}: {_fmt(v, dec)}{unit}")}</circle>')
             if all_labels:
-                out.append(_text(X(i), Y(v) - 8, _fmt(v, dec) + unit, 10, INK, weight="bold"))
+                pts.setdefault(i, []).append([Y(v) - 8, X(i), _fmt(v, dec) + unit, Y(v)])
             elif end_labels and i == last:
                 ends.append([Y(v) + 4, X(i) + 7, _fmt(v, dec) + unit])
+    for col_pts in pts.values():          # two labels at one x closer than 12px: put the lower one under its point
+        col_pts.sort()
+        for k in range(1, len(col_pts)):
+            if col_pts[k][0] - col_pts[k - 1][0] < 12:
+                col_pts[k][0] = col_pts[k][3] + 17
+        for yy, ax, s, _ in col_pts:
+            out.append(_text(ax, yy, s, 10, INK, weight="bold"))
     ends.sort()
     for k in range(1, len(ends)):          # keep end labels at least 12px apart
         if ends[k][0] - ends[k - 1][0] < 12:
@@ -284,7 +324,12 @@ def hbars(cats, vals, label, *, dec=0, unit="", w=520, h=None, highlight=None, c
     for i, (c, v) in enumerate(zip(cats, vals)):
         y = 6 + i * row
         col = colors[i] if colors else (PRIMARY if (hl is None or i in hl) else GREY)
-        out.append(_text(lab_w - 8, y + 15, c, 11, INK, anchor="end"))
+        cl = _wrap(c, max(6, int((lab_w - 10) / 5.6)), 2) if 6.2 * len(c) > lab_w - 10 else [c]   # asserts if a label needs 3 lines
+        if len(cl) == 1:
+            out.append(_text(lab_w - 8, y + 15, c, 11, INK, anchor="end"))
+        else:
+            out.append(_text(lab_w - 8, y + 10, cl[0], 10, INK, anchor="end"))
+            out.append(_text(lab_w - 8, y + 21, cl[1], 10, INK, anchor="end"))
         if track:
             out.append(f'<rect x="{lab_w}" y="{y+5}" width="{pw:.1f}" height="{row-12}" fill="{GREY_LT}" rx="2"/>')
         if v is None:
@@ -310,8 +355,15 @@ def waterfall(steps, label, *, dec=1, w=520, h=250):
         else:
             tops.append((run - v, run)); run -= v
     hi = max(max(a, b) for a, b in tops) * 1.04   # no value axis, so no need to round the ceiling
+    slot = (w - pad_l - pad_r) / len(steps)
+    fs = 9.5 if slot < 60 else 10
+    cw = fs * 0.56                                   # rough character width
+    longest = max(len(wd) for nm, _, _ in steps for wd in nm.replace("|", " ").split())
+    stagger = longest * cw > slot - 4                # a single word wider than its slot: alternate two label tiers
+    names = [_wrap(nm, max(5, int(((2 * slot if stagger else slot) - 6) / cw))) for nm, _, _ in steps]
+    tier = 12 * max(len(n) for n in names) + 4
+    pad_b = max(pad_b, 16 + tier * (2 if stagger else 1))
     ph, pw = h - pad_t - pad_b, w - pad_l - pad_r
-    slot = pw / len(steps)
     bw = min(54, slot * 0.62)
 
     def y(v):
@@ -326,8 +378,11 @@ def waterfall(steps, label, *, dec=1, w=520, h=250):
         out.append(f'<rect x="{cx-bw/2:.1f}" y="{y(b):.1f}" width="{bw:.1f}" height="{max(y(a)-y(b),0.8):.1f}" fill="{col}" rx="2">'
                    f'{_tip(nm.replace("|", " ") + ": " + sign + _fmt(v, dec))}</rect>')
         out.append(_text(cx, y(b) - 5, sign + _fmt(v, dec), 10.5, INK, weight="bold"))
-        for j, part in enumerate(nm.split("|")):
-            out.append(_text(cx, h - 26 + j * 12, part, 9.5 if slot < 60 else 10, MUTED))
+        off = tier if (stagger and i % 2) else 0
+        if off:
+            out.append(f'<line x1="{cx:.1f}" x2="{cx:.1f}" y1="{h - pad_b + 4:.1f}" y2="{h - pad_b + 6 + off:.1f}" stroke="{GREY_LT}"/>')
+        for j, part in enumerate(names[i]):
+            out.append(_text(cx, h - pad_b + 16 + off + j * 12, part, fs, MUTED))
         if prev is not None:
             lvl = y(b) if k in ("down", "total") else y(a)
             out.append(f'<line x1="{prev:.1f}" x2="{cx-bw/2:.1f}" y1="{lvl:.1f}" y2="{lvl:.1f}" stroke="{AXIS}" stroke-dasharray="3,3"/>')
@@ -339,7 +394,7 @@ def waterfall(steps, label, *, dec=1, w=520, h=250):
 def value_range(rows, price, label, *, w=520, h=None, lo=0, hi=None, unit="Rs "):
     """rows: list of (name, value, color, note). Dots on one rupee axis with the price as a vertical line."""
     row = 34
-    h = h or (len(rows) * row + 52)
+    h = h or (len(rows) * row + 60)
     lab_w, pad_r = 96, 30
     hi = hi or _nice_max(max(v for _, v, _, _ in rows) * 1.1)
     pw = w - lab_w - pad_r
@@ -355,7 +410,7 @@ def value_range(rows, price, label, *, w=520, h=None, lo=0, hi=None, unit="Rs ")
     out.append(f'<line x1="{X(price):.1f}" x2="{X(price):.1f}" y1="14" y2="{h-26}" stroke="{INK}" stroke-width="1.5" stroke-dasharray="4,3"/>')
     out.append(_text(X(price), 11, f"Price {unit}{_fmt(price, 0)}", 10.5, INK, weight="bold"))
     for i, (nm, v, col, note) in enumerate(rows):
-        yy = 30 + i * row
+        yy = 38 + i * row
         out.append(_text(lab_w - 8, yy + 4, nm, 11.5, INK, anchor="end", weight="bold"))
         out.append(f'<line x1="{X(price):.1f}" x2="{X(v):.1f}" y1="{yy}" y2="{yy}" stroke="{col}" stroke-width="3"/>')
         out.append(f'<circle cx="{X(v):.1f}" cy="{yy}" r="6.5" fill="{col}" stroke="#fff" stroke-width="2">'
@@ -364,9 +419,12 @@ def value_range(rows, price, label, *, w=520, h=None, lo=0, hi=None, unit="Rs ")
         s = f"{unit}{_fmt(v, 0)}  {note}"
         if right and X(v) + 11 + 6.2 * len(s) > w - 2:
             # no room right of the dot: put the label above it, ending at the dot
-            out.append(_text(X(v) + 6, yy - 10, s, 10.5, INK, anchor="end"))
+            out.append(_text(X(v) + 6, yy - 10, s, 10.5, INK, anchor="end", halo=True))
+        elif not right and X(v) - 11 - 6.2 * len(s) < lab_w + 2:
+            # no room left of the dot: put the label above it, starting at the dot
+            out.append(_text(X(v) - 6, yy - 10, s, 10.5, INK, anchor="start", halo=True))
         else:
-            out.append(_text(X(v) + (11 if right else -11), yy + 4, s, 10.5, INK, anchor="start" if right else "end"))
+            out.append(_text(X(v) + (11 if right else -11), yy + 4, s, 10.5, INK, anchor="start" if right else "end", halo=True))
     return _svg(w, h, "".join(out), label)
 
 

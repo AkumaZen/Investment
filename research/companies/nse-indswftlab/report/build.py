@@ -73,17 +73,28 @@ SRC = {
 
 def src(*items):
     """items: key or (key, page). Physical PDF page numbers, so #page= opens the right page."""
-    parts = []
+    groups = {}                      # key -> pages, in first-seen order; one name per source
     for it in items:
         key, pg = (it, None) if isinstance(it, str) else it
+        groups.setdefault(key, [])
+        if pg is not None and pg not in groups[key]:
+            groups[key].append(pg)
+    parts = []
+    for key, pgs in groups.items():
         name, url = SRC[key]
-        label = name + (f", p.{pg}" if pg else "")
+        if not pgs:
+            parts.append(f'<a href="{url}">{name}</a>' if url else name)
+            continue
+        pre = "p." if len(pgs) == 1 else "pp."
         if url:
-            first = str(pg).split("-")[0].split(",")[0] if pg else ""
-            u = url + (f"#page={first}" if pg and first.isdigit() else "")
-            parts.append(f'<a href="{u}">{label}</a>')
+            links = []
+            for j, pg in enumerate(pgs):
+                first = str(pg).split("-")[0].split(",")[0]
+                u = url + (f"#page={first}" if first.isdigit() else "")
+                links.append(f'<a href="{u}">{(name + ", " + pre) if j == 0 else ""}{pg}</a>')
+            parts.append(", ".join(links))
         else:
-            parts.append(label)
+            parts.append(f"{name}, {pre}" + ", ".join(str(x) for x in pgs))
     return "Source: " + "; ".join(parts) + "."
 
 
@@ -315,6 +326,7 @@ def duo(a, b):
 
 def table(head, rows, cls="", first_left=True, caption=None, source=None):
     th = "".join(f"<th>{h}</th>" for h in head)
+    labs = [re.sub(r"<[^>]+>", "", h).replace('"', "&quot;") for h in head]
     tr = []
     for r in rows:
         cells = []
@@ -323,7 +335,7 @@ def table(head, rows, cls="", first_left=True, caption=None, source=None):
             if isinstance(c, tuple):
                 c, extra = c
                 klass += " " + extra
-            cells.append(f'<td class="{klass}">{c}</td>')
+            cells.append(f'<td class="{klass}" data-label="{labs[i]}">{c}</td>')
         tr.append("<tr>" + "".join(cells) + "</tr>")
     t = f'<div class="tw"><table class="t {cls}"><thead><tr>{th}</tr></thead><tbody>{"".join(tr)}</tbody></table></div>'
     if caption:
@@ -334,7 +346,7 @@ def table(head, rows, cls="", first_left=True, caption=None, source=None):
 
 
 def chip(word):
-    cls = {"OK": "ok", "WATCH": "watch", "RED": "red", "MET": "ok", "MISSED": "red", "LATE": "watch",
+    cls = {"OK": "ok", "WATCH": "watch", "BULLISH": "ok", "CAUTIOUSLY OPTIMISTIC": "watch", "RED": "red", "MET": "ok", "MISSED": "red", "LATE": "watch",
            "OPEN": "open", "SOFTENED": "watch", "STRONG": "ok", "MODERATE": "watch", "WEAK": "red",
            "MAKES AND SELLS": "ok", "FIRST ORDERS": "watch", "IN DEVELOPMENT": "open",
            "NOT DISCLOSED": "nd", "DOES NOT MAKE": "nd", "NOT VERIFIED": "nd", "FAIR": "watch",
@@ -422,7 +434,7 @@ The first link that is not yet proven is repeat orders turning into cash. Receiv
 <p>At Rs {f0(D['price'])}, cash and the stake (at management's own value) make up about {pc(cs_share)} of the market value.
 The rest, about Rs {f0(CALC['core_ev'])} cr, buys the medicine business at {f1(VAL['reverse'][0]['x_fy27'])} times management's FY27 operating profit.
 That is cheap only if the second half delivers: sales of Rs {f0(h2n)} cr, {pc(h2g, 0, True)} on last year's second half.</p>
-<p>Management has delivered 2 of 22 claims we tracked, changed 7 and misstated 3, all three misstatements understating its own progress. We rate it WATCH, not RED.</p>"""
+<p>Of 22 management claims we tracked, 3 were met (2 delivered, 1 on track), 7 changed, 2 missed and 3 misstated, all three misstatements understating its own progress. We rate it WATCH, not RED.</p>"""
 s1_charts = exhibit("After the FY25 break, sales and profit are rebuilding from a smaller base (Rs cr)", annual, src("scr"),
                     "FY20 to FY24 include the API business that was sold in FY24; FY25 onward is the finished-medicine business. The two periods are not comparable.")
 s1_body = f'<div class="cover"><div class="cmain">{s1_main}{s1_charts}</div>{rail}</div>'
@@ -566,7 +578,7 @@ s5 = f"""{table(["Partner or channel", "What they buy", "Status", "What is known
     ["Two further contract customers", "Not named", chip("OPEN") + " 'hope to sign off in the last quarter'", "Not disclosed"],
     ["Own-brand distributors", "Own registrations in 60+ countries", chip("CONFIRMED"), "Credit terms not disclosed"],
     ["Indian drug companies (P2P)", "Contract supply in India", chip("CONFIRMED") + " Cipla, Lupin, Mankind, Concord", "Advance payment"]],
-    "std", caption="Who buys, and how much is locked in", source=src(("deck", 14), ("deck", 21), ("call", 5), ("call", 10), ("call", 13), ("call", 16), ("trq1", 3), ("trq1", 5), ("dq3", 16), ("deck", 10)))}
+    "std stack", caption="Who buys, and how much is locked in", source=src(("deck", 14), ("deck", 21), ("call", 5), ("call", 10), ("call", 13), ("call", 16), ("trq1", 3), ("trq1", 5), ("dq3", 16), ("deck", 10)))}
 <p>About Rs 80 to 90 cr of the Rs {f1(CALC['h1_inc'])} cr first-half increase came from new customers, which is {pc(CALC['new_cust_share'][0])} to {pc(CALC['new_cust_share'][1])} of the growth [E]. The partner molecule's Rs 83 cr in H1 is an upper bound on its share of the increase, because its H1 FY26 sales are not disclosed.</p>
 <blockquote class="q"><p>"it is VITRIS only who is driving the sales"</p><cite>Management on the Viatris volumes, Q2 FY27 call, p.16 (machine transcript spelling)</cite></blockquote>"""
 section("s5", "A", "Customers", "S5 | Customers and partners", "A few partners drive the growth, and they set the volumes",
@@ -598,10 +610,10 @@ s7 = f"""{table(["Measure", "Quantity (what is growing)", "Quality (what it is w
     ["Profit", f"H1 profit after tax Rs {f1(h['pat'][0])} cr to Rs {f1(h['pat'][1])} cr", f"Inventory plus receivables up Rs {f1(CALC['inv_rec_up'])} cr in a year, more than twice H1 profit"],
     ["Cash", f"Rs {f0(CALC['net_cash'])} cr net cash", f"Operating cash flow negative three years, Rs {f0(CALC['ocf_3y'])} cr in total; Rs 16 cr of deposits pledged"],
     ["Concentration", "Nine products", f"{pc(CALC['top9_share'])} of FY26 sales; two products {pc(CALC['ator2_share'])}"]],
-    "std two", caption="Growth is strong on volume and weak on quality so far", source=src(("deck", 19), ("deck", 28), ("deck", 29), ("deck", 30), ("call", 5), ("call", 11), "scr"))}
+    "std", caption="Growth is strong on volume and weak on quality so far", source=src(("deck", 19), ("deck", 28), ("deck", 29), ("deck", 30), ("call", 5), ("call", 11), "scr"))}
 {duo(exhibit("Raw material took a larger share of sales in Q2 as contract supply grew (%)",
              C.lines(D["dq"], [("Raw material", CALC["rm_pct"], C.SECOND, False), ("Staff", CALC["emp_pct"], C.PRIMARY, False), ("Other costs", CALC["oth_pct"], C.GREY, True)],
-                     "Cost lines as % of revenue", dec=1, w=460, h=230, all_labels=True), src(("deck", 28)) + " Our calculation on the deck revenue line [E]."),
+                     "Cost lines as % of revenue", dec=1, w=460, h=230, ymin=0, ymax=60, all_labels=True), src(("deck", 28)) + " Our calculation on the deck revenue line [E]."),
      exhibit("Inventory and receivables grew far faster than sales (Rs cr)",
              C.grouped(["Inventory", "Receivables", "Payables"], [("Sep 2025", [b["inventory"][0], b["receivables"][0], b["payables"][0]], C.GREY), ("Sep 2026", [b["inventory"][1], b["receivables"][1], b["payables"][1]], C.PRIMARY)],
                        "Working capital items, Sep 2025 and Sep 2026", w=460, h=230), src(("deck", 30))))}"""
@@ -649,7 +661,7 @@ s9 = f"""{plants}
 {duo(exhibit("Both plants are about three-quarters used", util, src(("call", 3), ("call", 8)), "Management gave the same 70-75% for both plants; we show the midpoint."),
      exhibit("The Rs 250 cr plan, as spread in our model [E]", plan, src(("call", 1), ("trq1", 5), "model"), "Rs 320 cr in the model including maintenance; project-wise detail is not disclosed."))}
 {exhibit("In the new business, capex has run ahead of cash from operations (Rs cr)", cap, src("scr"),
-         "Capex is operating cash flow less free cash flow [E]. FY24 includes the sale year. Capex of Rs 51-101 cr a year against negative operating cash flow means growth has been funded by sale proceeds and warrants.")}
+         f"Capex is operating cash flow less free cash flow [E]. FY24 includes the sale year. Capex of Rs {f0(min(hist_capex[-3:]))}-{f0(max(hist_capex[-3:]))} cr a year in FY24 to FY26 against negative operating cash flow means growth has been funded by sale proceeds and warrants.")}
 {table(["Item", "Plan or claim", "Status"], [
     ["Total plan", "Rs 250 cr over 2 to 2.5 years from internal accruals [G]", chip("ON TRACK") + " on spend; funding claim " + chip("CHANGED")],
     ["Capital work in progress", f"Rs 0 (Sep 2025) to Rs {f1(b['cwip'][1])} cr (Sep 2026)", chip("CONFIRMED")],
@@ -674,7 +686,7 @@ people = table(["Person", "Role", "What the filings show"], [
     ["Gagan Agarwal", "Chief Financial Officer", "20+ years at the group, rose from management trainee; leads the calls; pay +20.28%"]],
     "std", caption="Who runs the company", source=src(("deck", 24), ("deck", 25), ("ar26", 64), ("carer24", 1)))
 skin = C.lines(D["q"], [("Promoter holding", D["promoter"], C.PRIMARY, False), ("Foreign investors", D["fii"], C.SECOND, False)],
-               "Promoter and foreign investor holding, Dec 2024 to Sep 2026, %", unit="%", dec=1, w=600, h=230, ymin=0, ymax=50, end_labels=True)
+               "Promoter and foreign investor holding, Dec 2024 to Sep 2026, %", unit="%", dec=1, w=900, h=250, ymin=0, ymax=60, end_labels=True)
 cap_alloc = table(["Money", "Stated use", "What happened", "Status"], [
     ["Rs 1,650 cr API sale (FY24)", "Clear debt, build the medicine business", "About Rs 1,250-1,300 cr of debt repaid; Rs 348 cr net cash today; about Rs 308 cr in promoter-linked or unlisted instruments", chip("WATCH")],
     [f"Warrants 1: Rs {D['w1']['amt']} cr at Rs {D['w1']['price']}", "Expansion, a new plant on the Behra land", f"Rs {D['w1']['lapsed_amt']} cr lapsed; Rs {f1(CALC['w1_raised'])} cr raised and used; Behra land sold at a loss; some end use not traceable (funds commingled)", chip("MISSED")],
@@ -746,7 +758,7 @@ for *_, s_ in L:
 assert _cnt == {"DELIVERED": 2, "OPEN": 7, "CHANGED": 7, "ON TRACK": 1, "MISSED": 2, "MISSTATED": 3}, _cnt
 order = ["DELIVERED", "ON TRACK", "OPEN", "CHANGED", "MISSED", "MISSTATED"]
 score = C.hbars(order, [_cnt[k] for k in order], "Claims by status, 22 claims Jan to Nov 2026",
-                colors=[C.GREEN, C.GREEN, C.GREY, C.SECOND, C.RED, C.RED], w=460, lab_w=100)
+                colors=[C.GREEN, C.GREEN, C.GREY, C.SECOND, C.RED, C.RED], w=900, lab_w=110)
 s11 = f"""{exhibit("Only 3 of 22 claims were met as stated; 7 are still open", score, src("ledger"),
          "Credibility score: 3 met of 15 that can be judged = 20% [E]. All three misstatements understated the company's own progress.")}
 {table(["#", "Claim", "When and who", "What happened", "Status"], [[str(n), c_, w_, h_, chip(s_)] for n, c_, w_, h_, s_ in L],
@@ -764,7 +776,7 @@ hh = C.bars(["H1 FY26", "H2 FY26", "H1 FY27", "H2 FY27 need"], [h1v[0], CALC["h2
             "Half-year operating revenue and the H2 FY27 need, Rs cr", hatch={3}, colors=[C.GREY, C.GREY, C.PRIMARY, C.PRIMARY], w=520, h=230,
             notes={3: f"{pc(h2g, 0, True)} YoY"})
 mg = C.lines(D["q"], [("Operating margin", D["q_opm"], C.PRIMARY, False)], "Quarterly operating margin Dec 2024 to Sep 2026, %",
-             unit="%", dec=1, w=520, h=230, band=(18, 22, "Guided 18-22% from Q3 [G]"), ymin=-10, ymax=25, all_labels=True)
+             unit="%", dec=1, w=520, h=230, band=(18, 22, "Guided 18-22% from Q3 [G]"), ymin=-10, ymax=30, all_labels=True)
 guid = table(["Metric", "Guidance", "Period", "Speaker and words", "Type"], [
     ["Revenue growth", "Above 50% (at least Rs 954 cr)", "FY27", "Deck: \"over 50%\"", "[G]"],
     ["Revenue", "Rs 1,000 cr", "FY27", "CFO, to an analyst's number: \"A minimum internal target\"", "Internal target"],
@@ -798,9 +810,9 @@ section("s12", "C", "Guidance", "S12 | Guidance and outlook", "The next six mont
 
 # ================================================================= S13 growth and triggers
 bu = VAL["bottom_up_fy28"]
-build = C.hbars(["Own brands, export (Q2 run rate)", "Contract manufacturing (run rate)", "Viatris Ibuprofen", "New registrations", "Domestic"],
+build = C.hbars(["Own brands, export", "Contract manufacturing", "Viatris Ibuprofen", "New registrations", "Domestic"],
                 [bu["own_brand_run_rate"], bu["cmo_run_rate"], bu["viatris_ibuprofen"], bu["new_registrations"], bu["domestic_fy28"]],
-                f"Bottom-up FY28 revenue build, Rs cr, total {f0(bu['total'])}", w=600, lab_w=210, colors=[C.PRIMARY, C.SECOND, C.THIRD, C.FOURTH, C.GREY])
+                f"Bottom-up FY28 revenue build, Rs cr, total {f0(bu['total'])}; export lines at the Q2 run rate", w=900, lab_w=230, colors=[C.PRIMARY, C.SECOND, C.THIRD, C.FOURTH, C.GREY])
 trig = table(["Trigger", "Timing", "What management said", "Rs impact", "Bias", "Strength", "Status"], [
     ["Q3 FY27 results", "Early Feb 2027", "22% margin; Ibuprofen Rs 20 cr", f"Rs {f0(DER['h2_need_q'])} cr sales test", "+/-", chip("STRONG"), chip("CONFIRMED")],
     ["Viatris Ibuprofen ramp", "Q3 to Q4 FY27", "Rs 20 cr, then Rs 20-25 cr a quarter", "About Rs 90 cr a year by FY28 [E]", "+", chip("STRONG"), chip("CONFIRMED")],
@@ -812,13 +824,13 @@ trig = table(["Trigger", "Timing", "What management said", "Rs impact", "Bias", 
     ["Synthimed stake sale", "\"a couple of years more\"", "Buyer diligence; tag-along right", "Rs 546-702 cr gross", "+", chip("WEAK"), chip("OPEN")],
     ["Warrant conversion", "By about Mar 2028", "56 lakh at Rs 196", f"Rs {f1(CALC['w2_to_come'])} cr cash; 6% more shares", "-", chip("STRONG"), chip("CONFIRMED")],
     ["FY28 guidance", "Q3 FY27 call", "\"Very difficult\"; to be given next call", "Sets the base for FY28", "+/-", chip("WEAK"), chip("OPEN")]],
-    "std", caption="Trigger table", source=src(("call", 3), ("call", 4), ("call", 5), ("call", 6), ("call", 10), ("call", 13), ("deck", 21), ("dq3", 16), ("nsea", 1)))
+    "std stack", caption="Trigger table", source=src(("call", 3), ("call", 4), ("call", 5), ("call", 6), ("call", 10), ("call", 13), ("deck", 21), ("dq3", 16), ("nsea", 1)))
 absent = ul(["US filings: named as a direction only, no filing or date [deck p14].",
              "A new molecule in FY28: \"no new molecule\" [call p17]; FY28 grows on existing products.",
              "A signed Synthimed stake sale: none.",
              "The named second CDMO partner beyond Arrotex and Manx: none."])
 s13 = f"""{exhibit("Our bottom-up FY28 build lands within 1% of management's path", build, src(("call", 5), ("call", 4), ("deck", 16), ("trq1", 5), "model"),
-         f"Bottom-up total Rs {f1(bu['total'])} cr vs Rs {f1(bu['base_fy28'])} cr on the guided path [E]. Export Rs {f0(bu['export_fy28'])} cr. Capped by Derabassi capacity of about Rs 1,000-1,200 cr; above that needs Samba or new lines.")}
+         f"Bottom-up total Rs {f1(bu['total'])} cr vs Rs {f1(bu['base_fy28'])} cr on the guided path [E]. Own brands and contract manufacturing are held at the Q2 run rate. Export Rs {f0(bu['export_fy28'])} cr. Capped by Derabassi capacity of about Rs 1,000-1,200 cr; above that needs Samba or new lines.")}
 <p><b>Near term (next two quarters):</b> Q3 and Q4 FY27 results, Ibuprofen ramp, the 22% margin, and FY28 guidance on the Q3 call.<br>
 <b>Long term (two to three years):</b> Clarithromycin, Macrogol, Samba approval, new CDMO customers, the 333 FY27 registrations earning from about FY29 (registration takes 1-1.5 years, revenue about 2 years [call p15]), and the stake sale.</p>
 {trig}
@@ -841,7 +853,7 @@ PEERS = [("Marksans Pharma", 13970, 3392, 784, 23, "+24%", 17.8, "25.0", 18.8, "
          ("Ind-Swift Labs", 3032, 753, 104, 14, "n/a", 29.2, "33.0", 4.9, "EU, Australia, Canada own registrations plus partner supply")]
 _med = sorted(p_[6] for p_ in PEERS[:-1])
 assert abs((_med[3] + _med[4]) / 2 - CALC["peer_med"]) < 0.06
-pm = C.hbars([p_[0] for p_ in PEERS], [p_[6] for p_ in PEERS], "Market value / last 12 months operating profit, x", dec=1, unit="x", w=560, lab_w=120,
+pm = C.hbars([p_[0] for p_ in PEERS], [p_[6] for p_ in PEERS], "Market value / last 12 months operating profit, x", dec=1, unit="x", w=900, lab_w=130,
              highlight=len(PEERS) - 1)
 s14 = f"""<h3>Who can do what</h3>
 {table(["Company", "What it does", "How close to Ind-Swift"], [[p_[0], p_[9], c_] for p_, c_ in zip(PEERS[:-1], [
@@ -853,10 +865,9 @@ s14 = f"""<h3>Who can do what</h3>
     "Fast-growing contract and niche work; priced for growth",
     "Contract maker for India; scale player",
     "Contract maker; priced for growth"])], "std", caption="Peers: business comparison first", source=src("peers"))}
-{duo(exhibit("On last year's profit Ind-Swift looks expensive; on next year's guided profit it looks cheap", pm, src("peers"),
-             f"Peer median {CALC['peer_med']}x. Ind-Swift's 29.2x uses a TTM operating profit of Rs 104 cr that still includes the weak FY26 quarters; on FY27 base EBITDA the core trades at {f1(VAL['reverse'][0]['x_fy27'])}x [E]."),
-     table(["Company", "Margin", "Growth", "P/E", "ROCE"], [[p_[0], f"{p_[4]}%", p_[5], p_[7], f"{p_[8]}%"] for p_ in PEERS], "std"))}
-<p class="src">{src("peers")}. Market value / operating profit ignores each peer's own net cash or debt [E]. Registrations and working-capital days for peers were not collected.</p>
+{exhibit("On last year's profit Ind-Swift looks expensive; on next year's guided profit it looks cheap", pm, src("peers"),
+          f"Peer median {CALC['peer_med']}x. Ind-Swift's 29.2x uses a TTM operating profit of Rs 104 cr that still includes the weak FY26 quarters; on FY27 base EBITDA the core trades at {f1(VAL['reverse'][0]['x_fy27'])}x [E]. Market value / operating profit ignores each peer's own net cash or debt [E].")}
+{table(["Company", "Operating margin, TTM", "Sales growth, TTM", "P/E", "ROCE"], [[p_[0], f"{p_[4]}%" + (" (Q2 FY27: 18%)" if p_[0] == "Ind-Swift Labs" else ""), p_[5], p_[7], f"{p_[8]}%"] for p_ in PEERS], "std", caption="Peers: margin, growth and returns", source=src("peers")[:-1] + ". Registrations and working-capital days for peers were not collected.")}
 <p><b>Where it can compete:</b> regulated-market approvals (MHRA, TGA, Health Canada), a dossier library of 2,100+ filings, and a decade-long Viatris relationship. <b>Where it cannot:</b> scale, its own front end in Europe, and the US.</p>
 <p><b>Which multiple fits:</b> peer-level margin but ROCE of 4.9%, three years of negative operating cash flow and two-molecule concentration argue for a discount to the {CALC['peer_med']}x median. We use 10x bear (Lincoln, Indoco), 15x base (Unichem), and 18x bull (the median, for a proven exporter that collects its cash).</p>"""
 section("s14", "D", "Peers", "S14 | Peers", "A peer-level margin, but not yet peer-level returns or cash",
@@ -875,7 +886,7 @@ s15 = f"""{table(["Layer", "What", "Rs cr", "Status"], [
     ["Idea", "Rs 1,500 cr by FY30, US entry, two unnamed CDMO customers", "Not sized", chip("UNPROVEN")],
     ["Balance sheet", "Net cash Rs 348 cr; warrant money Rs 82 cr to come", "430", chip("PROVEN")],
     ["Stake", "7.80% of Synthimed at management's Rs 8,000 cr, after tax and 25% discount", f"{f0(VAL['scenarios']['Base']['value']['stake']['net'])}", chip("UNPROVEN")]],
-    "std", caption="Reality vs optionality, with rupees", source=src("scr", ("call", 4), ("call", 5), ("deck", 6), ("deck", 21), ("deck", 30), "model"))}
+    "std stack", caption="Reality vs optionality, with rupees", source=src("scr", ("call", 4), ("call", 5), ("deck", 6), ("deck", 21), ("deck", 30), "model"))}
 <p>What is proven, valued simply: last year's operating profit at our 15x base multiple plus net cash and warrant money is about <b>Rs {f0(proven_ps)} a share</b> [E]. The stake adds about Rs {f0(stake_ps)} if management's value is right. The price of Rs {f0(D['price'])} sits about Rs {f0(D['price'] - proven_ps - stake_ps)} above both, which is what the market pays today for the ramp continuing.</p>"""
 section("s15", "D", "Reality vs optionality", "S15 | Reality vs optionality", "The price pays for the ramp continuing, not for the ideas",
         f"Proven earnings plus cash are worth about Rs {f0(proven_ps)} a share and the stake about Rs {f0(stake_ps)}; the remaining Rs {f0(D['price'] - proven_ps - stake_ps)} of the Rs {f0(D['price'])} price is a bet on the partner ramp holding, while the Rs 1,500 cr idea is barely priced.",
@@ -896,7 +907,7 @@ drv = table(["Driver", "Approval", "Launch", "Repeat orders", "Cash collected", 
     ["333 FY27 registrations", chip("PARTLY PROVEN"), chip("UNPROVEN"), chip("UNPROVEN"), chip("UNPROVEN"), "Revenue from about FY29"],
     ["Samba exports", chip("UNPROVEN"), chip("UNPROVEN"), chip("UNPROVEN"), chip("UNPROVEN"), "EU/PIC/S approval"],
     ["Domestic", chip("PROVEN"), chip("PROVEN"), chip("PROVEN"), chip("PROVEN"), "None; but sales fell 14.7% in FY26"]],
-    "std", caption="The causal chain by driver", source=src(("deck", 7), ("deck", 8), ("deck", 30), ("call", 3), ("call", 5), ("call", 10), ("ar26", 93), "scr"))
+    "std stack", caption="The causal chain by driver", source=src(("deck", 7), ("deck", 8), ("deck", 30), ("call", 3), ("call", 5), ("call", 10), ("ar26", 93), "scr"))
 s16 = f"""{exhibit("From approvals to Rs 1,500 cr, the chain breaks at cash", chain, src(("deck", 7), ("deck", 28), ("deck", 30), ("call", 4), "scr"))}
 {drv}"""
 section("s16", "D", "Causal chain", "S16 | The causal chain", "Approvals and launches are proven; turning repeat orders into cash is not",
@@ -906,11 +917,11 @@ section("s16", "D", "Causal chain", "S16 | The causal chain", "Approvals and lau
 
 # ================================================================= S17 financials
 ocf_pat = C.grouped(D["years"], [("Profit after tax", D["pat"], C.GREY), ("Operating cash flow", D["ocf"], C.PRIMARY)],
-                    "Profit after tax vs operating cash flow FY20 to FY26, Rs cr", w=600, h=240)
-rd = C.lines(["Sep 2025", "Sep 2026"], [("Receivable days", CALC["rec_days"], C.PRIMARY, False)], "Receivable days", dec=0, w=300, h=200,
+                    "Profit after tax vs operating cash flow FY20 to FY26, Rs cr", w=900, h=260)
+rd = C.lines(["Sep 2025", "Sep 2026"], [("Receivable days", CALC["rec_days"], C.PRIMARY, False)], "Receivable days", dec=0, w=520, h=230,
              band=(55, 65, "CFO target about 60 [G]"), ymin=0, ymax=120, all_labels=True)
-wd = C.lines(["Sep 2025", "Sep 2026"], [("Working-capital days", CALC["nwc_days"], C.SECOND, False)], "Net working-capital days", dec=0, w=300, h=200,
-             band=(80, 90, "85 days at Rs 1,500 cr [G]"), ymin=0, ymax=130, all_labels=True)
+wd = C.lines(["Sep 2025", "Sep 2026"], [("Working-capital days", CALC["nwc_days"], C.SECOND, False)], "Net working-capital days", dec=0, w=520, h=230,
+             band=(80, 90, "85 days at Rs 1,500 cr [G]"), ymin=0, ymax=160, all_labels=True)
 qoe = table(["Metric", "Value", "Reading", "Verdict"], [
     ["Operating margin H1 FY27", f"{f1(h['margin'][1])}% vs {f1(h['margin'][0])}%", "Operating leverage: employee cost fell from 20.9% to 16.2% of sales Q1 to Q2", chip("OK")],
     ["Raw material % of revenue", "46.06% Q2 vs 40.41% Q1 (deck basis)", "Rose as contract volume grew; the call's 45.15% uses another base", chip("WATCH")],
@@ -1019,7 +1030,7 @@ anti = ul([
     f"About {pc(cs_share)} of the market value is cash and a stake valued by management, carried at Rs 32 cr.",
     "The cash is not obviously the minorities': Rs 319 cr in unquoted instruments, a loan without terms, and shares of the promoter entity that funds the company.",
     "More dilution is coming even with net cash: a promoter warrant issue for a plan called self-funded.",
-    f"The price already assumes delivery: at the bear FY27 EBITDA of Rs {f0(ROWS['Bear'][0]['ebitda'])} cr, the core is 13.2x a number not yet shown in cash."])
+    f"The price already assumes delivery: at the bear FY27 EBITDA of Rs {f0(ROWS['Bear'][0]['ebitda'])} cr, the core trades at {f1(CALC['core_ev'] / ROWS['Bear'][0]['ebitda'])}x a profit not yet shown in cash."])
 bvr = table(["Bull claim", "Best counter-evidence", "Evidence favours"], [
     ["Margin went from 5.5% to 18.0% in a half year", "Raw material share rose Q1 to Q2; leverage came from flat staff cost", "Bull"],
     ["Approvals and 540+ registrations take years to copy", "How many earn revenue is Not Disclosed", "Bull"],
@@ -1033,7 +1044,7 @@ s19 = f"""<h3>The anti-thesis, argued as a sceptic would</h3>
 {bvr}
 <h3>Risk cards, ranked</h3>
 {rcards}
-<p class="src">{src("model", ("call", 5), ("call", 13), ("call", 14), ("deck", 20))}. Impacts use Rs {f1(ps(1))} a share per Rs 1 cr of FY28 EBITDA at 15x [E]. The bear case uses R1, R2, R5 and R6.</p>
+<p class="src">{src("model", ("call", 5), ("call", 13), ("call", 14), ("deck", 20))} Impacts use Rs {f1(ps(1))} a share per Rs 1 cr of FY28 EBITDA at 15x [E]. The bear case uses R1, R2, R5 and R6.</p>
 <h3>What would change our mind</h3>
 <p><b>Kills the anti-thesis:</b> H2 FY27 sales of Rs 533 cr or more, positive H2 operating cash flow, receivable days below 90, and a named new CDMO customer.<br>
 <b>Kills the thesis:</b> Q3 sales below Rs 250 cr, partner molecule sales falling, receivable days above 110, or a RED governance trigger.</p>"""
@@ -1046,10 +1057,10 @@ section("s19", "E", "Risks", "S19 | Risks and anti-thesis", "The case against is
 bv = VAL["scenarios"]["Base"]["value"]
 wf = C.waterfall([("Core business, 15x FY28", bv["core_ev"], "up"), ("Net cash, Mar 2027", bv["net_cash_mar27"], "up"), ("Warrant money", bv["warrant_cash"], "up"),
                   ("Stake after tax and discount", bv["stake_counted"], "up"), ("Equity value, Mar 2027", bv["equity_mar27"], "total")],
-                 "Sum of the parts, base case, Rs cr", dec=0, w=640, h=260)
+                 "Sum of the parts, base case, Rs cr", dec=0, w=900, h=280)
 vr = C.value_range([("Bear", bear_v, C.RED, "10x, stake at half"), ("12x multiple", _fv("multiple_12"), C.GREY, "base, lower multiple"),
                     ("No stake", _fv("no_stake"), C.GREY, "base without the stake"), ("Base", base_v, C.PRIMARY, "guidance, 15x"),
-                    ("Bull", bull_v, C.GREEN, "18x, stake at 15% off")], D["price"], "Value per share by case vs the price", w=640, lo=150, hi=550)
+                    ("Bull", bull_v, C.GREEN, "18x, stake at 15% off")], D["price"], "Value per share by case vs the price", w=900, lo=150, hi=550)
 sg = VAL["sensitivity"]
 sens = table(["FY28 EBITDA, Rs cr"] + [f"{m:g}x" for m in sg["multiples"]],
              [[f0(r_["fy28_ebitda"])] + [((f0(v_), "bold") if (abs(r_["fy28_ebitda"] - 221.84) < 0.1 and m_ == 15) else (f0(v_), "neg" if v_ < D["price"] else "")) for m_, v_ in zip(sg["multiples"], r_["values"])] for r_ in sg["rows"]],
@@ -1099,7 +1110,7 @@ watch = table(["Date", "Signal", "Confirms the base", "Breaks it"], [
     ["By about Mar 2028", "Warrant conversion", "56 lakh converted at Rs 196", "Lapse, as in issue 1"]], "std", caption="Dated signals to watch")
 s20 = f"""{scen}
 {exhibit("The core business is about 80% of base value; cash and the stake are the rest", wf, src("model", ("deck", 30), ("deck", 6)),
-         f"Discounted to today at 13% for {VAL['assumptions']['years_to_value_date']} years and divided by 9,39,61,558 shares: Rs {f0(base_v)} a share [E].")}
+         f"Discounted to today at 13% for {VAL['assumptions']['years_to_value_date']:.2f} years (9 Nov 2026 to 31 Mar 2027) and divided by 9,39,61,558 shares: Rs {f0(base_v)} a share [E].")}
 {exhibit("The price sits between the bear case and the cases without the stake or at a lower multiple", vr, src("model"))}
 {sens}
 <p>Reverse check: at Rs {f0(D['price'])}, the market pays {f1(VAL['reverse'][0]['x_fy27'])}x FY27 and {f1(VAL['reverse'][0]['x_fy28'])}x FY28 base EBITDA for the core business [E]. Cross-checks on the base: FY28 P/E {f1(VAL['cross_checks']['pe_fy28_base'])}x; FY28 free cash flow yield {pc(VAL['cross_checks']['fcf_yield_fy28_base'], 1)}.</p>
@@ -1121,7 +1132,7 @@ for k, (name, url) in SRC.items():
 dil = table(["Key number", "Label", "Where"], [
     ["Operating revenue H1 FY27 Rs 420.97 cr", "Disclosed", "[deck p29]"], ["Net cash Rs 348.36 cr", "Inferred from disclosed balance sheet", "[deck p30]"],
     ["Stake value Rs 624 cr", "Inferred from management's company value", "[deck p6]"], ["Stake carrying value Rs 32 cr", "Disclosed", "[AR26 p80]"],
-    ["Partner molecule Rs 25 cr / Rs 58 cr", "Disclosed (spoken)", "[tr-q1 p14], [call p5]"], ["New-customer revenue Rs 80-90 cr", "Disclosed (spoken)", "[call p11]"],
+    ["Partner molecule Rs 25 cr / Rs 58 cr", "Disclosed (spoken)", "[Q1 call p14], [call p5]"], ["New-customer revenue Rs 80-90 cr", "Disclosed (spoken)", "[call p11]"],
     ["Registrations earning revenue", "Not Disclosed", "[call p11]"], ["Viatris contract terms", "Not Disclosed", "[call p16]"],
     ["Synthimed purchase terms", "Not Disclosed", "[AR26 p92]"], ["Promoter pledge", "Not Disclosed", "AR FY26, AR FY25"],
     ["Diluted shares 9,39,61,558", "Inferred", "[NSE-C], [deck p30]"], ["H2 need Rs 533 cr", "Inferred [E]", "model"],
@@ -1264,6 +1275,14 @@ blockquote.q p{margin:0 0 4px;font-style:italic}blockquote.q cite{font-size:12.5
  h2{font-size:21px}.ctitle{font-size:27px}
 }
 @media screen and (max-width:480px){.plants{grid-template-columns:minmax(0,1fr)}}
+@media screen and (max-width:600px){
+ .t.stack thead{display:none}
+ .t.stack,.t.stack tbody,.t.stack tr,.t.stack td{display:block;width:100%}
+ .t.stack tr{border-bottom:1px solid var(--line);padding:6px 0}
+ .t.stack td{border:0;padding:2px 0;white-space:normal;text-align:left}
+ .t.stack td.l{font-weight:600}
+ .t.stack td:not(.l)::before{content:attr(data-label) ": ";color:var(--muted);font-weight:400}
+}
 @page:first{@top-left{content:none}@top-right{content:none}}
 @page{size:A4;margin:40pt 36pt 40pt;@top-left{content:"IND-SWIFT LABORATORIES | NSE: INDSWFTLAB | Company study";font:bold 7.5pt Calibri,Carlito,sans-serif;color:#0E5A63}@top-right{content:"9 November 2026";font:7.5pt Calibri,Carlito,sans-serif;color:#0E5A63}@bottom-left{content:"Ind-Swift Laboratories | Company study | Not investment advice";font:7.5pt Calibri,Carlito,sans-serif;color:#5F6873}@bottom-right{content:counter(page) " / " counter(pages);font:7.5pt Calibri,Carlito,sans-serif;color:#5F6873}}
 @media print{
