@@ -1,0 +1,702 @@
+{
+ "data": {
+  "price": 594.0,
+  "shares_cr": 20.9232408,
+  "hi52": 808,
+  "lo52": 494,
+  "bv": 99.2,
+  "years": [
+   "FY20",
+   "FY21",
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "sales": [
+   512,
+   616,
+   713,
+   853,
+   1017,
+   1200,
+   1055
+  ],
+  "sales_ttm": 1170,
+  "op": [
+   205,
+   327,
+   270,
+   344,
+   432,
+   506,
+   368
+  ],
+  "op_ttm": 403,
+  "opm": [
+   40,
+   53,
+   38,
+   40,
+   42,
+   42,
+   35
+  ],
+  "oi": [
+   32,
+   14,
+   23,
+   37,
+   37,
+   44,
+   52
+  ],
+  "dep": [
+   21,
+   28,
+   50,
+   54,
+   54,
+   54,
+   74
+  ],
+  "pbt": [
+   214,
+   313,
+   238,
+   322,
+   413,
+   495,
+   345
+  ],
+  "pat": [
+   169,
+   235,
+   175,
+   240,
+   308,
+   372,
+   259
+  ],
+  "pat_ttm": 279,
+  "eps_adj": [
+   8.09,
+   11.26,
+   8.37,
+   11.48,
+   14.73,
+   17.76,
+   12.47
+  ],
+  "eps_ttm": 13.5,
+  "payout": [
+   22,
+   0,
+   3,
+   30,
+   30,
+   25,
+   30
+  ],
+  "reserves": [
+   761,
+   990,
+   1094,
+   1280,
+   1516,
+   1802,
+   2007
+  ],
+  "borrow": [
+   52,
+   86,
+   62,
+   32,
+   10,
+   3,
+   2
+  ],
+  "fa": [
+   240,
+   546,
+   573,
+   593,
+   575,
+   795,
+   789
+  ],
+  "cwip": [
+   141,
+   18,
+   74,
+   173,
+   211,
+   51,
+   79
+  ],
+  "inv_book": [
+   199,
+   141,
+   74,
+   137,
+   246,
+   335,
+   491
+  ],
+  "cfo": [
+   155,
+   167,
+   207,
+   246,
+   265,
+   245,
+   267
+  ],
+  "fcf": [
+   -1,
+   -38,
+   52,
+   101,
+   180,
+   134,
+   172
+  ],
+  "debtor_d": [
+   131,
+   105,
+   119,
+   117,
+   125,
+   159,
+   159
+  ],
+  "inv_d": [
+   312,
+   503,
+   434,
+   430,
+   331,
+   286,
+   485
+  ],
+  "pay_d": [
+   201,
+   152,
+   185,
+   190,
+   150,
+   135,
+   151
+  ],
+  "ccc": [
+   242,
+   456,
+   368,
+   357,
+   306,
+   310,
+   493
+  ],
+  "roce": [
+   null,
+   32,
+   21,
+   26,
+   28,
+   28,
+   17
+  ],
+  "q": [
+   "Dec-24",
+   "Mar-25",
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "ql": [
+   "Q3 FY25",
+   "Q4 FY25",
+   "Q1 FY26",
+   "Q2 FY26",
+   "Q3 FY26",
+   "Q4 FY26",
+   "Q1 FY27",
+   "Q2 FY27"
+  ],
+  "q_sales": [
+   244,
+   430,
+   204,
+   247,
+   278,
+   326,
+   257,
+   309
+  ],
+  "q_op": [
+   98,
+   189,
+   61,
+   88,
+   98,
+   118,
+   82,
+   104
+  ],
+  "q_pat": [
+   76,
+   140,
+   44,
+   63,
+   64,
+   88,
+   58,
+   70
+  ],
+  "q_adj": [
+   null,
+   null,
+   37,
+   41,
+   40,
+   39,
+   null,
+   37.1
+  ],
+  "seg_years": [
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26"
+  ],
+  "api": [
+   761.3,
+   828.0,
+   940.1,
+   828.8
+  ],
+  "form": [
+   91.9,
+   188.9,
+   260.0,
+   226.1
+  ],
+  "api_h1": [
+   345.6,
+   469.1
+  ],
+  "form_h1": [
+   105.5,
+   97.5
+  ],
+  "q4": [
+   "Q4 FY23",
+   "Q4 FY24",
+   "Q4 FY25",
+   "Q4 FY26"
+  ],
+  "q4_sales": [
+   272.6,
+   319.0,
+   429.9,
+   326.1
+  ],
+  "geo": {
+   "India": 563.6,
+   "United States": 108.03,
+   "Other overseas": 383.25
+  },
+  "geo25": {
+   "India": 661.83,
+   "United States": 137.97,
+   "Other overseas": 400.28
+  },
+  "top10": {
+   "FY22": 47.7,
+   "FY23": 44.3,
+   "FY24": 42.0,
+   "FY25": 37.8,
+   "FY26": 37.6
+  },
+  "util_q2fy27": {
+   "Unit I Dholka (API)": 75,
+   "Unit III Limbasi (API)": 55,
+   "Unit II Valthera (tablets)": 21,
+   "Unit IV Valthera (injectables)": 5
+  },
+  "util_hist_cats": [
+   "H1 FY24",
+   "Q1 FY25",
+   "H1 FY25",
+   "FY25",
+   "Q1 FY26",
+   "Q3 FY26",
+   "FY26",
+   "Q2 FY27"
+  ],
+  "util_u1": [
+   78,
+   76.5,
+   79,
+   84,
+   75,
+   81,
+   77,
+   75
+  ],
+  "util_u2": [
+   14.5,
+   24,
+   50,
+   36,
+   26,
+   27,
+   30,
+   21
+  ],
+  "util_u3": [
+   36,
+   38,
+   38,
+   40,
+   57,
+   40,
+   53,
+   55
+  ],
+  "h1": {
+   "rev": 566.6,
+   "rev_ly": 451.1,
+   "gm": 77.4,
+   "gm_ly": 79.1,
+   "ebitda": 187,
+   "ebitda_ly": 150,
+   "pat": 127.3,
+   "pat_ly": 107.0,
+   "cfo": 168.2,
+   "cfo_ly": 151.1
+  },
+  "q2": {
+   "rev": 309.1,
+   "rev_ly": 247.1,
+   "gm": 76.2,
+   "gm_ly": 80.2,
+   "ebitda": 104.4,
+   "ebitda_ly": 88.5,
+   "pat": 69.6,
+   "pat_ly": 63.1
+  },
+  "h2fy26": 603.9,
+  "fy26_rev": 1054.9,
+  "fy25_rev": 1200.1,
+  "fy26_pat_owners": 259.2,
+  "cash_liquid_sep26": 445.8,
+  "inv_noncurrent_sep26": 96.0,
+  "inv_current_sep26": 438.1,
+  "inventory_sep26": 397.8,
+  "inventory_mar26": 326.4,
+  "recv_sep26": 412.5,
+  "recv_mar26": 460.2,
+  "promoter": 44.09,
+  "holders": {
+   "Sudhir Vaid": 28.84,
+   "Manju Vaid": 9.55,
+   "Sudman Consultants LLP": 4.54,
+   "Ankur Vaid": 0.56,
+   "Megha Vaid": 0.52,
+   "Sonal Kumra": 0.07
+  },
+  "kmp_pay": [
+   13.81,
+   14.05
+  ],
+  "median_raise": 8.59,
+  "peers": [
+   [
+    "Concord Biotech",
+    1055,
+    18,
+    -12,
+    4,
+    42,
+    35,
+    34,
+    43.6,
+    17.1
+   ],
+   [
+    "Divi's Laboratories",
+    10560,
+    19,
+    13,
+    22,
+    32,
+    33,
+    38,
+    89.8,
+    22.0
+   ],
+   [
+    "Neuland Laboratories",
+    2023,
+    -5,
+    37,
+    50,
+    22,
+    29,
+    31,
+    58.2,
+    26.5
+   ],
+   [
+    "Laurus Labs",
+    6813,
+    10,
+    23,
+    23,
+    19,
+    26,
+    30,
+    98.5,
+    17.8
+   ],
+   [
+    "Sai Life Sciences",
+    2192,
+    16,
+    29,
+    16,
+    24,
+    29,
+    29,
+    102.0,
+    19.6
+   ],
+   [
+    "Gland Pharma",
+    6431,
+    -1,
+    14,
+    22,
+    23,
+    25,
+    27,
+    43.9,
+    15.1
+   ],
+   [
+    "Biocon",
+    16927,
+    3,
+    11,
+    6,
+    21,
+    21,
+    20,
+    87.9,
+    3.6
+   ],
+   [
+    "Aarti Drugs",
+    2565,
+    -6,
+    7,
+    15,
+    12,
+    12,
+    13,
+    19.6,
+    12.0
+   ]
+  ]
+ },
+ "calc": {
+  "mcap": 12428.4050352,
+  "net_cash": 443.8,
+  "cagr_20_25": 0.18572030488965585,
+  "cagr_20_26": 0.12805536781292415,
+  "cagr_24_26": 0.01851106936878466,
+  "q_opm": [
+   40.16393442622951,
+   43.95348837209303,
+   29.901960784313726,
+   35.62753036437247,
+   35.25179856115108,
+   36.19631901840491,
+   31.906614785992215,
+   33.65695792880259
+  ],
+  "fy26_fall": 145.19999999999982,
+  "h1fy25": 526.0999999999999,
+  "h2fy25": 674,
+  "need19": 688.7310000000001,
+  "need20": 699.2800000000001,
+  "need19_g": 0.14047193243914569,
+  "need20_g": 0.15794005630071228,
+  "need18": 678.1820000000001,
+  "need18_g": 0.12300380857757931,
+  "h1_growth": 0.2560407891819996,
+  "api_h1_g": 0.357349537037037,
+  "form_h1_g": -0.07582938388625593,
+  "api_share_h1": 0.8279209318743381,
+  "fat": [
+   2.1333333333333333,
+   1.1282051282051282,
+   1.2443280977312392,
+   1.4384485666104554,
+   1.768695652173913,
+   1.509433962264151,
+   1.3371356147021547
+  ],
+  "cfo_ebitda": [
+   75.60975609756098,
+   51.07033639143731,
+   76.66666666666667,
+   71.51162790697676,
+   61.342592592592595,
+   48.418972332015805,
+   72.55434782608695
+  ],
+  "capex": [
+   156,
+   205,
+   155,
+   145,
+   85,
+   111,
+   95
+  ],
+  "per100": {
+   "ebitda": 34.88482320599108,
+   "dep_int": 7.109678642525358,
+   "oi": 4.929377192150914,
+   "pbt": 32.704521755616646,
+   "pat": 24.571049388567634,
+   "cfo": 25.310455967390272,
+   "capex": 9.005592947198785,
+   "fcf": 16.304863020191483
+  },
+  "adj_gap_fy26": 42.196000000000005,
+  "adj_gap_h1": 27.196799999999993,
+  "kmp_pct_pat": 5.420524691358025,
+  "pat_chg": -0.303763440860215,
+  "inv_book_sep26": 534.1,
+  "geo_share": {
+   "India": 53.42686510569722,
+   "United States": 10.240781116693524,
+   "Other overseas": 36.330457863304574
+  },
+  "geo_chg": {
+   "India": -0.14842180016016204,
+   "United States": -0.21700369645575124,
+   "Other overseas": -0.042545218347156966
+  },
+  "halve": 297.0,
+  "halve_pe": 22.273127303225806,
+  "peak3000_cagr": 0.19028691784412155,
+  "unit3_80_years": 2.263811259536614
+ },
+ "sources": {
+  "deck27": [
+   "Q2 FY27 investor presentation, 27 Oct 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=118d1eac-e193-46cb-ae1b-a1caa31993e0.pdf"
+  ],
+  "deck426": [
+   "Q4 FY26 investor presentation, 30 May 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f7e81595-7124-4fa1-9ea0-20682d51d8fa.pdf"
+  ],
+  "deck226": [
+   "Q2 FY26 investor presentation, 13 Nov 2025",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f934c394-3b55-470f-b81b-acb031601389.pdf"
+  ],
+  "tr27": [
+   "Q2 FY27 call transcript, 28 Oct 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ea74d0f1-395f-4d3a-ad8e-4d0cfb5182d6.pdf"
+  ],
+  "tr127": [
+   "Q1 FY27 call transcript, 3 Aug 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=105c5d3d-a70a-4fd0-a0f9-fcd4dafcd984.pdf"
+  ],
+  "tr426": [
+   "Q4 FY26 call transcript, 1 Jun 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a5e51736-3b9f-4286-89d2-b5fe20aa9ef7.pdf"
+  ],
+  "tr326": [
+   "Q3 FY26 call transcript, 12 Feb 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=612d3269-a756-4bb6-9599-02449be09d0b.pdf"
+  ],
+  "tr226": [
+   "Q2 FY26 call transcript, 14 Nov 2025",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a2e1d840-994f-4249-8e2a-2721ae943b2c.pdf"
+  ],
+  "tr126": [
+   "Q1 FY26 call transcript, 11 Aug 2025",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=addbb564-28e8-4082-9a21-e5db2523d4b7.pdf"
+  ],
+  "tr425": [
+   "Q4 FY25 call transcript, 30 May 2025",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c83e1980-61c3-4e31-ab22-68b8c1eb05c7.pdf"
+  ],
+  "tr325": [
+   "Q3 FY25 call transcript, 14 Feb 2025",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2331ef6f-b29f-45a9-8504-a240ea1b4f36.pdf"
+  ],
+  "tr225": [
+   "Q2 FY25 call transcript, 12 Nov 2024",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b067a150-a0a4-454a-9225-2566e17b404a.pdf"
+  ],
+  "tr125": [
+   "Q1 FY25 call transcript, 12 Aug 2024",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fd223f7b-18e4-401e-bbad-966b3a7d7533.pdf"
+  ],
+  "tr324": [
+   "Q3 FY24 call transcript, 9 Feb 2024",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fc8098c1-b016-4bd2-b819-9ca4582d883f.pdf"
+  ],
+  "tr124": [
+   "Q1 FY24 call transcript, 7 Sep 2023",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3a010362-24c5-4b39-83f1-87b465d43b52.pdf"
+  ],
+  "ar26": [
+   "Annual Report FY2025-26",
+   "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ec74e0d2-8c48-4a0b-9961-f4be126f5dda.pdf"
+  ],
+  "bonus": [
+   "Bonus allotment filing, 4 Nov 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2f88d61b-23a5-4e8e-adfb-82ac09d13ff7.pdf"
+  ],
+  "press27": [
+   "Q2 FY27 results filing, 28 Oct 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=efd072c7-89b4-40ce-a718-eeaf8374dcdb.pdf"
+  ],
+  "rhp": [
+   "IPO red herring prospectus, Aug 2023",
+   "https://www.bseindia.com/corporates/download/383248/IPO%20Open/RHP_20230802171607.pdf"
+  ],
+  "scr": [
+   "Screener.in consolidated data, fetched 9 Nov 2026",
+   "https://www.screener.in/company/CONCORDBIO/consolidated/"
+  ],
+  "decks": [
+   "Company investor presentations Q1 FY24 to Q2 FY27 (our extraction)",
+   null
+  ],
+  "ledger": [
+   "Our promises-vs-delivery ledger of all 14 calls, Q1 FY24 to Q2 FY27",
+   null
+  ],
+  "model": [
+   "Our valuation model (model/valuation.py)",
+   null
+  ],
+  "peers": [
+   "Screener.in peer pages, fetched 9 Nov 2026",
+   "https://www.screener.in/company/CONCORDBIO/consolidated/"
+  ]
+ },
+ "valuation_readout": "FAIR"
+}
