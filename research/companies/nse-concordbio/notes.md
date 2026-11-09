@@ -124,6 +124,7 @@ What is at risk [E]: Unit I and Unit III make all the fermentation API (about 80
 ## Q15. What does Rs 594 imply for FY29 PAT, and how does it compare with guidance?
 
 Inferred; the full model is model/valuation.py.
-Market cap Rs 12,418 cr; at 30x FY29 earnings the price needs FY29 PAT of about Rs 414 cr, a 14% CAGR from FY26 PAT of Rs 259 cr.
-Guided path, preliminary [E]: 19% growth from FY26's Rs 1,055 cr gives about Rs 1,780 cr in FY29; at 38% EBITDA margin and 24.5% tax, PAT is roughly Rs 470 cr, above the implied Rs 414 cr.
-So the price assumes management delivers most, but not all, of its guide; FY24-FY26 delivery (1.9% a year) is well short of it.
+Market cap Rs 12,418 cr; at 30x FY29 earnings the price needs FY29 PAT of about Rs 414 cr, 14% a year for three years from TTM PAT of Rs 279 cr, or 16.9% a year from FY26 PAT of Rs 259 cr.
+Guided path [E] (model/valuation.md, base case): 19% growth from FY26's Rs 1,055 cr gives Rs 1,778 cr in FY29; at 38% EBITDA margin and 24.5% tax, PAT is Rs 484 cr, above the Rs 411-414 cr the price needs at 30x if it simply holds.
+If the investor also wants a 12% annual return to Mar-28, the price needs FY29 PAT of Rs 482 cr at 30x, almost exactly the guided Rs 484 cr, or Rs 413 cr at 35x.
+So the price assumes management delivers close to its full guide; FY24-FY26 delivery (1.9% a year) is well short of it.

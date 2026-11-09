@@ -45,7 +45,7 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 | Deck history (capacity, utilisation, segments) | Done (f33973f) | evidence/deck-history.md |
 | FY26 annual report extraction | Done (9024b4c) | evidence/ar-fy26.md |
 | Peers and notes (15 questions) | Done | notes.md, evidence/peers.md |
-| Model and valuation | Pending | model/valuation.py |
+| Model and valuation | Done (base Rs 696, FAIR) | model/valuation.py, valuation.md, valuation.json |
 | HTML report build | Pending | report/ |
 | Visual check and by-eye pass | Pending | qa-notes.md |
 | PDF export and page inspection | Pending | report/*.pdf |
