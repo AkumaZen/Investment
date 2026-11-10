@@ -1,0 +1,76 @@
+{
+  "pdf": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-concordbio\\report\\Concord_Biotech_Company_Study.pdf",
+  "pages": 26,
+  "sections": 21,
+  "new_navigation_links": 99,
+  "total_links": 223,
+  "all_destinations_verified": true,
+  "original_html_analytical_text_preserved": true,
+  "original_pdf_text_positions_and_images_preserved": true,
+  "original_visual_pixels_preserved_outside_navigation": true,
+  "rendered_pages": 26,
+  "manual_review": {
+    "status": "passed",
+    "pdf_pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "desktop_and_mobile_html_reviewed": true,
+    "navigation_overlap": "none"
+  },
+  "outputs": [
+    {
+      "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-concordbio\\report\\report.html",
+      "sha256": "09c54a8f42bb41ebf2f055438e8008b76bcb66949933606efb50c5ac6c952b0d"
+    },
+    {
+      "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-concordbio\\report\\Concord_Biotech_Company_Study.pdf",
+      "sha256": "fb5a95dd374c429bf4e47dcca99c91c5775082e5c2e82ab437ca94a52aea2481"
+    },
+    {
+      "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-concordbio\\report\\qa\\navigation\\section-map.json",
+      "sha256": "a2461b5d51c4d8202aa5c694386ac7d647451f4481ffb3a3c861dfd1afeba8df"
+    }
+  ],
+  "browser_interactions": [
+    {
+      "file": "research/companies/nse-concordbio/report/navigation.json",
+      "width": 1280,
+      "index_links_clicked": 21,
+      "page_controls_clicked": 63,
+      "passed": true
+    },
+    {
+      "file": "research/companies/nse-concordbio/report/navigation.json",
+      "width": 390,
+      "index_links_clicked": 21,
+      "page_controls_clicked": 63,
+      "passed": true
+    }
+  ],
+  "html_rebuild_idempotence": "passed"
+}
