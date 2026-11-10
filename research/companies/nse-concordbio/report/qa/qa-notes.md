@@ -151,3 +151,18 @@ Report re-check after the update: `python -I -X utf8 build.py` printed `base 696
 
 The prompt-builder workflow names worker models that are not available here.
 No worker models were used; all extraction and checks were done directly in this session.
+
+## 11. Valuation restructure (business-valuation-scenarios), 2026-11-11
+
+The S20 scenario block now follows the business-valuation-scenarios layout.
+Three tables (Exhibits 41-43) show FY25A and FY26A Screener actuals and FY27E-FY29E projections, with PAT growth, PAT margin, EPS pre and post-dilution, target price at each 31 March, return and CAGR vs the Rs 594 price, and the P/E held flat per case.
+A caveats list separates guided, estimated and simplified inputs.
+The bull case no longer reuses base earnings; it uses disclosed upside: 22% FY27 growth (guide and H1 26%, Q2 FY27 call p15), injectables Rs 75 cr in FY28 and Rs 150 cr in FY29 against Rs 300 cr in 3-4 years (call p12), and margin to 40%, the top of the 38-40% guide (call p12).
+Values: bear Rs 352, base Rs 696, bull Rs 1,051 (was Rs 894); readout FAIR unchanged.
+The earlier bull Rs 894 notes in sections above are historical; Rs 894 still appears correctly as the 19%-growth, 45x cell of the Exhibit 45 sensitivity.
+
+Checks run:
+- `python -I -X utf8 model/valuation.py` then `python -I -X utf8 report/build.py`: `sections 21 exhibits 47`, `base 696 bear 352 bull 1051`.
+- `node review.mjs report.html`: desktop 21 and mobile 21 pages, 0 console errors, automated checks clean; S20 inspected by eye at desktop and 390 px, the six-column tables fit.
+- PDF via `tools/print-navigation-report.mjs` and `tools/report_navigation.py pdf`: 30 pages, 21 bookmarks, no dash characters, no foreign footer text; all 30 pages inspected by eye on contact sheets.
+- Fixed in the PDF tool: print-navigation-report.mjs had hardcoded an Augmont footer that printed over this report's own footer; the footer now comes from an optional `footer` key in navigation.json (Augmont's config keeps its text).

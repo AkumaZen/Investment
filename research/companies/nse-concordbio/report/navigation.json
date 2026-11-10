@@ -1,0 +1,8 @@
+{
+  "html":"report.html",
+  "pdf_input":"qa/navigation/clean-print.pdf",
+  "pdf":"Concord_Biotech_Company_Study.pdf",
+  "section_map":"qa/navigation/section-map.json",
+  "cover_rect":[36,698,559,803],
+  "labels":["Investment view","Business model","Products & molecules","Segments & entities","Customers & markets","Competitive advantage","Growth & margins","Quarterly performance","Capacity & capex","Management","Promises vs delivery","Current guidance","Growth catalysts","Peer comparison","Reality vs optionality","Thesis mechanisms","Cash & capital efficiency","Governance","Risks & downside","Valuation & scenarios","Sources & disclosures"]
+}

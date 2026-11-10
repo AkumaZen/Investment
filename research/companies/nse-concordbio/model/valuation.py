@@ -5,6 +5,7 @@ Writes model/valuation.md and model/valuation.json next to this file.
 All money in Rs crore unless stated. Inputs are tagged with their source in INPUTS.
 """
 import json
+from datetime import date
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -48,25 +49,43 @@ SCENARIOS = {
         "why": "Management guidance with no haircut: 19% growth a year, margin rising to 38% (bottom of the 38-40% guide) by FY29, tax 24.5%; 35x one-year-forward, a discount to the API and CDMO peer group (44-102x trailing) for the FY24-FY26 delivery record",
     },
     "Bull": {
-        "growth": [0.19, 0.19, 0.19],
-        "margin": [0.35, 0.365, 0.38],
+        # core (API, formulation, CDMO) compounds; disclosed injectables revenue is added on top
+        "core_growth": [0.22, 0.19, 0.19],
+        "inject": [0.0, 75.0, 150.0],
+        "margin": [0.35, 0.38, 0.40],
         "pe": 45.0,
-        "why": "Same earnings as the base case (revenue is never modelled above guidance); the market pays 45x, today's trailing multiple and Gland Pharma's, for a proven 18-19% compounder with Unit IV filling",
+        "why": ("Guidance met in full and the disclosed upside arrives on time: FY27 growth 22%, between the guide of 'slightly better than' 18-19% "
+                "and H1's 26% (Q2 FY27 call p15); the core then grows at the 19% guide while injectables add Rs 75 cr in FY28 and Rs 150 cr in FY29 "
+                "on the way to the Rs 300 cr management has built in over 3-4 years (call p12) [E]; EBITDA margin 38% in FY28 and 40%, the top of the "
+                "38-40% guide, in FY29 (call p12; margin excluding injectables and Stellon costs already 37.8% in H1, call p5) [E]; "
+                "45x, today's trailing multiple and Gland Pharma's"),
     },
 }
+# Screener consolidated actuals (data/screener-2026-11-09.md), Rs cr; EPS bonus-adjusted
+HIST = [
+    {"year": "FY25A", "sales": 1200.0, "expenses": 694.0, "op": 506.0, "opm": 0.42, "other_income": 44.0, "interest": 1.0,
+     "depreciation": 54.0, "pbt": 495.0, "tax_pct": 0.25, "pat": 372.0, "eps": 17.76, "pat_prev": 308.0},
+    {"year": "FY26A", "sales": 1055.0, "expenses": 687.0, "op": 368.0, "opm": 0.35, "other_income": 52.0, "interest": 1.0,
+     "depreciation": 74.0, "pbt": 345.0, "tax_pct": 0.25, "pat": 259.0, "eps": 12.47, "pat_prev": 372.0},
+]
+VALUE_DATE = date(2026, 11, 9)
+YEAR_END = {"FY27": date(2027, 3, 31), "FY28": date(2028, 3, 31), "FY29": date(2029, 3, 31)}
 OTHER_INCOME = [45.0, 50.0, 55.0]      # Screener TTM Rs 46 cr; rises with the cash pile
 DEPRECIATION = [78.0, 83.0, 88.0]      # [G] capex Rs 20-30 cr maintenance + Rs 50-60 cr a year in FY27-FY28
 CAPEX = [85.0, 85.0, 50.0]
 
 
 def project(s):
-    rows, rev = [], V["fy26_revenue"]
+    rows, core, prev = [], V["fy26_revenue"], V["fy26_revenue"]
     for i, year in enumerate(["FY27", "FY28", "FY29"]):
-        rev = rev * (1 + s["growth"][i])
+        core = core * (1 + (s["core_growth"] if "core_growth" in s else s["growth"])[i])
+        rev = core + s.get("inject", [0.0] * 3)[i]
+        growth, prev = rev / prev - 1, rev
         ebitda = rev * s["margin"][i]
         pbt = ebitda + OTHER_INCOME[i] - DEPRECIATION[i] - INTEREST
         pat = pbt * (1 - TAX)
-        rows.append({"year": year, "revenue": rev, "ebitda": ebitda, "margin": s["margin"][i],
+        rows.append({"year": year, "revenue": rev, "growth": growth, "ebitda": ebitda, "margin": s["margin"][i],
+                     "other_income": OTHER_INCOME[i], "depreciation": DEPRECIATION[i], "interest": INTEREST,
                      "pbt": pbt, "pat": pat, "eps": pat / V["shares_cr"]})
     return rows
 
@@ -80,6 +99,51 @@ def value(s, rows):
     return {"fy29_eps": fy29["eps"], "pe": s["pe"], "price_mar28": price_mar28,
             "pv_today": pv, "palvella_ps": palvella_ps, "value_ps": total,
             "vs_price": total / V["price"] - 1}
+
+
+def skill_table(s, rows):
+    """business-valuation-scenarios layout: 2 actual years + projections, target price at each 31 Mar."""
+    palvella_ps = V["palvella_mar26"] / V["shares_cr"]
+    hist = [dict(h, pat_growth=h["pat"] / h["pat_prev"] - 1, pat_margin=h["pat"] / h["sales"]) for h in HIST]
+    proj, prev_pat = [], HIST[-1]["pat"]
+    for r in rows:
+        tp = r["eps"] * s["pe"] + palvella_ps
+        yrs = (YEAR_END[r["year"]] - VALUE_DATE).days / 365
+        proj.append({"year": r["year"] + "E", "sales": r["revenue"], "expenses": r["revenue"] - r["ebitda"], "op": r["ebitda"],
+                     "opm": r["margin"], "other_income": r["other_income"], "interest": r["interest"], "depreciation": r["depreciation"],
+                     "pbt": r["pbt"], "tax_pct": TAX, "pat": r["pat"], "eps": r["eps"], "pat_growth": r["pat"] / prev_pat - 1,
+                     "pat_margin": r["pat"] / r["revenue"], "tp": tp, "return": tp / V["price"] - 1, "years": yrs,
+                     "cagr": (tp / V["price"]) ** (1 / yrs) - 1 if yrs >= 1 else None})
+        prev_pat = r["pat"]
+    return {"multiple": s["pe"], "multiple_flat": True, "hist": hist, "proj": proj}
+
+
+def skill_md(name, t):
+    cols = t["hist"] + t["proj"]
+    def line(label, key, fmt):
+        return f"| {label} | " + " | ".join("-" if c.get(key) is None else fmt(c[key]) for c in cols) + " |"
+    n1 = lambda v: f"{v:,.1f}"
+    p1 = lambda v: f"{v*100:.1f}%"
+    return [f"### {name} ({t['multiple']:.0f}x P/E, held flat FY27E-FY29E)", "",
+            "| Rs cr | " + " | ".join(c["year"] for c in cols) + " |", "|---|" + "---|" * len(cols),
+            line("Sales", "sales", n1), line("Expenses", "expenses", n1), line("Operating Profit", "op", n1), line("OPM %", "opm", p1),
+            line("Other Income", "other_income", n1), line("Interest", "interest", n1), line("Depreciation", "depreciation", n1),
+            line("Profit before tax", "pbt", n1), line("Tax %", "tax_pct", p1), line("Net Profit", "pat", n1),
+            line("EPS (Rs, pre and post-dilution, same)", "eps", lambda v: f"{v:.2f}"), line("PAT Growth %", "pat_growth", p1),
+            line("PAT Margin %", "pat_margin", p1), line("Target price at 31 Mar (Rs)", "tp", lambda v: f"{v:,.0f}"),
+            line(f"Return vs CMP Rs {V['price']:.0f}", "return", lambda v: f"{v*100:+.0f}%"),
+            line("CAGR vs CMP to 31 Mar", "cagr", lambda v: f"{v*100:+.1f}%"), ""]
+
+
+CAVEATS = [
+    "Guided by management: FY27 growth 'slightly better than' the historical 18-19% (Q2 FY27 call p15); EBITDA margin 38-40% over the next few years (call p12); tax 24-25% (call p10); injectables about Rs 300 cr of revenue built in over 3-4 years (call p12).",
+    "Estimated by us [E]: every bear line; the base margin path (35%, 36.5%, 38%); the bull's 22% FY27 growth, injectables ramp (Rs 75 cr, Rs 150 cr) and 38-40% margins; other income Rs 45-55 cr; depreciation Rs 78-88 cr; interest Rs 1 cr.",
+    "Share count: 20,92,32,408 shares after the 1:1 bonus of 4 Nov 2026. No warrants, QIP or ESOP pool is disclosed, so pre and post-dilution EPS and target price are the same.",
+    "The P/E is held flat across the years of each case (25x, 35x, 45x). That is a simplification: a real bear case usually also compresses the multiple and a bull case expands it.",
+    "The headline values apply the multiple to FY29 EPS at 31 Mar 2028 (one year forward) and discount to today at 12%; the year-end target prices in these tables are trailing and undiscounted, so the two are different numbers.",
+    "Bull risk: Unit IV injectables run at 5% utilisation and the customer contracts are still being negotiated, expected in H2 (call p4, p9); the bull adds nothing for CDMO, Inspira or Stellon beyond the 19% core growth.",
+    "Not investment advice. I am not a licensed financial advisor. These are scenario bands, not forecasts.",
+]
 
 
 def readout(base_gap, mgmt_verdict="AMBER"):
@@ -98,12 +162,20 @@ def main():
     for name, s in SCENARIOS.items():
         rows = project(s)
         v = value(s, rows)
-        out["scenarios"][name] = {"assumptions": s, "rows": rows, "value": v}
+        out["scenarios"][name] = {"assumptions": s, "rows": rows, "value": v, "skill_table": skill_table(s, rows)}
         md += [f"## {name}", "", s["why"] + ".", "",
                "| Year | Revenue | Growth | EBITDA | Margin | PBT | PAT | EPS (Rs) |", "|---|---|---|---|---|---|---|---|"]
         for i, r in enumerate(rows):
-            md.append(f"| {r['year']} | {r['revenue']:,.0f} | {s['growth'][i]*100:.0f}% | {r['ebitda']:,.0f} | {r['margin']*100:.1f}% | {r['pbt']:,.0f} | {r['pat']:,.0f} | {r['eps']:.2f} |")
+            md.append(f"| {r['year']} | {r['revenue']:,.0f} | {r['growth']*100:.0f}% | {r['ebitda']:,.0f} | {r['margin']*100:.1f}% | {r['pbt']:,.0f} | {r['pat']:,.0f} | {r['eps']:.2f} |")
         md += ["", f"FY29 EPS Rs {v['fy29_eps']:.2f} x {v['pe']:.0f} = Rs {v['price_mar28']:.0f} at Mar-28; today Rs {v['pv_today']:.0f} + Palvella Rs {v['palvella_ps']:.0f} = **Rs {v['value_ps']:.0f}** ({v['vs_price']*100:+.0f}% vs price).", ""]
+
+    md += ["## Year-wise scenario tables (business-valuation-scenarios layout)", "",
+           "FY25A and FY26A are Screener consolidated actuals (EPS bonus-adjusted); FY27E-FY29E are the model, with FY27E growth measured from the annual report's Rs 1,054.9 cr.",
+           "Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palvella at book per share (Rs 4), not discounted; CAGR runs from 9 Nov 2026, so FY27E (under a year away) shows none.", ""]
+    for name in SCENARIOS:
+        md += skill_md(name, out["scenarios"][name]["skill_table"])
+    md += ["### Key assumptions and caveats", ""] + [f"- {c}" for c in CAVEATS] + [""]
+    out["caveats"] = CAVEATS
 
     base_gap = out["scenarios"]["Base"]["value"]["vs_price"]
     out["readout"] = readout(base_gap)

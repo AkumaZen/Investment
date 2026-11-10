@@ -30,15 +30,93 @@ FY29 EPS Rs 23.15 x 35 = Rs 810 at Mar-28; today Rs 692 + Palvella Rs 4 = **Rs 6
 
 ## Bull
 
-Same earnings as the base case (revenue is never modelled above guidance); the market pays 45x, today's trailing multiple and Gland Pharma's, for a proven 18-19% compounder with Unit IV filling.
+Guidance met in full and the disclosed upside arrives on time: FY27 growth 22%, between the guide of 'slightly better than' 18-19% and H1's 26% (Q2 FY27 call p15); the core then grows at the 19% guide while injectables add Rs 75 cr in FY28 and Rs 150 cr in FY29 on the way to the Rs 300 cr management has built in over 3-4 years (call p12) [E]; EBITDA margin 38% in FY28 and 40%, the top of the 38-40% guide, in FY29 (call p12; margin excluding injectables and Stellon costs already 37.8% in H1, call p5) [E]; 45x, today's trailing multiple and Gland Pharma's.
 
 | Year | Revenue | Growth | EBITDA | Margin | PBT | PAT | EPS (Rs) |
 |---|---|---|---|---|---|---|---|
-| FY27 | 1,255 | 19% | 439 | 35.0% | 405 | 306 | 14.63 |
-| FY28 | 1,494 | 19% | 545 | 36.5% | 511 | 386 | 18.45 |
-| FY29 | 1,778 | 19% | 676 | 38.0% | 642 | 484 | 23.15 |
+| FY27 | 1,287 | 22% | 450 | 35.0% | 416 | 314 | 15.03 |
+| FY28 | 1,607 | 25% | 610 | 38.0% | 576 | 435 | 20.80 |
+| FY29 | 1,972 | 23% | 789 | 40.0% | 755 | 570 | 27.24 |
 
-FY29 EPS Rs 23.15 x 45 = Rs 1042 at Mar-28; today Rs 890 + Palvella Rs 4 = **Rs 894** (+50% vs price).
+FY29 EPS Rs 27.24 x 45 = Rs 1226 at Mar-28; today Rs 1047 + Palvella Rs 4 = **Rs 1051** (+77% vs price).
+
+## Year-wise scenario tables (business-valuation-scenarios layout)
+
+FY25A and FY26A are Screener consolidated actuals (EPS bonus-adjusted); FY27E-FY29E are the model, with FY27E growth measured from the annual report's Rs 1,054.9 cr.
+Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palvella at book per share (Rs 4), not discounted; CAGR runs from 9 Nov 2026, so FY27E (under a year away) shows none.
+
+### Bear (25x P/E, held flat FY27E-FY29E)
+
+| Rs cr | FY25A | FY26A | FY27E | FY28E | FY29E |
+|---|---|---|---|---|---|
+| Sales | 1,200.0 | 1,055.0 | 1,160.4 | 1,288.0 | 1,429.7 |
+| Expenses | 694.0 | 687.0 | 777.5 | 850.1 | 943.6 |
+| Operating Profit | 506.0 | 368.0 | 382.9 | 437.9 | 486.1 |
+| OPM % | 42.0% | 35.0% | 33.0% | 34.0% | 34.0% |
+| Other Income | 44.0 | 52.0 | 45.0 | 50.0 | 55.0 |
+| Interest | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| Depreciation | 54.0 | 74.0 | 78.0 | 83.0 | 88.0 |
+| Profit before tax | 495.0 | 345.0 | 348.9 | 403.9 | 452.1 |
+| Tax % | 25.0% | 25.0% | 24.5% | 24.5% | 24.5% |
+| Net Profit | 372.0 | 259.0 | 263.4 | 305.0 | 341.3 |
+| EPS (Rs, pre and post-dilution, same) | 17.76 | 12.47 | 12.59 | 14.58 | 16.31 |
+| PAT Growth % | 20.8% | -30.4% | 1.7% | 15.8% | 11.9% |
+| PAT Margin % | 31.0% | 24.5% | 22.7% | 23.7% | 23.9% |
+| Target price at 31 Mar (Rs) | - | - | 319 | 368 | 412 |
+| Return vs CMP Rs 594 | - | - | -46% | -38% | -31% |
+| CAGR vs CMP to 31 Mar | - | - | - | -29.1% | -14.2% |
+
+### Base (35x P/E, held flat FY27E-FY29E)
+
+| Rs cr | FY25A | FY26A | FY27E | FY28E | FY29E |
+|---|---|---|---|---|---|
+| Sales | 1,200.0 | 1,055.0 | 1,255.3 | 1,493.8 | 1,777.7 |
+| Expenses | 694.0 | 687.0 | 816.0 | 948.6 | 1,102.2 |
+| Operating Profit | 506.0 | 368.0 | 439.4 | 545.3 | 675.5 |
+| OPM % | 42.0% | 35.0% | 35.0% | 36.5% | 38.0% |
+| Other Income | 44.0 | 52.0 | 45.0 | 50.0 | 55.0 |
+| Interest | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| Depreciation | 54.0 | 74.0 | 78.0 | 83.0 | 88.0 |
+| Profit before tax | 495.0 | 345.0 | 405.4 | 511.3 | 641.5 |
+| Tax % | 25.0% | 25.0% | 24.5% | 24.5% | 24.5% |
+| Net Profit | 372.0 | 259.0 | 306.1 | 386.0 | 484.3 |
+| EPS (Rs, pre and post-dilution, same) | 17.76 | 12.47 | 14.63 | 18.45 | 23.15 |
+| PAT Growth % | 20.8% | -30.4% | 18.2% | 26.1% | 25.5% |
+| PAT Margin % | 31.0% | 24.5% | 24.4% | 25.8% | 27.2% |
+| Target price at 31 Mar (Rs) | - | - | 516 | 650 | 814 |
+| Return vs CMP Rs 594 | - | - | -13% | +9% | +37% |
+| CAGR vs CMP to 31 Mar | - | - | - | +6.7% | +14.1% |
+
+### Bull (45x P/E, held flat FY27E-FY29E)
+
+| Rs cr | FY25A | FY26A | FY27E | FY28E | FY29E |
+|---|---|---|---|---|---|
+| Sales | 1,200.0 | 1,055.0 | 1,287.0 | 1,606.5 | 1,972.5 |
+| Expenses | 694.0 | 687.0 | 836.5 | 996.0 | 1,183.5 |
+| Operating Profit | 506.0 | 368.0 | 450.4 | 610.5 | 789.0 |
+| OPM % | 42.0% | 35.0% | 35.0% | 38.0% | 40.0% |
+| Other Income | 44.0 | 52.0 | 45.0 | 50.0 | 55.0 |
+| Interest | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| Depreciation | 54.0 | 74.0 | 78.0 | 83.0 | 88.0 |
+| Profit before tax | 495.0 | 345.0 | 416.4 | 576.5 | 755.0 |
+| Tax % | 25.0% | 25.0% | 24.5% | 24.5% | 24.5% |
+| Net Profit | 372.0 | 259.0 | 314.4 | 435.2 | 570.0 |
+| EPS (Rs, pre and post-dilution, same) | 17.76 | 12.47 | 15.03 | 20.80 | 27.24 |
+| PAT Growth % | 20.8% | -30.4% | 21.4% | 38.4% | 31.0% |
+| PAT Margin % | 31.0% | 24.5% | 24.4% | 27.1% | 28.9% |
+| Target price at 31 Mar (Rs) | - | - | 680 | 940 | 1,230 |
+| Return vs CMP Rs 594 | - | - | +15% | +58% | +107% |
+| CAGR vs CMP to 31 Mar | - | - | - | +39.1% | +35.6% |
+
+### Key assumptions and caveats
+
+- Guided by management: FY27 growth 'slightly better than' the historical 18-19% (Q2 FY27 call p15); EBITDA margin 38-40% over the next few years (call p12); tax 24-25% (call p10); injectables about Rs 300 cr of revenue built in over 3-4 years (call p12).
+- Estimated by us [E]: every bear line; the base margin path (35%, 36.5%, 38%); the bull's 22% FY27 growth, injectables ramp (Rs 75 cr, Rs 150 cr) and 38-40% margins; other income Rs 45-55 cr; depreciation Rs 78-88 cr; interest Rs 1 cr.
+- Share count: 20,92,32,408 shares after the 1:1 bonus of 4 Nov 2026. No warrants, QIP or ESOP pool is disclosed, so pre and post-dilution EPS and target price are the same.
+- The P/E is held flat across the years of each case (25x, 35x, 45x). That is a simplification: a real bear case usually also compresses the multiple and a bull case expands it.
+- The headline values apply the multiple to FY29 EPS at 31 Mar 2028 (one year forward) and discount to today at 12%; the year-end target prices in these tables are trailing and undiscounted, so the two are different numbers.
+- Bull risk: Unit IV injectables run at 5% utilisation and the customer contracts are still being negotiated, expected in H2 (call p4, p9); the bull adds nothing for CDMO, Inspira or Stellon beyond the 19% core growth.
+- Not investment advice. I am not a licensed financial advisor. These are scenario bands, not forecasts.
 
 ## Readout
 

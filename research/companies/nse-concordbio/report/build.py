@@ -770,14 +770,15 @@ section("s14", "D", "Peers", "S14 | Peers", "Cheaper than API peers because it s
 rvo = table(["Business", "Today", "Management's stated potential", "In our base case?"], [
     ["Fermentation API", "Rs 829 cr FY26; Rs 469 cr H1 FY27", "Grow 18-19% a year; Limbasi Rs 1,500-1,600 cr at peak", "Yes, at guidance"],
     ["Formulations (tablets)", "Rs 226 cr FY26; falling", "Earlier 35-40% CAGR (missed)", "Inside the 19%"],
-    ["Injectables (Unit IV)", "Not disclosed; plant at 5%", "About Rs 300 cr in 3-4 years; plant Rs 500-600 cr", "Only through margin rising to 38%"],
+    ["Injectables (Unit IV)", "Not disclosed; plant at 5%", "About Rs 300 cr in 3-4 years; plant Rs 500-600 cr", "Base: only through margin rising to 38%. Bull: Rs 150 cr by FY29"],
     ["CDMO", "About USD 2 mn a year", "USD 40-50 mn opportunity; 1-4% of FY27 sales", "No separate value"],
     ["Inspira (skin brand)", "Launched Q2 FY27", "Rs 400-500 cr in 4-5 years", "No separate value"],
     ["Group target", "TTM Rs 1,170 cr", "Rs 3,000 cr peak in 5-6 years", "No; base reaches Rs 1,778 cr by FY29"]], "std",
     caption="What exists today vs what management says could exist", source=src(("tr27", 4), ("tr27", 13), ("tr126", 16), ("tr124", 12), "decks"))
 s15 = f"""{rvo}
 <p>Our base case uses guided growth of 19% a year and no more. It reaches Rs {f0(ROWS['Base'][2]['revenue'])} cr of sales in FY29, about 59% of the Rs 3,000 cr target.
-If the options work, they are upside to the bull case; we do not add a separate value for them, because none yet has a contract, a revenue line or a disclosed margin.</p>"""
+Only one option enters our numbers: the bull case adds injectables sales of Rs 75 cr in FY28 and Rs 150 cr in FY29, half the Rs 300 cr management has built in over 3-4 years.
+CDMO, Inspira and the Rs 3,000 cr target get no separate value, because none yet has a contract, a revenue line or a disclosed margin.</p>"""
 section("s15", "D", "Reality vs optionality", "S15 | Reality vs options", "Pay for the API engine; treat the rest as free options",
         "About 83% of sales today is fermentation API; injectables, CDMO, Inspira and the Rs 3,000 cr target are options with no contracts or revenue lines yet.",
         s15,
@@ -900,7 +901,7 @@ section("s19", "E", "Anti-thesis and risks", "S19 | Risks", "Most risks show up 
 vr = C.value_range([("Bear", bear_v, C.SECOND, pc(V["Bear"]["vs_price"], 0, True)),
                     ("Base", base_v, C.PRIMARY, pc(V["Base"]["vs_price"], 0, True)),
                     ("Bull", bull_v, C.FOURTH, pc(V["Bull"]["vs_price"], 0, True))], D["price"],
-                   "Bear, base and bull value per share vs price", w=760, lo=0, hi=1000)
+                   "Bear, base and bull value per share vs price", w=760, lo=0, hi=1200)
 imp = VAL["implied"]
 ib = C.hbars([f"Needed at {int(r['pe'])}x" for r in imp] + ["Base case FY29 [E]", "TTM (Sep-26)", "FY26 actual"],
              [round(r["pat_flat"]) for r in imp] + [round(ROWS["Base"][2]["pat"]), D["pat_ttm"], round(D["fy26_pat_owners"])],
@@ -908,16 +909,43 @@ ib = C.hbars([f"Needed at {int(r['pe'])}x" for r in imp] + ["Base case FY29 [E]"
              colors=[C.GREY] * 4 + [C.PRIMARY, C.SECOND, C.SECOND], lab_w=150)
 
 
-def sc_rows(name):
-    a = VAL["scenarios"][name]["assumptions"]
-    rs = ROWS[name]
-    return [[f"{name} {r['year']}", f0(r["revenue"]), pc(a["growth"][i], 0), f0(r["ebitda"]), pc(r["margin"], 1), f0(r["pat"]), f"{r['eps']:.2f}"]
-            for i, r in enumerate(rs)]
+def skill_tbl(name):
+    """business-valuation-scenarios layout: Screener P&L rows, 2 actual years, projections, year-end target price."""
+    t = VAL["scenarios"][name]["skill_table"]
+    cols = t["hist"] + t["proj"]
+
+    def row(label, key, fmt, bold=False, sign=False):
+        cells = [(label, "bold") if bold else label]
+        for c in cols:
+            v = c.get(key)
+            if v is None:
+                cells.append("-")
+                continue
+            k = ("neg " if sign and v < 0 else "") + ("bold" if bold else "")
+            cells.append((fmt(v), k.strip()) if k.strip() else fmt(v))
+        return cells
+
+    n = lambda v: f"{v:,.0f}"
+    p1 = lambda v: f"{v * 100:.1f}%"
+    rows = [row("Sales", "sales", n), row("Expenses", "expenses", n), row("Operating profit", "op", n), row("OPM", "opm", p1),
+            row("Other income", "other_income", n), row("Interest", "interest", n), row("Depreciation", "depreciation", n),
+            row("Profit before tax", "pbt", n), row("Tax rate", "tax_pct", p1), row("Net profit", "pat", n, bold=True),
+            row("EPS (Rs), pre and post-dilution", "eps", lambda v: f"{v:.2f}"), row("PAT growth", "pat_growth", p1, sign=True),
+            row("PAT margin", "pat_margin", p1), row("Target price at 31 Mar (Rs)", "tp", n, bold=True),
+            row(f"Return vs CMP Rs {D['price']:.0f}", "return", lambda v: f"{v * 100:+.0f}%", sign=True),
+            row("CAGR vs CMP to 31 Mar", "cagr", lambda v: f"{v * 100:+.1f}%", sign=True)]
+    return table(["Rs cr"] + [c["year"] for c in cols], rows, "fin",
+                 caption=f"{name}: {t['multiple']:.0f}x P/E, held flat FY27E to FY29E (Screener layout; FY25A and FY26A actual) [E]",
+                 source=src("model", "scr"))
 
 
-sc = table(["Case and year", "Sales", "Growth", "EBITDA", "Margin", "Profit", "EPS (Rs)"],
-           sc_rows("Bear") + sc_rows("Base"), "fin",
-           caption="Bear and base projections (bull uses base earnings) [E]", source=src("model"))
+skill_note = """<p><b>How to read the year-by-year tables.</b> Each case is laid out like a Screener profit and loss page: two actual years, then our three projected years.
+The target price at 31 March of each year is that year's earnings per share times the case's P/E, plus Rs 4 a share for the Palvella stake. It is not discounted.
+Return and CAGR are measured from Rs 594 on 9 November 2026; FY27E is under a year away, so it shows no CAGR.
+Concord has no warrants, convertible or disclosed share-option pool, so earnings per share is the same before and after dilution.</p>"""
+skill_caveats = f"""<h3>Key assumptions and caveats</h3>
+{ul(VAL["caveats"], "small")}
+<p class="src">{src(("tr27", 4), ("tr27", 5), ("tr27", 9), ("tr27", 12), ("tr27", 15), "model")[8:]}</p>"""
 val = table(["", "Bear", "Base", "Bull"], [
     ["FY29 EPS (Rs) [E]", f"{V['Bear']['fy29_eps']:.2f}", f"{V['Base']['fy29_eps']:.2f}", f"{V['Bull']['fy29_eps']:.2f}"],
     ["P/E applied", f"{V['Bear']['pe']:.0f}x", f"{V['Base']['pe']:.0f}x", f"{V['Bull']['pe']:.0f}x"],
@@ -951,16 +979,21 @@ qs15 = [
 q15 = table(["#", "Question", "One-line answer"], [[str(i + 1), q, a] for i, (q, a) in enumerate(qs15)], "std",
             caption="The 15 research questions, answered in one line each", source="Source: notes.md, with sources cited in each section above.")
 grounded = table(["Grounded in filings", "Assumed by us"], [
-    ["FY26 base: sales Rs 1,055 cr, EBITDA Rs 368 cr, owner profit Rs 259 cr", "Growth path: 10-11% bear, 19% base and bull"],
-    ["Shares 20.92 cr after bonus; price Rs 594", "Margins: 33-34% bear; 35% to 38% base"],
+    ["FY26 base: sales Rs 1,055 cr, EBITDA Rs 368 cr, owner profit Rs 259 cr", "Growth path: 10-11% bear; 19% base; bull 22% in FY27, then 19% plus injectables"],
+    ["Shares 20.92 cr after bonus; price Rs 594", "Margins: 33-34% bear; 35% to 38% base; 35% to 40% bull"],
     ["Cash and liquid funds Rs 446 cr; no debt", "Multiples: 25x, 35x, 45x on FY29 earnings"],
     ["Tax 24-25% [G]; capex Rs 20-30 cr plus Rs 50-60 cr [G]", "Cost of equity 12%; other income Rs 45-55 cr"]], "std two")
 s20 = f"""<p><b>Method.</b> We value Concord on price to earnings, because it is a steady, debt-free manufacturer whose profit is mostly cash.
 We project sales and margin to FY29, apply a multiple to FY29 earnings to get a value at March 2028, discount it back 1.39 years at 12%, and add the Palvella stake at book value.</p>
 {exhibit("Price sits between our bear and base values", vr, src("model"), f"Readout: {READOUT}. Base is {pc(V['Base']['vs_price'], 0, True)} vs price; ATTRACTIVE needs +20% or more, STRETCHED -20% or worse.")}
 {val}
-{sc}
-<p class="small">Bear: built from risks R1, R2, R4 and R6: growth 10-11%, margin 33-34%, 25x. Base: management guidance with no haircut, 19% growth and margin rising to 38% by FY29, 35x. Bull: the same earnings as the base, valued at 45x (today's trailing multiple), because we never model sales above guidance.</p>
+<p class="small">Bear: built from risks R1, R2, R4 and R6: growth 10-11%, margin 33-34%, 25x. Base: management guidance with no haircut, 19% growth and margin rising to 38% by FY29, 35x. Bull: guidance met in full and the disclosed upside arrives on time: 22% growth in FY27 (between the guide and H1's 26%), 19% after that, injectables adding Rs 75 cr in FY28 and Rs 150 cr in FY29, and margin reaching the top of the 38-40% guide by FY29, valued at 45x (today's trailing multiple).</p>
+<h3>Year by year: bear, base and bull</h3>
+{skill_note}
+{skill_tbl("Bear")}
+{skill_tbl("Base")}
+{skill_tbl("Bull")}
+{skill_caveats}
 {duo(exhibit("At 30x, the price needs Rs 411 cr of FY29 profit; guidance gives Rs 484 cr (Rs cr)", ib, src("model"), "'Needed' assumes the price simply holds to Mar-28; for a 12% yearly return add about 17%."),
      sens)}
 <p><b>Cross-checks [E].</b> Enterprise value Rs {f0(cc['ev'])} cr; {f1(cc['ev_ttm_ebitda'])}x trailing EBITDA and {f1(cc['ev_fy29_base_ebitda'])}x FY29 base EBITDA; free-cash-flow yield {pc(cc['fcf_yield_fy26'], 1)} on FY26; sales per rupee of fixed assets {cc['fat_fy26']:.2f}x in FY26 and {cc['fat_fy29_base']:.2f}x in the FY29 base, back above FY24's 1.77x.</p>
@@ -1217,6 +1250,10 @@ def render():
             '<meta name="description" content="Plain-language, chart-led company study of Concord Biotech (NSE: CONCORDBIO), data as of 9 Nov 2026.">'
             f'<style>{CSS}</style></head><body>{"".join(top)}<div class="wrap">{"".join(side)}<main>{body}</main></div></body></html>')
     assert "—" not in html and "–" not in html, "em or en dash found"
+    import runpy
+    from pathlib import Path
+    nav = runpy.run_path(str(Path(HERE).parents[3] / "tools/report_navigation.py"))
+    html = nav['add_html_navigation'](html, json.loads((Path(HERE) / 'navigation.json').read_text(encoding='utf-8'))['labels'])
     with open(os.path.join(HERE, "report.html"), "w", encoding="utf-8") as fh:
         fh.write(html)
     with open(os.path.join(HERE, "chart-data.json"), "w", encoding="utf-8") as fh:

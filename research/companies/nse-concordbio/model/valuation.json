@@ -75,8 +75,12 @@
     {
      "year": "FY27",
      "revenue": 1160.39,
+     "growth": 0.10000000000000009,
      "ebitda": 382.92870000000005,
      "margin": 0.33,
+     "other_income": 45.0,
+     "depreciation": 78.0,
+     "interest": 1.0,
      "pbt": 348.92870000000005,
      "pat": 263.44116850000006,
      "eps": 12.590839584468199
@@ -84,8 +88,12 @@
     {
      "year": "FY28",
      "revenue": 1288.0329000000002,
+     "growth": 0.1100000000000001,
      "ebitda": 437.9311860000001,
      "margin": 0.34,
+     "other_income": 50.0,
+     "depreciation": 83.0,
+     "interest": 1.0,
      "pbt": 403.9311860000001,
      "pat": 304.9680454300001,
      "eps": 14.575564480909673
@@ -93,8 +101,12 @@
     {
      "year": "FY29",
      "revenue": 1429.7165190000003,
+     "growth": 0.1100000000000001,
      "ebitda": 486.1036164600001,
      "margin": 0.34,
+     "other_income": 55.0,
+     "depreciation": 88.0,
+     "interest": 1.0,
      "pbt": 452.1036164600001,
      "pat": 341.3382304273001,
      "eps": 16.313831766793037
@@ -108,6 +120,108 @@
     "palvella_ps": 4.019453812336758,
     "value_ps": 352.4232966645552,
     "vs_price": -0.40669478676000803
+   },
+   "skill_table": {
+    "multiple": 25.0,
+    "multiple_flat": true,
+    "hist": [
+     {
+      "year": "FY25A",
+      "sales": 1200.0,
+      "expenses": 694.0,
+      "op": 506.0,
+      "opm": 0.42,
+      "other_income": 44.0,
+      "interest": 1.0,
+      "depreciation": 54.0,
+      "pbt": 495.0,
+      "tax_pct": 0.25,
+      "pat": 372.0,
+      "eps": 17.76,
+      "pat_prev": 308.0,
+      "pat_growth": 0.20779220779220786,
+      "pat_margin": 0.31
+     },
+     {
+      "year": "FY26A",
+      "sales": 1055.0,
+      "expenses": 687.0,
+      "op": 368.0,
+      "opm": 0.35,
+      "other_income": 52.0,
+      "interest": 1.0,
+      "depreciation": 74.0,
+      "pbt": 345.0,
+      "tax_pct": 0.25,
+      "pat": 259.0,
+      "eps": 12.47,
+      "pat_prev": 372.0,
+      "pat_growth": -0.303763440860215,
+      "pat_margin": 0.24549763033175356
+     }
+    ],
+    "proj": [
+     {
+      "year": "FY27E",
+      "sales": 1160.39,
+      "expenses": 777.4613,
+      "op": 382.92870000000005,
+      "opm": 0.33,
+      "other_income": 45.0,
+      "interest": 1.0,
+      "depreciation": 78.0,
+      "pbt": 348.92870000000005,
+      "tax_pct": 0.245,
+      "pat": 263.44116850000006,
+      "eps": 12.590839584468199,
+      "pat_growth": 0.017147368725868972,
+      "pat_margin": 0.2270281271813787,
+      "tp": 318.7904434240417,
+      "return": -0.46331575181137763,
+      "years": 0.38904109589041097,
+      "cagr": null
+     },
+     {
+      "year": "FY28E",
+      "sales": 1288.0329000000002,
+      "expenses": 850.1017140000001,
+      "op": 437.9311860000001,
+      "opm": 0.34,
+      "other_income": 50.0,
+      "interest": 1.0,
+      "depreciation": 83.0,
+      "pbt": 403.9311860000001,
+      "tax_pct": 0.245,
+      "pat": 304.9680454300001,
+      "eps": 14.575564480909673,
+      "pat_growth": 0.15763245041178897,
+      "pat_margin": 0.23677038484808893,
+      "tp": 368.40856583507855,
+      "return": -0.37978355920020446,
+      "years": 1.3917808219178083,
+      "cagr": -0.2905177642842668
+     },
+     {
+      "year": "FY29E",
+      "sales": 1429.7165190000003,
+      "expenses": 943.6129025400002,
+      "op": 486.1036164600001,
+      "opm": 0.34,
+      "other_income": 55.0,
+      "interest": 1.0,
+      "depreciation": 88.0,
+      "pbt": 452.1036164600001,
+      "tax_pct": 0.245,
+      "pat": 341.3382304273001,
+      "eps": 16.313831766793037,
+      "pat_growth": 0.11925900284411317,
+      "pat_margin": 0.23874539175503506,
+      "tp": 411.86524798216266,
+      "return": -0.3066241616461908,
+      "years": 2.3917808219178083,
+      "cagr": -0.14195660622094275
+     }
+    ]
    }
   },
   "Base": {
@@ -129,8 +243,12 @@
     {
      "year": "FY27",
      "revenue": 1255.3310000000001,
+     "growth": 0.18999999999999995,
      "ebitda": 439.36585,
      "margin": 0.35,
+     "other_income": 45.0,
+     "depreciation": 78.0,
+     "interest": 1.0,
      "pbt": 405.36585,
      "pat": 306.05121675000004,
      "eps": 14.627333292938065
@@ -138,8 +256,12 @@
     {
      "year": "FY28",
      "revenue": 1493.84389,
+     "growth": 0.18999999999999995,
      "ebitda": 545.25301985,
      "margin": 0.365,
+     "other_income": 50.0,
+     "depreciation": 83.0,
+     "interest": 1.0,
      "pbt": 511.25301985,
      "pat": 385.99602998675,
      "eps": 18.448195175708634
@@ -147,8 +269,12 @@
     {
      "year": "FY29",
      "revenue": 1777.6742291,
+     "growth": 0.18999999999999995,
      "ebitda": 675.5162070580001,
      "margin": 0.38,
+     "other_income": 55.0,
+     "depreciation": 88.0,
+     "interest": 1.0,
      "pbt": 641.5162070580001,
      "pat": 484.3447363287901,
      "eps": 23.14864800145062
@@ -162,63 +288,293 @@
     "palvella_ps": 4.019453812336758,
     "value_ps": 696.1382184386446,
     "vs_price": 0.17194986269132073
+   },
+   "skill_table": {
+    "multiple": 35.0,
+    "multiple_flat": true,
+    "hist": [
+     {
+      "year": "FY25A",
+      "sales": 1200.0,
+      "expenses": 694.0,
+      "op": 506.0,
+      "opm": 0.42,
+      "other_income": 44.0,
+      "interest": 1.0,
+      "depreciation": 54.0,
+      "pbt": 495.0,
+      "tax_pct": 0.25,
+      "pat": 372.0,
+      "eps": 17.76,
+      "pat_prev": 308.0,
+      "pat_growth": 0.20779220779220786,
+      "pat_margin": 0.31
+     },
+     {
+      "year": "FY26A",
+      "sales": 1055.0,
+      "expenses": 687.0,
+      "op": 368.0,
+      "opm": 0.35,
+      "other_income": 52.0,
+      "interest": 1.0,
+      "depreciation": 74.0,
+      "pbt": 345.0,
+      "tax_pct": 0.25,
+      "pat": 259.0,
+      "eps": 12.47,
+      "pat_prev": 372.0,
+      "pat_growth": -0.303763440860215,
+      "pat_margin": 0.24549763033175356
+     }
+    ],
+    "proj": [
+     {
+      "year": "FY27E",
+      "sales": 1255.3310000000001,
+      "expenses": 815.9651500000001,
+      "op": 439.36585,
+      "opm": 0.35,
+      "other_income": 45.0,
+      "interest": 1.0,
+      "depreciation": 78.0,
+      "pbt": 405.36585,
+      "tax_pct": 0.245,
+      "pat": 306.05121675000004,
+      "eps": 14.627333292938065,
+      "pat_growth": 0.18166492953667968,
+      "pat_margin": 0.24380120999959373,
+      "tp": 515.9761190651691,
+      "return": -0.13135333490712275,
+      "years": 0.38904109589041097,
+      "cagr": null
+     },
+     {
+      "year": "FY28E",
+      "sales": 1493.84389,
+      "expenses": 948.5908701500001,
+      "op": 545.25301985,
+      "opm": 0.365,
+      "other_income": 50.0,
+      "interest": 1.0,
+      "depreciation": 83.0,
+      "pbt": 511.25301985,
+      "tax_pct": 0.245,
+      "pat": 385.99602998675,
+      "eps": 18.448195175708634,
+      "pat_growth": 0.26121383893093086,
+      "pat_margin": 0.2583911428568014,
+      "tp": 649.706284962139,
+      "return": 0.09378162451538552,
+      "years": 1.3917808219178083,
+      "cagr": 0.06652688072735202
+     },
+     {
+      "year": "FY29E",
+      "sales": 1777.6742291,
+      "expenses": 1102.158022042,
+      "op": 675.5162070580001,
+      "opm": 0.38,
+      "other_income": 55.0,
+      "interest": 1.0,
+      "depreciation": 88.0,
+      "pbt": 641.5162070580001,
+      "tax_pct": 0.245,
+      "pat": 484.3447363287901,
+      "eps": 23.14864800145062,
+      "pat_growth": 0.2547920152065193,
+      "pat_margin": 0.2724597839132786,
+      "tp": 814.2221338631085,
+      "return": 0.37074433310287636,
+      "years": 2.3917808219178083,
+      "cagr": 0.14093602088700985
+     }
+    ]
    }
   },
   "Bull": {
    "assumptions": {
-    "growth": [
-     0.19,
+    "core_growth": [
+     0.22,
      0.19,
      0.19
     ],
+    "inject": [
+     0.0,
+     75.0,
+     150.0
+    ],
     "margin": [
      0.35,
-     0.365,
-     0.38
+     0.38,
+     0.4
     ],
     "pe": 45.0,
-    "why": "Same earnings as the base case (revenue is never modelled above guidance); the market pays 45x, today's trailing multiple and Gland Pharma's, for a proven 18-19% compounder with Unit IV filling"
+    "why": "Guidance met in full and the disclosed upside arrives on time: FY27 growth 22%, between the guide of 'slightly better than' 18-19% and H1's 26% (Q2 FY27 call p15); the core then grows at the 19% guide while injectables add Rs 75 cr in FY28 and Rs 150 cr in FY29 on the way to the Rs 300 cr management has built in over 3-4 years (call p12) [E]; EBITDA margin 38% in FY28 and 40%, the top of the 38-40% guide, in FY29 (call p12; margin excluding injectables and Stellon costs already 37.8% in H1, call p5) [E]; 45x, today's trailing multiple and Gland Pharma's"
    },
    "rows": [
     {
      "year": "FY27",
-     "revenue": 1255.3310000000001,
-     "ebitda": 439.36585,
+     "revenue": 1286.978,
+     "growth": 0.21999999999999997,
+     "ebitda": 450.4423,
      "margin": 0.35,
-     "pbt": 405.36585,
-     "pat": 306.05121675000004,
-     "eps": 14.627333292938065
+     "other_income": 45.0,
+     "depreciation": 78.0,
+     "interest": 1.0,
+     "pbt": 416.4423,
+     "pat": 314.4139365,
+     "eps": 15.027018974039624
     },
     {
      "year": "FY28",
-     "revenue": 1493.84389,
-     "ebitda": 545.25301985,
-     "margin": 0.365,
-     "pbt": 511.25301985,
-     "pat": 385.99602998675,
-     "eps": 18.448195175708634
+     "revenue": 1606.50382,
+     "growth": 0.24827605444692913,
+     "ebitda": 610.4714516,
+     "margin": 0.38,
+     "other_income": 50.0,
+     "depreciation": 83.0,
+     "interest": 1.0,
+     "pbt": 576.4714516,
+     "pat": 435.235945958,
+     "eps": 20.801555080224475
     },
     {
      "year": "FY29",
-     "revenue": 1777.6742291,
-     "ebitda": 675.5162070580001,
-     "margin": 0.38,
-     "pbt": 641.5162070580001,
-     "pat": 484.3447363287901,
-     "eps": 23.14864800145062
+     "revenue": 1972.4895457999999,
+     "growth": 0.2278150361323137,
+     "ebitda": 788.99581832,
+     "margin": 0.4,
+     "other_income": 55.0,
+     "depreciation": 88.0,
+     "interest": 1.0,
+     "pbt": 754.99581832,
+     "pat": 570.0218428316,
+     "eps": 27.243477637154566
     }
    ],
    "value": {
-    "fy29_eps": 23.14864800145062,
+    "fy29_eps": 27.243477637154566,
     "pe": 45.0,
-    "price_mar28": 1041.689160065278,
-    "pv_today": 889.8669830909672,
+    "price_mar28": 1225.9564936719555,
+    "pv_today": 1047.278063598434,
     "palvella_ps": 4.019453812336758,
-    "value_ps": 893.886436903304,
-    "vs_price": 0.5048593213860337
+    "value_ps": 1051.2975174107708,
+    "vs_price": 0.7698611404221729
+   },
+   "skill_table": {
+    "multiple": 45.0,
+    "multiple_flat": true,
+    "hist": [
+     {
+      "year": "FY25A",
+      "sales": 1200.0,
+      "expenses": 694.0,
+      "op": 506.0,
+      "opm": 0.42,
+      "other_income": 44.0,
+      "interest": 1.0,
+      "depreciation": 54.0,
+      "pbt": 495.0,
+      "tax_pct": 0.25,
+      "pat": 372.0,
+      "eps": 17.76,
+      "pat_prev": 308.0,
+      "pat_growth": 0.20779220779220786,
+      "pat_margin": 0.31
+     },
+     {
+      "year": "FY26A",
+      "sales": 1055.0,
+      "expenses": 687.0,
+      "op": 368.0,
+      "opm": 0.35,
+      "other_income": 52.0,
+      "interest": 1.0,
+      "depreciation": 74.0,
+      "pbt": 345.0,
+      "tax_pct": 0.25,
+      "pat": 259.0,
+      "eps": 12.47,
+      "pat_prev": 372.0,
+      "pat_growth": -0.303763440860215,
+      "pat_margin": 0.24549763033175356
+     }
+    ],
+    "proj": [
+     {
+      "year": "FY27E",
+      "sales": 1286.978,
+      "expenses": 836.5357000000001,
+      "op": 450.4423,
+      "opm": 0.35,
+      "other_income": 45.0,
+      "interest": 1.0,
+      "depreciation": 78.0,
+      "pbt": 416.4423,
+      "tax_pct": 0.245,
+      "pat": 314.4139365,
+      "eps": 15.027018974039624,
+      "pat_growth": 0.2139534227799227,
+      "pat_margin": 0.24430404909796435,
+      "tp": 680.2353076441199,
+      "return": 0.1451772855961615,
+      "years": 0.38904109589041097,
+      "cagr": null
+     },
+     {
+      "year": "FY28E",
+      "sales": 1606.50382,
+      "expenses": 996.0323683999999,
+      "op": 610.4714516,
+      "opm": 0.38,
+      "other_income": 50.0,
+      "interest": 1.0,
+      "depreciation": 83.0,
+      "pbt": 576.4714516,
+      "tax_pct": 0.245,
+      "pat": 435.235945958,
+      "eps": 20.801555080224475,
+      "pat_growth": 0.38427688925932846,
+      "pat_margin": 0.2709212020161894,
+      "tp": 940.0894324224381,
+      "return": 0.5826421421253167,
+      "years": 1.3917808219178083,
+      "cagr": 0.39077627481489063
+     },
+     {
+      "year": "FY29E",
+      "sales": 1972.4895457999999,
+      "expenses": 1183.49372748,
+      "op": 788.99581832,
+      "opm": 0.4,
+      "other_income": 55.0,
+      "interest": 1.0,
+      "depreciation": 88.0,
+      "pbt": 754.99581832,
+      "tax_pct": 0.245,
+      "pat": 570.0218428316,
+      "eps": 27.243477637154566,
+      "pat_growth": 0.3096846621363547,
+      "pat_margin": 0.288985989327721,
+      "tp": 1229.9759474842922,
+      "return": 1.0706665782563842,
+      "years": 2.3917808219178083,
+      "cagr": 0.3557049848751379
+     }
+    ]
    }
   }
  },
+ "caveats": [
+  "Guided by management: FY27 growth 'slightly better than' the historical 18-19% (Q2 FY27 call p15); EBITDA margin 38-40% over the next few years (call p12); tax 24-25% (call p10); injectables about Rs 300 cr of revenue built in over 3-4 years (call p12).",
+  "Estimated by us [E]: every bear line; the base margin path (35%, 36.5%, 38%); the bull's 22% FY27 growth, injectables ramp (Rs 75 cr, Rs 150 cr) and 38-40% margins; other income Rs 45-55 cr; depreciation Rs 78-88 cr; interest Rs 1 cr.",
+  "Share count: 20,92,32,408 shares after the 1:1 bonus of 4 Nov 2026. No warrants, QIP or ESOP pool is disclosed, so pre and post-dilution EPS and target price are the same.",
+  "The P/E is held flat across the years of each case (25x, 35x, 45x). That is a simplification: a real bear case usually also compresses the multiple and a bull case expands it.",
+  "The headline values apply the multiple to FY29 EPS at 31 Mar 2028 (one year forward) and discount to today at 12%; the year-end target prices in these tables are trailing and undiscounted, so the two are different numbers.",
+  "Bull risk: Unit IV injectables run at 5% utilisation and the customer contracts are still being negotiated, expected in H2 (call p4, p9); the bull adds nothing for CDMO, Inspira or Stellon beyond the 19% core growth.",
+  "Not investment advice. I am not a licensed financial advisor. These are scenario bands, not forecasts."
+ ],
  "readout": "FAIR",
  "implied": [
   {

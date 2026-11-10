@@ -51,3 +51,6 @@ All files in docs/CONCORDBIO/raw, text in docs/CONCORDBIO/text, index in data/do
 | PDF export and page inspection | Done (a029a48), 26 pages | report/Concord_Biotech_Company_Study.pdf |
 | QA summary | Done | report/qa/qa-notes.md |
 | Gap research (11 known gaps) | Done: 7 closed, 4 narrowed; report rebuilt, visual check clean, PDF 26 pages | evidence/gap-research.md |
+
+- 2026-11-10: Navigation complete in HTML and existing 26-page PDF. Clickable 21-section index, bookmarks and Contents / Previous / Next on every PDF page. Original analysis/layout preserved; all targets and all-page visual QA passed. See report/qa/navigation/verification-summary.md.
+- 2026-11-11: Valuation restructured per business-valuation-scenarios. S20 now has year-wise Bear/Base/Bull tables in Screener P&L layout (FY25A, FY26A, FY27E-FY29E) with pre and post-dilution EPS (same; no dilution instruments), PAT growth and margin, target price at each 31 Mar, return and CAGR vs Rs 594, multiple held flat, and a caveats list. Bull rebuilt from disclosed upside (22% FY27, injectables Rs 75/150 cr in FY28/FY29, margin to 40%, 45x): Rs 894 to Rs 1,051. Bear Rs 352 and base Rs 696 unchanged, readout FAIR. PDF re-exported (30 pages) with the PDF tool footer now config-driven. See report/qa/qa-notes.md section 11.
