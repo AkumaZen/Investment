@@ -1,0 +1,230 @@
+{
+ "data": {
+  "price": 1017.0,
+  "mcap": 19996.0,
+  "shares": 19.661750245821043,
+  "net_debt": 1236.0,
+  "promoter": 69.87,
+  "years": [
+   "FY22",
+   "FY23",
+   "FY24",
+   "FY25",
+   "FY26",
+   "TTM"
+  ],
+  "sales_y": [
+   5306,
+   5653,
+   6229,
+   6672,
+   7345,
+   8477
+  ],
+  "op_y": [
+   874,
+   682,
+   932,
+   1008,
+   1121,
+   1413
+  ],
+  "pat_y": [
+   521,
+   342,
+   616,
+   582,
+   671,
+   840
+  ],
+  "cfo_y": [
+   552,
+   724,
+   803,
+   88,
+   783
+  ],
+  "quarters": [
+   "Dec24",
+   "Mar25",
+   "Jun25",
+   "Sep25",
+   "Dec25",
+   "Mar26",
+   "Jun26",
+   "Sep26"
+  ],
+  "sales_q": [
+   1693,
+   1770,
+   1711,
+   1910,
+   1876,
+   1848,
+   2150,
+   2603
+  ],
+  "op_q": [
+   260,
+   271,
+   281,
+   316,
+   292,
+   228,
+   332,
+   562
+  ],
+  "seg": [
+   "India",
+   "US",
+   "Ex-US",
+   "API"
+  ],
+  "seg_h1_26": [
+   12.38,
+   10.89,
+   7.19,
+   5.75
+  ],
+  "seg_h1_27": [
+   13.67,
+   17.81,
+   8.23,
+   7.82
+  ],
+  "seg_q2_26": [
+   6.39,
+   5.66,
+   3.92,
+   3.14
+  ],
+  "seg_q2_27": [
+   7.25,
+   10.03,
+   4.4,
+   4.36
+  ],
+  "seg_fy22": [
+   19.26,
+   16.66,
+   7.75,
+   9.39
+  ],
+  "seg_fy26": [
+   24.58,
+   22.06,
+   14.94,
+   11.87
+  ],
+  "ah_fy22": 2.32,
+  "ah_fy26": 5.19
+ },
+ "calc": {
+  "opm_q": [
+   15.35735380980508,
+   15.310734463276837,
+   16.42314436002338,
+   16.544502617801047,
+   15.56503198294243,
+   12.337662337662337,
+   15.441860465116278,
+   21.5904725316942
+  ],
+  "opm_y": [
+   16.471918582736524,
+   12.06439058906775,
+   14.962273238079948,
+   15.107913669064748,
+   15.26208304969367,
+   16.668632771027486
+  ],
+  "seg_h1_g": [
+   0.10420032310177696,
+   0.6354453627180898,
+   0.14464534075104307,
+   0.3600000000000001
+  ],
+  "h1_g": 0.31262082297707816,
+  "q2_g": 0.36282722513089016,
+  "cagr_22_26": 0.08469125454772053,
+  "seg_cagr": [
+   0.06287305889245931,
+   0.07271073740574252,
+   0.17831721785508647,
+   0.060342775380164415
+  ],
+  "ah_cagr": 0.22298137528255468,
+  "launch_cr": 306.81999999999994,
+  "yoy_add": 693,
+  "launch_share_of_add": 0.44274170274170266,
+  "q2_ex_launch_g": 0.20218848167539272,
+  "launch_ebitda_mid": 198.9962999999999,
+  "launch_ebitda_share": 0.34436409132913154,
+  "us_fy_g": 0.12723556463975472,
+  "cfo_conv": [
+   0.631578947368421,
+   1.06158357771261,
+   0.8615879828326181,
+   0.0873015873015873,
+   0.6984834968777877
+  ]
+ },
+ "sources": {
+  "q2c": [
+   "Q2 FY27 call transcript, 4 Nov 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5991f5bd-f70d-4eb3-bd32-07b794edf376.pdf"
+  ],
+  "q2d": [
+   "Q2 FY27 investor presentation, 4 Nov 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f6ef52d7-552d-47ae-adce-c82ce091ad53.pdf"
+  ],
+  "q1c": [
+   "Q1 FY27 call transcript, 4 Aug 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b8f27d1b-f644-4885-a463-793dbbfce7ca.pdf"
+  ],
+  "q1d": [
+   "Q1 FY27 investor presentation, Aug 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d85cc438-3429-4b83-a89a-b1afb9824454.pdf"
+  ],
+  "q4c": [
+   "Q4 FY26 call transcript, 15 May 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1e5987cb-3bd7-4832-852e-ec765d86c045.pdf"
+  ],
+  "q4d": [
+   "Q4 FY26 investor presentation, May 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7304396a-752a-453f-9789-5d41d3d422c0.pdf"
+  ],
+  "q3c": [
+   "Q3 FY26 call transcript, 5 Feb 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7eca3970-89d2-42e5-ba67-8ab7bc7e1dc9.pdf"
+  ],
+  "q3d": [
+   "Q3 FY26 investor presentation, Feb 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=46c93f24-1700-455c-b9cd-ab997c99dfbc.pdf"
+  ],
+  "a1": [
+   "USFDA approval, Olopatadine 0.7% OTC, 4 Nov 2026",
+   "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e3ffd3f1-dc5f-4bd1-92a9-9de2c85a2380.pdf"
+  ],
+  "a2": [
+   "Trade report on the expanded DifGen collaboration, 5 Nov 2026",
+   "https://www.indianpharmapost.com/news/alembic-pharma-expands-us-complex-generics-portfolio-via-difgen-partnership-22328"
+  ],
+  "a3": [
+   "Company press release, Binimetinib tentative approval, 19 Jun 2026",
+   "https://alembicpharmaceuticals.com/webfiles/pdf/Investor/notices/2026-2027/Press-Release-Binimetinib-Tablets-45-mg.pdf"
+  ],
+  "a4": [
+   "Company press release, Dapagliflozin approval, 7 Apr 2026",
+   "https://alembicpharmaceuticals.com/webfiles/pdf/Investor/notices/2026-2027/press-release-dapagliflozin-tablets-5mg-and-10mg.pdf"
+  ],
+  "scr": [
+   "Screener consolidated financials, fetched 10 Nov 2026",
+   "https://www.screener.in/company/APLLTD/consolidated/"
+  ],
+  "model": [
+   "Our model, model/valuation.py and valuation.md [E]",
+   null
+  ]
+ }
+}
