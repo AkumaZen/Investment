@@ -113,7 +113,7 @@ def skill_table(s, rows):
                      "opm": r["margin"], "other_income": r["other_income"], "interest": r["interest"], "depreciation": r["depreciation"],
                      "pbt": r["pbt"], "tax_pct": TAX, "pat": r["pat"], "eps": r["eps"], "pat_growth": r["pat"] / prev_pat - 1,
                      "pat_margin": r["pat"] / r["revenue"], "tp": tp, "return": tp / V["price"] - 1, "years": yrs,
-                     "cagr": (tp / V["price"]) ** (1 / yrs) - 1 if yrs >= 1 else None})
+                     "cagr": (tp / V["price"]) ** (1 / yrs) - 1 })
         prev_pat = r["pat"]
     return {"multiple": s["pe"], "multiple_flat": True, "hist": hist, "proj": proj}
 
@@ -171,7 +171,7 @@ def main():
 
     md += ["## Year-wise scenario tables (business-valuation-scenarios layout)", "",
            "FY25A and FY26A are Screener consolidated actuals (EPS bonus-adjusted); FY27E-FY29E are the model, with FY27E growth measured from the annual report's Rs 1,054.9 cr.",
-           "Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palvella at book per share (Rs 4), not discounted; CAGR runs from 9 Nov 2026, so FY27E (under a year away) shows none.", ""]
+           "Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palvella at book per share (Rs 4), not discounted; CAGR runs from 9 Nov 2026; FY27E CAGR is annualised over the 0.39 years to 31 Mar 2027, so small moves show as large yearly rates; read it with the return row.", ""]
     for name in SCENARIOS:
         md += skill_md(name, out["scenarios"][name]["skill_table"])
     md += ["### Key assumptions and caveats", ""] + [f"- {c}" for c in CAVEATS] + [""]

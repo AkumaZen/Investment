@@ -224,7 +224,7 @@ def skill_table(s, rows, v):
                      "eps_post": r["eps_diluted"], "pat_growth": r["pat"] / prev_pat - 1, "pat_margin": r["pat"] / r["revenue"],
                      "net_cash_end": cash, "ev": ev, "tp_pre": tp_pre, "tp_post": tp_post,
                      "return_post": tp_post / V["price"] - 1, "years": yrs,
-                     "cagr_post": (tp_post / V["price"]) ** (1 / yrs) - 1 if yrs >= 1 else None})
+                     "cagr_post": (tp_post / V["price"]) ** (1 / yrs) - 1 })
         prev_pat = r["pat"]
     hist = [dict(year=y + "A", eps_pre=h["eps"], eps_post=None, pat_growth=h["pat"] / h["pat_prev"] - 1, pat_margin=h["pat"] / h["sales"],
                  **{k: h[k] for k in ("sales", "expenses", "op", "opm", "other_income", "interest", "depreciation", "pbt", "tax_pct", "pat")})

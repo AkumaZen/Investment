@@ -105,7 +105,7 @@ def run():
             r["target"] = r["eps"] * s["pe"]
             r["ret"] = (r["target"] / CMP - 1) * 100
             t = _yrs(fy)
-            r["cagr"] = ((r["target"] / CMP) ** (1 / t) - 1) * 100 if t >= 1 else None
+            r["cagr"] = ((r["target"] / CMP) ** (1 / t) - 1) * 100
             r["years_from_now"] = t
             r["pb_at_target"] = r["target"] / r["bvps"]
             r["roe"] = r["owner"] / ((bv - r["owner"] / 2) if fy != "FY27E" else (OWNER_EQ_SEP26 + bv) / 2) * 100

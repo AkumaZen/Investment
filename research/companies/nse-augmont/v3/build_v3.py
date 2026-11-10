@@ -968,7 +968,7 @@ FY27E = H1 FY27 actual + our H2 estimate. EPS uses the full 9.14 cr shares for e
 <h4 style="color:{C.GREEN}">Bull case (P/E 26x)</h4>{sc_table("Bull")}
 <p class="src">Source: FY25 Screener (rounded); FY26 Annual Report p.84 and results filing p.6; H1 FY27 results filing p.6; FY27E-FY29E our estimates (calc.).
 Reported FY25/FY26 EPS use the weighted share count before the IPO, so they are not exactly comparable with the projected EPS.
-No yearly return is shown for FY27E because March 2027 is less than a year away.</p>
+The FY27E yearly return is annualised over the under-five months to March 2027, so small moves show as large yearly rates; read it with the return row.</p>
 <h4>Key assumptions and caveats</h4>
 <ul class="small">
 <li><b>Guided vs estimated.</b> Nothing here is company guidance. Management declined to give FY27 numbers (call p.14).

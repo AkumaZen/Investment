@@ -99,7 +99,7 @@ def make_model():
    book+=pat-(H1['pat'] if j==0 else 0)
    ev=op*c['multiple'];equity=ev-net;price=equity/SHARES
    yrs=(date(2000+int(fy[2:4]),3,31)-date(2026,11,9)).days/365.25
-   r=dict(sales=sales,expenses=sales-op,op=op,opm=c['margins'][j],oi=oi,interest=interest,dep=dep,pbt=pbt,tax_pct=c['tax'],tax=tax,pat=pat,eps=pat/SHARES,pat_growth=(pat/prevpat-1)*100,pat_margin=pat/sales*100,multiple=c['multiple'],net_debt=net,ev=ev,equity=equity,price=price,ret=(price/CMP-1)*100,cagr=((price/CMP)**(1/yrs)-1)*100 if yrs>=1 else None,wc_add=dwc,capex=c['capex'][j],reserved_release=c['release'][j],cashop=cashop,fcf=aftercapex,book=book,years=yrs,line3=c['line3'][j],svp=c['svp'][j],legacy=287.6767*c['legacy'][j])
+   r=dict(sales=sales,expenses=sales-op,op=op,opm=c['margins'][j],oi=oi,interest=interest,dep=dep,pbt=pbt,tax_pct=c['tax'],tax=tax,pat=pat,eps=pat/SHARES,pat_growth=(pat/prevpat-1)*100,pat_margin=pat/sales*100,multiple=c['multiple'],net_debt=net,ev=ev,equity=equity,price=price,ret=(price/CMP-1)*100,cagr=((price/CMP)**(1/yrs)-1)*100,wc_add=dwc,capex=c['capex'][j],reserved_release=c['release'][j],cashop=cashop,fcf=aftercapex,book=book,years=yrs,line3=c['line3'][j],svp=c['svp'][j],legacy=287.6767*c['legacy'][j])
    assert abs(pbt-(op+oi-interest-dep))<1e-8
    assert abs(equity-(ev-net))<1e-8
    assert abs(price*SHARES-equity)<1e-8

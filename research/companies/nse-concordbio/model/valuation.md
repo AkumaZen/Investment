@@ -43,7 +43,7 @@ FY29 EPS Rs 27.24 x 45 = Rs 1226 at Mar-28; today Rs 1047 + Palvella Rs 4 = **Rs
 ## Year-wise scenario tables (business-valuation-scenarios layout)
 
 FY25A and FY26A are Screener consolidated actuals (EPS bonus-adjusted); FY27E-FY29E are the model, with FY27E growth measured from the annual report's Rs 1,054.9 cr.
-Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palvella at book per share (Rs 4), not discounted; CAGR runs from 9 Nov 2026, so FY27E (under a year away) shows none.
+Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palvella at book per share (Rs 4), not discounted; CAGR runs from 9 Nov 2026; FY27E CAGR is annualised over the 0.39 years to 31 Mar 2027, so small moves show as large yearly rates; read it with the return row.
 
 ### Bear (25x P/E, held flat FY27E-FY29E)
 
@@ -64,7 +64,7 @@ Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palve
 | PAT Margin % | 31.0% | 24.5% | 22.7% | 23.7% | 23.9% |
 | Target price at 31 Mar (Rs) | - | - | 319 | 368 | 412 |
 | Return vs CMP Rs 594 | - | - | -46% | -38% | -31% |
-| CAGR vs CMP to 31 Mar | - | - | - | -29.1% | -14.2% |
+| CAGR vs CMP to 31 Mar | - | - | -79.8% | -29.1% | -14.2% |
 
 ### Base (35x P/E, held flat FY27E-FY29E)
 
@@ -85,7 +85,7 @@ Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palve
 | PAT Margin % | 31.0% | 24.5% | 24.4% | 25.8% | 27.2% |
 | Target price at 31 Mar (Rs) | - | - | 516 | 650 | 814 |
 | Return vs CMP Rs 594 | - | - | -13% | +9% | +37% |
-| CAGR vs CMP to 31 Mar | - | - | - | +6.7% | +14.1% |
+| CAGR vs CMP to 31 Mar | - | - | -30.4% | +6.7% | +14.1% |
 
 ### Bull (45x P/E, held flat FY27E-FY29E)
 
@@ -106,7 +106,7 @@ Target price at 31 Mar of each year = that year's EPS x the scenario P/E + Palve
 | PAT Margin % | 31.0% | 24.5% | 24.4% | 27.1% | 28.9% |
 | Target price at 31 Mar (Rs) | - | - | 680 | 940 | 1,230 |
 | Return vs CMP Rs 594 | - | - | +15% | +58% | +107% |
-| CAGR vs CMP to 31 Mar | - | - | - | +39.1% | +35.6% |
+| CAGR vs CMP to 31 Mar | - | - | +41.7% | +39.1% | +35.6% |
 
 ### Key assumptions and caveats
 

@@ -92,7 +92,7 @@ Target price at 31 Mar of each year = multiple x that year's EBITDA + net cash a
 | Target price pre-dilution (Rs) | - | - | 244 | 266 | 292 | 334 |
 | Target price post-dilution (Rs) | - | - | 238 | 259 | 284 | 323 |
 | Return vs CMP Rs 349 (post-dilution) | - | - | -32% | -26% | -19% | -8% |
-| CAGR vs CMP to 31 Mar (post-dilution) | - | - | - | -19.3% | -8.3% | -2.3% |
+| CAGR vs CMP to 31 Mar (post-dilution) | - | - | -62.5% | -19.3% | -8.3% | -2.3% |
 
 ### Base (15x EV/EBITDA, held flat FY27E-FY30E)
 
@@ -116,7 +116,7 @@ Target price at 31 Mar of each year = multiple x that year's EBITDA + net cash a
 | Target price pre-dilution (Rs) | - | - | 397 | 472 | 543 | 639 |
 | Target price post-dilution (Rs) | - | - | 382 | 453 | 520 | 609 |
 | Return vs CMP Rs 349 (post-dilution) | - | - | +9% | +30% | +49% | +75% |
-| CAGR vs CMP to 31 Mar (post-dilution) | - | - | - | +20.6% | +18.1% | +17.9% |
+| CAGR vs CMP to 31 Mar (post-dilution) | - | - | +25.9% | +20.6% | +18.1% | +17.9% |
 
 ### Bull (18x EV/EBITDA, held flat FY27E-FY30E)
 
@@ -140,7 +140,7 @@ Target price at 31 Mar of each year = multiple x that year's EBITDA + net cash a
 | Target price pre-dilution (Rs) | - | - | 471 | 577 | 684 | 809 |
 | Target price post-dilution (Rs) | - | - | 451 | 551 | 652 | 770 |
 | Return vs CMP Rs 349 (post-dilution) | - | - | +29% | +58% | +87% | +121% |
-| CAGR vs CMP to 31 Mar (post-dilution) | - | - | - | +38.9% | +29.9% | +26.3% |
+| CAGR vs CMP to 31 Mar (post-dilution) | - | - | +93.6% | +38.9% | +29.9% | +26.3% |
 
 ### Key assumptions and caveats
 

@@ -282,7 +282,7 @@
     "page_id": "report-page-9",
     "report_type": "Comprehensive company research",
     "family": "MQ",
-    "question": "High utilisation can hide different economic realities / The \u00e2\u201a\u00b960 crore Line 3 target is commercially demanding",
+    "question": "High utilisation can hide different economic realities / The \u20b960 crore Line 3 target is commercially demanding",
     "answer": "The old plant, the new line and newly qualified products must be measured separately.",
     "layout": "standard",
     "evidence_status": "Reported facts; G management targets; E estimates identified",
@@ -295,7 +295,7 @@
     ],
     "interpretation": "The old plant, the new line and newly qualified products must be measured separately.",
     "limitation": "See page source notes and assumptions",
-    "next_question": "The \u00e2\u201a\u00b960 crore Line 3 target is commercially demanding",
+    "next_question": "The \u20b960 crore Line 3 target is commercially demanding",
     "qa": {
       "arithmetic": true,
       "source_checked": true,
@@ -309,7 +309,7 @@
     "section_starts": [
       {
         "section": "S8",
-        "question": "The \u00e2\u201a\u00b960 crore Line 3 target is commercially demanding"
+        "question": "The \u20b960 crore Line 3 target is commercially demanding"
       }
     ]
   },
@@ -318,7 +318,7 @@
     "page_id": "report-page-10",
     "report_type": "Comprehensive company research",
     "family": "MQ",
-    "question": "The \u00e2\u201a\u00b960 crore Line 3 target is commercially demanding / Three projects, three clocks, three funding profiles",
+    "question": "The \u20b960 crore Line 3 target is commercially demanding / Three projects, three clocks, three funding profiles",
     "answer": "The late FY27 start leaves little room for a slow ramp at the disclosed steady-state revenue rate.",
     "layout": "standard",
     "evidence_status": "Reported facts; G management targets; E estimates identified",
@@ -964,7 +964,7 @@
     "report_type": "Comprehensive company research",
     "family": "MQ",
     "question": "Base case: earnings and per-share value by year",
-    "answer": "Line 3 reaches its disclosed revenue potential; SVP begins at the speculative \u00e2\u201a\u00b916cr illustration. A 25% ex-OI margin requires stronger mix and execution than demonstrated so far.",
+    "answer": "Line 3 reaches its disclosed revenue potential; SVP begins at the speculative \u20b916cr illustration. A 25% ex-OI margin requires stronger mix and execution than demonstrated so far.",
     "layout": "scenario",
     "evidence_status": "Reported facts; G management targets; E estimates identified",
     "source_refs": [
@@ -972,7 +972,7 @@
       "R27:3",
       "E:model"
     ],
-    "interpretation": "Line 3 reaches its disclosed revenue potential; SVP begins at the speculative \u00e2\u201a\u00b916cr illustration. A 25% ex-OI margin requires stronger mix and execution than demonstrated so far.",
+    "interpretation": "Line 3 reaches its disclosed revenue potential; SVP begins at the speculative \u20b916cr illustration. A 25% ex-OI margin requires stronger mix and execution than demonstrated so far.",
     "limitation": "See page source notes and assumptions",
     "next_question": "Bull case: earnings and per-share value by year",
     "qa": {
@@ -997,7 +997,7 @@
     "report_type": "Comprehensive company research",
     "family": "MQ",
     "question": "Bull case: earnings and per-share value by year",
-    "answer": "Line 3 slightly exceeds the \u00e2\u201a\u00b9110cr potential, legacy sales grow and SVP ramps faster. A 28% margin and 17x multiple require sustained differentiation and cash delivery.",
+    "answer": "Line 3 slightly exceeds the \u20b9110cr potential, legacy sales grow and SVP ramps faster. A 28% margin and 17x multiple require sustained differentiation and cash delivery.",
     "layout": "scenario",
     "evidence_status": "Reported facts; G management targets; E estimates identified",
     "source_refs": [
@@ -1005,7 +1005,7 @@
       "R27:3",
       "E:model"
     ],
-    "interpretation": "Line 3 slightly exceeds the \u00e2\u201a\u00b9110cr potential, legacy sales grow and SVP ramps faster. A 28% margin and 17x multiple require sustained differentiation and cash delivery.",
+    "interpretation": "Line 3 slightly exceeds the \u20b9110cr potential, legacy sales grow and SVP ramps faster. A 28% margin and 17x multiple require sustained differentiation and cash delivery.",
     "limitation": "See page source notes and assumptions",
     "next_question": "The equity bridge must carry the cash cost of growth",
     "qa": {

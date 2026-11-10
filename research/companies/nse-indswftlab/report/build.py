@@ -1108,7 +1108,7 @@ def skill_tbl(name):
 
 skill_note = ("<p>Target price at 31 Mar of each year = multiple x that year's EBITDA + net cash at that year end (rolled forward by free cash flow) "
               "+ the stake after tax and discount [+ Rs 82.32 cr of warrant money, post-dilution only], divided by 8,83,61,558 shares before dilution "
-              "or 9,39,61,558 after. These are not discounted; CAGR runs from 9 Nov 2026, so FY27E (under five months away) shows no CAGR. "
+              "or 9,39,61,558 after. These are not discounted; CAGR runs from 9 Nov 2026; FY27E CAGR is annualised over the 0.39 years to 31 Mar 2027, so small moves show as large yearly rates; read it with the return row. "
               "FY27E growth is measured from the deck's Rs 635.89 cr operating revenue, not Screener's Rs 649 cr.</p>")
 skill_caveats = """<h3>Key assumptions and caveats</h3>
 <ul class="small">

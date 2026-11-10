@@ -160,19 +160,19 @@
     },
     {
       "page": 26,
-      "text_characters": 2329,
+      "text_characters": 2414,
       "links": 6,
       "numbering_pass": true
     },
     {
       "page": 27,
-      "text_characters": 2377,
+      "text_characters": 2460,
       "links": 6,
       "numbering_pass": true
     },
     {
       "page": 28,
-      "text_characters": 2368,
+      "text_characters": 2452,
       "links": 6,
       "numbering_pass": true
     },
@@ -213,7 +213,7 @@
   "financial_independent_check": {
     "source_model": "../report/valuation-model.json",
     "source": "build_report.py make_model formula independently recalculated; build script not executed",
-    "status": "all 9 rows reconcile within 1e-8 â‚¹ crore or â‚¹/share",
+    "status": "all 9 rows reconcile within 1e-8 ₹ crore or ₹/share",
     "market_close_inr": 202.15,
     "issued_shares_crore": 3.8829351,
     "opening_net_debt_including_leases_crore": 202.2177,
@@ -627,23 +627,23 @@
   "artifacts": [
     {
       "file": "amanta-healthcare-equity-research.pdf",
-      "sha256": "e8cc551c41d500ae6f328fb649efc4427adafe5266b6d4c77b187cbf002c58e8",
-      "bytes": 1126483
+      "sha256": "ade79fb3ae90444193dd5b66ddc18116118b7ee14113a472e4d5f77e1f8287ec",
+      "bytes": 1126873
     },
     {
       "file": "report.html",
-      "sha256": "90481be43fd16432bc581dba84480344d128a78578971418576ee031eda6524a",
-      "bytes": 1049720
+      "sha256": "8f8017bf52993223295cefe40ea11fae6e24328715d4497f5f24ea706d3727cd",
+      "bytes": 1049961
     },
     {
       "file": "valuation-model.json",
-      "sha256": "61f60279941bd932b290b8afc2d6469c0dc97d7f1fb6c6e20d4bd656e9a25226",
-      "bytes": 12756
+      "sha256": "197da0d29b6629c9823013fdbf7bfd8b1c56988e4dad6d2d9b78729269c2a186",
+      "bytes": 12797
     },
     {
       "file": "source-manifest.json",
-      "sha256": "9436a184e695f911bfe2d2b2bb28fdfa74e472eca09d41757b82e0ce3ac53a6d",
-      "bytes": 34809
+      "sha256": "7a47183eff59a4f3b30af4e586aaf1262a70788e4e31ab5b591efa101a1e36aa",
+      "bytes": 34801
     }
   ],
   "navigation": {

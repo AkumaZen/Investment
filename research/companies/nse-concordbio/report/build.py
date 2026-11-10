@@ -941,7 +941,7 @@ def skill_tbl(name):
 
 skill_note = """<p><b>How to read the year-by-year tables.</b> Each case is laid out like a Screener profit and loss page: two actual years, then our three projected years.
 The target price at 31 March of each year is that year's earnings per share times the case's P/E, plus Rs 4 a share for the Palvella stake. It is not discounted.
-Return and CAGR are measured from Rs 594 on 9 November 2026; FY27E is under a year away, so it shows no CAGR.
+Return and CAGR are measured from Rs 594 on 9 November 2026. FY27E CAGR is annualised over the 0.39 years to 31 Mar 2027, so small moves show as large yearly rates; read it with the return row.
 Concord has no warrants, convertible or disclosed share-option pool, so earnings per share is the same before and after dilution.</p>"""
 skill_caveats = f"""<h3>Key assumptions and caveats</h3>
 {ul(VAL["caveats"], "small")}

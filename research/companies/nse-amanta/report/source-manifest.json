@@ -492,7 +492,7 @@
     {
       "page": 9,
       "section": "report-page-9",
-      "title": "High utilisation can hide different economic realities / The â‚¹60 crore Line 3 target is commercially demanding",
+      "title": "High utilisation can hide different economic realities / The ₹60 crore Line 3 target is commercially demanding",
       "references": [
         "AR:10",
         "P2:5,18",
@@ -504,7 +504,7 @@
     {
       "page": 10,
       "section": "report-page-10",
-      "title": "The â‚¹60 crore Line 3 target is commercially demanding / Three projects, three clocks, three funding profiles",
+      "title": "The ₹60 crore Line 3 target is commercially demanding / Three projects, three clocks, three funding profiles",
       "references": [
         "P2:5",
         "C2:5,10",
@@ -853,18 +853,18 @@
   "outputs": [
     {
       "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report\\amanta-healthcare-equity-research.pdf",
-      "sha256": "e8cc551c41d500ae6f328fb649efc4427adafe5266b6d4c77b187cbf002c58e8",
-      "bytes": 1126483
+      "sha256": "ade79fb3ae90444193dd5b66ddc18116118b7ee14113a472e4d5f77e1f8287ec",
+      "bytes": 1126873
     },
     {
       "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report\\report.html",
-      "sha256": "90481be43fd16432bc581dba84480344d128a78578971418576ee031eda6524a",
-      "bytes": 1049720
+      "sha256": "8f8017bf52993223295cefe40ea11fae6e24328715d4497f5f24ea706d3727cd",
+      "bytes": 1049961
     },
     {
       "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report\\valuation-model.json",
-      "sha256": "61f60279941bd932b290b8afc2d6469c0dc97d7f1fb6c6e20d4bd656e9a25226",
-      "bytes": 12756
+      "sha256": "197da0d29b6629c9823013fdbf7bfd8b1c56988e4dad6d2d9b78729269c2a186",
+      "bytes": 12797
     }
   ]
 }
