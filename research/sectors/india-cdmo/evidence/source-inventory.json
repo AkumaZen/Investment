@@ -1,0 +1,79 @@
+{
+  "project": "India listed pharma CDMO universe discovery",
+  "as_of": "2026-11-10",
+  "purpose": "Prompt-stage universe mapping; not an exhaustive investable universe and not sector analysis",
+  "screener_mcp": {
+    "identity_searches": [
+      {"query":"Syngene","result":"SYNGENE"},
+      {"query":"Sai Life Sciences","result":"SAILIFE"},
+      {"query":"Anthem Biosciences","result":"ANTHEM"},
+      {"query":"Aragen Life Sciences","result":"no listed result"},
+      {"query":"Divis Laboratories","result":"DIVISLAB"},
+      {"query":"Laurus Labs","result":"LAURUSLABS"},
+      {"query":"Suven Pharmaceuticals","result":"no result under legacy name"},
+      {"query":"Cohance Lifesciences","result":"COHANCE"},
+      {"query":"Piramal Pharma","result":"PPLPHARMA"},
+      {"query":"Jubilant Pharmova","result":"JUBLPHARMA"},
+      {"query":"Neuland Laboratories","result":"NEULANDLAB"},
+      {"query":"Gland Pharma","result":"GLAND"},
+      {"query":"SMS Pharmaceuticals","result":"SMSPHARMA"},
+      {"query":"Shilpa Medicare","result":"SHILPAMED"},
+      {"query":"Solara Active Pharma","result":"SOLARA; also SOLARAPP1 partly paid-up result"},
+      {"query":"Supriya Lifescience","result":"SUPRIYA"},
+      {"query":"Akums Drugs","result":"AKUMS"},
+      {"query":"Innova Captab","result":"INNOVACAP"},
+      {"query":"Windlas Biotech","result":"WINDLAS"},
+      {"query":"Syncom Formulations","result":"SYNCOMF"},
+      {"query":"Concord Biotech","result":"CONCORDBIO"},
+      {"query":"Granules India","result":"GRANULES"},
+      {"query":"Dr Reddy's Laboratories","result":"no result on exact name; unresolved"},
+      {"query":"Aurobindo Pharma","result":"AUROPHARMA"},
+      {"query":"Zydus Lifesciences","result":"ZYDUSLIFE"},
+      {"query":"Aarti Pharmalabs","result":"AARTIPHARM"},
+      {"query":"Hikal","result":"HIKAL"},
+      {"query":"PI Industries","result":"no result for phrase query; identity still requires exact symbol lookup"},
+      {"query":"Anupam Rasayan","result":"ANURAS"},
+      {"query":"Navin Fluorine","result":"NAVINFLUOR"}
+      ,{"query":"Dishman Carbogen Amcis","result":"DCAL; issuer/exchange confirms BSE 540701"}
+      ,{"query":"Jubilant Ingrevia","result":"JUBLINGREA; NSE filing confirms BSE 543271"}
+      ,{"query":"Rubicon Research","result":"RUBICON; NSE filing confirms BSE 544578; listed 2025"}
+      ,{"query":"OneSource Specialty Pharma","result":"ONESOURCE; NSE FY26 filing confirms BSE 544292; listed 2025"}
+      ,{"query":"Suven Life Sciences","result":"SUVEN; NSE filing confirms BSE 530239; distinct from former Suven Pharmaceuticals business now Cohance"}
+      ,{"query":"Biocon","result":"BIOCON; parent/holding exposure to Syngene, not a standalone CDMO peer"}
+    ],
+    "overviews": {
+      "fetched_at": "2026-11-10T12:36:07Z to 2026-11-10T12:36:14Z",
+      "symbols": ["SYNGENE","SAILIFE","ANTHEM","LAURUSLABS","COHANCE","PPLPHARMA","JUBLPHARMA","NEULANDLAB","GLAND","SMSPHARMA","SHILPAMED","SOLARA","SUPRIYA","AKUMS","INNOVACAP","WINDLAS","SYNCOMF","CONCORDBIO","GRANULES","AUROPHARMA","ZYDUSLIFE","AARTIPHARM","HIKAL","ANURAS","NAVINFLUOR"],
+      "source_pattern": "https://www.screener.in/company/{SYMBOL}/consolidated/",
+      "notable_gaps": ["DIVISLAB overview not fetched","DRREDDY unresolved","PIIND unresolved","SUPRIYA overview metrics returned null"]
+    },
+    "document_list_calls": {
+      "method": "get_document_list",
+      "symbols": ["SYNGENE","SAILIFE","ANTHEM","COHANCE","PPLPHARMA","JUBLPHARMA","NEULANDLAB","GLAND","AKUMS","INNOVACAP","WINDLAS","CONCORDBIO","AARTIPHARM","HIKAL","ANURAS"],
+      "result": "Calls completed; endpoint outputs were too large/mixed to normalize in this pass and raw responses were not saved. Do not treat this as a complete verified document index.",
+      "next_action": "Repeat per symbol and archive normalized current annual report, latest results, available decks/transcripts and material filings."
+    }
+  },
+  "primary_sources": [
+    {"issuer":"Sai Life Sciences","type":"FY26 integrated report release","url":"https://sailife.com/news/sai-life-sciences-releases-its-first-integrated-report-for-fy-2025-26/","accessed":"2026-11-10","coverage":"Issuer describes global CRDMO; FY26 capex and FY27 plan; report availability. Web page reviewed; report PDF not downloaded or hashed."},
+    {"issuer":"Sai Life Sciences","type":"Annual report index","url":"https://sailife.com/annual-reports/","accessed":"2026-11-10","coverage":"FY26 integrated report and FY25-FY22 report links."},
+    {"issuer":"Sai Life Sciences","type":"FY26 earnings release","url":"https://www.sailife.com/wp-content/uploads/2026/06/Earnings-Release-Q4FY26.pdf","accessed":"2026-11-10","coverage":"FY26 operating revenue and issuer-reported results; not independently page-checked."},
+    {"issuer":"Sai Life Sciences","type":"FY26 earnings call transcript","url":"https://www.sailife.com/wp-content/uploads/2026/06/Earnings-Call-Transcript.pdf","accessed":"2026-11-10","coverage":"CRO/CDMO commentary, large pharma cohort and molecule pipeline; transcript page snippets only, not full read."},
+    {"issuer":"Syngene International","type":"FY26 annual report","url":"https://annualreport.syngeneintl.com/","accessed":"2026-11-10","coverage":"Issuer describes integrated CRDMO and headline customer/revenue/workforce metrics; web report reviewed selectively, no file hash."},
+    {"issuer":"Syngene International","type":"FY25 strategic priorities","url":"https://annualreport.syngeneintl.com/strategic-priorities.html","accessed":"2026-11-10","coverage":"Small molecule CDMO development/clinical/commercial service model and operating model changes."},
+    {"issuer":"Anthem Biosciences","type":"Investor page and disclosure catalogue","url":"https://anthembio.com/investors/","accessed":"2026-11-10","coverage":"Identity, NSE/BSE symbols, CRDMO description, RHP and annual-report index FY23-FY25."},
+    {"issuer":"Piramal Pharma","type":"Annual report FY23","url":"https://piramal.com/wp-content/uploads/2023/07/Annual-Report-2022-23.pdf","accessed":"2026-11-10","coverage":"Historical company overview and three-business verticals; stale for current business mix."},
+    {"issuer":"Jubilant Pharmova","type":"Announcements page","url":"https://www.jubilantpharmova.com/newsroom/announcements","accessed":"2026-11-10","coverage":"FY26 announcement page: separate radiopharma, allergy immunotherapy, sterile injectables CDMO, CRDMO and generics; page snippets only."}
+    ,{"issuer":"Dishman Carbogen Amcis","type":"NSE audited FY26 integrated filing","url":"https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_159116_19052026234113_iXBRL_WEB.html","accessed":"2026-11-10","coverage":"Identity DCAL/BSE 540701; mixed single segment includes CDMO and specialty chemical/products categories."}
+    ,{"issuer":"Dishman Carbogen Amcis","type":"Issuer lifecycle service page","url":"https://www.imdcal.com/what-we-do/crams-hipoapi/life-cycle-management","accessed":"2026-11-10","coverage":"Issuer states API drug substance lifecycle from development and validation through commercial manufacturing."}
+    ,{"issuer":"Jubilant Ingrevia","type":"NSE FY25 annual report","url":"https://nsearchives.nseindia.com/annual_reports/AR_27297_JUBLINGREA_2024_2025_A_05082025233201.pdf","accessed":"2026-11-10","coverage":"Issuer says pharma/agrochemical/semiconductor CDMO; FY25 active development counts include pharma and semiconductor molecules. Do not aggregate all as pharma."}
+    ,{"issuer":"Rubicon Research","type":"NSE issuer filing","url":"https://nsearchives.nseindia.com/corporate/9823522970_30052026115826_RRLSEIntimationNewspaperadvt30May2026.pdf","accessed":"2026-11-10","coverage":"Confirms listed symbol RUBICON, BSE 544578."}
+    ,{"issuer":"Rubicon Research","type":"FY26 investor deck","url":"https://www.rubicon.co.in/pdf/RRL%20Investor%20Deck%20Q2%20FY26.pdf","accessed":"2026-11-10","coverage":"Issuer timeline describes evolution from fee-for-service CDO/CDMO to specialty products, own front end and drug-device products; use to flag mixed model."}
+    ,{"issuer":"OneSource Specialty Pharma","type":"NSE audited FY26 results filing","url":"https://nsearchives.nseindia.com/corporate/ONESOURCECDMO_19052026105523_OCR_Financial_results.pdf","accessed":"2026-11-10","coverage":"Confirms BSE 544292, NSE ONESOURCE and pharmaceutical CDMO reporting segment."}
+    ,{"issuer":"OneSource Specialty Pharma","type":"Issuer capabilities page","url":"https://www.onesourcecdmo.com/offerings/","accessed":"2026-11-10","coverage":"Issuer describes biologics, sterile injectables, drug-device combinations and soft gelatin capsule CDMO services."}
+    ,{"issuer":"Suven Life Sciences","type":"NSE FY27 Q2 filing","url":"https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_210283_05112026172205_iXBRL_WEB.html","accessed":"2026-11-10","coverage":"Confirms current distinct listed company SUVEN/BSE 530239."}
+    ,{"issuer":"Suven Life Sciences","type":"Issuer business overview","url":"https://www.suven.com/","accessed":"2026-11-10","coverage":"Drug discovery and development support plus proprietary CNS pipeline; distinct from legacy Suven Pharma CRAMS demerged to Cohance."}
+    ,{"issuer":"Biocon / Syngene","type":"FY25 annual report","url":"https://www.biocon.com/docs/Syngene-Annual-Report-2024-25.pdf","accessed":"2026-11-10","coverage":"Syngene annual report identifies Biocon as holding company and 52.46% holding at 31 Mar 2025; current stake must be refreshed before look-through calculations."}
+  ],
+  "coverage_note": "Issuer overview pages and exchange filing excerpts were used for discovery, not full company report reading. No PDF page coverage or SHA-256 hashes were generated. Treat numerical/company claims as source leads for the downstream prompt's document-reader workflow, not completed full-document fact packs."
+}

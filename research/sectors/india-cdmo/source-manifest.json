@@ -1,0 +1,144 @@
+{
+  "as_of": "2026-11-10",
+  "stage": "sector research prompt preparation",
+  "report_complete": false,
+  "source_indexes": [
+    "evidence/sources.json",
+    "evidence/source-inventory.json",
+    "evidence/document-list-register.md"
+  ],
+  "primary_fact_checks": "evidence/verification.md",
+  "reference_only": "references/",
+  "files": [
+    {
+      "path": "evidence/demand.md",
+      "bytes": 17906,
+      "sha256": "7060cd50d779ffae721e6bc3c5c48ae180b153a77678bb04f7300c1d69e33760"
+    },
+    {
+      "path": "evidence/design-notes.md",
+      "bytes": 9967,
+      "sha256": "aa87d98bdc847991e070b5e1b9e15f7da61110052f9a66dfc06cc1dfc1a1192d"
+    },
+    {
+      "path": "evidence/document-list-register.md",
+      "bytes": 18794,
+      "sha256": "5e44c9cc7ee7f5ff0bbee6ce29b938374c1b95def78399283fd90a02a599e270"
+    },
+    {
+      "path": "evidence/editorial-review.md",
+      "bytes": 6039,
+      "sha256": "edc183b1a5f5fad0301c134b7f7e1c66b3e4edb98e22175d15910f99440ea8a5"
+    },
+    {
+      "path": "evidence/external-skills.md",
+      "bytes": 5310,
+      "sha256": "e3b5a7758f14632a74db50fd695bbb0c8e09fb0835ac2cff18613bdabd1be3b5"
+    },
+    {
+      "path": "evidence/prompt-facts.md",
+      "bytes": 4060,
+      "sha256": "95a11ebf37091f37d032e3e932cdf50364f3d0c27c991baeea59bf3ac179e2b1"
+    },
+    {
+      "path": "evidence/source-inventory.json",
+      "bytes": 9888,
+      "sha256": "a62e16591fea42e564416ce53d8068989192e365ddca6f42fbdd0c7f4bc81dd7"
+    },
+    {
+      "path": "evidence/sources.json",
+      "bytes": 7099,
+      "sha256": "fa27d62539beb5c83656416efbdd6064886a60d03ec770f37e0e68ece056f777"
+    },
+    {
+      "path": "evidence/universe.md",
+      "bytes": 16467,
+      "sha256": "1d7963f60891d899eaa215dfa96bbd48bf46af9bdb7655cc081868203a92fad5"
+    },
+    {
+      "path": "evidence/verification.md",
+      "bytes": 4447,
+      "sha256": "47d0a71438f4bd9680c6bbe5b83706a278aeeea17274376cc90171b83b6f1603"
+    },
+    {
+      "path": "prompt-check.txt",
+      "bytes": 1622,
+      "sha256": "026c6153ff9caf9db2f6287db555d61f701bc570c1b653ec3604d383b301373c"
+    },
+    {
+      "path": "prompt-notes.md",
+      "bytes": 9816,
+      "sha256": "423990caffbfb8e6efc613b0edbc83736a0b0b4d5d736cdc8c771cef8004e31a"
+    },
+    {
+      "path": "prompts/build_prompt.py",
+      "bytes": 43015,
+      "sha256": "e32a933f23cb1217205cb3eea8315fcd0660ed76fd08399479586f0daa2a9674"
+    },
+    {
+      "path": "prompts/build_slots.py",
+      "bytes": 6776,
+      "sha256": "a351b5c59ea7aa854807b183674ab3d5f464fb61c116cdc11cb5ea115ec34067"
+    },
+    {
+      "path": "prompts/draft.md",
+      "bytes": 61069,
+      "sha256": "090096ddc1c5bb84f4335509a017864a45b245a6ad40b09617b64c4bd8148633"
+    },
+    {
+      "path": "prompts/Indian CDMO Sector Research Prompt.md",
+      "bytes": 89198,
+      "sha256": "f3fba7a686ffc7343798f93275f438fdfa9b88d185f04fef9de5b923ffa78cf5"
+    },
+    {
+      "path": "prompts/slots.json",
+      "bytes": 11839,
+      "sha256": "4005b1b0012aa97c778c114a577c80b6cfd46bbe03ba1b46598c1f8fa161e65d"
+    },
+    {
+      "path": "references/originals/Axis_Building_Materials_Initiating_Coverage_2025-07-16.pdf",
+      "bytes": 1206550,
+      "sha256": "d5543ebdbb11d9ad7b9aeb8eeae850df25962d0179af6d57baa2a09bd30c53e9"
+    },
+    {
+      "path": "references/report-design/Equity_Research_Design_Agent_Specification.json",
+      "bytes": 3090537,
+      "sha256": "d194abf87bd4f964f19f3ba92df7a12c0dc422785997aab07158588827b50c30"
+    },
+    {
+      "path": "references/report-design/Equity_Research_Design_Page_by_Page_Manual.md",
+      "bytes": 257744,
+      "sha256": "87b5b8ec00375892d4424e5545fcd201da95dc6ab0275b1b2b0383df1d1c6f99"
+    },
+    {
+      "path": "references/report-design/Equity_Research_Design_Page_by_Page_Manual.pdf",
+      "bytes": 361749,
+      "sha256": "b8a3ae9cb568e9aaffbb48b3e944527998ff8f626979460de9d512642c1d43fe"
+    },
+    {
+      "path": "references/report-design/guide.md",
+      "bytes": 9977,
+      "sha256": "6a691f4c3372937dffcd1b1d09e4d4531fd803ada53f5db0db93196eecfbc342"
+    },
+    {
+      "path": "references/report-design/manifest.json",
+      "bytes": 1223,
+      "sha256": "38bf6d4684ba6cf43c59cba89ebedd8dd90e46f17745d06801205198b3e89b48"
+    },
+    {
+      "path": "references/report-design/report_references.py",
+      "bytes": 9209,
+      "sha256": "f1c14634c0d96b0c691f33010ce86c7841715c68b5a0d23acbe86b40b52f38b8"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 2882,
+      "sha256": "d1323ab3186c4ed962023212ca096a632c9a0d09aeb54fe7dcc855926216965f"
+    },
+    {
+      "path": "verification-summary.md",
+      "bytes": 3252,
+      "sha256": "cb2e0d308800873146d45d5d77c7b395c4f6adcb53aae02d09430e86426a4cc5"
+    }
+  ]
+}
