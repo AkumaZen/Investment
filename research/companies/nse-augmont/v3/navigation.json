@@ -1,0 +1,9 @@
+{
+  "html":"augmont-report.html",
+  "pdf_input":"qa/navigation/clean-print.pdf",
+  "pdf":"Augmont_Company_Study.pdf",
+  "footer":"Augmont Enterprises | Company study | Not investment advice",
+  "section_map":"qa/navigation/section-map.json",
+  "cover_rect":[36,680,390,803],
+  "labels":["Investment view","Story in charts","Indian gold market","Company position","Business platforms","Revenue model","Enterprise volumes","Scrap procurement","Consumer business","Reach & utilisation","Subsidiaries","Quarterly performance","Management Q&A","Historical financials","Cash conversion","IPO capital","Related parties","Ownership & governance","Current valuation","Scenario values","Year-wise projections","Catalysts & monitoring","Risks","Financial summary","Glossary & sources"]
+}

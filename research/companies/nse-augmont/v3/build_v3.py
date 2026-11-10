@@ -1266,6 +1266,10 @@ def render():
             '<title>Augmont Enterprises Study</title>'
             '<meta name="description" content="Plain-language, chart-led company study of Augmont Enterprises (NSE: AUGMONT), data as of 7 Nov 2026.">'
             f'<style>{CSS}</style></head><body>' + body_html + "</body></html>")
+    import runpy
+    from pathlib import Path
+    nav = runpy.run_path(str(Path(HERE).parents[3] / "tools/report_navigation.py"))
+    html = nav['add_html_navigation'](html, json.loads((Path(HERE) / 'navigation.json').read_text(encoding='utf-8'))['labels'])
     with open(os.path.join(HERE, "augmont-report.html"), "w", encoding="utf-8") as fh:
         fh.write(html)
     with open(os.path.join(HERE, "chart-data.json"), "w", encoding="utf-8") as fh:

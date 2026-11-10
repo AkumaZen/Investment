@@ -38,10 +38,12 @@
 - Edit text or data in `v3/build_v3.py`, then run `python -I build_v3.py` from `v3/`.
 - Re-check visuals (mandatory after each build): `node review.mjs ../../research/companies/nse-augmont/v3/augmont-report.html` from `tools/report-visual-check/`, then the by-eye pass in `learnings/concepts/equity-report-quality-process.md`. Quick single pages: `python -I qa_shots.py desktop 1 4`.
 - Scenario drivers live in `SCEN` in `valuation.py`; rebuild with `python -I build_v3.py`.
-- Next edition (when the user asks): rating, PDF export, fill the SEBI RA disclaimer placeholder, update with Q3 FY27 results.
+- Next edition (when the user asks): rating, fill the SEBI RA disclaimer placeholder, update with Q3 FY27 results.
 
 ## Log
 
 - 2026-11-07: Stage 1 done. Chrome extension unavailable (account mismatch); ChatGPT share read via headless Edge.
 - 2026-11-08: Stage 9 done. Base FY29 value Rs 1,134 (20x FY29E owner EPS 56.7); bear 397 (14x); bull 2,191 (26x). 25 pages, 46 exhibits.
 - 2026-11-07: Stages 2-8 done. Report built and reviewed at desktop and phone widths; 9 defects fixed (see qa-notes.md).
+
+- 2026-11-10: Navigation complete. Latest HTML updated; matching 25-page Augmont_Company_Study.pdf exported. Clickable 25-section index, bookmarks and Contents / Previous / Next on every PDF page. Analysis preserved; all targets and all-page visual QA passed. See qa/navigation/verification-summary.md.
