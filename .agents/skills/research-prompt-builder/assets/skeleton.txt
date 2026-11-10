@@ -2,7 +2,7 @@ RESEARCH PROMPT
 Company: {{COMPANY}}
 Research type: {{RESEARCH_TYPE: Initiating coverage deep dive, or Update}}
 NSE: {{NSE}} | BSE: {{BSE}}
-Lead analyst: Claude Opus 5.5 as a senior equity research analyst; Sonnet 5.5 workers read the documents
+Lead analyst: current lead agent as a senior equity research analyst; GPT-6 Luna workers use low for routine extraction and medium for analytical work
 Output: one self-contained HTML report using the supplied report-design references in section 7, light theme, saved as report.html in the research folder
 Document mode: {{DOC_MODE: Default, or All documents}}
 Size: {{SIZE: Full, or Concise}}
@@ -111,13 +111,13 @@ Research folder: `{{RESEARCH_FOLDER}}`
 
 Steps, in order. After each step, update state.md in the research folder with what was done, what was found and what is next. Run to completion without stopping for permission. Stop only if a primary document needed for a core section cannot be found anywhere, and say which.
 [0] Set up: create the research folder, copy in the files from section 1, start state.md.
-[1] Read: Sonnet 5.5 workers read each document and write page-tagged facts to facts.md, covering business, products, customers, management, capex projects, guidance quotes, growth triggers, risks, and analyst questions with management's answers. Charts, tables and scanned pages are read from rendered page images. Opus does not read documents in bulk.
+[1] Read: GPT-6 Luna workers read each document and write page-tagged facts to facts.md, covering business, products, customers, management, capex projects, guidance quotes, growth triggers, risks, and analyst questions with management's answers. Charts, tables and scanned pages are read from rendered page images. The lead agent does not read documents in bulk.
 [2] Numbers: pull the financials from Screener into financials.md and recompute every ratio by script.
-[3] Diagnose: Opus answers the 15 questions in notes.md, writes the anti-thesis before the bull case hardens, and closes the "To find" list.
+[3] Diagnose: The lead agent answers the 15 questions in notes.md, writes the anti-thesis before the bull case hardens, and closes the "To find" list.
 [4] Model: model.py builds the valuation in section 5; every derived number is recomputed by script.
 [5] Write: report.html, following sections 4, 6, 6A and 7.
 [6] Check: the checks in section 6, then section 8, then section 8B, then the final reply in section 9.
-Models: Sonnet 5.5 workers read (pass model "sonnet" on every worker call). Opus 5.5 decides, writes and checks. If Sonnet 5.5 is unavailable, stop and say so; never fall back to a smaller model.
+Models: use collaboration.spawn_agent with model="gpt-6-luna", fork_turns="none". Set reasoning_effort="low" for routine extraction/indexing and reasoning_effort="medium" for guidance/Q&A interpretation, historical comparisons, ambiguous evidence, reconciliation, valuation and final verification. Mixed assignments use medium; escalate unresolved passages without repeating completed full reading. Record actual settings per assignment. The lead agent decides, writes and checks. If GPT-6 Luna is unavailable, stop and say so; never substitute another worker model without user approval.
 
 ## 4. Report structure
 
@@ -253,7 +253,7 @@ Every S-section opens with the answer in one bold line, then the evidence, then 
 
 ## 5. Valuation
 
-- Method: build the valuation by following the `business-valuation-scenarios` skill (`C:\Users\Rohit Negi\.claude\skills\business-valuation-scenarios\SKILL.md`), Steps 1 to 4: metric diagnosis, projections anchored to disclosed guidance, three separate year-wise Bear, Base and Bull tables in its Screener P&L layout with its added rows, and its caveats section. Read the skill there before building the model; it is not copied here. Where this section and the skill differ on how scenarios are built or laid out, the skill wins. The tables and caveats go in S20. Its Step 5 dashboard JSON is not part of the report: it is produced in chat only after the user approves the tables.
+- Method: build the valuation by following the installed `business-valuation-scenarios` skill (`C:\Users\Rohit Negi\.codex\skills\business-valuation-scenarios\SKILL.md`), Steps 1 to 4: metric diagnosis, projections anchored to disclosed guidance, three separate year-wise Bear, Base and Bull tables in its Screener P&L layout with its added rows, and its caveats section. Read the skill there before building the model; it is not copied here. If the file is unavailable, flag the missing dependency before building the valuation. Where this section and the skill differ on how scenarios are built or laid out, the skill wins. The tables and caveats go in S20.
 - Share count: {{SHARES: basic shares plus dilution from warrants, ESOPs and convertibles, with source}}
 - Main metric: {{METRIC_AND_REASON: the metric, and why it fits this business, chosen with the business-valuation-scenarios Step 1 table}}. The method follows the business: when there are no earnings yet, value the asset (such as rNPV, replacement cost or sum of the parts), never past earnings. Cross-check: {{CROSS_CHECK}}
 - Revenue build, bottom-up: {{REVENUE_BUILD: the driver arithmetic, such as capacity x utilisation x realisation}}
@@ -272,6 +272,9 @@ Every S-section opens with the answer in one bold line, then the evidence, then 
 - Show the working for every estimate, and keep the interest, depreciation and tax bridge marked [E].
 
 ## 6. Writing, design, checks
+
+- Execution efficiency, user-approved 10 November 2026: read `C:/Users/Rohit Negi/Desktop/Investment/Investment/learnings/concepts/research-report-efficient-execution.md`. Preserve this prompt; reuse full hashed page extracts and complete per-document reader outputs, maintain source-linked evidence/guidance registers and one canonical model, and give authorized Luna workers using low for routine extraction and medium for analytical work bounded file-based handoffs. Retain every in-scope document, full historical comparison, important Q&A, source verification and independent model checks. Keep file-based milestone checkpoints, preserving evidence paths/hashes, assumptions, unresolved issues, completed checks and the exact next action. The user declined optional context compaction: do not initiate it or configure a custom automatic threshold. Built-in runtime context management remains unchanged. Record actual usage when available. Never claim token savings without measurements.
+- Before the first build, plan official product photos grouped by category/platform beside the product discussion, visible clickable PDF contents plus bookmarks and return/previous/next controls, and balanced reference-based page density. Use one reproducible build command manifest; calculate navigation from the final section/page map. For cosmetic revisions reuse validated research and the model. Render and inspect every final PDF page and verify all final internal destinations; record QA evidence. These requirements also apply when executing an older prompt under this user's standing workflow amendment.
 
 - Simple words. Explain every term before using it. Write for a first-time investor who is smart but new to this industry.
 - Answer first, then evidence.

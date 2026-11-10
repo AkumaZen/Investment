@@ -40,3 +40,5 @@ This starter contains workflows and blank templates, not completed company resea
 The [research-prompt-builder skill](.agents/skills/research-prompt-builder/SKILL.md) prepares a tailored prompt for a later research run. Read its [Codex setup notes](.agents/skills/research-prompt-builder/CODEX.md) for repository paths and runtime requirements, and [Screener MCP setup](docs/screener-mcp.md) for its data connection.
 
 Use `$research-prompt-builder` when you want the research prompt itself. Use `$stock-research` when you want company analysis.
+
+For full reports, use the [efficient execution workflow](learnings/concepts/research-report-efficient-execution.md), [run checkpoint](templates/research-run.md) and [build manifest template](templates/report-build.json). `python tools/report-workflow.py extract <pdf> --cache <folder>` caches full page-labelled text; `python tools/report-workflow.py run <build.json> --check` checks the configured commands and `run <build.json>` executes them with timings and output hashes. Document scope and final visual/source/model QA remain unchanged.

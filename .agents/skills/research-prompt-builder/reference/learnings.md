@@ -4,6 +4,8 @@ What the user had to ask after a report was built. Every new prompt must force e
 
 ## Standing rules from the user's own words
 
+User-approved process amendment, 10 November 2026: follow the repository's `learnings/concepts/research-report-efficient-execution.md`. Preserve the original prompt, every in-scope document and all analytical/verification requirements. Reuse full cached extracts and complete hash-matched reader outputs; maintain evidence/guidance registers, one financial model, compact Luna/medium handoffs and recovery checkpoints. Plan real category/product images, visible clickable PDF navigation and balanced density before the first build. Use one reproducible pipeline; cosmetic edits reuse validated research, with full final PDF visual review. Default scope is latest annual report, all historical calls/decks, current results, material announcements and applicable RHP/uploads; do not repeat the scope question when this standing answer applies. Record actual usage when available; savings are not yet measured. This supersedes the narrower historical default and mandatory fresh worker-per-file mechanics, not research depth.
+
 | User's words (date) | Rule |
 |---|---|
 | "Great Research analyst... explains the business and it's products flawlessly... acting like a robot" (04-Oct) | Read the documents before writing. Business and every product first, then peers, then numbers. Add material topics without being asked |
@@ -69,3 +71,11 @@ Append here: date, what the user asked, why the prompt missed it, the line that 
 
 | 2026-11-07 | "Just replace Sonnet with the gpt 6.1 light models" | Sonnet was unavailable in Codex | User-approved amendment: use gpt-6.1-sol with low reasoning effort and fork_turns none for all workers, including verification. Supersedes historical model assignments only. |
 | Tue, 10 Nov 2026 | "add this skill of business valuation scenarios for valuation modelling in the research prompt so valuation is always structured the way I want, I want you to refer to that skill not pasted" | Section 5 used only the skill's Step 1 metric table, so scenario build and layout were improvised per report | Section 5 and S20 point to `business-valuation-scenarios` Steps 1 to 4 (three separate year-wise tables, caveats); check_prompt.py gates the pointer. User-approved supersession: bull is now guidance realised faster or better from disclosed triggers (the skill's Step 2), replacing "same earnings at a higher multiple". Base = guidance and bear from risk cards are unchanged |
+
+| 2026-11-10 | "can you change all of them to luna with medium effort" | Reader, financial scanner and verifier previously used GPT-6.1 Sol at low effort | All future workers use model gpt-6-luna, reasoning_effort medium and fork_turns none. SKILL.md, CODEX.md, worker briefs, skeleton and Amanta prompt updated. Supersedes earlier model assignments; historical execution records preserved. |
+
+
+| Tue, 10 Nov 2026, latest amendment | "GPT-6 Luna low for routine extraction, with medium retained for analytical work" | Blanket medium spent reasoning on literal retrieval; blanket low could weaken interpretation | Use low for routine extraction/indexing; medium for guidance/Q&A interpretation, historical comparisons, ambiguity, reconciliation, valuation and final review. Mixed assignments use medium. Record actual effort and escalate unresolved source passages without rereading completed documents. Preserve full coverage and QA. Checkpoint at milestones and near 50% reported context usage; runtime compaction threshold remains unchanged. |
+
+
+Latest context amendment, 10 November 2026: user declined compaction. Do not initiate optional/manual compaction or configure a custom automatic threshold. Retain file-based milestone checkpoints and all source/model/visual checks. Built-in runtime context management remains unchanged; do not claim it has been disabled. This supersedes earlier optional compaction suggestions.

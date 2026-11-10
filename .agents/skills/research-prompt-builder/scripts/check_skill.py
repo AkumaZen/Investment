@@ -15,6 +15,13 @@ from report_references import validate_bundle
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 
 REQUIRED = [
+    # User-approved efficient-execution amendment; original plan body remains immutable.
+    ("SKILL.md", "research-report-efficient-execution.md", "shared full-coverage workflow is discoverable"),
+    ("assets/skeleton.txt", "reuse full hashed page extracts", "new prompts carry extraction reuse forward"),
+    ("assets/design-system.txt", "visible PDF contents", "PDF navigation survives printing"),
+    ("assets/design-system.txt", "product photos grouped by category/platform", "first-build product imagery"),
+    ("assets/visual-review.txt", "large blank regions", "density reviewed before delivery"),
+    ("assets/visual-review.txt", "all final PDF pages rendered", "final full visual QA preserved"),
     # SKILL.md workflow
     ("SKILL.md", "reference/plan.md", "plan is the source of truth"),
     ("SKILL.md", "Never overwrite an existing prompt", "V2 instead of overwrite"),
@@ -27,7 +34,7 @@ REQUIRED = [
     ("SKILL.md", "found vs missing list", "found vs missing feeds To find"),
     ("SKILL.md", "Always ask which documents to use", "later user change: ask documents first"),
     ("SKILL.md", "downloader currently returns 0 filings", "reason Screener is used"),
-    ("SKILL.md", "model: \"gpt-6.1-sol\"", "GPT-6.1 Sol workers"),
+    ("SKILL.md", "model: \"gpt-6-luna\"", "GPT-6 Luna workers"),
     ("SKILL.md", "Never substitute another worker model without user approval", "no Haiku fallback"),
     ("SKILL.md", "Never edit the agent files", "agent files stay unchanged"),
     ("SKILL.md", "stock-screen", "stock-screen relies on pinned agents"),

@@ -20,6 +20,8 @@ Details are in `research/companies/nse-augmont/v3/qa-notes.md`.
 
 ## The process
 
+User-approved extension, 10 November 2026: apply [full-coverage efficient execution](research-report-efficient-execution.md) alongside this quality process. It adds cached page extracts, evidence/guidance registers, compact handoffs, one reproducible pipeline and scoped revision work without reducing source coverage or QA. Include real category/product imagery, visible PDF contents/return links and a density review in the first design pass. The final PDF must have every page rendered and inspected at readable resolution; desktop/phone contact sheets remain required for HTML reports. The approved extension supersedes any conflicting instruction below to rerun research for cosmetic edits or to require repeated approval for already authorized exports. Existing user authorization governs git/export actions; do not commit or push merely because this historical checklist mentions committing.
+
 ### 1. Brief and resumability
 
 Fix the brief before writing: readers, output format, whether a rating or target is wanted, data refresh source, and git limits (push, files not to stage).

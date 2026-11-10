@@ -7,6 +7,8 @@ description: Write a finished company research PROMPT (not the research itself) 
 
 For this repository in Codex, read [CODEX.md](CODEX.md) before using the workflow below. It defines the local paths and records runtime requirements without replacing the research rules.
 
+For new prompts, also read [the user-approved efficient execution workflow](../../../learnings/concepts/research-report-efficient-execution.md). Carry its requirements into the later run using the skeleton and locked review section: full source coverage, reusable evidence, compact handoffs, first-build photos/navigation/density and one reproducible build. An existing prompt requested for execution is routed to stock-research without rebuilding it. This 10 November 2026 amendment supersedes the older default document subset, repeated document-choice question when standing scope applies, and mandatory fresh worker per unchanged document; all analytical and verification requirements remain.
+
 You write the prompt that a later research run will follow. You stop at the prompt. Building the report is a separate step the user starts.
 
 A good prompt reads like it was written by a senior analyst who has already read the filings: it knows what this business sells, where the debate is, which numbers conflict and what is still missing. A prompt that only swaps the company name into a template is a failure.
@@ -34,7 +36,7 @@ Never overwrite an existing prompt. If `<Company> Research Prompt.md` exists, sa
 - `reference/report-design/guide.md`: how to consult the three separately bundled design references. Read this router, then only the relevant manual chapters and JSON page records. The PDF is the reading/review copy. Do not paste the manuals or full JSON into the skill or generated prompt.
 - `reference/workers.md`: the worker briefs for step 3.
 - `reference/examples.md`: which saved prompt to read for which case.
-- Valuation modelling follows the `business-valuation-scenarios` skill (`~/.claude/skills/business-valuation-scenarios/SKILL.md`): its Step 1 metric table, Step 2 guidance-anchored scenarios, Step 3 three separate year-wise tables and Step 4 caveats. Read it there; do not copy it. Section 5 of every prompt points the research run to it.
+- Valuation modelling follows the installed `business-valuation-scenarios` skill (`C:\Users\Rohit Negi\.codex\skills\business-valuation-scenarios\SKILL.md`): its Step 1 metric table, Step 2 guidance-anchored scenarios, Step 3 three separate year-wise tables and Step 4 caveats. Read it there; do not copy it. Section 5 of every prompt must include this absolute path and require the research run to read the skill before building the valuation model. Verify the file exists before delivering the prompt; if unavailable, flag the missing dependency rather than inventing its instructions.
 
 ## Workflow
 
@@ -54,7 +56,7 @@ Sources, in this order:
 
 | Mode | When | Documents |
 |---|---|---|
-| Default | The user says nothing about scope | The latest annual report; the latest deck and transcript, plus any older call a guidance quote depends on; the latest results; the RHP if listed in the last 3 years; important announcements only; every upload |
+| Default | The user says nothing about scope | The latest annual report; all available historical decks and concall transcripts; the latest results; the RHP if listed in the last 3 years; important announcements only; every upload |
 | All documents | The user says "all documents", "use everything" or similar | Every annual report, deck, transcript and results filing on Screener and in the cache, plus important announcements, plus every upload |
 
 - Uploads are always added to the fetched set, never used instead of it, unless the user says to use only the uploads.
@@ -62,15 +64,15 @@ Sources, in this order:
 - In all-documents mode the newest document wins when numbers conflict, and the conflict is recorded.
 - Write the mode into the prompt's section 2, so the research run uses the same set.
 - Keep a found vs missing list in `prompt-notes.md`. Every missing item goes into the prompt's "To find" list.
-- Always ask which documents to use before any worker reads anything, unless the user already said in this request. Run `get_document_list` and check the cache first, then ask one question (AskUserQuestion) that lists what was found by type and period (annual reports, transcripts, decks, results, RHP) and offers: Default set (recommended, name the exact files), All documents, Pick specific ones, or "I'll upload my own" (uploads are added to the fetched set). Record the answer word for word in `prompt-notes.md`.
+- Always ask which documents to use before any worker reads anything, unless the request or the user's recorded standing scope already supplies the answer. The 10 November 2026 standing scope is the Default row above; discover and record its exact files without asking again. When scope is genuinely unresolved, run `get_document_list` and check the cache first, then ask one question (AskUserQuestion) listing what was found by type and period, offering Default set, All documents, Pick specific ones, or "I'll upload my own". Record an explicit answer word for word in `prompt-notes.md`.
 - After that one question, never stop for permission. Ask again only if the ticker is ambiguous or no documents can be found at all.
 
-### Step 3: Extract (GPT-6.1 Sol workers read, you do not)
+### Step 3: Extract (GPT-6 Luna workers read, you do not)
 
-- Spawn one worker per document with the `doc-reader` brief in `reference/workers.md`, and one `financials-scanner` worker for the Screener numbers. Use collaboration.spawn_agent with `model: "gpt-6.1-sol", reasoning_effort: "low", fork_turns: "none"` on every call. Run them in parallel.
-- Each worker writes its own `facts-<doc>.md`; you merge them into `facts.md`. Charts, tables and scanned pages are read from page images made by `python SKILL_DIR/scripts/pdf_pages.py <pdf> --render --pages 12-15 --out <dir>`.
-- If a GPT-6.1 Sol worker cannot be started, stop and tell the user. Never substitute another worker model without user approval.
-- Never edit the agent files in `.claude/agents/` (doc-reader, financials-scanner, evidence-verifier). Other skills such as stock-screen rely on their pinned model. Pass `model: "gpt-6.1-sol", reasoning_effort: "low", fork_turns: "none"` on each call instead, which overrides the pin for that call only.
+- Reuse hash-matched complete extracts/fact files and coverage records first. Assign unread/changed documents with the `doc-reader` brief in `reference/workers.md`; a bounded batch of short related documents may share a worker, preserving separate per-document outputs and full reading. Run a `financials-scanner` only when the financial snapshot needs refreshing. Use collaboration.spawn_agent with `model: "gpt-6-luna", fork_turns: "none"`; choose `reasoning_effort: "low"` for routine extraction/indexing and `reasoning_effort: "medium"` for analytical, ambiguous or verification work. Mixed assignments use medium. Run independent assignments in parallel within the available concurrency limit. Give each worker a compact task brief and relevant source paths, not the whole conversation or reference corpus.
+- Each worker writes its own `facts-<doc>.md` with source hash and pages-read/render-review coverage; merge new findings into `facts.md` and the evidence/guidance registers without duplicating prior entries. Cache extraction through `tools/report-workflow.py extract` before reading. Charts, tables and scanned pages are read from page images made by `python SKILL_DIR/scripts/pdf_pages.py <pdf> --render --pages 12-15 --out <dir>`.
+- If a GPT-6 Luna worker cannot be started, stop and tell the user. Never substitute another worker model without user approval.
+- Never edit the agent files in `.claude/agents/` (doc-reader, financials-scanner, evidence-verifier). Other skills such as stock-screen rely on their pinned model. Pass `model: "gpt-6-luna", fork_turns: "none"` and the task-appropriate low/medium effort on each call instead, which overrides the pin for that call only.
 - Do not read whole documents yourself. Read `facts.md`, and open a specific page only to settle a conflict or check a key number.
 
 ### Step 4: Diagnose (you, before drafting)
@@ -120,9 +122,9 @@ Why read; Business; Revenue model; Products; Customers; Moat; Capacity; Capex tr
 2. Recompute every derived number in the prompt (growth rates, margins, multiples, per-share values) by script, and fix any difference.
 3. Read the prompt as a sceptical fund manager: what obvious question about this company is unanswered? Fix it and re-run the checker.
 4. Follow-up replay: for every row of `reference/learnings.md`, name the prompt line that forces the answer. A row with no line is a FAIL.
-5. Accuracy: an `evidence-verifier` worker (model "gpt-6.1-sol") re-reads 10 random numbers from the prompt against their source pages.
+5. Accuracy: an `evidence-verifier` worker (model "gpt-6-luna") re-reads 10 random numbers from the prompt against their source pages.
 6. Adaptation: compare with the closest earlier prompt; 0A, structure, the 15 questions, rules, capex, triggers, anti-thesis, valuation metric and visual plan must truly differ, not only the names.
-7. Model check: confirm every worker ran on GPT-6.1 Sol with low reasoning effort and quote it.
+7. Model check: confirm every worker ran on GPT-6 Luna with the recorded task-appropriate effort: low for routine extraction/indexing, medium for analytical work, ambiguity and final verification. Quote actual settings rather than a blanket claim.
 8. Preservation: after ANY change to this skill (not per prompt), run `python SKILL_DIR/scripts/check_skill.py`. It must PASS, so no decision from `reference/plan.md` is ever dropped.
 9. Reference handoff: confirm the three original resources match their manifest, every selected physical source page exists, the prompt carries accessible local paths and one declared family, and the page plan fits this company. Confirm the later report instructions require the manual's model-first process, page storyboard, rendered-page inspection and reader decision test. The checker verifies structure and access; it cannot prove that the agent read the files or produced good analysis.
 
@@ -143,8 +145,8 @@ Paste the full prompt only if the user asks.
 
 - Simple words. Explain a term before using it.
 - No em dashes or en dashes in anything you write.
-- Workers run on GPT-6.1 Sol with low reasoning effort only. The prompt never names any other worker model.
+- Workers run on GPT-6 Luna: low for routine extraction/indexing, medium for analysis, ambiguous evidence and final review. The prompt never names any other worker model.
 - Facts in the prompt come from documents and carry source tags. Your own estimates are marked `[E]` with the working.
 - When the user corrects a prompt, append the lesson to `reference/learnings.md`: what they asked, why the prompt missed it, and the line that will force it next time.
 
-Codex worker calls must use reasoning_effort="low" and fork_turns="none" with full task context.
+Codex worker calls use fork_turns="none" with bounded task context; select reasoning_effort="low" for routine extraction or reasoning_effort="medium" for analytical/verification assignments. Escalate uncertain extracted passages to medium without repeating completed full reading.

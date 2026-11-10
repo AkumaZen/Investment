@@ -18,6 +18,10 @@ Answer each question for the whole report, and fix every NO before the final rep
 13. Does the report follow one declared reference family, with physical source-page precedents and justified departures documented?
 14. Can each material thesis be traced from primary evidence through an operating driver to earnings, cash, capital needs and a falsification signal?
 15. Were the reference patterns applied to actual page construction with readable typography, source notes and no unexplained geometry copied from text rectangles?
+16. Are clear, attributed issuer product/category photos grouped beside the relevant business discussion, or is a genuine non-applicability/missing-source limitation recorded?
+17. Do the visible PDF contents, bookmarks and Contents/Previous/Next controls resolve correctly after final pagination, without covering research? Check every destination.
+18. Have large blank regions, near-empty pages, table continuations and footer collisions been reviewed against the reference, without reducing readable typography or adding filler?
+19. Were all final PDF pages rendered and visually inspected at readable resolution, alongside desktop/phone checks, with final output/source hashes verified after all packaging mutations?
 
 Final review, done twice:
 - As an equity research analyst: is anything important missing, unsupported or misleading? Would a fund manager's first question be answered?

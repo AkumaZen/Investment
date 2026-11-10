@@ -1,8 +1,12 @@
 # Worker briefs
 
-Spawn with collaboration.spawn_agent: `model: "gpt-6.1-sol", reasoning_effort: "low", fork_turns: "none"`. Never another model. Paste the brief, filled in, as the prompt. Run workers in parallel. If a worker cannot start on GPT-6.1 Sol, stop and tell the user.
+Spawn with collaboration.spawn_agent: `model: "gpt-6-luna", fork_turns: "none"`. Set `reasoning_effort: "low"` for literal extraction, document/source/image indexing and routine formatting; set `reasoning_effort: "medium"` for guidance/Q&A interpretation, historical comparison, ambiguous evidence, reconciliation, valuation and final review. Mixed analytical assignments use medium. Never another model. Paste the bounded brief, filled in, as the prompt. Run independent workers in parallel. If a worker cannot start on GPT-6 Luna, stop and tell the user.
+
+10 November 2026 execution amendment: reuse complete, hash-matched document fact/coverage files before dispatch. A worker may read a bounded batch of related short documents, fully and with one output/coverage record per document. Provide only relevant requirements, source paths, existing extracts, output schema and unresolved questions; never the whole session. Reuse cached full page-labelled extracts produced by `tools/report-workflow.py extract` (repository root). Render every chart/table/scan needing visual reading, including text-rich pages. Full reading and source checks remain mandatory.
 
 ## doc-reader
+
+Use low for literal extraction; preserve every assigned page and all qualifications. Flag ambiguous tables, conflicting claims or interpretive questions with source pages for a medium pass. Use medium from the start if the assignment requires interpreting Q&A or reconciling evidence. Reuse complete reading; escalation targets the unresolved passages.
 
 ```
 You are reading one company document for an equity research prompt. Read it fully. Do not summarise loosely and do not add facts that are not on the page.
@@ -31,10 +35,13 @@ Group lines under these headings, writing "None found" under any empty heading:
 ## Analyst questions and management answers (verbatim, with speakers; calls only)
 ## Numbers that look inconsistent
 
-End with: PAGES READ: <n> of <total>. Reply with only the output path and that line.
+Record source SHA-256, extractor/reader version, physical pages read, rendered/OCR pages reviewed and gaps. Preserve important Q&A qualifications and contradictions in the guidance register. Do not treat an extract as proof of reading.
+End with: PAGES READ: <n> of <total>. Reply with only the output path, that line, material conflicts and unresolved blockers.
 ```
 
 ## financials-scanner
+
+Use low for literal data retrieval/transcription. Reconciliation, adjustments and interpretation require medium; arithmetic should be reproduced by script.
 
 ```
 Pull the financials for <company> (<ticker>) with the Screener tools: get_company_overview, get_financials, get_quarterly_results, get_shareholding_pattern, get_peer_comparison.
@@ -54,6 +61,8 @@ Reply with only the output path.
 
 ## evidence-verifier
 
+Use medium for verification and resolution of discrepancies; preserve required random-number checks and material-claim verification.
+
 ```
 Check these numbers against their source pages. For each, open the cited page (pdf_pages.py --text --pages <n>, or --render for tables) and report MATCH, MISMATCH (with the number actually on the page) or NOT FOUND.
 
@@ -62,4 +71,4 @@ Check these numbers against their source pages. For each, open the cited page (p
 Reply with a table: claim | cited | found | result.
 ```
 
-Codex worker calls must use reasoning_effort="low" and fork_turns="none" with full task context.
+Record the actual model and effort per assignment. Every worker uses fork_turns="none" with the relevant task context and file paths; choose low/medium using the task rules above.

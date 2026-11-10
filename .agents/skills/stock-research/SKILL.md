@@ -7,6 +7,8 @@ description: Research listed companies, assess financial quality, or build and u
 
 Paths below are relative to the repository root.
 
+For full company reports, read [the efficient execution workflow](../../../learnings/concepts/research-report-efficient-execution.md) before collecting documents. Reuse the existing prompt, hashed extracts, evidence/guidance registers and canonical model; keep the user's complete source scope and analytical/QA requirements. Start with `templates/research-run.md` and adapt `templates/report-build.json` to the real build. Include official product/category photos, visible clickable PDF contents/return links and reference-based page density in the first page plan. For cosmetic follow-ups load only the affected renderer/map and validated inputs; preserve final full PDF visual review.
+
 1. Resolve the exchange, ticker, analysis date, and research horizon from the request. Mark unresolved scope before drawing security-specific conclusions.
 2. Gather current filings, results, exchange disclosures, and relevant industry evidence under the root AGENTS.md research rules.
 3. Explain the business, competitive position, financial trends, governance, and capital allocation. Distinguish evidence from interpretation.

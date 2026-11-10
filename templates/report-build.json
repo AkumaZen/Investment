@@ -1,0 +1,13 @@
+{
+  "working_directory": ".",
+  "log": "qa/build-run.json",
+  "instructions": "Copy into the company's report-work folder. Adapt stages to actual scripts, including a separate pagination stage if used. Keep packaging before final verification. A successful command run still requires manual review of every final PDF page.",
+  "stages": [
+    {"name": "build-html-exhibits", "argv": ["python", "build_report.py"]},
+    {"name": "print-pdf", "argv": ["node", "print-report.mjs"]},
+    {"name": "package-navigation-and-manifest", "argv": ["python", "package_report.py"]},
+    {"name": "desktop-phone-visual-check", "argv": ["node", "../../../../tools/report-visual-check/review.mjs", "../report/report.html"]},
+    {"name": "verify-delivery", "argv": ["python", "verify_delivery.py"]}
+  ],
+  "outputs": ["../report/report.html", "../report/amend-company-name.pdf", "../report/source-manifest.json", "../report/verification-summary.json"]
+}
