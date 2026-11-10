@@ -76,6 +76,8 @@ FY30_TARGET = 1500.0
 BASE_FY27 = V["fy26_revenue"] * 1.50
 BASE_G = (FY30_TARGET / BASE_FY27) ** (1 / 3) - 1
 BEAR_FY27 = V["h1_revenue_op"] + 2 * V["q2_revenue_op"]
+BULL_FY30 = V["fy26_revenue"] * 1.25 ** 4          # top of the guided 20-25% FY26-FY30 CAGR [deck p23]
+BULL_G = (BULL_FY30 / BASE_FY27) ** (1 / 3) - 1
 
 YEARS = ["FY27", "FY28", "FY29", "FY30"]
 SCENARIOS = {
@@ -104,15 +106,28 @@ SCENARIOS = {
     },
     "Bull": {
         "fy27_revenue": BASE_FY27,
-        "growth": [None, BASE_G, BASE_G, BASE_G],
-        "margin": [0.19, 0.20, 0.20, 0.20],
+        "growth": [None, BULL_G, BULL_G, BULL_G],
+        "margin": [0.19, 0.205, 0.21, 0.21],
         "wc_days": [110.0, 100.0, 92.0, MGMT_WC_DAYS],
         "multiple": 18.0,
         "stake_equity": 9000.0, "stake_discount": 0.15,
-        "why": ("Same earnings and working capital as the base case (revenue is never modelled above guidance); 18x, the peer median, "
-                "for a proven regulated-market exporter that collects its cash; stake at the top of management's range, Rs 9,000 cr, less tax and a 15% discount"),
+        "why": ("Guidance realised at the top of its range (business-valuation-scenarios Step 2): FY27 +50% to Rs {fy27:,.0f} cr at 19%, then {gb:.2f}% a year to "
+                "Rs {fy30b:,.0f} cr in FY30, the 25% end of the guided 20-25% FY26-FY30 CAGR [deck p23], from triggers already disclosed and not in the base build: "
+                "Viatris Clarithromycin (USD 6.0 mn launch value [deck p21]), the 100-150 registrations not yet earning [call p12] and the two unnamed customers due to sign in Q4 [call p13-p14]; "
+                "margin 20.5% to 21% as staff-cost leverage continues (employee cost fell from 20.93% to 16.23% of revenue in Q2 [deck p28]); working capital as the base; "
+                "18x, the peer median, for a proven exporter that collects its cash; stake at Rs 9,000 cr less tax and a 15% discount"),
     },
 }
+
+# ---- Screener history for the year-wise tables (consolidated, Rs cr) [Screener, fetched 9 Nov 2026] ----
+HIST = {
+    "FY25": {"sales": 574.0, "expenses": 581.0, "op": -7.0, "opm": -0.012, "other_income": 292.0, "interest": 3.0,
+             "depreciation": 24.0, "pbt": 258.0, "tax_pct": 0.03, "pat": 250.0, "eps": 41.32, "pat_prev": 421.0},
+    "FY26": {"sales": 649.0, "expenses": 602.0, "op": 47.0, "opm": 0.07, "other_income": 36.0, "interest": 1.0,
+             "depreciation": 31.0, "pbt": 51.0, "tax_pct": 0.15, "pat": 43.0, "eps": 4.97, "pat_prev": 250.0},
+}
+SHARES_PRE = 8.8361558   # 8,83,61,558 after the 8 Oct 2026 conversion, before the 56,00,000 warrants [E, Inferred]
+YEAR_END = {"FY27": date(2027, 3, 31), "FY28": date(2028, 3, 31), "FY29": date(2029, 3, 31), "FY30": date(2030, 3, 31)}
 
 
 def project(s):
@@ -184,7 +199,62 @@ def readout(base_gap, mgmt_verdict):
 
 def fmt_why(s):
     return s["why"].format(fy27=s["fy27_revenue"], g27=(s["fy27_revenue"] / V["fy26_revenue"] - 1) * 100,
-                           wc=NWC_DAYS_SEP26, g=BASE_G * 100, mwc=MGMT_WC_DAYS)
+                           wc=NWC_DAYS_SEP26, g=BASE_G * 100, mwc=MGMT_WC_DAYS, gb=BULL_G * 100, fy30b=BULL_FY30)
+
+
+def skill_table(s, rows, v):
+    """Year-wise table in the business-valuation-scenarios Step 3 layout: Screener P&L rows for FY25-FY26 actual and
+    FY27E-FY30E, plus PAT growth, PAT margin, target price per year (pre and post dilution) and return / CAGR vs CMP.
+    Target price at 31 Mar of each year = (multiple, held flat, x that year's EBITDA + net cash at that year end
+    + stake net [+ warrant cash, post-dilution only]) / shares. Net cash rolls forward by each year's FCF."""
+    stake = v["stake"]["net"]
+    cols, cash = [], v["net_cash_mar27"]
+    prev_pat = HIST["FY26"]["pat"]
+    for i, r in enumerate(rows):
+        if i > 0:
+            cash += r["fcf"]
+        ev = s["multiple"] * r["ebitda"]
+        tp_post = (ev + cash + V["warrant_cash_to_come"] + stake) / V["shares_diluted"]
+        tp_pre = (ev + cash + stake) / SHARES_PRE
+        yrs = (YEAR_END[r["year"]] - TODAY).days / 365.0
+        other, interest = OTHER_INCOME_YEAR, FINANCE_COST_YEAR
+        cols.append({"year": r["year"] + "E", "sales": r["revenue"], "expenses": r["revenue"] - r["ebitda"], "op": r["ebitda"],
+                     "opm": r["margin"], "other_income": other, "interest": interest, "depreciation": r["depreciation"],
+                     "pbt": r["pbt"], "tax_pct": TAX_RATE, "pat": r["pat"], "eps_pre": r["pat"] / SHARES_PRE,
+                     "eps_post": r["eps_diluted"], "pat_growth": r["pat"] / prev_pat - 1, "pat_margin": r["pat"] / r["revenue"],
+                     "net_cash_end": cash, "ev": ev, "tp_pre": tp_pre, "tp_post": tp_post,
+                     "return_post": tp_post / V["price"] - 1, "years": yrs,
+                     "cagr_post": (tp_post / V["price"]) ** (1 / yrs) - 1 if yrs >= 1 else None})
+        prev_pat = r["pat"]
+    hist = [dict(year=y + "A", eps_pre=h["eps"], eps_post=None, pat_growth=h["pat"] / h["pat_prev"] - 1, pat_margin=h["pat"] / h["sales"],
+                 **{k: h[k] for k in ("sales", "expenses", "op", "opm", "other_income", "interest", "depreciation", "pbt", "tax_pct", "pat")})
+            for y, h in HIST.items()]
+    return {"multiple": s["multiple"], "multiple_flat": True, "hist": hist, "proj": cols}
+
+
+def skill_md(name, t):
+    allc = t["hist"] + t["proj"]
+    def row(label, key, fmt, hist_ok=True):
+        cells = []
+        for c in allc:
+            x = c.get(key)
+            cells.append("-" if x is None or (not hist_ok and c in t["hist"]) else fmt(x))
+        return f"| {label} | " + " | ".join(cells) + " |"
+    cr = lambda x: f"{x:,.1f}"
+    p1 = lambda x: f"{x*100:.1f}%"
+    rs = lambda x: f"{x:,.0f}"
+    out = [f"### {name} ({t['multiple']:.0f}x EV/EBITDA, held flat FY27E-FY30E)", "",
+           "| Rs cr | " + " | ".join(c["year"] for c in allc) + " |", "|---|" + "---|" * len(allc),
+           row("Sales", "sales", cr), row("Expenses", "expenses", cr), row("Operating Profit", "op", cr), row("OPM %", "opm", p1),
+           row("Other Income", "other_income", cr), row("Interest", "interest", cr), row("Depreciation", "depreciation", cr),
+           row("Profit before tax", "pbt", cr), row("Tax %", "tax_pct", p1), row("Net Profit", "pat", cr),
+           row("EPS pre-dilution (Rs)", "eps_pre", lambda x: f"{x:.2f}"), row("EPS post-dilution (Rs)", "eps_post", lambda x: f"{x:.2f}"),
+           row("PAT Growth %", "pat_growth", p1), row("PAT Margin %", "pat_margin", p1),
+           row("Net cash at year end", "net_cash_end", cr, False),
+           row("Target price pre-dilution (Rs)", "tp_pre", rs, False), row("Target price post-dilution (Rs)", "tp_post", rs, False),
+           row("Return vs CMP Rs 349 (post-dilution)", "return_post", lambda x: f"{x*100:+.0f}%", False),
+           row("CAGR vs CMP to 31 Mar (post-dilution)", "cagr_post", lambda x: f"{x*100:+.1f}%", False), ""]
+    return out
 
 
 def main():
@@ -195,7 +265,7 @@ def main():
         "finance_cost_year": FINANCE_COST_YEAR, "depreciation_base": DEPRECIATION_BASE,
         "dep_rate_on_new": DEP_RATE_ON_NEW, "capex": CAPEX},
         "derived": {"net_cash_sep26": NET_CASH_SEP26, "nwc_sep26": NWC_SEP26, "nwc_days_sep26": NWC_DAYS_SEP26,
-                    "mgmt_wc_days": MGMT_WC_DAYS, "base_fy27": BASE_FY27, "base_growth_fy28_30": BASE_G,
+                    "mgmt_wc_days": MGMT_WC_DAYS, "base_fy27": BASE_FY27, "base_growth_fy28_30": BASE_G, "bull_growth_fy28_30": BULL_G,
                     "bear_fy27": BEAR_FY27,
                     "receivable_days": V["receivables_sep26"] / (2 * V["h1_revenue_line"]) * 365,
                     "inventory_days": V["inventory_sep26"] / (2 * V["h1_revenue_line"]) * 365,
@@ -237,6 +307,27 @@ def main():
                f"- Stake: 7.8% x Rs {s['stake_equity']:,.0f} cr = Rs {st['gross']:.2f} cr; tax {STAKE_TAX*100:.2f}% on the gain over Rs 32 cr = Rs {st['tax']:.2f} cr; after tax Rs {st['after_tax']:.2f} cr; less {st['discount']*100:.0f}% = Rs {st['net']:.2f} cr.",
                f"- Equity at Mar-27 Rs {v['equity_mar27']:,.2f} cr / {v['shares']:.4f} cr shares = Rs {v['value_ps_mar27']:.2f}; today **Rs {v['value_ps']:.0f}** ({v['vs_price']*100:+.1f}% vs Rs {V['price']:.0f}).",
                f"- Per share today: core Rs {v['parts_ps']['core']:.0f}, cash Rs {v['parts_ps']['cash']:.0f}, stake Rs {v['parts_ps']['stake']:.0f}.", ""]
+
+    # Year-wise tables per the business-valuation-scenarios skill, Steps 3 and 4
+    out["skill_tables"] = {}
+    md += ["## Year-wise scenario tables (business-valuation-scenarios layout)", "",
+           "FY25A and FY26A are Screener consolidated actuals; FY27E-FY30E are the model. FY26 sales are Rs 649 cr on Screener (consolidated)"
+           " but the guidance base is the deck's Rs 635.89 cr operating revenue, so FY27E growth is measured from Rs 635.89 cr.",
+           "Target price at 31 Mar of each year = multiple x that year's EBITDA + net cash at that year end (rolled by free cash flow) + stake after tax and discount"
+           " [+ Rs 82.32 cr warrant cash, post-dilution only], divided by 8,83,61,558 shares (pre-dilution) or 9,39,61,558 (post-dilution). Not discounted; CAGR is from 9 Nov 2026.", ""]
+    for name, s in SCENARIOS.items():
+        sc = out["scenarios"][name]
+        t = skill_table(s, sc["rows"], sc["value"])
+        out["skill_tables"][name] = t
+        md += skill_md(name, t)
+    md += ["### Key assumptions and caveats", "",
+           "- Guided by management: FY27 revenue +50% (Rs 953.84 cr) and about 19% EBITDA margin [deck p3, call p4]; Rs 1,500 cr+ revenue by FY30 at a 20-25% CAGR [deck p23]; working capital about Rs 350 cr at Rs 1,500 cr [call p13]; Rs 250 cr capex [call p1-p2].",
+           "- Estimated by us [E]: every bear line; the bull's top-of-range growth and 20.5-21% margins; FY28-FY29 path of the base; other income Rs 30 cr and interest Rs 4 cr a year (H1 FY27 x 2); depreciation (Rs 30.7 cr plus 8% of new capex); tax 25.17% (section 115BAA).",
+           "- Dilution: 56,00,000 warrants (issue price Rs 196, Rs 147 a warrant still to pay, Rs 82.32 cr in all) are assumed converted, giving 9,39,61,558 shares post-dilution; pre-dilution uses 8,83,61,558 shares after the 8 Oct 2026 conversion (inferred from filings; the printed count is 8,69,61,558).",
+           "- The multiple is held flat across years within each scenario (10x, 15x, 18x). That is a simplification: a real bear case usually also compresses the multiple and a bull case expands it, and a business that turns its cash flow positive would likely re-rate.",
+           "- The headline value today applies the same multiple one year ahead (FY28 EBITDA at 31 Mar 2027) and discounts it to 9 Nov 2026 at 13%; the year-end target prices above are trailing and undiscounted, so the two are not the same number.",
+           f"- Bull FY30 revenue of Rs {BULL_FY30:,.0f} cr is above the Rs 1,000-1,200 cr current plants carry; it needs Samba exports after EU/PIC/S approval and the full Rs 250 cr capex on time [deck p8, call p3, call p8, E].",
+           "- Not investment advice. I am not a licensed financial advisor. These are scenario bands, not forecasts.", ""]
 
     base, bear, bull = (out["scenarios"][k]["value"] for k in ("Base", "Bear", "Bull"))
     out["readout"] = readout(base["vs_price"], mgmt_verdict)

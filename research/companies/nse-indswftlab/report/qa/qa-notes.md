@@ -126,3 +126,15 @@ Screenshots: `report/qa/pw/` (desktop-p01..p21.png at 1280px, mobile-p01..p21.pn
 - Hierarchy: the S1 answer bar, readout and value range are visible first on desktop and in the first phone screens.
 - Repeated data: Exhibit 1 and the S17 table overlap on purpose (summary vs audit); no other duplicate visuals found.
 - Fixed in this pass: none beyond the lede. The sticky contents rail was tried and reverted per the house rule.
+
+### Valuation restructure, 10 Nov 2026
+
+- What changed:
+  - S20 now has the three year-wise scenario tables required by the business-valuation-scenarios skill (Exhibits 51-53), each in Screener P&L layout with FY25A and FY26A beside FY27E-FY30E.
+  - A key assumptions and caveats list follows the tables.
+  - The bull case was moved to the top of the guided 20-25% CAGR; its value went from Rs 504 to Rs 519.
+- Checks:
+  - `python -I -X utf8 model/valuation.py`, then `python -I -X utf8 report/build.py`, gives: sections 21, exhibits 59, base 425.8, bear 246.32, bull 519.41, readout ATTRACTIVE.
+  - `node review.mjs`: desktop 21 pages and mobile 21 pages, 0 console errors, automated checks clean.
+  - By eye: S20 at 1280 px is clean; at 390 px the 7-column tables fit with no sideways scroll; in the value-range chart, the bull label sits above its dot with no overlap.
+  - PDF: 34 A4 pages; pages 29-32 (S20) were rendered and inspected, and every table is unbroken.

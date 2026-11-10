@@ -50,24 +50,111 @@ Management guidance exactly: FY27 +50% to Rs 954 cr at 19%, then 16.29% a year t
 
 ## Bull
 
-Same earnings and working capital as the base case (revenue is never modelled above guidance); 18x, the peer median, for a proven regulated-market exporter that collects its cash; stake at the top of management's range, Rs 9,000 cr, less tax and a 15% discount.
+Guidance realised at the top of its range (business-valuation-scenarios Step 2): FY27 +50% to Rs 954 cr at 19%, then 17.63% a year to Rs 1,552 cr in FY30, the 25% end of the guided 20-25% FY26-FY30 CAGR [deck p23], from triggers already disclosed and not in the base build: Viatris Clarithromycin (USD 6.0 mn launch value [deck p21]), the 100-150 registrations not yet earning [call p12] and the two unnamed customers due to sign in Q4 [call p13-p14]; margin 20.5% to 21% as staff-cost leverage continues (employee cost fell from 20.93% to 16.23% of revenue in Q2 [deck p28]); working capital as the base; 18x, the peer median, for a proven exporter that collects its cash; stake at Rs 9,000 cr less tax and a 15% discount.
 
 | Year | Revenue | Growth | EBITDA | Margin | Depreciation | PBT | PAT | EPS diluted (Rs) | NWC days | NWC | Capex | FCF |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | FY27 | 953.84 | 50.0% | 181.23 | 19.0% | 35.5 | 171.7 | 128.5 | 13.68 | 110 | 287.5 | 60 | 15.2 (H2 FY27 (Oct-Mar)) |
-| FY28 | 1,109.21 | 16.3% | 221.84 | 20.0% | 45.1 | 202.7 | 151.7 | 16.15 | 100 | 303.9 | 120 | 60.4 (FY28) |
-| FY29 | 1,289.89 | 16.3% | 257.98 | 20.0% | 54.7 | 229.3 | 171.6 | 18.26 | 92 | 325.1 | 120 | 85.0 (FY29) |
-| FY30 | 1,500.00 | 16.3% | 300.00 | 20.0% | 56.3 | 269.7 | 201.8 | 21.48 | 85 | 350.0 | 20 | 213.2 (FY30) |
+| FY28 | 1,121.99 | 17.6% | 230.01 | 20.5% | 45.1 | 210.9 | 157.8 | 16.80 | 100 | 307.4 | 120 | 63.0 (FY28) |
+| FY29 | 1,319.79 | 17.6% | 277.16 | 21.0% | 54.7 | 248.5 | 185.9 | 19.79 | 92 | 332.7 | 120 | 95.4 (FY29) |
+| FY30 | 1,552.47 | 17.6% | 326.02 | 21.0% | 56.3 | 295.7 | 221.3 | 23.55 | 85 | 362.2 | 20 | 228.0 (FY30) |
 
-- Core EV: 18x FY28E EBITDA Rs 221.84 cr = Rs 3,993.15 cr.
+- Core EV: 18x FY28E EBITDA Rs 230.01 cr = Rs 4,140.15 cr.
 - Net cash at Mar-27: Rs 348.36 + Rs 20.58 (Oct conversion) + Rs 15.18 (H2 FY27 FCF) = Rs 384.12 cr; plus warrant cash Rs 82.32 cr.
 - Stake: 7.8% x Rs 9,000 cr = Rs 702.00 cr; tax 14.95% on the gain over Rs 32 cr = Rs 100.16 cr; after tax Rs 601.84 cr; less 15% = Rs 511.56 cr.
-- Equity at Mar-27 Rs 4,971.15 cr / 9.3962 cr shares = Rs 529.06; today **Rs 504** (+44.6% vs Rs 349).
-- Per share today: core Rs 405, cash Rs 47, stake Rs 52.
+- Equity at Mar-27 Rs 5,118.15 cr / 9.3962 cr shares = Rs 544.71; today **Rs 519** (+48.8% vs Rs 349).
+- Per share today: core Rs 420, cash Rs 47, stake Rs 52.
+
+## Year-wise scenario tables (business-valuation-scenarios layout)
+
+FY25A and FY26A are Screener consolidated actuals; FY27E-FY30E are the model. FY26 sales are Rs 649 cr on Screener (consolidated) but the guidance base is the deck's Rs 635.89 cr operating revenue, so FY27E growth is measured from Rs 635.89 cr.
+Target price at 31 Mar of each year = multiple x that year's EBITDA + net cash at that year end (rolled by free cash flow) + stake after tax and discount [+ Rs 82.32 cr warrant cash, post-dilution only], divided by 8,83,61,558 shares (pre-dilution) or 9,39,61,558 (post-dilution). Not discounted; CAGR is from 9 Nov 2026.
+
+### Bear (10x EV/EBITDA, held flat FY27E-FY30E)
+
+| Rs cr | FY25A | FY26A | FY27E | FY28E | FY29E | FY30E |
+|---|---|---|---|---|---|---|
+| Sales | 574.0 | 649.0 | 890.8 | 997.6 | 1,117.4 | 1,251.4 |
+| Expenses | 581.0 | 602.0 | 734.9 | 823.1 | 921.8 | 1,032.4 |
+| Operating Profit | -7.0 | 47.0 | 155.9 | 174.6 | 195.5 | 219.0 |
+| OPM % | -1.2% | 7.0% | 17.5% | 17.5% | 17.5% | 17.5% |
+| Other Income | 292.0 | 36.0 | 30.0 | 30.0 | 30.0 | 30.0 |
+| Interest | 3.0 | 1.0 | 4.0 | 4.0 | 4.0 | 4.0 |
+| Depreciation | 24.0 | 31.0 | 35.5 | 45.1 | 54.7 | 56.3 |
+| Profit before tax | 258.0 | 51.0 | 146.4 | 155.5 | 166.8 | 188.7 |
+| Tax % | 3.0% | 15.0% | 25.2% | 25.2% | 25.2% | 25.2% |
+| Net Profit | 250.0 | 43.0 | 109.5 | 116.4 | 124.8 | 141.2 |
+| EPS pre-dilution (Rs) | 41.32 | 4.97 | 12.40 | 13.17 | 14.13 | 15.98 |
+| EPS post-dilution (Rs) | - | - | 11.66 | 12.38 | 13.29 | 15.03 |
+| PAT Growth % | -40.6% | -82.8% | 154.7% | 6.2% | 7.3% | 13.1% |
+| PAT Margin % | 43.6% | 6.6% | 12.3% | 11.7% | 11.2% | 11.3% |
+| Net cash at year end | - | - | 364.4 | 371.3 | 392.1 | 526.2 |
+| Target price pre-dilution (Rs) | - | - | 244 | 266 | 292 | 334 |
+| Target price post-dilution (Rs) | - | - | 238 | 259 | 284 | 323 |
+| Return vs CMP Rs 349 (post-dilution) | - | - | -32% | -26% | -19% | -8% |
+| CAGR vs CMP to 31 Mar (post-dilution) | - | - | - | -19.3% | -8.3% | -2.3% |
+
+### Base (15x EV/EBITDA, held flat FY27E-FY30E)
+
+| Rs cr | FY25A | FY26A | FY27E | FY28E | FY29E | FY30E |
+|---|---|---|---|---|---|---|
+| Sales | 574.0 | 649.0 | 953.8 | 1,109.2 | 1,289.9 | 1,500.0 |
+| Expenses | 581.0 | 602.0 | 772.6 | 887.4 | 1,031.9 | 1,200.0 |
+| Operating Profit | -7.0 | 47.0 | 181.2 | 221.8 | 258.0 | 300.0 |
+| OPM % | -1.2% | 7.0% | 19.0% | 20.0% | 20.0% | 20.0% |
+| Other Income | 292.0 | 36.0 | 30.0 | 30.0 | 30.0 | 30.0 |
+| Interest | 3.0 | 1.0 | 4.0 | 4.0 | 4.0 | 4.0 |
+| Depreciation | 24.0 | 31.0 | 35.5 | 45.1 | 54.7 | 56.3 |
+| Profit before tax | 258.0 | 51.0 | 171.7 | 202.7 | 229.3 | 269.7 |
+| Tax % | 3.0% | 15.0% | 25.2% | 25.2% | 25.2% | 25.2% |
+| Net Profit | 250.0 | 43.0 | 128.5 | 151.7 | 171.6 | 201.8 |
+| EPS pre-dilution (Rs) | 41.32 | 4.97 | 14.54 | 17.17 | 19.42 | 22.84 |
+| EPS post-dilution (Rs) | - | - | 13.68 | 16.15 | 18.26 | 21.48 |
+| PAT Growth % | -40.6% | -82.8% | 198.8% | 18.1% | 13.1% | 17.6% |
+| PAT Margin % | 43.6% | 6.6% | 13.5% | 13.7% | 13.3% | 13.5% |
+| Net cash at year end | - | - | 384.1 | 444.5 | 529.5 | 742.8 |
+| Target price pre-dilution (Rs) | - | - | 397 | 472 | 543 | 639 |
+| Target price post-dilution (Rs) | - | - | 382 | 453 | 520 | 609 |
+| Return vs CMP Rs 349 (post-dilution) | - | - | +9% | +30% | +49% | +75% |
+| CAGR vs CMP to 31 Mar (post-dilution) | - | - | - | +20.6% | +18.1% | +17.9% |
+
+### Bull (18x EV/EBITDA, held flat FY27E-FY30E)
+
+| Rs cr | FY25A | FY26A | FY27E | FY28E | FY29E | FY30E |
+|---|---|---|---|---|---|---|
+| Sales | 574.0 | 649.0 | 953.8 | 1,122.0 | 1,319.8 | 1,552.5 |
+| Expenses | 581.0 | 602.0 | 772.6 | 892.0 | 1,042.6 | 1,226.4 |
+| Operating Profit | -7.0 | 47.0 | 181.2 | 230.0 | 277.2 | 326.0 |
+| OPM % | -1.2% | 7.0% | 19.0% | 20.5% | 21.0% | 21.0% |
+| Other Income | 292.0 | 36.0 | 30.0 | 30.0 | 30.0 | 30.0 |
+| Interest | 3.0 | 1.0 | 4.0 | 4.0 | 4.0 | 4.0 |
+| Depreciation | 24.0 | 31.0 | 35.5 | 45.1 | 54.7 | 56.3 |
+| Profit before tax | 258.0 | 51.0 | 171.7 | 210.9 | 248.5 | 295.7 |
+| Tax % | 3.0% | 15.0% | 25.2% | 25.2% | 25.2% | 25.2% |
+| Net Profit | 250.0 | 43.0 | 128.5 | 157.8 | 185.9 | 221.3 |
+| EPS pre-dilution (Rs) | 41.32 | 4.97 | 14.54 | 17.86 | 21.04 | 25.04 |
+| EPS post-dilution (Rs) | - | - | 13.68 | 16.80 | 19.79 | 23.55 |
+| PAT Growth % | -40.6% | -82.8% | 198.8% | 22.8% | 17.8% | 19.0% |
+| PAT Margin % | 43.6% | 6.6% | 13.5% | 14.1% | 14.1% | 14.3% |
+| Net cash at year end | - | - | 384.1 | 447.1 | 542.5 | 770.5 |
+| Target price pre-dilution (Rs) | - | - | 471 | 577 | 684 | 809 |
+| Target price post-dilution (Rs) | - | - | 451 | 551 | 652 | 770 |
+| Return vs CMP Rs 349 (post-dilution) | - | - | +29% | +58% | +87% | +121% |
+| CAGR vs CMP to 31 Mar (post-dilution) | - | - | - | +38.9% | +29.9% | +26.3% |
+
+### Key assumptions and caveats
+
+- Guided by management: FY27 revenue +50% (Rs 953.84 cr) and about 19% EBITDA margin [deck p3, call p4]; Rs 1,500 cr+ revenue by FY30 at a 20-25% CAGR [deck p23]; working capital about Rs 350 cr at Rs 1,500 cr [call p13]; Rs 250 cr capex [call p1-p2].
+- Estimated by us [E]: every bear line; the bull's top-of-range growth and 20.5-21% margins; FY28-FY29 path of the base; other income Rs 30 cr and interest Rs 4 cr a year (H1 FY27 x 2); depreciation (Rs 30.7 cr plus 8% of new capex); tax 25.17% (section 115BAA).
+- Dilution: 56,00,000 warrants (issue price Rs 196, Rs 147 a warrant still to pay, Rs 82.32 cr in all) are assumed converted, giving 9,39,61,558 shares post-dilution; pre-dilution uses 8,83,61,558 shares after the 8 Oct 2026 conversion (inferred from filings; the printed count is 8,69,61,558).
+- The multiple is held flat across years within each scenario (10x, 15x, 18x). That is a simplification: a real bear case usually also compresses the multiple and a bull case expands it, and a business that turns its cash flow positive would likely re-rate.
+- The headline value today applies the same multiple one year ahead (FY28 EBITDA at 31 Mar 2027) and discounts it to 9 Nov 2026 at 13%; the year-end target prices above are trailing and undiscounted, so the two are not the same number.
+- Bull FY30 revenue of Rs 1,552 cr is above the Rs 1,000-1,200 cr current plants carry; it needs Samba exports after EU/PIC/S approval and the full Rs 250 cr capex on time [deck p8, call p3, call p8, E].
+- Not investment advice. I am not a licensed financial advisor. These are scenario bands, not forecasts.
 
 ## Readout
 
-Value range Rs 246 (bear) / Rs 426 (base) / Rs 504 (bull) vs price Rs 349.
+Value range Rs 246 (bear) / Rs 426 (base) / Rs 519 (bull) vs price Rs 349.
 Base is +22.0% vs price: **ATTRACTIVE** (ATTRACTIVE at +20% or more, STRETCHED at -20% or worse; management verdict WATCH, so no cap applies).
 
 ## What the base readout rests on

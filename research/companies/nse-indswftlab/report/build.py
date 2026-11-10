@@ -1060,15 +1060,15 @@ wf = C.waterfall([("Core business, 15x FY28", bv["core_ev"], "up"), ("Net cash, 
                  "Sum of the parts, base case, Rs cr", dec=0, w=900, h=280)
 vr = C.value_range([("Bear", bear_v, C.RED, "10x, stake at half"), ("12x multiple", _fv("multiple_12"), C.GREY, "base, lower multiple"),
                     ("No stake", _fv("no_stake"), C.GREY, "base without the stake"), ("Base", base_v, C.PRIMARY, "guidance, 15x"),
-                    ("Bull", bull_v, C.GREEN, "18x, stake at 15% off")], D["price"], "Value per share by case vs the price", w=900, lo=150, hi=550)
+                    ("Bull", bull_v, C.GREEN, "25% CAGR to FY30, 18x")], D["price"], "Value per share by case vs the price", w=900, lo=150, hi=550)
 sg = VAL["sensitivity"]
 sens = table(["FY28 EBITDA, Rs cr"] + [f"{m:g}x" for m in sg["multiples"]],
              [[f0(r_["fy28_ebitda"])] + [((f0(v_), "bold") if (abs(r_["fy28_ebitda"] - 221.84) < 0.1 and m_ == 15) else (f0(v_), "neg" if v_ < D["price"] else "")) for m_, v_ in zip(sg["multiples"], r_["values"])] for r_ in sg["rows"]],
              "std", caption="Value per share by FY28 EBITDA and multiple (price Rs 349; below price in red)", source=src("model"))
 scen = table(["", "Bear", "Base", "Bull"], [
     ["FY27 revenue, Rs cr", f0(ASM["Bear"]["fy27_revenue"]), f0(ASM["Base"]["fy27_revenue"]), f0(ASM["Bull"]["fy27_revenue"])],
-    ["Margin", "17.5%", "19% to 20%", "19% to 20%"],
-    ["Growth FY28 to FY30", "12%", pc(DER["base_growth_fy28_30"], 1), pc(DER["base_growth_fy28_30"], 1)],
+    ["Margin", "17.5%", "19% to 20%", "19% to 21%"],
+    ["Growth FY28 to FY30", "12%", pc(DER["base_growth_fy28_30"], 1), pc(DER["bull_growth_fy28_30"], 1)],
     ["Working-capital days", "118", "110 to 85", "110 to 85"],
     ["FY28 EBITDA, Rs cr", f0(ROWS["Bear"][1]["ebitda"]), f0(B28["ebitda"]), f0(ROWS["Bull"][1]["ebitda"])],
     ["Multiple", "10x", "15x", "18x"],
@@ -1076,6 +1076,51 @@ scen = table(["", "Bear", "Base", "Bull"], [
     [("Value per share", "bold"), (f"Rs {f0(bear_v)}", "bold"), (f"Rs {f0(base_v)}", "bold"), (f"Rs {f0(bull_v)}", "bold")],
     ["vs price", (pc(V["Bear"]["vs_price"], 0, True), "neg"), pc(V["Base"]["vs_price"], 0, True), pc(V["Bull"]["vs_price"], 0, True)]],
     "std", caption="Bear, base and bull side by side", source=src("model"))
+ST = VAL["skill_tables"]
+
+
+def skill_tbl(name):
+    t = ST[name]
+    cols = t["hist"] + t["proj"]
+    n0 = lambda v: "-" if v is None else f1(v)
+    p1 = lambda v: "-" if v is None else pc(v, 1)
+    rs = lambda v: "-" if v is None else f0(v)
+    eps = lambda v: "-" if v is None else f"{v:.2f}"
+    def neg(v, txt):
+        return (txt, "neg") if (v is not None and v < 0) else txt
+    def row(label, key, fmt, bold=False):
+        cells = [neg(c.get(key), fmt(c.get(key))) for c in cols]
+        if bold:
+            cells = [(c, "bold") if isinstance(c, str) else (c[0], c[1] + " bold") for c in cells]
+        return [(label, "bold") if bold else label] + cells
+    rows = [row("Sales", "sales", n0), row("Expenses", "expenses", n0), row("Operating profit", "op", n0), row("OPM", "opm", p1),
+            row("Other income", "other_income", n0), row("Interest", "interest", n0), row("Depreciation", "depreciation", n0),
+            row("Profit before tax", "pbt", n0), row("Tax rate", "tax_pct", p1), row("Net profit", "pat", n0, True),
+            row("EPS pre-dilution, Rs", "eps_pre", eps), row("EPS post-dilution, Rs", "eps_post", eps),
+            row("PAT growth", "pat_growth", p1), row("PAT margin", "pat_margin", p1), row("Net cash at year end", "net_cash_end", n0),
+            row("Target price pre-dilution, Rs", "tp_pre", rs), row("Target price post-dilution, Rs", "tp_post", rs, True),
+            row(f"Return vs CMP Rs {f0(D['price'])}", "return_post", lambda v: "-" if v is None else pc(v, 0, True)),
+            row("CAGR vs CMP to 31 Mar", "cagr_post", lambda v: "-" if v is None else pc(v, 1, True))]
+    return table(["Rs cr"] + [c["year"] for c in cols], rows, "fin",
+                 caption=f"{name}: {t['multiple']:g}x EV/EBITDA, held flat FY27E to FY30E (Screener layout; FY25A and FY26A consolidated actuals)",
+                 source=src("model", "scr"))
+
+
+skill_note = ("<p>Target price at 31 Mar of each year = multiple x that year's EBITDA + net cash at that year end (rolled forward by free cash flow) "
+              "+ the stake after tax and discount [+ Rs 82.32 cr of warrant money, post-dilution only], divided by 8,83,61,558 shares before dilution "
+              "or 9,39,61,558 after. These are not discounted; CAGR runs from 9 Nov 2026, so FY27E (under five months away) shows no CAGR. "
+              "FY27E growth is measured from the deck's Rs 635.89 cr operating revenue, not Screener's Rs 649 cr.</p>")
+skill_caveats = """<h3>Key assumptions and caveats</h3>
+<ul class="small">
+<li>Guided by management: FY27 revenue +50% (Rs 953.84 cr) at about 19% EBITDA margin [deck p3, call p4]; Rs 1,500 cr+ revenue by FY30 at a 20-25% CAGR [deck p23]; working capital about Rs 350 cr at Rs 1,500 cr [call p13]; Rs 250 cr capex [call p1-p2].</li>
+<li>Estimated by us [E]: every bear line; the bull's top-of-range 25% CAGR and 20.5-21% margins; the base path for FY28-FY29; other income Rs 30 cr and interest Rs 4 cr a year (H1 FY27 x 2); depreciation (Rs 30.7 cr plus 8% of new capex); tax 25.17% (section 115BAA).</li>
+<li>Bull triggers already disclosed: Viatris Clarithromycin supply of USD 6.0 mn [deck p21]; 100-150 registrations planned [call p12]; two customers expected to sign in Q4 [call p13-p14]; staff cost down from 20.93% to 16.23% of revenue [deck p28].</li>
+<li>Bull FY30 revenue of Rs 1,552 cr is above the Rs 1,000-1,200 cr current plants carry; it needs Samba exports after EU/PIC/S approval and the full Rs 250 cr capex on time [deck p8, call p3, call p8, E].</li>
+<li>Dilution: 56,00,000 warrants (issue price Rs 196, Rs 147 a warrant still to pay, Rs 82.32 cr in all) are assumed converted, giving 9,39,61,558 shares; pre-dilution uses 8,83,61,558 shares after the 8 Oct 2026 conversion (inferred from filings; the printed count is 8,69,61,558).</li>
+<li>The multiple is held flat across years in each case (10x, 15x, 18x). That is a simplification: a real bear case usually also compresses the multiple, and a bull case expands it.</li>
+<li>The headline values (Rs {bear} / {base} / {bull}) apply the same multiple to FY28 EBITDA at 31 Mar 2027 and discount to today at 13%; the year-end target prices above are undiscounted, so the two do not match.</li>
+<li>Not investment advice. We are not licensed financial advisors. These are scenario bands, not forecasts.</li>
+</ul>""".format(bear=f0(bear_v), base=f0(base_v), bull=f0(bull_v))
 Q15 = [
     "FY26 base: Rs 635.89 cr operating revenue; pre-merger formulation accounts Not Disclosed.",
     "Q2 growth was 50.16%, not 15.15%; the third arithmetic slip in two quarters, all understating.",
@@ -1109,6 +1154,12 @@ watch = table(["Date", "Signal", "Confirms the base", "Breaks it"], [
     ["During 2027", "Samba EU/PIC/S; new CDMO customers", "Approval; a named customer", "Delay past FY27"],
     ["By about Mar 2028", "Warrant conversion", "56 lakh converted at Rs 196", "Lapse, as in issue 1"]], "std", caption="Dated signals to watch")
 s20 = f"""{scen}
+<h3>Year by year: bear, base and bull</h3>
+{skill_note}
+{skill_tbl("Bear")}
+{skill_tbl("Base")}
+{skill_tbl("Bull")}
+{skill_caveats}
 {exhibit("The core business is about 80% of base value; cash and the stake are the rest", wf, src("model", ("deck", 30), ("deck", 6)),
          f"Discounted to today at 13% for {VAL['assumptions']['years_to_value_date']:.2f} years (9 Nov 2026 to 31 Mar 2027) and divided by 9,39,61,558 shares: Rs {f0(base_v)} a share [E].")}
 {exhibit("The price sits between the bear case and the cases without the stake or at a lower multiple", vr, src("model"))}
