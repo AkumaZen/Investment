@@ -1,0 +1,30 @@
+[
+  {
+    "file": "research/companies/nse-augmont/v3/navigation.json",
+    "width": 1280,
+    "index_links_clicked": 25,
+    "page_controls_clicked": 75,
+    "passed": true
+  },
+  {
+    "file": "research/companies/nse-augmont/v3/navigation.json",
+    "width": 390,
+    "index_links_clicked": 25,
+    "page_controls_clicked": 75,
+    "passed": true
+  },
+  {
+    "file": "research/companies/nse-concordbio/report/navigation.json",
+    "width": 1280,
+    "index_links_clicked": 21,
+    "page_controls_clicked": 63,
+    "passed": true
+  },
+  {
+    "file": "research/companies/nse-concordbio/report/navigation.json",
+    "width": 390,
+    "index_links_clicked": 21,
+    "page_controls_clicked": 63,
+    "passed": true
+  }
+]
