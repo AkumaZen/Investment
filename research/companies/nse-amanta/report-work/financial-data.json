@@ -1,0 +1,399 @@
+{
+  "company": "Amanta Healthcare Limited",
+  "symbol": "NSE: AMANTA; BSE: 544502",
+  "basis": "Standalone. FY26 annual report states that the company has no subsidiaries, joint ventures or associates and does not prepare consolidated financial statements.",
+  "currency": "INR",
+  "statement_unit": "INR crore unless specified; FY26 annual report statements are INR lakhs and converted by dividing by 100.",
+  "sources": [
+    {
+      "id": "AR26",
+      "title": "Amanta Healthcare Annual Report 2025-26",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/Annual-Report/amanta-annual-report-2025-26.pdf",
+      "accessed": "2026-11-10",
+      "physical_pages": "52-54 (printed pp. 98-102)",
+      "scope": "Audited FY26/FY25 financial statements and statement of changes in equity"
+    },
+    {
+      "id": "SCR",
+      "title": "Screener.in AMANTA standalone full analysis",
+      "url": "https://www.screener.in/company/AMANTA/",
+      "fetched_at": "2026-11-09T20:30:36Z",
+      "scope": "Annual historical financials, quarterly results, latest balance sheet and ratios; figures generally rounded to nearest crore"
+    },
+    {
+      "id": "PRICE",
+      "title": "NSE official daily bhavcopy",
+      "url": "https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_09112026.csv",
+      "date": "2026-11-09",
+      "scope": "NSE official bhavcopy: AMANTA EQ close ₹202.15, last ₹202.50, VWAP ₹201.41"
+    }
+  ],
+  "annual_financials_crore": [
+    {
+      "fy": "FY20",
+      "revenue": 184,
+      "ebitda": 37,
+      "ebitda_margin_pct": 20,
+      "interest": 38,
+      "depreciation": 16,
+      "pbt": -15,
+      "pat": -19,
+      "eps_inr": -7.03,
+      "cfo": 38,
+      "cfi": -9,
+      "cff": -37,
+      "source": "SCR; rounded crore"
+    },
+    {
+      "fy": "FY21",
+      "revenue": 171,
+      "ebitda": 38,
+      "ebitda_margin_pct": 22,
+      "interest": 40,
+      "depreciation": 17,
+      "pbt": -18,
+      "pat": -22,
+      "eps_inr": -8.14,
+      "cfo": 31,
+      "cfi": -13,
+      "cff": -18,
+      "source": "SCR; rounded crore"
+    },
+    {
+      "fy": "FY22",
+      "revenue": 225,
+      "ebitda": 52,
+      "ebitda_margin_pct": 23,
+      "other_income": 76,
+      "interest": 49,
+      "depreciation": 17,
+      "pbt": 62,
+      "pat": 55,
+      "eps_inr": 20.54,
+      "cfo": 62,
+      "cfi": -6,
+      "cff": -50,
+      "source": "SCR; rounded crore. Other income is unusually high and the underlying cause has not been verified in the available dataset."
+    },
+    {
+      "fy": "FY23",
+      "revenue": 259.13,
+      "ebitda": 53,
+      "ebitda_margin_pct": 20,
+      "interest": 35.0,
+      "depreciation": 18.0,
+      "pbt": 3.0,
+      "pat": -2.0,
+      "eps_inr": -0.79,
+      "cfo": 43.0,
+      "cfi": -7.0,
+      "cff": -42.0,
+      "fcf_screener": 36.0,
+      "source": "SCR; rounded crore (standalone Operating Profit row; distinct from EBITDA including other income)"
+    },
+    {
+      "fy": "FY24",
+      "revenue": 280.34,
+      "ebitda": 58,
+      "ebitda_margin_pct": 21,
+      "interest": 34.0,
+      "depreciation": 20.0,
+      "pbt": 5.0,
+      "pat": 4.0,
+      "eps_inr": 1.35,
+      "cfo": 58.0,
+      "cfi": -10.0,
+      "cff": -46.0,
+      "fcf_screener": 46.0,
+      "source": "SCR; rounded crore (standalone Operating Profit row; distinct from EBITDA including other income)"
+    },
+    {
+      "fy": "FY25",
+      "revenue": 274.7082,
+      "ebitda": 59.6685,
+      "ebitda_margin_pct": 21.72,
+      "company_reported_ebitda_including_other_income": 61.0537,
+      "interest": 27.9479,
+      "depreciation": 18.3989,
+      "pbt": 14.7069,
+      "pat": 10.5007,
+      "eps_inr": 3.71,
+      "cfo": 46.62,
+      "cfi": -24.4725,
+      "cff": -23.4663,
+      "capex_cash": 20.774,
+      "other_income": 1.3852,
+      "source": "AR26 precise values; operating EBITDA equals revenue from operations less operating expenses before finance/depreciation; company reported EBITDA includes other income; EPS from audited Note 41"
+    },
+    {
+      "fy": "FY26",
+      "revenue": 287.6767,
+      "ebitda": 59.8585,
+      "ebitda_margin_pct": 20.8,
+      "company_reported_ebitda_including_other_income": 63.2292,
+      "interest": 20.7457,
+      "depreciation": 18.73,
+      "pbt": 21.1247,
+      "pat": 14.8752,
+      "eps_inr": 4.33,
+      "cfo": 48.4464,
+      "cfi": -93.6089,
+      "cff": 125.9522,
+      "capex_cash": 80.1864,
+      "other_income": 3.3707,
+      "source": "AR26 precise values; operating EBITDA equals revenue from operations less operating expenses before finance/depreciation; company reported EBITDA includes other income; EPS from audited Note 41"
+    }
+  ],
+  "quarterly_financials_crore": [
+    {
+      "quarter": "Q1 FY25",
+      "revenue": 68.1,
+      "ebitda": 13.4,
+      "ebitda_margin_pct": 19.68,
+      "interest": 9.45,
+      "depreciation": 4.6,
+      "pbt": -0.5,
+      "pat": -0.36,
+      "eps_inr": -0.13
+    },
+    {
+      "quarter": "Q2 FY25",
+      "revenue": 66.73,
+      "ebitda": 13.88,
+      "ebitda_margin_pct": 20.8,
+      "interest": 6.32,
+      "depreciation": 4.6,
+      "pbt": 3.17,
+      "pat": 2.26,
+      "eps_inr": 0.78
+    },
+    {
+      "quarter": "Q3 FY25",
+      "revenue": 67.81,
+      "ebitda": 15.06,
+      "ebitda_margin_pct": 22.21,
+      "interest": 5.9,
+      "depreciation": 4.51,
+      "pbt": 5.52,
+      "pat": 4.28,
+      "eps_inr": 1.48
+    },
+    {
+      "quarter": "Q4 FY25",
+      "revenue": 72.06,
+      "ebitda": 18.96,
+      "ebitda_margin_pct": 26.31,
+      "interest": 6.28,
+      "depreciation": 4.69,
+      "pbt": 8.15,
+      "pat": 5.96,
+      "eps_inr": 2.07
+    },
+    {
+      "quarter": "Q1 FY26",
+      "revenue": 65.31,
+      "ebitda": 14.9,
+      "ebitda_margin_pct": 22.81,
+      "interest": 6.29,
+      "depreciation": 4.64,
+      "pbt": 4.93,
+      "pat": 3.51,
+      "eps_inr": 1.22
+    },
+    {
+      "quarter": "Q2 FY26",
+      "revenue": 70.89,
+      "ebitda": 14.65,
+      "ebitda_margin_pct": 20.67,
+      "interest": 5.15,
+      "depreciation": 4.66,
+      "pbt": 2.28,
+      "pat": 1.21,
+      "eps_inr": 0.31
+    },
+    {
+      "quarter": "Q3 FY26",
+      "revenue": 74.49,
+      "ebitda": 15.36,
+      "ebitda_margin_pct": 20.62,
+      "interest": 5.06,
+      "depreciation": 4.67,
+      "pbt": 6.31,
+      "pat": 4.63,
+      "eps_inr": 1.19
+    },
+    {
+      "quarter": "Q4 FY26",
+      "revenue": 76.99,
+      "ebitda": 14.96,
+      "ebitda_margin_pct": 19.43,
+      "interest": 4.25,
+      "depreciation": 4.75,
+      "pbt": 7.62,
+      "pat": 5.53,
+      "eps_inr": 1.42
+    },
+    {
+      "quarter": "Q1 FY27",
+      "revenue": 68.8,
+      "ebitda": 14.54,
+      "ebitda_margin_pct": 21.13,
+      "interest": 6.0,
+      "depreciation": 4.69,
+      "pbt": 4.49,
+      "pat": 3.31,
+      "eps_inr": 0.85
+    },
+    {
+      "quarter": "Q2 FY27",
+      "revenue": 83.13,
+      "ebitda": 17.19,
+      "ebitda_margin_pct": 20.68,
+      "interest": 5.84,
+      "depreciation": 5.28,
+      "pbt": 6.83,
+      "pat": 4.86,
+      "eps_inr": 1.25
+    }
+  ],
+  "h1_fy27_crore": {
+    "revenue": 151.9356,
+    "ebitda": 31.73,
+    "pbt": 11.3185,
+    "pat": 8.1714,
+    "cfo": 21.9359,
+    "cfi": -48.3622,
+    "cff": -52.918,
+    "capex_cash": 37.5961,
+    "cash_and_equivalents_end": 1.666,
+    "source": "Q2 FY27 official board outcome, PDF pages 3-6; ₹lakhs converted to crore. EBITDA is sum of Screener quarter operating profit; primary P&L cost build supports c.₹31.73cr."
+  },
+  "balance_sheet_crore": {
+    "FY23_2023-03-31": {
+      "equity_share_capital": 27,
+      "reserves": 36,
+      "borrowings_screener": 216,
+      "source": "SCR; rounded crore; borrowings field may include lease liabilities"
+    },
+    "FY24_2024-03-31": {
+      "equity_share_capital": 27,
+      "reserves": 39,
+      "borrowings_screener": 211,
+      "source": "SCR; rounded crore; borrowings field may include lease liabilities"
+    },
+    "FY25_2025-03-31": {
+      "total_assets": 381.7585,
+      "equity_share_capital": 28.8294,
+      "other_equity": 67.5589,
+      "borrowings_total": 194.9961,
+      "cash_and_equivalents": 0.2206,
+      "cwip": 6.548,
+      "source": "AR26, printed p.98 / PDF p.52; INR lakhs converted to crore"
+    },
+    "FY26_2026-03-31": {
+      "total_assets": 557.9807,
+      "equity_share_capital": 38.8294,
+      "other_equity": 181.3816,
+      "borrowings_noncurrent": 161.9706,
+      "borrowings_current": 72.4475,
+      "borrowings_total": 234.4182,
+      "cash_and_equivalents": 81.0103,
+      "bank_deposits_other": 11.6265,
+      "cwip": 81.5177,
+      "source": "AR26, printed p.98 / PDF p.52; INR lakhs converted to crore"
+    },
+    "H1FY27_2026-09-30": {
+      "total_assets": 528.9506,
+      "equity_share_capital": 38.8294,
+      "other_equity": 189.2985,
+      "borrowings_noncurrent": 48.9888,
+      "borrowings_current": 145.5694,
+      "borrowings_total": 194.5582,
+      "lease_liabilities_noncurrent": 7.4343,
+      "lease_liabilities_current": 1.8912,
+      "cash_and_equivalents": 1.666,
+      "bank_deposits_other": 25.1308,
+      "cwip": 0.081,
+      "source": "Q2 FY27 official board outcome, PDF page 4; ₹lakhs converted to crore"
+    }
+  },
+  "share_count": {
+    "face_value_inr": 10,
+    "issued_and_paid_up_shares_FY26_and_H1FY27": 38829351,
+    "weighted_average_shares_FY26": 34336000,
+    "weighted_average_shares_FY25": 28270000,
+    "diluted_weighted_average_shares_FY26": 34336000,
+    "note": "Exact 38,829,351 issued shares from FY26 Annual Report Note 18; the Q2 FY27 statement reports unchanged capital. No dilutive potential ordinary shares; diluted EPS equals basic EPS. Weighted average share counts are as per AR Note 41.",
+    "source": "AR26 Note 18, printed p. 112 / PDF p. 59; AR26 Note 41, printed p. 135 / PDF p. 70; Q2 FY27 results PDF p. 3"
+  },
+  "market_snapshot": {
+    "price_inr_close_2026-11-09": 202.15,
+    "market_cap_crore_approx": 784.94,
+    "basis": "₹202.15 x 3.8829351 crore issued shares, both as of 2026-11-09 close",
+    "screener_snapshot_price_inr": 202,
+    "screener_market_cap_crore": 778,
+    "valuation_note": "No target valuation supplied; price and market cap snapshot are reference inputs only."
+  },
+  "returns_and_working_capital": {
+    "screener_roce_pct": {
+      "FY23": 13,
+      "FY24": 14,
+      "FY25": 15,
+      "FY26": 12
+    },
+    "annual_report_FY26_roce_pct": 11.1,
+    "annual_report_FY26_roe_pct": 8.9,
+    "annual_report_FY26_net_working_capital_days": 141,
+    "screener_inventory_days": {
+      "FY23": 247,
+      "FY24": 309,
+      "FY25": 464,
+      "FY26": 530
+    },
+    "screener_debtor_days": {
+      "FY23": 75,
+      "FY24": 63,
+      "FY25": 67,
+      "FY26": 55
+    },
+    "screener_cash_conversion_cycle_days": {
+      "FY23": 193,
+      "FY24": 243,
+      "FY25": 336,
+      "FY26": 354
+    },
+    "note": "Company annual-report and Screener ratio definitions / calculations differ; use source-specific series rather than merging."
+  },
+  "related_party_transactions_fy26": {
+    "kmp_compensation_crore": {
+      "Bhavesh_G_Patel": 1.08,
+      "Paras_Mehta": 0.8503,
+      "Shailesh_M_Shah": 0.1218
+    },
+    "vehicle_lease_rent_paid_to_Bhavesh_G_Patel_crore": 0.288,
+    "purchase_of_land_from_Bhavesh_G_Patel_crore": 1.0246,
+    "csr_expense_to_Health_and_Care_Foundation_crore": 0.1191,
+    "year_end_kmp_payables_crore": {
+      "Bhavesh_G_Patel": 0.0444,
+      "Paras_Mehta": 0.0834
+    },
+    "source": "AR26 Note 42, printed pp. 135-136 / PDF pp. 70-71; all FY26 amounts in ₹lakhs converted to crore. Board report says transactions were ordinary-course and arm's length; no material non-ordinary/non-arm's-length contracts reported."
+  },
+  "debt_reconciliation": {
+    "FY26_borrowings_excluding_leases_crore": 234.4182,
+    "FY26_leases_crore": 10.0252,
+    "FY26_screener_borrowings_rounded_crore": 244,
+    "FY25_borrowings_excluding_leases_crore": 194.9961,
+    "FY25_leases_crore": 8.9404,
+    "FY25_screener_borrowings_rounded_crore": 204,
+    "H1FY27_borrowings_excluding_leases_crore": 194.5582,
+    "H1FY27_leases_crore": 9.3255,
+    "H1FY27_screener_borrowings_rounded_crore": 204,
+    "interpretation": "Screener borrowings aggregate includes lease liabilities; the audited balance-sheet borrowings line excludes lease liabilities. Management's ~₹190cr call comment is a rough figure and is close to but below the official ₹194.56cr H1 amount; the reason for the difference is not disclosed."
+  },
+  "comparables": {
+    "status": "No peer valuation numbers included",
+    "rationale": "Gufic Biosciences, Ahlcon Parenterals and Denis Chem Lab require verification of current operating mix, accounting period and standalone/consolidated basis before comparison; no peer figure is inferred from an unverified dataset."
+  },
+  "annual_financials_note": "FY23 and FY24 ebitda fields are Screener standalone Operating Profit (operating EBITDA, excluding other income), rounded to whole crore. These differ from company EBITDA including other income."
+}

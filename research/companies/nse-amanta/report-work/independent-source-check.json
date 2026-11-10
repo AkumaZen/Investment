@@ -1,0 +1,60 @@
+{
+  "as_of": "2026-11-10",
+  "sample_reviewed": 10,
+  "overall": "all requested sample values reconcile to official company PDFs",
+  "sources": [
+    {
+      "id": "ar_fy26",
+      "file": "docs/amanta-annual-report-2025-26.pdf",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/Annual-Report/amanta-annual-report-2025-26.pdf"
+    },
+    {
+      "id": "q2_outcome",
+      "file": "docs/amanta-q2-fy27-board-outcome.pdf",
+      "printed_page_status": "scanned exhibit has no printed page numbers"
+    },
+    {
+      "id": "q2_presentation",
+      "file": "docs/amanta-investor-presentation-fy-2026-27-q2.pdf",
+      "printed_page_status": "slide deck; PDF page 5 is slide 3"
+    },
+    {
+      "id": "monitor_sep26",
+      "file": "docs/amanta-monitoring-agency-report-september-2026.pdf",
+      "printed_page_status": "PDF p.9 has printed page 9"
+    }
+  ],
+  "checks": [
+    {"claim": "FY26 revenue ₹287.6767 crore", "status": "PASS", "source": "ar_fy26", "pdf_page": 52, "printed_pages": [98, 99], "source_value_lakh": 28767.67, "class": "fact"},
+    {"claim": "FY26 PAT ₹14.8752 crore", "status": "PASS", "source": "ar_fy26", "pdf_page": 52, "printed_pages": [98, 99], "source_value_lakh": 1487.52, "class": "fact"},
+    {"claim": "FY26 CFO ₹48.4464 crore", "status": "PASS", "source": "ar_fy26", "pdf_page": 53, "printed_pages": [100, 101], "source_value_lakh": 4844.64, "class": "fact"},
+    {"claim": "FY26 capex cash outflow ₹80.1864 crore", "status": "PASS", "source": "ar_fy26", "pdf_page": 53, "printed_pages": [100, 101], "source_value_lakh": 8018.64, "class": "fact", "scope": "cash-flow payments for PPE, intangible assets, CWIP and capital advances"},
+    {"claim": "Latest debt ₹194.5582 crore; leases ₹9.3255 crore; cash ₹1.666 crore", "status": "PASS_WITH_DERIVATIONS", "source": "q2_outcome", "pdf_page": 4, "printed_pages": null, "source_values_lakh": {"noncurrent_borrowings": 4898.88, "current_borrowings": 14556.94, "noncurrent_lease_liabilities": 743.43, "current_lease_liabilities": 189.12, "cash_and_cash_equivalents": 166.60}, "derived_values_lakh": {"borrowings": 19455.82, "lease_liabilities": 932.55}, "class": "reported balance-sheet facts and arithmetic sums", "scope": "cash and cash equivalents only; excludes other bank balances"},
+    {"claim": "IPO utilization ₹74.9543 crore", "status": "PASS", "source": "monitor_sep26", "pdf_page": 9, "printed_pages": [9], "source_value_lakh": 7495.43, "class": "fact based on certificate and management undertaking", "caveat": "monitoring report states utilization is based on certified information/undertaking and does not independently audit or verify"},
+    {"claim": "Solar project cost ₹34.8 crore", "status": "PASS", "source": "ar_fy26", "pdf_page": 12, "printed_pages": [20, 21], "source_value_crore": 34.8, "class": "management-reported project economics", "related_reported_values_crore": {"equity_outlay": 5.8, "expected_annual_savings": 9.0}, "payback_years": 3.6, "payback_basis": "pre-interest"},
+    {"claim": "Shares outstanding 38,829,351", "status": "PASS", "source": "ar_fy26", "pdf_page": 59, "printed_pages": [112, 113], "class": "fact", "date": "2026-03-31"},
+    {"claim": "SteriPort capacity 11.6 crore bottles", "status": "PASS", "source": "q2_presentation", "pdf_page": 5, "printed_pages": null, "slide": 3, "class": "management claim"},
+    {"claim": "SVP capacity target 31.7 crore units", "status": "PASS", "source": "q2_presentation", "pdf_page": 5, "printed_pages": null, "slide": 3, "class": "management estimate/target", "target_timing": "Q1 FY28"}
+  ],
+  "auditor_name": {
+    "verified_exact_legal_name": "Price Waterhouse Chartered Accountants LLP",
+    "firm_registration_number": "012754N/N500016",
+    "source": "docs/amanta-annual-report-2025-26.pdf",
+    "locations": ["PDF p.15, printed pp.26–27", "PDF p.52, printed pp.98–99"],
+    "correction": "Use the exact name in formal firm identification. PwC is shorthand, not the legal firm name in the report."
+  },
+  "draft_audit": {
+    "file": "report_content.py",
+    "verified_annual_report_citations": [
+      {"claim": "FY26 utilization history", "status": "CORRECTED", "source": "ar_fy26", "pdf_page": 10, "printed_pages": [16, 17], "correction": "LVP FY24 visual chart value is 93%, not 94%; remaining LVP/SVP/SteriPort series match."},
+      {"claim": "Solar project economics", "status": "CORRECTED", "source": "ar_fy26", "pdf_page": 12, "printed_pages": [20, 21], "correction": "Physical p.10 is manufacturing infrastructure; solar economics are on p.12."},
+      {"claim": "FY26 geographic external revenue", "status": "CORRECTED", "source": "ar_fy26", "pdf_page": 75, "printed_pages": [144, 145], "correction": "Geographic revenue table appears on p.75. p.74 supports customer concentration wording."},
+      {"claim": "Issued share count", "status": "CORRECTED", "source": "ar_fy26", "pdf_page": 59, "printed_pages": [112, 113], "correction": "Direct 38,829,351 share count in Note 18."},
+      {"claim": "No subsidiaries, joint ventures or associates", "status": "PASS", "source": "ar_fy26", "pdf_page": 54, "printed_pages": [102, 103]},
+      {"claim": "CMD remuneration", "status": "PASS", "source": "ar_fy26", "pdf_page": 42, "printed_pages": [78, 79]},
+      {"claim": "Related-party disclosure", "status": "PASS", "source": "ar_fy26", "pdf_page": 70, "printed_pages": [134, 135]},
+      {"claim": "Disaggregated product revenue", "status": "PASS", "source": "ar_fy26", "pdf_page": 65, "printed_pages": [124, 125]}
+    ],
+    "format_note": "Current report source notes show physical PDF page numbers only. Printed-page pair is required if the report must render both locators beside each annual-report citation; mapping varies by spread and must not be calculated with a single formula."
+  }
+}

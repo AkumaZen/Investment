@@ -1,0 +1,677 @@
+{
+  "status": "Completed with explicitly disclosed source/model limitations",
+  "pdf_pages": 33,
+  "exhibits": 47,
+  "bookmarks": 20,
+  "pdf_links": 440,
+  "source_records": 32,
+  "source_hashes_verified": true,
+  "output_hashes_verified": true,
+  "pages": [
+    {
+      "page": 1,
+      "text_characters": 3812,
+      "links": 38,
+      "numbering_pass": true
+    },
+    {
+      "page": 2,
+      "text_characters": 1584,
+      "links": 8,
+      "numbering_pass": true
+    },
+    {
+      "page": 3,
+      "text_characters": 2572,
+      "links": 10,
+      "numbering_pass": true
+    },
+    {
+      "page": 4,
+      "text_characters": 2921,
+      "links": 13,
+      "numbering_pass": true
+    },
+    {
+      "page": 5,
+      "text_characters": 2741,
+      "links": 13,
+      "numbering_pass": true
+    },
+    {
+      "page": 6,
+      "text_characters": 2944,
+      "links": 15,
+      "numbering_pass": true
+    },
+    {
+      "page": 7,
+      "text_characters": 3145,
+      "links": 15,
+      "numbering_pass": true
+    },
+    {
+      "page": 8,
+      "text_characters": 3541,
+      "links": 13,
+      "numbering_pass": true
+    },
+    {
+      "page": 9,
+      "text_characters": 2608,
+      "links": 10,
+      "numbering_pass": true
+    },
+    {
+      "page": 10,
+      "text_characters": 3560,
+      "links": 13,
+      "numbering_pass": true
+    },
+    {
+      "page": 11,
+      "text_characters": 2817,
+      "links": 12,
+      "numbering_pass": true
+    },
+    {
+      "page": 12,
+      "text_characters": 3282,
+      "links": 15,
+      "numbering_pass": true
+    },
+    {
+      "page": 13,
+      "text_characters": 3554,
+      "links": 17,
+      "numbering_pass": true
+    },
+    {
+      "page": 14,
+      "text_characters": 3291,
+      "links": 13,
+      "numbering_pass": true
+    },
+    {
+      "page": 15,
+      "text_characters": 3270,
+      "links": 18,
+      "numbering_pass": true
+    },
+    {
+      "page": 16,
+      "text_characters": 3067,
+      "links": 13,
+      "numbering_pass": true
+    },
+    {
+      "page": 17,
+      "text_characters": 3695,
+      "links": 18,
+      "numbering_pass": true
+    },
+    {
+      "page": 18,
+      "text_characters": 3354,
+      "links": 8,
+      "numbering_pass": true
+    },
+    {
+      "page": 19,
+      "text_characters": 2187,
+      "links": 8,
+      "numbering_pass": true
+    },
+    {
+      "page": 20,
+      "text_characters": 2306,
+      "links": 10,
+      "numbering_pass": true
+    },
+    {
+      "page": 21,
+      "text_characters": 2815,
+      "links": 10,
+      "numbering_pass": true
+    },
+    {
+      "page": 22,
+      "text_characters": 3679,
+      "links": 10,
+      "numbering_pass": true
+    },
+    {
+      "page": 23,
+      "text_characters": 3616,
+      "links": 15,
+      "numbering_pass": true
+    },
+    {
+      "page": 24,
+      "text_characters": 3909,
+      "links": 21,
+      "numbering_pass": true
+    },
+    {
+      "page": 25,
+      "text_characters": 3540,
+      "links": 11,
+      "numbering_pass": true
+    },
+    {
+      "page": 26,
+      "text_characters": 2329,
+      "links": 6,
+      "numbering_pass": true
+    },
+    {
+      "page": 27,
+      "text_characters": 2377,
+      "links": 6,
+      "numbering_pass": true
+    },
+    {
+      "page": 28,
+      "text_characters": 2368,
+      "links": 6,
+      "numbering_pass": true
+    },
+    {
+      "page": 29,
+      "text_characters": 3265,
+      "links": 7,
+      "numbering_pass": true
+    },
+    {
+      "page": 30,
+      "text_characters": 2654,
+      "links": 8,
+      "numbering_pass": true
+    },
+    {
+      "page": 31,
+      "text_characters": 3781,
+      "links": 33,
+      "numbering_pass": true
+    },
+    {
+      "page": 32,
+      "text_characters": 3073,
+      "links": 3,
+      "numbering_pass": true
+    },
+    {
+      "page": 33,
+      "text_characters": 2847,
+      "links": 24,
+      "numbering_pass": true
+    }
+  ],
+  "print_footer_collisions": 0,
+  "print_page_overflow": 0,
+  "desktop_mobile_automated_issues": 0,
+  "financial_independent_check": {
+    "source_model": "../report/valuation-model.json",
+    "source": "build_report.py make_model formula independently recalculated; build script not executed",
+    "status": "all 9 rows reconcile within 1e-8 â‚¹ crore or â‚¹/share",
+    "market_close_inr": 202.15,
+    "issued_shares_crore": 3.8829351,
+    "opening_net_debt_including_leases_crore": 202.2177,
+    "working_capital": {
+      "march_2026_crore": 80.9638,
+      "september_2026_crore": 89.7662,
+      "base_fy27_increment_crore": 14.3756821918,
+      "base_fy28_increment_crore": 25.495890411,
+      "base_fy29_increment_crore": 11.7373170822,
+      "method": "FY27 target uses March WC plus full FY sales increment at scenario days; only difference to actual Sep opening WC is charged in H2; later years use incremental sales"
+    },
+    "scenario_fy28_values": {
+      "Bear": {
+        "sales_crore": 380.6767,
+        "operating_ebitda_crore": 79.942107,
+        "net_debt_crore": 180.5489832732183,
+        "value_per_share": 179.9706087610843
+      },
+      "Base": {
+        "sales_crore": 413.6767,
+        "operating_ebitda_crore": 103.419175,
+        "net_debt_crore": 161.04887513639355,
+        "value_per_share": 331.40383285407125
+      },
+      "Bull": {
+        "sales_crore": 454.937302,
+        "operating_ebitda_crore": 122.83307154,
+        "net_debt_crore": 150.25198868178612,
+        "value_per_share": 499.08385733725345
+      }
+    },
+    "checks": [
+      {
+        "scenario": "Bear",
+        "period": "FY27E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      },
+      {
+        "scenario": "Bear",
+        "period": "FY28E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      },
+      {
+        "scenario": "Bear",
+        "period": "FY29E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      },
+      {
+        "scenario": "Base",
+        "period": "FY27E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      },
+      {
+        "scenario": "Base",
+        "period": "FY28E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      },
+      {
+        "scenario": "Base",
+        "period": "FY29E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      },
+      {
+        "scenario": "Bull",
+        "period": "FY27E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      },
+      {
+        "scenario": "Bull",
+        "period": "FY28E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      },
+      {
+        "scenario": "Bull",
+        "period": "FY29E",
+        "sales_equals_legacy_plus_incremental": 0.0,
+        "op_equals_sales_times_margin": 0.0,
+        "pbt_bridge": 0.0,
+        "pat_after_tax": 0.0,
+        "ev_bridge": 0.0,
+        "equity_bridge": 0.0,
+        "price_per_share": 0.0
+      }
+    ],
+    "limitations": [
+      "The workbook is a conditional P&L and net-debt scenario bridge, not a balanced three-statement forecast.",
+      "FY27 cash bridge is H2 only and uses accrual finance cost and tax after subtracting H1 accruals.",
+      "Lease liabilities are included in opening net debt and held static; no future lease principal roll-forward.",
+      "Restricted bank deposits are excluded from opening cash-only net debt; assumed deposits used for capex are reflected as separate releases.",
+      "Scenario results depend on management opportunity figures and analyst assumptions for margins, WC days, capex, tax, interest and exit multiples."
+    ]
+  },
+  "source_samples": {
+    "as_of": "2026-11-10",
+    "sample_reviewed": 10,
+    "overall": "all requested sample values reconcile to official company PDFs",
+    "sources": [
+      {
+        "id": "ar_fy26",
+        "file": "docs/amanta-annual-report-2025-26.pdf",
+        "url": "https://www.amanta.co.in/public/assets/pdf/Investors/Annual-Report/amanta-annual-report-2025-26.pdf"
+      },
+      {
+        "id": "q2_outcome",
+        "file": "docs/amanta-q2-fy27-board-outcome.pdf",
+        "printed_page_status": "scanned exhibit has no printed page numbers"
+      },
+      {
+        "id": "q2_presentation",
+        "file": "docs/amanta-investor-presentation-fy-2026-27-q2.pdf",
+        "printed_page_status": "slide deck; PDF page 5 is slide 3"
+      },
+      {
+        "id": "monitor_sep26",
+        "file": "docs/amanta-monitoring-agency-report-september-2026.pdf",
+        "printed_page_status": "PDF p.9 has printed page 9"
+      }
+    ],
+    "checks": [
+      {
+        "claim": "FY26 revenue ₹287.6767 crore",
+        "status": "PASS",
+        "source": "ar_fy26",
+        "pdf_page": 52,
+        "printed_pages": [
+          98,
+          99
+        ],
+        "source_value_lakh": 28767.67,
+        "class": "fact"
+      },
+      {
+        "claim": "FY26 PAT ₹14.8752 crore",
+        "status": "PASS",
+        "source": "ar_fy26",
+        "pdf_page": 52,
+        "printed_pages": [
+          98,
+          99
+        ],
+        "source_value_lakh": 1487.52,
+        "class": "fact"
+      },
+      {
+        "claim": "FY26 CFO ₹48.4464 crore",
+        "status": "PASS",
+        "source": "ar_fy26",
+        "pdf_page": 53,
+        "printed_pages": [
+          100,
+          101
+        ],
+        "source_value_lakh": 4844.64,
+        "class": "fact"
+      },
+      {
+        "claim": "FY26 capex cash outflow ₹80.1864 crore",
+        "status": "PASS",
+        "source": "ar_fy26",
+        "pdf_page": 53,
+        "printed_pages": [
+          100,
+          101
+        ],
+        "source_value_lakh": 8018.64,
+        "class": "fact",
+        "scope": "cash-flow payments for PPE, intangible assets, CWIP and capital advances"
+      },
+      {
+        "claim": "Latest debt ₹194.5582 crore; leases ₹9.3255 crore; cash ₹1.666 crore",
+        "status": "PASS_WITH_DERIVATIONS",
+        "source": "q2_outcome",
+        "pdf_page": 4,
+        "printed_pages": null,
+        "source_values_lakh": {
+          "noncurrent_borrowings": 4898.88,
+          "current_borrowings": 14556.94,
+          "noncurrent_lease_liabilities": 743.43,
+          "current_lease_liabilities": 189.12,
+          "cash_and_cash_equivalents": 166.6
+        },
+        "derived_values_lakh": {
+          "borrowings": 19455.82,
+          "lease_liabilities": 932.55
+        },
+        "class": "reported balance-sheet facts and arithmetic sums",
+        "scope": "cash and cash equivalents only; excludes other bank balances"
+      },
+      {
+        "claim": "IPO utilization ₹74.9543 crore",
+        "status": "PASS",
+        "source": "monitor_sep26",
+        "pdf_page": 9,
+        "printed_pages": [
+          9
+        ],
+        "source_value_lakh": 7495.43,
+        "class": "fact based on certificate and management undertaking",
+        "caveat": "monitoring report states utilization is based on certified information/undertaking and does not independently audit or verify"
+      },
+      {
+        "claim": "Solar project cost ₹34.8 crore",
+        "status": "PASS",
+        "source": "ar_fy26",
+        "pdf_page": 12,
+        "printed_pages": [
+          20,
+          21
+        ],
+        "source_value_crore": 34.8,
+        "class": "management-reported project economics",
+        "related_reported_values_crore": {
+          "equity_outlay": 5.8,
+          "expected_annual_savings": 9.0
+        },
+        "payback_years": 3.6,
+        "payback_basis": "pre-interest"
+      },
+      {
+        "claim": "Shares outstanding 38,829,351",
+        "status": "PASS",
+        "source": "ar_fy26",
+        "pdf_page": 59,
+        "printed_pages": [
+          112,
+          113
+        ],
+        "class": "fact",
+        "date": "2026-03-31"
+      },
+      {
+        "claim": "SteriPort capacity 11.6 crore bottles",
+        "status": "PASS",
+        "source": "q2_presentation",
+        "pdf_page": 5,
+        "printed_pages": null,
+        "slide": 3,
+        "class": "management claim"
+      },
+      {
+        "claim": "SVP capacity target 31.7 crore units",
+        "status": "PASS",
+        "source": "q2_presentation",
+        "pdf_page": 5,
+        "printed_pages": null,
+        "slide": 3,
+        "class": "management estimate/target",
+        "target_timing": "Q1 FY28"
+      }
+    ],
+    "auditor_name": {
+      "verified_exact_legal_name": "Price Waterhouse Chartered Accountants LLP",
+      "firm_registration_number": "012754N/N500016",
+      "source": "docs/amanta-annual-report-2025-26.pdf",
+      "locations": [
+        "PDF p.15, printed pp.26–27",
+        "PDF p.52, printed pp.98–99"
+      ],
+      "correction": "Use the exact name in formal firm identification. PwC is shorthand, not the legal firm name in the report."
+    },
+    "draft_audit": {
+      "file": "report_content.py",
+      "verified_annual_report_citations": [
+        {
+          "claim": "FY26 utilization history",
+          "status": "CORRECTED",
+          "source": "ar_fy26",
+          "pdf_page": 10,
+          "printed_pages": [
+            16,
+            17
+          ],
+          "correction": "LVP FY24 visual chart value is 93%, not 94%; remaining LVP/SVP/SteriPort series match."
+        },
+        {
+          "claim": "Solar project economics",
+          "status": "CORRECTED",
+          "source": "ar_fy26",
+          "pdf_page": 12,
+          "printed_pages": [
+            20,
+            21
+          ],
+          "correction": "Physical p.10 is manufacturing infrastructure; solar economics are on p.12."
+        },
+        {
+          "claim": "FY26 geographic external revenue",
+          "status": "CORRECTED",
+          "source": "ar_fy26",
+          "pdf_page": 75,
+          "printed_pages": [
+            144,
+            145
+          ],
+          "correction": "Geographic revenue table appears on p.75. p.74 supports customer concentration wording."
+        },
+        {
+          "claim": "Issued share count",
+          "status": "CORRECTED",
+          "source": "ar_fy26",
+          "pdf_page": 59,
+          "printed_pages": [
+            112,
+            113
+          ],
+          "correction": "Direct 38,829,351 share count in Note 18."
+        },
+        {
+          "claim": "No subsidiaries, joint ventures or associates",
+          "status": "PASS",
+          "source": "ar_fy26",
+          "pdf_page": 54,
+          "printed_pages": [
+            102,
+            103
+          ]
+        },
+        {
+          "claim": "CMD remuneration",
+          "status": "PASS",
+          "source": "ar_fy26",
+          "pdf_page": 42,
+          "printed_pages": [
+            78,
+            79
+          ]
+        },
+        {
+          "claim": "Related-party disclosure",
+          "status": "PASS",
+          "source": "ar_fy26",
+          "pdf_page": 70,
+          "printed_pages": [
+            134,
+            135
+          ]
+        },
+        {
+          "claim": "Disaggregated product revenue",
+          "status": "PASS",
+          "source": "ar_fy26",
+          "pdf_page": 65,
+          "printed_pages": [
+            124,
+            125
+          ]
+        }
+      ],
+      "format_note": "Current report source notes show physical PDF page numbers only. Printed-page pair is required if the report must render both locators beside each annual-report citation; mapping varies by spread and must not be calculated with a single formula."
+    }
+  },
+  "limitations": [
+    "Company archive and Screener document feed yielded four historical call transcripts and four matching investor presentations. No older publicly listed call was located; completeness is limited to discoverable archive coverage.",
+    "The original BSE annual-report download and live NSE quote API returned access errors; official company-hosted annual report and official NSE archived bhavcopy were recovered. Failure logs retained in report-work/document-manifest.json.",
+    "Screener consolidated data were empty; standalone statements are appropriate because the annual report discloses no subsidiaries, associates or JVs.",
+    "The direct 6 Nov promoter purchase disclosure was not retrieved. Its secondary feed summary is explicitly qualified in the governance section and is not evidence of price-paid conviction.",
+    "MD remuneration archive item was identified; annual report p42 and official AGM disclosure supply the report evidence. That separate remuneration PDF is not part of the downloaded corpus.",
+    "Actual line-specific sold volume, net realization, product margins, binding orders and audited solar project profit are not disclosed in this source set. Missing facts are not filled with invented figures.",
+    "Management revenue language on Q2 call p10 mixes annualised and full-year wording, alongside FY28 range on p14. No single clean FY27 promise is imputed.",
+    "Valuation includes analyst assumptions for incrementality, margins, financing, depreciation, taxes, WC, capex, restricted-fund use and multiples. It is not a fully balanced three-statement forecast or licensed investment advice."
+  ],
+  "additional_historical_limit": "Secondary FY25 quarterly PAT totals 12.14cr versus audited annual 10.5007cr, a 1.6393cr difference not reconciled in the available set. The quarterly-financials section explicitly qualifies historical quarterly sums and uses audited annual figures for valuation. This is not treated as a comparable audited quarter roll-forward.",
+  "artifacts": [
+    {
+      "file": "amanta-healthcare-equity-research.pdf",
+      "sha256": "e8cc551c41d500ae6f328fb649efc4427adafe5266b6d4c77b187cbf002c58e8",
+      "bytes": 1126483
+    },
+    {
+      "file": "report.html",
+      "sha256": "90481be43fd16432bc581dba84480344d128a78578971418576ee031eda6524a",
+      "bytes": 1049720
+    },
+    {
+      "file": "valuation-model.json",
+      "sha256": "61f60279941bd932b290b8afc2d6469c0dc97d7f1fb6c6e20d4bd656e9a25226",
+      "bytes": 12756
+    },
+    {
+      "file": "source-manifest.json",
+      "sha256": "9436a184e695f911bfe2d2b2bb28fdfa74e472eca09d41757b82e0ce3ac53a6d",
+      "bytes": 34809
+    }
+  ],
+  "navigation": {
+    "clickable_contents_sections": 20,
+    "contents_previous_next_on_every_page": true,
+    "destinations_verified": true,
+    "page_count_unchanged": true
+  },
+  "visual_revision": {
+    "before_pages": 37,
+    "after_pages": 33,
+    "before_blank_px": 5715.796875,
+    "after_blank_px": 2576.796875,
+    "measurement": "Sum of vertical gap between content bottom and footer top in CSS print pixels; not all white pixels on page",
+    "product_photos": 6,
+    "product_galleries": 2,
+    "unique_analytical_exhibits": 47,
+    "valuation_model_unchanged": true,
+    "blank_gap_reduction_percent": 54.91797676942465,
+    "every_revised_pdf_page_reviewed": true,
+    "mobile_contact_sheets_reviewed": true,
+    "product_photographs_embedded": 6,
+    "product_photograph_pages": [
+      4,
+      5
+    ],
+    "unique_analytical_content_preserved": true,
+    "duplicate_monitoring_block_removed": true,
+    "body_fonts_reduced": false
+  }
+}

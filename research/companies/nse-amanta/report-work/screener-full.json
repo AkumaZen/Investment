@@ -1,0 +1,337 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"data\": {\n    \"symbol\": \"AMANTA\",\n    \"sections\": {\n      \"overview\": {\n        \"name\": \"Amanta Healthcare Ltd\",\n        \"bse_code\": \"544502\",\n        \"nse_code\": \"AMANTA\",\n        \"about\": \"\",\n        \"sectors\": [\n          \"Healthcare\",\n          \"Pharmaceuticals\"\n        ],\n        \"current_price\": \"\",\n        \"52_week_high\": \"\",\n        \"52_week_low\": \"\",\n        \"key_ratios\": {\n          \"Market Cap\": \"\",\n          \"Stock P/E\": \"\",\n          \"Book Value\": \"\",\n          \"Dividend Yield\": \"\",\n          \"ROCE\": \"\",\n          \"ROE\": \"\",\n          \"Face Value\": \"\"\n        }\n      },\n      \"profit_loss\": {\n        \"years\": [],\n        \"rows\": [\n          {\n            \"label\": \"Sales\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Expenses +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Operating Profit\",\n            \"values\": []\n          },\n          {\n            \"label\": \"OPM %\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Other Income +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Interest\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Depreciation\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Profit before tax\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Tax %\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Net Profit +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"EPS in Rs\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Dividend Payout %\",\n            \"values\": []\n          }\n        ]\n      },\n      \"balance_sheet\": {\n        \"years\": [],\n        \"rows\": [\n          {\n            \"label\": \"Equity Capital\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Reserves\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Borrowings +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Other Liabilities +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Total Liabilities\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Fixed Assets +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"CWIP\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Investments\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Other Assets +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Total Assets\",\n            \"values\": []\n          }\n        ]\n      },\n      \"cash_flow\": {\n        \"years\": [],\n        \"rows\": [\n          {\n            \"label\": \"Cash from Operating Activity +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Cash from Investing Activity +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Cash from Financing Activity +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Net Cash Flow\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Free Cash Flow\",\n            \"values\": []\n          },\n          {\n            \"label\": \"CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit\",\n            \"values\": []\n          }\n        ]\n      },\n      \"quarterly_results\": {\n        \"years\": [],\n        \"rows\": [\n          {\n            \"label\": \"Sales\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Expenses +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Operating Profit\",\n            \"values\": []\n          },\n          {\n            \"label\": \"OPM %\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Other Income +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Interest\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Depreciation\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Profit before tax\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Tax %\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Net Profit +\",\n            \"values\": []\n          },\n          {\n            \"label\": \"EPS in Rs\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Raw PDF\",\n            \"values\": []\n          }\n        ]\n      },\n      \"ratios_history\": {\n        \"years\": [],\n        \"rows\": [\n          {\n            \"label\": \"Debtor Days\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Inventory Days\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Days Payable\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Cash Conversion Cycle\",\n            \"values\": []\n          },\n          {\n            \"label\": \"Working Capital Days\",\n            \"values\": []\n          },\n          {\n            \"label\": \"ROCE %\",\n            \"values\": []\n          }\n        ]\n      },\n      \"shareholding\": {\n        \"quarters\": [\n          \"Sep 2025\",\n          \"Dec 2025\",\n          \"Mar 2026\",\n          \"Jun 2026\",\n          \"Sep 2026\"\n        ],\n        \"rows\": [\n          {\n            \"category\": \"Promoters +\",\n            \"values\": [\n              \"63.56%\",\n              \"63.56%\",\n              \"63.72%\",\n              \"63.79%\",\n              \"63.80%\"\n            ]\n          },\n          {\n            \"category\": \"FIIs +\",\n            \"values\": [\n              \"1.00%\",\n              \"1.10%\",\n              \"0.85%\",\n              \"0.43%\",\n              \"0.07%\"\n            ]\n          },\n          {\n            \"category\": \"DIIs +\",\n            \"values\": [\n              \"11.34%\",\n              \"11.24%\",\n              \"12.88%\",\n              \"12.92%\",\n              \"12.20%\"\n            ]\n          },\n          {\n            \"category\": \"Public +\",\n            \"values\": [\n              \"24.10%\",\n              \"24.09%\",\n              \"22.55%\",\n              \"22.84%\",\n              \"23.93%\"\n            ]\n          },\n          {\n            \"category\": \"No. of Shareholders\",\n            \"values\": [\n              \"18,669\",\n              \"16,181\",\n              \"15,222\",\n              \"12,612\",\n              \"12,319\"\n            ]\n          }\n        ]\n      },\n      \"peers\": [\n        {\n          \"_note\": \"Peer table loads via AJAX. Sector context below:\"\n        },\n        {\n          \"Sector Level\": \"Broad Sector\",\n          \"Name\": \"Healthcare\"\n        },\n        {\n          \"Sector Level\": \"Sector\",\n          \"Name\": \"Healthcare\"\n        },\n        {\n          \"Sector Level\": \"Broad Industry\",\n          \"Name\": \"Pharmaceuticals & Biotechnology\"\n        },\n        {\n          \"Sector Level\": \"Industry\",\n          \"Name\": \"Pharmaceuticals\"\n        }\n      ]\n    }\n  },\n  \"meta\": {\n    \"source_url\": \"https://www.screener.in/company/AMANTA/consolidated/\",\n    \"fetched_at\": \"2026-11-09T20:28:56Z\",\n    \"financial_type\": \"consolidated\",\n    \"warnings\": []\n  }\n}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "data": {
+        "symbol": "AMANTA",
+        "sections": {
+          "overview": {
+            "name": "Amanta Healthcare Ltd",
+            "bse_code": "544502",
+            "nse_code": "AMANTA",
+            "about": "",
+            "sectors": [
+              "Healthcare",
+              "Pharmaceuticals"
+            ],
+            "current_price": "",
+            "52_week_high": "",
+            "52_week_low": "",
+            "key_ratios": {
+              "Market Cap": "",
+              "Stock P/E": "",
+              "Book Value": "",
+              "Dividend Yield": "",
+              "ROCE": "",
+              "ROE": "",
+              "Face Value": ""
+            }
+          },
+          "profit_loss": {
+            "years": [],
+            "rows": [
+              {
+                "label": "Sales",
+                "values": []
+              },
+              {
+                "label": "Expenses +",
+                "values": []
+              },
+              {
+                "label": "Operating Profit",
+                "values": []
+              },
+              {
+                "label": "OPM %",
+                "values": []
+              },
+              {
+                "label": "Other Income +",
+                "values": []
+              },
+              {
+                "label": "Interest",
+                "values": []
+              },
+              {
+                "label": "Depreciation",
+                "values": []
+              },
+              {
+                "label": "Profit before tax",
+                "values": []
+              },
+              {
+                "label": "Tax %",
+                "values": []
+              },
+              {
+                "label": "Net Profit +",
+                "values": []
+              },
+              {
+                "label": "EPS in Rs",
+                "values": []
+              },
+              {
+                "label": "Dividend Payout %",
+                "values": []
+              }
+            ]
+          },
+          "balance_sheet": {
+            "years": [],
+            "rows": [
+              {
+                "label": "Equity Capital",
+                "values": []
+              },
+              {
+                "label": "Reserves",
+                "values": []
+              },
+              {
+                "label": "Borrowings +",
+                "values": []
+              },
+              {
+                "label": "Other Liabilities +",
+                "values": []
+              },
+              {
+                "label": "Total Liabilities",
+                "values": []
+              },
+              {
+                "label": "Fixed Assets +",
+                "values": []
+              },
+              {
+                "label": "CWIP",
+                "values": []
+              },
+              {
+                "label": "Investments",
+                "values": []
+              },
+              {
+                "label": "Other Assets +",
+                "values": []
+              },
+              {
+                "label": "Total Assets",
+                "values": []
+              }
+            ]
+          },
+          "cash_flow": {
+            "years": [],
+            "rows": [
+              {
+                "label": "Cash from Operating Activity +",
+                "values": []
+              },
+              {
+                "label": "Cash from Investing Activity +",
+                "values": []
+              },
+              {
+                "label": "Cash from Financing Activity +",
+                "values": []
+              },
+              {
+                "label": "Net Cash Flow",
+                "values": []
+              },
+              {
+                "label": "Free Cash Flow",
+                "values": []
+              },
+              {
+                "label": "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit",
+                "values": []
+              }
+            ]
+          },
+          "quarterly_results": {
+            "years": [],
+            "rows": [
+              {
+                "label": "Sales",
+                "values": []
+              },
+              {
+                "label": "Expenses +",
+                "values": []
+              },
+              {
+                "label": "Operating Profit",
+                "values": []
+              },
+              {
+                "label": "OPM %",
+                "values": []
+              },
+              {
+                "label": "Other Income +",
+                "values": []
+              },
+              {
+                "label": "Interest",
+                "values": []
+              },
+              {
+                "label": "Depreciation",
+                "values": []
+              },
+              {
+                "label": "Profit before tax",
+                "values": []
+              },
+              {
+                "label": "Tax %",
+                "values": []
+              },
+              {
+                "label": "Net Profit +",
+                "values": []
+              },
+              {
+                "label": "EPS in Rs",
+                "values": []
+              },
+              {
+                "label": "Raw PDF",
+                "values": []
+              }
+            ]
+          },
+          "ratios_history": {
+            "years": [],
+            "rows": [
+              {
+                "label": "Debtor Days",
+                "values": []
+              },
+              {
+                "label": "Inventory Days",
+                "values": []
+              },
+              {
+                "label": "Days Payable",
+                "values": []
+              },
+              {
+                "label": "Cash Conversion Cycle",
+                "values": []
+              },
+              {
+                "label": "Working Capital Days",
+                "values": []
+              },
+              {
+                "label": "ROCE %",
+                "values": []
+              }
+            ]
+          },
+          "shareholding": {
+            "quarters": [
+              "Sep 2025",
+              "Dec 2025",
+              "Mar 2026",
+              "Jun 2026",
+              "Sep 2026"
+            ],
+            "rows": [
+              {
+                "category": "Promoters +",
+                "values": [
+                  "63.56%",
+                  "63.56%",
+                  "63.72%",
+                  "63.79%",
+                  "63.80%"
+                ]
+              },
+              {
+                "category": "FIIs +",
+                "values": [
+                  "1.00%",
+                  "1.10%",
+                  "0.85%",
+                  "0.43%",
+                  "0.07%"
+                ]
+              },
+              {
+                "category": "DIIs +",
+                "values": [
+                  "11.34%",
+                  "11.24%",
+                  "12.88%",
+                  "12.92%",
+                  "12.20%"
+                ]
+              },
+              {
+                "category": "Public +",
+                "values": [
+                  "24.10%",
+                  "24.09%",
+                  "22.55%",
+                  "22.84%",
+                  "23.93%"
+                ]
+              },
+              {
+                "category": "No. of Shareholders",
+                "values": [
+                  "18,669",
+                  "16,181",
+                  "15,222",
+                  "12,612",
+                  "12,319"
+                ]
+              }
+            ]
+          },
+          "peers": [
+            {
+              "_note": "Peer table loads via AJAX. Sector context below:"
+            },
+            {
+              "Sector Level": "Broad Sector",
+              "Name": "Healthcare"
+            },
+            {
+              "Sector Level": "Sector",
+              "Name": "Healthcare"
+            },
+            {
+              "Sector Level": "Broad Industry",
+              "Name": "Pharmaceuticals & Biotechnology"
+            },
+            {
+              "Sector Level": "Industry",
+              "Name": "Pharmaceuticals"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "source_url": "https://www.screener.in/company/AMANTA/consolidated/",
+        "fetched_at": "2026-11-09T20:28:56Z",
+        "financial_type": "consolidated",
+        "warnings": []
+      }
+    }
+  },
+  "isError": false
+}

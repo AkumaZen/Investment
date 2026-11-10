@@ -1,0 +1,298 @@
+[
+  {
+    "page": 1,
+    "id": "S1",
+    "height": 1120.625,
+    "contentBottom": 956.0625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 2,
+    "id": "S1-2",
+    "height": 1120.625,
+    "contentBottom": 917.328125,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 3,
+    "id": "S2",
+    "height": 1120.625,
+    "contentBottom": 912.40625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 4,
+    "id": "S3",
+    "height": 1120.625,
+    "contentBottom": 772.09375,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 5,
+    "id": "S3-5",
+    "height": 1120.625,
+    "contentBottom": 919.71875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 6,
+    "id": "S4",
+    "height": 1120.625,
+    "contentBottom": 965.8125,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 7,
+    "id": "S5",
+    "height": 1120.625,
+    "contentBottom": 1011.21875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 8,
+    "id": "S6",
+    "height": 1120.625,
+    "contentBottom": 859.53125,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 9,
+    "id": "S7",
+    "height": 1120.625,
+    "contentBottom": 838.125,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 10,
+    "id": "S8",
+    "height": 1120.625,
+    "contentBottom": 1054.96875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 11,
+    "id": "S9",
+    "height": 1120.625,
+    "contentBottom": 984.0625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 12,
+    "id": "S9-12",
+    "height": 1120.625,
+    "contentBottom": 859.53125,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 13,
+    "id": "S10",
+    "height": 1120.625,
+    "contentBottom": 1051.03125,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 14,
+    "id": "S11",
+    "height": 1120.625,
+    "contentBottom": 843.21875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 15,
+    "id": "S12",
+    "height": 1120.625,
+    "contentBottom": 844.75,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 16,
+    "id": "S13",
+    "height": 1120.625,
+    "contentBottom": 979.25,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 17,
+    "id": "S14",
+    "height": 1120.625,
+    "contentBottom": 933.15625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 18,
+    "id": "S15",
+    "height": 1120.625,
+    "contentBottom": 868.84375,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 19,
+    "id": "S16",
+    "height": 1120.625,
+    "contentBottom": 853.75,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 20,
+    "id": "S17",
+    "height": 1120.625,
+    "contentBottom": 926.09375,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 21,
+    "id": "S17-21",
+    "height": 1120.625,
+    "contentBottom": 1016.46875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 22,
+    "id": "S17-22",
+    "height": 1120.625,
+    "contentBottom": 962.46875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 23,
+    "id": "S17-23",
+    "height": 1120.625,
+    "contentBottom": 827.1875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 24,
+    "id": "S17-24",
+    "height": 1120.625,
+    "contentBottom": 949.6875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 25,
+    "id": "S18",
+    "height": 1120.625,
+    "contentBottom": 952.09375,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 26,
+    "id": "S19",
+    "height": 1120.625,
+    "contentBottom": 866.65625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 27,
+    "id": "S19-27",
+    "height": 1120.625,
+    "contentBottom": 901.09375,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 28,
+    "id": "S20",
+    "height": 1120.625,
+    "contentBottom": 828.28125,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 29,
+    "id": "S20-29",
+    "height": 1120.625,
+    "contentBottom": 1064.40625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 30,
+    "id": "S20-30",
+    "height": 1120.625,
+    "contentBottom": 1064.40625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 31,
+    "id": "S20-31",
+    "height": 1120.625,
+    "contentBottom": 1064.40625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 32,
+    "id": "S20-32",
+    "height": 1120.625,
+    "contentBottom": 1046.46875,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 33,
+    "id": "S20-33",
+    "height": 1120.625,
+    "contentBottom": 930.0625,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 34,
+    "id": "S20-34",
+    "height": 1120.625,
+    "contentBottom": 770.4375,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 35,
+    "id": "S20-35",
+    "height": 1120.625,
+    "contentBottom": 725.3125,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 36,
+    "id": "S20-36",
+    "height": 1120.625,
+    "contentBottom": 962.34375,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  },
+  {
+    "page": 37,
+    "id": "S20-37",
+    "height": 1120.625,
+    "contentBottom": 1058.59375,
+    "footerTop": 1082.625,
+    "footerCollision": false
+  }
+]

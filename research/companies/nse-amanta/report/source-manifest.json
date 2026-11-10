@@ -1,0 +1,870 @@
+{
+  "company": "Amanta Healthcare Limited",
+  "exchange": "NSE: AMANTA; BSE:544502",
+  "isin": "INE084K01015",
+  "market": "India",
+  "currency": "INR",
+  "analysis_date": "2026-11-10",
+  "evidence_cutoff": "2026-11-09",
+  "price_date": "2026-11-09",
+  "closing_price": 202.15,
+  "shares": 38829351,
+  "source_locator_convention": "Physical PDF pages. Annual report often displays two printed pages per physical page.",
+  "saved_prompt": {
+    "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\prompts\\Amanta Healthcare Research Prompt.md",
+    "sha256": "a1e7f0a0953c41ca94b9181083851c5debeac6d33f927bb7d75edecc22a25b2e",
+    "scope": "Original preserved. Latest user request expands original call-only scope."
+  },
+  "sources": [
+    {
+      "id": "C2",
+      "title": "November 9, 2026 Outcome (Transcript)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/amanta-outcome-transcript-q2-fy-2026-27.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-outcome-transcript-q2-fy-2026-27.pdf",
+      "pages": 16,
+      "bytes": 950352,
+      "sha256": "dfc56a063f47637a832062bc349e0e3db276ad7ac29759758c664e577f30edb4",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "P2",
+      "title": "November 4, 2026 Investor Presentation",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/amanta-investor-presentation-fy-2026-27-q2.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-investor-presentation-fy-2026-27-q2.pdf",
+      "pages": 36,
+      "bytes": 4765393,
+      "sha256": "5705ca69903b2b9bb6a5e7dc5c7ced6227f2ef2d5049a3d89d96b4a74556ed53",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "C1",
+      "title": "August 8, 2026 Outcome (Transcript)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/amanta-outcome-transcript-q1-fy-2026-27.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-outcome-transcript-q1-fy-2026-27.pdf",
+      "pages": 19,
+      "bytes": 960927,
+      "sha256": "54e0d0a5d069d7a0f5fe9d7e59d9437a821012e253a04391f310c163b82d2468",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "P1",
+      "title": "August 5, 2026 Investor Presentation",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/amanta-investor-presentation-fy-2026-27-q1.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-investor-presentation-fy-2026-27-q1.pdf",
+      "pages": 35,
+      "bytes": 4345998,
+      "sha256": "7c3eaebdcbaae582ad04ff56f0f28be060d0ab2ad9bf66d299a1d26ff4ae9b13",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "C4",
+      "title": "May 21, 2026 Outcome (Transcript)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/amanta-outcome-transcript-q4-fy-2025-26.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-outcome-transcript-q4-fy-2025-26.pdf",
+      "pages": 19,
+      "bytes": 923272,
+      "sha256": "6399a148934a916207b052dd2c34ded89bcb10e4603481bd5313b1546ea7035e",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "P4",
+      "title": "May 19, 2026 Investor Presentation",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/amanta-investor-presentation-q4-fy-2025-26.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-investor-presentation-q4-fy-2025-26.pdf",
+      "pages": 34,
+      "bytes": 4337818,
+      "sha256": "69c4670911ad9998d2c5f5de6226d2d87917e24538ceb0b3d7857df114f4d92a",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "C3",
+      "title": "February 16, 2026 Outcome (Transcript)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/outcome-transcript-16-02-2026.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\outcome-transcript-16-02-2026.pdf",
+      "pages": 20,
+      "bytes": 401986,
+      "sha256": "53895822025d26a0465398d1738c017bfc9d1736fe0d2246020946bbf86bcaff",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "P3",
+      "title": "February 11, 2026 Intimation under Regulation 30 (LODR) - Investor\n                                            Presentation",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/intimation-under-regulation-30-investor-presentation.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\intimation-under-regulation-30-investor-presentation.pdf",
+      "pages": 38,
+      "bytes": 5323815,
+      "sha256": "3c7d7eb13fe234e3002ea4033f1afb7acbbbfa911f36bbc299c24395f815f7b7",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "AR",
+      "title": "Annual Report 2025-26",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/Annual-Report/amanta-annual-report-2025-26.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-annual-report-2025-26.pdf",
+      "pages": 81,
+      "bytes": 5671515,
+      "sha256": "d04258b847b39f6f78707d5695bb199e5bf6c5aa2bc2777c98b99708ab35e8d7",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "MA",
+      "title": "Monitoring Agency Report for quarter ended September 30, 2026 (4 Nov 2026)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/exchange-announcements/amanta-monitoring-agency-report-september-2026.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-monitoring-agency-report-september-2026.pdf",
+      "pages": 13,
+      "bytes": 813131,
+      "sha256": "f2d5feaab79e04e776ab6afed6caeff09e30ad323347c2d37adcbd0fb99eab33",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "AS",
+      "title": "Commissioning of New SteriPort Line (2 Sep 2026)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/exchange-announcements/amanta-commissioning-of-new-sterilport-line.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-commissioning-of-new-sterilport-line.pdf",
+      "pages": 1,
+      "bytes": 495403,
+      "sha256": "5308bbdc8ed2cc9cf09dd988592d6c7bc5329e80d94dd15897bfff7394526e21",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "AP",
+      "title": "Commissioning of Solar Power Plant (30 May 2026)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/exchange-announcements/amanta-commissioning-solar-power-plant.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-commissioning-solar-power-plant.pdf",
+      "pages": 1,
+      "bytes": 496870,
+      "sha256": "aac9f7bc5a61616b1951e6c45f262aa5d9c6efb6ca0f37f047bc5eaf90358e71",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "COO",
+      "title": "Intimation for Change in Management - Anil Rathi, Resignation (30 Oct 2026)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/exchange-announcements/amanta-intimation-for-change-in-management-30102026.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-intimation-for-change-in-management-30102026.pdf",
+      "pages": 3,
+      "bytes": 771056,
+      "sha256": "e3a03caa5cdc482b153ce26c814e42b0c008d7630fff7da48d86e2a078c9d89e",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "AGM",
+      "title": "Intimation for Change in Management - AGM approvals (16 Sep 2026)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/exchange-announcements/amanta-intimation-for-change-in-management-16092026.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-intimation-for-change-in-management-16092026.pdf",
+      "pages": 3,
+      "bytes": 578225,
+      "sha256": "d61db17f1b6357c89a25696ba629c9d169cb20758cbed14ac6384217eef5d742",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "CR",
+      "title": "Intimation for upgrade in Credit Rating (16 Feb 2026)",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/exchange-announcements/intimation-for-upgrade-in-credit-rating.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\intimation-for-upgrade-in-credit-rating.pdf",
+      "pages": 8,
+      "bytes": 1140070,
+      "sha256": "c8e8c8899bb04a66f9bc4ad99e428a1c60ce161aaa93a0a59bf62407575295ee",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "R27",
+      "title": "Official Q2/H1 FY27 results, board outcome 3 Nov 2026",
+      "url": "https://www.amanta.co.in/public/assets/pdf/Investors/exchange-announcements/amanta-outcome-of-board-meeting-held-on-03112026.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\amanta-q2-fy27-board-outcome.pdf",
+      "pages": 7,
+      "bytes": 3477149,
+      "sha256": "751c09470cfd6f3922135db867d6f28421567244767e103175e7158061ab53c5",
+      "status": "retrieved",
+      "role": "Primary issuer disclosure",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "DR",
+      "title": "Denis Chem Lab CRISIL rationale, 27 Oct 2025",
+      "url": "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/28102025/a0a240b8-582b-4575-b1ec-055a70638207.pdf",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\denis-rating-2025.pdf",
+      "pages": 7,
+      "bytes": 564048,
+      "sha256": "49858fb52283e46d9769a9bbf7635751269eb38e81d3b4f646023ac4f4f7b76f",
+      "status": "retrieved",
+      "role": "Primary rating rationale hosted in exchange-announcement mirror",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "GF",
+      "title": "Gufic official manufacturing capabilities",
+      "url": "https://gufic.com/manufacturing/navsari-facility",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\docs\\gufic-manufacturing.html",
+      "pages": null,
+      "bytes": 81056,
+      "sha256": "cf79d64d0f056d6565e8ec16e7850b16c7bac48e2f8188164a077b2bacdfe321",
+      "status": "retrieved",
+      "role": "Primary corporate website",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "NSE",
+      "title": "Official NSE EQ bhavcopy, 9 Nov 2026",
+      "url": "https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_09112026.csv",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\nse-bhavcopy.csv",
+      "pages": null,
+      "bytes": 400839,
+      "sha256": "ed3c764b5a58368d95543146fec96d8534cc29cba6862cebf357a4f7d86c0093",
+      "status": "retrieved",
+      "role": "Official dated price: CLOSE_PRICE 202.15; LAST_PRICE 202.50 is different",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SC",
+      "title": "Screener standalone Amanta snapshot",
+      "url": "https://www.screener.in/company/AMANTA/",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\screener-standalone.json",
+      "pages": null,
+      "bytes": 6217,
+      "sha256": "4ff7865585c3ec48fe07e04638e200f8a829ae22232600475d82f20591c25363",
+      "status": "retrieved",
+      "role": "Secondary historical quarters, ownership and ratios; audited statement controls differences",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "GS",
+      "title": "Screener standalone Gufic snapshot",
+      "url": "https://www.screener.in/company/GUFICBIO/",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\peer-0.json",
+      "pages": null,
+      "bytes": 7676,
+      "sha256": "dd88d3d6801bf45e2f6eb2257e29661ce779d61ebf485b42f3476ac35ddd87ea",
+      "status": "retrieved",
+      "role": "Secondary peer financials, dated 10 Nov retrieval",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "DS",
+      "title": "Screener standalone Denis snapshot",
+      "url": "https://www.screener.in/company/537536/",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\peer-denis.json",
+      "pages": null,
+      "bytes": 7776,
+      "sha256": "f28fdfb60233e008095841ebbe0fc8adb551ed8ae31b9da0bccb2a086ea64976",
+      "status": "retrieved",
+      "role": "Secondary peer financials, dated 10 Nov retrieval",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "IMG-pro-img-slide-1.png",
+      "title": "Official Amanta product photograph: pro-img-slide-1.png",
+      "url": "https://www.amanta.co.in/public/assets/images/pro-img-slide-1.png",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\pro-img-slide-1.png",
+      "pages": null,
+      "bytes": 183251,
+      "sha256": "7e7268e1d028ecff65bfa7ac51e5af4e8455305a5fd4af4f393faaa528355ac8",
+      "status": "retrieved",
+      "role": "Issuer product photograph; representative current pack, not proof of future line or market approval",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "IMG-pro-img-slide-2.png",
+      "title": "Official Amanta product photograph: pro-img-slide-2.png",
+      "url": "https://www.amanta.co.in/public/assets/images/pro-img-slide-2.png",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\pro-img-slide-2.png",
+      "pages": null,
+      "bytes": 160494,
+      "sha256": "e4bcce00859386145cc6e5130f17536a6cf03b766e6e5a3524cf0a11b49b0d1f",
+      "status": "retrieved",
+      "role": "Issuer product photograph; representative current pack, not proof of future line or market approval",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "IMG-respiratory-P1.jpg",
+      "title": "Official Amanta product photograph: respiratory-P1.jpg",
+      "url": "https://www.amanta.co.in/public/assets/images/respiratory-P1.jpg",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\respiratory-P1.jpg",
+      "pages": null,
+      "bytes": 214420,
+      "sha256": "63ceddd53326eccc5d404c717ec401d3bf15ea1f2f46795d9d4086ef651dd114",
+      "status": "retrieved",
+      "role": "Issuer product photograph; representative current pack, not proof of future line or market approval",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "IMG-ophthalmics-P4.jpg",
+      "title": "Official Amanta product photograph: ophthalmics-P4.jpg",
+      "url": "https://www.amanta.co.in/public/assets/images/ophthalmics-P4.jpg",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\ophthalmics-P4.jpg",
+      "pages": null,
+      "bytes": 10552,
+      "sha256": "3da63cc59acdb1de6e28bd69037b625491f5df59e963b2c17fb89a9b038d6320",
+      "status": "retrieved",
+      "role": "Issuer product photograph; representative current pack, not proof of future line or market approval",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "IMG-ophthalmics-P5.jpg",
+      "title": "Official Amanta product photograph: ophthalmics-P5.jpg",
+      "url": "https://www.amanta.co.in/public/assets/images/ophthalmics-P5.jpg",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\ophthalmics-P5.jpg",
+      "pages": null,
+      "bytes": 14917,
+      "sha256": "1f2fa50de0040922c09c4f0742a44e2c19fbf86f7123519bd3976276748727f9",
+      "status": "retrieved",
+      "role": "Issuer product photograph; representative current pack, not proof of future line or market approval",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "IMG-diluents-P1.jpg",
+      "title": "Official Amanta product photograph: diluents-P1.jpg",
+      "url": "https://www.amanta.co.in/public/assets/images/diluents-P1.jpg",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\diluents-P1.jpg",
+      "pages": null,
+      "bytes": 20916,
+      "sha256": "a7ab9e1f5f2d2ee628c1a622fbfc65f250d2114a20578cc70ccc886df5092a19",
+      "status": "retrieved",
+      "role": "Issuer product photograph; representative current pack, not proof of future line or market approval",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "CAT-fluid-therapy",
+      "title": "Amanta official fluid-therapy catalogue",
+      "url": "https://www.amanta.co.in/fluid-therapy",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\fluid-therapy.html",
+      "pages": null,
+      "bytes": 31113,
+      "sha256": "53d67da52b5a03d8e3643bed98d7ffb1731193f78eeaedd8f85f18d2c3acab6b",
+      "status": "retrieved",
+      "role": "Primary corporate product catalogue; photographs accessed for visual revision, research cutoff unchanged",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "CAT-respiratory",
+      "title": "Amanta official respiratory catalogue",
+      "url": "https://www.amanta.co.in/respiratory",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\respiratory.html",
+      "pages": null,
+      "bytes": 29813,
+      "sha256": "4249a70e5d03359848cbd60806ba7f95435e22ffc413be0c1ee02ac6ae6c89b9",
+      "status": "retrieved",
+      "role": "Primary corporate product catalogue; photographs accessed for visual revision, research cutoff unchanged",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "CAT-ophthalmics",
+      "title": "Amanta official ophthalmics catalogue",
+      "url": "https://www.amanta.co.in/ophthalmics",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\ophthalmics.html",
+      "pages": null,
+      "bytes": 32325,
+      "sha256": "4b2d7d4d168e921dbc8dadf0f631815ff0f6aa8f9057cca3775db987342e6756",
+      "status": "retrieved",
+      "role": "Primary corporate product catalogue; photographs accessed for visual revision, research cutoff unchanged",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "CAT-diluents",
+      "title": "Amanta official diluents catalogue",
+      "url": "https://www.amanta.co.in/diluents",
+      "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report-work\\product-assets\\diluents.html",
+      "pages": null,
+      "bytes": 29116,
+      "sha256": "95d539a25c0a61dd5cc2dd08fc8055fea15d0ffb0423f3a77b50ae423c38eac7",
+      "status": "retrieved",
+      "role": "Primary corporate product catalogue; photographs accessed for visual revision, research cutoff unchanged",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "report_page_sources": [
+    {
+      "page": 1,
+      "section": "report-page-1",
+      "title": "Turning capacity into earnings and cash",
+      "references": [
+        "AS1",
+        "P2:5",
+        "R27:3-6",
+        "AR:52-53"
+      ]
+    },
+    {
+      "page": 2,
+      "section": "report-page-2",
+      "title": "The investment argument in four exhibits",
+      "references": [
+        "SC",
+        "AR:52-53",
+        "P2:5"
+      ]
+    },
+    {
+      "page": 3,
+      "section": "report-page-3",
+      "title": "A sterile manufacturer sells reliability with each dose",
+      "references": [
+        "AR:8-9",
+        "P2:12-16",
+        "C2:5"
+      ]
+    },
+    {
+      "page": 4,
+      "section": "report-page-4",
+      "title": "The product base is broad; fluid therapy still dominates",
+      "references": [
+        "P2:13-14,29-33",
+        "C2:13-14"
+      ]
+    },
+    {
+      "page": 5,
+      "section": "report-page-5",
+      "title": "The SVP opportunity depends on product transfer, not just speed",
+      "references": [
+        "AS:1",
+        "C2:5-6,11,13-14"
+      ]
+    },
+    {
+      "page": 6,
+      "section": "report-page-6",
+      "title": "The SVP opportunity depends on product transfer, not just speed / One company, several overlapping views of the same revenue",
+      "references": [
+        "AS:1",
+        "C2:5-6,11,13-14",
+        "AR:54,75",
+        "P2:19",
+        "C2:4,9,13,15"
+      ]
+    },
+    {
+      "page": 7,
+      "section": "report-page-7",
+      "title": "One company, several overlapping views of the same revenue / A distribution network helps; hospital conversion still matters",
+      "references": [
+        "AR:54,75",
+        "P2:19",
+        "C2:4,9,13,15",
+        "AR:11,52,74",
+        "R27:4",
+        "C2:7-9,13,15"
+      ]
+    },
+    {
+      "page": 8,
+      "section": "report-page-8",
+      "title": "The moat is process-and-access, with limits to pricing power / High utilisation can hide different economic realities",
+      "references": [
+        "AR:9-10,52",
+        "P2:16",
+        "C2:3,5,7-8",
+        "AR:10",
+        "P2:5,18",
+        "C2:4,7,15"
+      ]
+    },
+    {
+      "page": 9,
+      "section": "report-page-9",
+      "title": "High utilisation can hide different economic realities / The â‚¹60 crore Line 3 target is commercially demanding",
+      "references": [
+        "AR:10",
+        "P2:5,18",
+        "C2:4,7,15",
+        "P2:5",
+        "C2:5,10"
+      ]
+    },
+    {
+      "page": 10,
+      "section": "report-page-10",
+      "title": "The â‚¹60 crore Line 3 target is commercially demanding / Three projects, three clocks, three funding profiles",
+      "references": [
+        "P2:5",
+        "C2:5,10",
+        "AR:12,30,53",
+        "AS:1",
+        "AP:1",
+        "C2:10-12,14"
+      ]
+    },
+    {
+      "page": 11,
+      "section": "report-page-11",
+      "title": "Three projects, three clocks, three funding profiles / Solar improves operating cost, not rupee-for-rupee owner cash",
+      "references": [
+        "AR:12,30,53",
+        "AS:1",
+        "AP:1",
+        "C2:10-12,14",
+        "AR:12",
+        "C2:4-5"
+      ]
+    },
+    {
+      "page": 12,
+      "section": "report-page-12",
+      "title": "Solar improves operating cost, not rupee-for-rupee owner cash / Management has substantial ownership and a mixed execution record",
+      "references": [
+        "AR:12",
+        "AP:1",
+        "C2:4-5",
+        "P2:21-22",
+        "AR:32,42,70",
+        "AGM:1-2",
+        "COO:1",
+        "MA:9"
+      ]
+    },
+    {
+      "page": 13,
+      "section": "report-page-13",
+      "title": "Management has substantial ownership and a mixed execution record / The expansion was delivered later than first envisaged",
+      "references": [
+        "P2:21-22",
+        "AR:32,42,70",
+        "AGM:1-2",
+        "COO:1",
+        "MA:9",
+        "C3:6-7,16-17",
+        "C4:3",
+        "C1:8",
+        "AS:1",
+        "AP:1",
+        "C2:10,12,14"
+      ]
+    },
+    {
+      "page": 14,
+      "section": "report-page-14",
+      "title": "The current guidance register needs explicit qualifiers / Growth has two routes: more bottles and more value per unit",
+      "references": [
+        "C2:3-7,9,13-15",
+        "P2:9",
+        "C2:3,5-6,9-15"
+      ]
+    },
+    {
+      "page": 15,
+      "section": "report-page-15",
+      "title": "Growth has two routes: more bottles and more value per unit / Compare manufacturing economics before comparing P/E",
+      "references": [
+        "C2:3,5-6,9-15",
+        "AR:52",
+        "P2:13,16",
+        "DR",
+        "GF",
+        "SC",
+        "DS",
+        "GS",
+        "C4:9"
+      ]
+    },
+    {
+      "page": 16,
+      "section": "report-page-16",
+      "title": "Compare manufacturing economics before comparing P/E / Keep current earnings separate from future possibilities",
+      "references": [
+        "AR:52",
+        "P2:13,16",
+        "DR",
+        "GF",
+        "SC",
+        "DS",
+        "GS",
+        "C4:9",
+        "AR:65",
+        "P2:5",
+        "C2:5,9,11,15"
+      ]
+    },
+    {
+      "page": 17,
+      "section": "report-page-17",
+      "title": "Keep current earnings separate from future possibilities / The causal chain shows where each thesis can break",
+      "references": [
+        "AR:65",
+        "P2:5",
+        "C2:5,9,11,15",
+        "AS:1",
+        "AP:1",
+        "R27:4-5",
+        "C2:5-6,11,14"
+      ]
+    },
+    {
+      "page": 18,
+      "section": "report-page-18",
+      "title": "The causal chain shows where each thesis can break / Q2 improved; reported PAT growth needs an exceptional-item bridge",
+      "references": [
+        "AS:1",
+        "AP:1",
+        "R27:4-5",
+        "C2:5-6,11,14",
+        "R27:3,7",
+        "C2:4-5"
+      ]
+    },
+    {
+      "page": 19,
+      "section": "report-page-19",
+      "title": "Q2 improved; reported PAT growth needs an exceptional-item bridge / A longer quarterly record shows why the new line matters",
+      "references": [
+        "R27:3,7",
+        "C2:4-5",
+        "SC",
+        "R27:3",
+        "C3:16"
+      ]
+    },
+    {
+      "page": 20,
+      "section": "report-page-20",
+      "title": "FY26 PAT growth came mainly below operating EBITDA",
+      "references": [
+        "AR:52-53,65,70",
+        "SC"
+      ]
+    },
+    {
+      "page": 21,
+      "section": "report-page-21",
+      "title": "Cash generation has not funded the investment cycle / Leverage fell after March, but near-term liquidity remains important",
+      "references": [
+        "AR:53",
+        "R27:5-6",
+        "AR:52",
+        "C4:10",
+        "R27:4",
+        "SC"
+      ]
+    },
+    {
+      "page": 22,
+      "section": "report-page-22",
+      "title": "Leverage fell after March, but near-term liquidity remains important / An unmodified audit does not eliminate governance watchpoints",
+      "references": [
+        "AR:52",
+        "C4:10",
+        "R27:4",
+        "SC",
+        "AR:47-48,63,67-68,70-71",
+        "MA:3,9"
+      ]
+    },
+    {
+      "page": 23,
+      "section": "report-page-23",
+      "title": "An unmodified audit does not eliminate governance watchpoints / The downside travels through margin, timing and cash",
+      "references": [
+        "AR:47-48,63,67-68,70-71",
+        "MA:3,9",
+        "SC",
+        "C2:7,10,12-13",
+        "R27:4-5",
+        "AR:65,67",
+        "MA:9",
+        "P2:12"
+      ]
+    },
+    {
+      "page": 24,
+      "section": "report-page-24",
+      "title": "The downside travels through margin, timing and cash / A persuasive bear case does not require the factory to fail",
+      "references": [
+        "C2:7,10,12-13",
+        "R27:4-5",
+        "AR:65,67",
+        "MA:9",
+        "P2:12",
+        "AS:1",
+        "C2:5,8,14",
+        "AR:52"
+      ]
+    },
+    {
+      "page": 25,
+      "section": "report-page-25",
+      "title": "A persuasive bear case does not require the factory to fail / Value the operating ramp, then deduct its funding",
+      "references": [
+        "AS:1",
+        "C2:5,8,14",
+        "AR:52",
+        "R27:4-5",
+        "AR:52,54,74",
+        "C2:5,14-15",
+        "R27:4"
+      ]
+    },
+    {
+      "page": 26,
+      "section": "report-page-26",
+      "title": "Bear case: earnings and per-share value by year",
+      "references": [
+        "AR:52,70",
+        "R27:3",
+        "E:model"
+      ]
+    },
+    {
+      "page": 27,
+      "section": "report-page-27",
+      "title": "Base case: earnings and per-share value by year",
+      "references": [
+        "AR:52,70",
+        "R27:3",
+        "E:model"
+      ]
+    },
+    {
+      "page": 28,
+      "section": "report-page-28",
+      "title": "Bull case: earnings and per-share value by year",
+      "references": [
+        "AR:52,70",
+        "R27:3",
+        "E:model"
+      ]
+    },
+    {
+      "page": 29,
+      "section": "report-page-29",
+      "title": "The equity bridge must carry the cash cost of growth",
+      "references": [
+        "R27:4-6",
+        "MA:9",
+        "E:model"
+      ]
+    },
+    {
+      "page": 30,
+      "section": "report-page-30",
+      "title": "The multiple and margin matter more than false precision",
+      "references": [
+        "NSE",
+        "AR:52",
+        "R27:4",
+        "E:model"
+      ]
+    },
+    {
+      "page": 31,
+      "section": "report-page-31",
+      "title": "The original research questions, answered / The original research questions, answered (continued)",
+      "references": [
+        "C2:4-15",
+        "AR:12,52",
+        "P2:6",
+        "R27:3-5"
+      ]
+    },
+    {
+      "page": 32,
+      "section": "report-page-32",
+      "title": "The original research questions, answered (continued) / Verdict: attractive mechanisms, a demanding cash test",
+      "references": [
+        "C2:4-15",
+        "AR:12,52",
+        "P2:6",
+        "R27:3-5",
+        "AR",
+        "C3",
+        "C4",
+        "C1",
+        "C2",
+        "P3",
+        "P4",
+        "P1",
+        "P2",
+        "R27",
+        "MA"
+      ]
+    },
+    {
+      "page": 33,
+      "section": "report-page-33",
+      "title": "Reading key and original document index",
+      "references": [
+        "AR",
+        "C3",
+        "C4",
+        "C1",
+        "C2",
+        "P3",
+        "P4",
+        "P1",
+        "P2",
+        "NSE",
+        "SC",
+        "EA",
+        "R27",
+        "ar_fy26",
+        "MA",
+        "AS",
+        "AP",
+        "COO",
+        "AGM",
+        "rating_feb26",
+        "md_pay",
+        "exchange_archive",
+        "GF",
+        "GS",
+        "DS",
+        "DR"
+      ]
+    }
+  ],
+  "limitations": [
+    "Company archive and Screener document feed yielded four historical call transcripts and four matching investor presentations. No older publicly listed call was located; completeness is limited to discoverable archive coverage.",
+    "The original BSE annual-report download and live NSE quote API returned access errors; official company-hosted annual report and official NSE archived bhavcopy were recovered. Failure logs retained in report-work/document-manifest.json.",
+    "Screener consolidated data were empty; standalone statements are appropriate because the annual report discloses no subsidiaries, associates or JVs.",
+    "The direct 6 Nov promoter purchase disclosure was not retrieved. Its secondary feed summary is explicitly qualified in the governance section and is not evidence of price-paid conviction.",
+    "MD remuneration archive item was identified; annual report p42 and official AGM disclosure supply the report evidence. That separate remuneration PDF is not part of the downloaded corpus.",
+    "Actual line-specific sold volume, net realization, product margins, binding orders and audited solar project profit are not disclosed in this source set. Missing facts are not filled with invented figures.",
+    "Management revenue language on Q2 call p10 mixes annualised and full-year wording, alongside FY28 range on p14. No single clean FY27 promise is imputed.",
+    "Valuation includes analyst assumptions for incrementality, margins, financing, depreciation, taxes, WC, capex, restricted-fund use and multiples. It is not a fully balanced three-statement forecast or licensed investment advice."
+  ],
+  "outputs": [
+    {
+      "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report\\amanta-healthcare-equity-research.pdf",
+      "sha256": "e8cc551c41d500ae6f328fb649efc4427adafe5266b6d4c77b187cbf002c58e8",
+      "bytes": 1126483
+    },
+    {
+      "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report\\report.html",
+      "sha256": "90481be43fd16432bc581dba84480344d128a78578971418576ee031eda6524a",
+      "bytes": 1049720
+    },
+    {
+      "path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\report\\valuation-model.json",
+      "sha256": "61f60279941bd932b290b8afc2d6469c0dc97d7f1fb6c6e20d4bd656e9a25226",
+      "bytes": 12756
+    }
+  ]
+}

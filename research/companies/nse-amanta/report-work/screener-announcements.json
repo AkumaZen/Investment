@@ -1,0 +1,12 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "**No announcements found for AMANTA.**\n\nPossible reasons:\n  - Symbol is incorrect — use `search_company('AMANTA')` to verify\n  - NSE API is temporarily unavailable\n  - Company has no recent announcements\n"
+    }
+  ],
+  "structuredContent": {
+    "result": "**No announcements found for AMANTA.**\n\nPossible reasons:\n  - Symbol is incorrect — use `search_company('AMANTA')` to verify\n  - NSE API is temporarily unavailable\n  - Company has no recent announcements\n"
+  },
+  "isError": false
+}

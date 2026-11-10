@@ -1,0 +1,945 @@
+{
+  "company": "Amanta Healthcare Limited",
+  "exchange_ticker": "NSE: AMANTA",
+  "as_of": "2026-11-10",
+  "scope": "Historical review of four investor presentations and four earnings call transcripts. Page numbers refer to physical PDF pages, including the cover/intimation pages.",
+  "source_files": [
+    "docs/outcome-transcript-16-02-2026.txt",
+    "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+    "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+    "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+    "docs/intimation-under-regulation-30-investor-presentation.txt",
+    "docs/amanta-investor-presentation-q4-fy-2025-26.txt",
+    "docs/amanta-investor-presentation-fy-2026-27-q1.txt",
+    "docs/amanta-investor-presentation-fy-2026-27-q2.txt"
+  ],
+  "evidence_conventions": {
+    "management_reported": "Attributed to company management or company presentation; not independently verified here.",
+    "management_forecast": "Forward-looking estimate, target or aspiration; not treated as achieved.",
+    "arithmetic": "Derived calculation from stated inputs; not a company forecast.",
+    "discrepancy": "Conflicting, differently defined or unreconciled company statements are retained as reported."
+  },
+  "historical_comparisons": [
+    {
+      "id": 1,
+      "topic": "SteriPort commissioning",
+      "earlier": "Q3 FY26 call expected machines placed by 15 Mar, bottles by end-March and commercialization in April 2026.",
+      "later": "Q4 FY26 call said commission by June. Q1 FY27 call on Aug 6 reported FDA plan approval, validation expected by Aug 18, and commercial production targeted in the last week of August. Q2 FY27 call retrospectively says commissioned in the first week of September.",
+      "assessment": "Roughly 4–5 month slip from April commercialization expectation. Q1 timing is a target, Q2 is retrospective; no exact actual date beyond these claims. Q2 call itself says the line was about five months late.",
+      "type": [
+        "management_reported",
+        "management_forecast",
+        "discrepancy"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+          "physical_pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            3,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "Solar commissioning",
+      "earlier": "Q3 call expected 10.8 MW commissioning by Q1 FY27 and about ₹9cr annual cost saving. Q4 call said commissioning in 5–6 days.",
+      "later": "Q1 call reports commissioned since June 2026; Q2 call says generation since end-Q1 FY27 and repeats ~₹9cr annual power-cost saving.",
+      "assessment": "Milestone reported within original Q1 window, but later than Q4's near-immediate expectation. ₹9cr remains an annualized management estimate, not a fully observed year of savings.",
+      "type": [
+        "management_reported",
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+          "physical_pages": [
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            3,
+            5
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q2.txt",
+          "physical_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "SteriPort capacity",
+      "earlier": "Q3 and Q4 calls described 6.6cr to roughly 12cr bottles/year and ₹90cr capex.",
+      "later": "Q2 call and Q2 presentation give 6.6cr to 11.6cr, about 75% increase.",
+      "assessment": "Use 11.6cr as the stated figure and ~12cr as rounded; capacity is not sales.",
+      "type": [
+        "management_reported"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            3
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q2.txt",
+          "physical_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "New-line ramp",
+      "earlier": "Q3 management said line could run full capacity from day one while accumulating inventory; estimated ~₹110cr annual revenue at normal utilization.",
+      "later": "Q2 call says line ran at ~55% during initial tuning/balancing and forecasts full rate by Nov 20 / next quarter. Q2 presentation reports installed capacity but no Sep-to-date unit-sales figure.",
+      "assessment": "55% is management's ramp snapshot; 100% is a forecast. Validate production, dispatches and utilization in later results.",
+      "type": [
+        "management_reported",
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            3,
+            7,
+            8,
+            10
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q2.txt",
+          "physical_pages": [
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "Annualized vs FY27 SteriPort sales",
+      "earlier": "Q3 FY26 call gave ~₹110cr annual SteriPort revenue at normal utilization and separately discussed a post-expansion ~₹430cr top line / ~₹105cr EBITDA case; SVP contribution was uncertain/not built in.",
+      "later": "Q2 expects ~₹60cr SteriPort contribution in FY27 and retains ~₹110cr annual revenue at optimal utilization.",
+      "assessment": "Partial-year FY27 contribution and steady annual line run-rate are distinct management estimates.",
+      "type": [
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            11,
+            18
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "FY26 reported growth (no cited FY26 ~20% target)",
+      "earlier": "Q3 call reported Q3 revenue ₹75cr (+9.8% YoY), nine-month ₹211cr (+4%+). In separate Q&A, management discussed the following year (FY27), not FY26.",
+      "later": "Q4 call reported FY26 revenue ₹288cr; Q3 call cited FY25 revenue ₹275cr.",
+      "assessment": "Arithmetic growth is about 4.7%. The reviewed documents do not substantiate a ~20% FY26 growth forecast; no FY26 guidance miss is asserted.",
+      "type": [
+        "management_reported",
+        "arithmetic"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            3,
+            4,
+            5,
+            16
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "FY27 and FY28 revenue target path",
+      "earlier": "Q3 FY26 call (February): CEO hoped for ~₹400cr in FY27 (~33% increase); he said 20% CAGR was for the next two years. Q4 FY26 and Q1 FY27 call/deck do not give a ₹420–430cr FY27 target. Q4/Q1 decks carry a two-year 20%+ revenue CAGR / 25%+ EBITDA margin aim.",
+      "later": "Q2 FY27 call (November): CEO first called ₹420–430cr an annualized top-line run-rate for Q3/Q4, then stated ₹420–430cr on a full-year basis for FY27. He confirmed an analyst-raised FY28 ₹400–420cr target includes SVP, but did not quantify SVP revenue. FY27 H1 revenue was ₹151.9cr.",
+      "assessment": "Management’s FY27 figure rose from ~₹400cr in February to ₹420–430cr in November; Q2 wording mixes annualized and full-year descriptions. Conditional arithmetic: H2 needs ₹268.1–278.1cr (~₹134.1–139.1cr/quarter) after H1 ₹151.9cr. The FY28 range includes SVP but contribution remains unquantified; initial post-commission utilization is forecast at 45–50%.",
+      "type": [
+        "management_reported",
+        "management_forecast",
+        "arithmetic"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            16
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-q4-fy-2025-26.txt",
+          "physical_pages": [
+            10
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q1.txt",
+          "physical_pages": [
+            10
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+          "physical_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            5,
+            10,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "EBITDA margin",
+      "earlier": "Q3 9M EBITDA ₹45cr, 21.3% margin (+42 bps); Q4 FY26 EBITDA ₹63cr, ~22% margin.",
+      "later": "Q2 reports 21.6% quarterly and about 22% H1 margin; polymer inflation was absorbed while new capacity depreciation and solar interest started.",
+      "assessment": "Historical margin is stable around 21–22%; Q2 target of 25%+ in two years is a significant step not yet evidenced.",
+      "type": [
+        "management_reported",
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            5
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q2.txt",
+          "physical_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "SVP expansion schedule",
+      "earlier": "Q3 call targeted ~20.9cr to ~31cr units/year and January 2027 commissioning; Q4 presentation/call expected commissioning during FY27.",
+      "later": "Q2 call/deck says ~20.9cr to ~31.7cr (+52%), Q1 FY28; Q2 call says about five months late versus earlier projections.",
+      "assessment": "Moved at least one quarter later. No commissioning reported through Q2. 31 vs 31.7 likely rounding.",
+      "type": [
+        "management_reported",
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            4,
+            16,
+            18
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-q4-fy-2025-26.txt",
+          "physical_pages": [
+            9,
+            19
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            4,
+            10
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q2.txt",
+          "physical_pages": [
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "topic": "SVP value opportunity",
+      "earlier": "Q4 says inhalation solutions and preservative-free ophthalmics were ~20% of FY26 SVP revenue.",
+      "later": "Q2 says current SVP SBU sales ₹55–65cr, short/mid-term goal ₹100–120cr; line is aimed at inhalation, with F&D strengthening inhalation and ophthalmics.",
+      "assessment": "Mix-led upside, dependent on products, market mix and regulatory work; no dated bridge to the target.",
+      "type": [
+        "management_reported",
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "topic": "Export mix",
+      "earlier": "Presentations characterize SVP as export-centric; Q4 says UK presence exceeds 20 years.",
+      "later": "Q1 call says ~90% of SVP revenue exports and capacity constraints forced choices among UK and other regions. Q2 says international sales were ~32% of total revenue.",
+      "assessment": "SVP export mix is not identical to companywide export share; do not assume SVP remains exactly 100% exports.",
+      "type": [
+        "management_reported"
+      ],
+      "sources": [
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-q4-fy-2025-26.txt",
+          "physical_pages": [
+            14
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+          "physical_pages": [
+            13,
+            15,
+            16
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "topic": "Regulatory opportunity",
+      "earlier": "Q4 reports 20 products in pipeline and selective regulated-market entry; Q1 describes a two-year registration program and four-person regulatory team.",
+      "later": "Q2 says inhalation portfolio had not yet been filed in advanced markets; planned filing follows SVP commissioning and tech transfer. Management estimates tech transfer saves 3–4 months. Ophthalmics are intended for licensing rather than a company-built marketing front end.",
+      "assessment": "Pipeline is not approvals or sales; delayed line shifts transfer and filings. Time saving is an estimate.",
+      "type": [
+        "management_reported",
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+          "physical_pages": [
+            13,
+            16
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "topic": "Product pipeline",
+      "earlier": "Q4 says 20 pipeline products; Q1 says 7–8 ophthalmic.",
+      "later": "Q2 says ~12 of 20 are SVP, split between inhalation and ophthalmics; it describes an inhalation portfolio of six, two commercialized, and 'additional six' to be developed, with advanced-market filings pending.",
+      "assessment": "Management wording is ambiguous whether six is inclusive of two commercialized products or another six to develop. Clarify remaining development count. Pipeline does not prove scale or market approval.",
+      "type": [
+        "management_reported",
+        "discrepancy"
+      ],
+      "sources": [
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+          "physical_pages": [
+            16
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            6,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "topic": "SteriPort differentiation and price limit",
+      "earlier": "Q3/Q4 attribute lower contamination risk, safety and compatibility to ISBM/two-port design.",
+      "later": "Q2 says it costs more than legacy and other two-port products and is used selectively in oncology, ICU/intensive cardiac, pediatrics and anesthesia. Management claims >35cr bottles sold since 2016 with no fungal contamination complaint.",
+      "assessment": "Differentiation is targeted to high-acuity use, but price constrains universal substitution; safety statistic is company-reported without independent comparator.",
+      "type": [
+        "management_reported"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            3,
+            9,
+            10
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "topic": "Product mix denominator",
+      "earlier": "Q3 says SteriPort ~40% of revenue and SVP ~20% of company revenue.",
+      "later": "Q4 says SteriPort ~42%; selected high-value inhalation and preservative-free ophthalmics ~20% of SVP revenue.",
+      "assessment": "The two 20% figures have different denominators; not a like-for-like trend.",
+      "type": [
+        "management_reported"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            3
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "topic": "Absorption and capex",
+      "earlier": "Q3 says strong demand/short supply and potential day-one full production with inventory; Q4 expects growth from LVP/SVP capex.",
+      "later": "Q2 says legacy plus SteriPort capacity is enough for hospital demand, no immediate SteriPort capex, and 200–250 channel partners sufficient; focus moves to SVP.",
+      "assessment": "LVP growth must come from utilization and market penetration, while next value growth depends more on SVP mix.",
+      "type": [
+        "management_reported",
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            6,
+            7,
+            12
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "topic": "Leverage and added charges",
+      "earlier": "Q4 describes debt/equity improving from ~3x to ~1x.",
+      "later": "Q2 says 3.5x FY23 to 1.1x FY26 and annual repayments ~₹35cr including solar; full new-line depreciation and solar loan interest already affect Q2.",
+      "assessment": "Deleveraging continued, but assess debt service and added charges against EBITDA conversion.",
+      "type": [
+        "management_reported"
+      ],
+      "sources": [
+        {
+          "file": "docs/amanta-outcome-transcript-q4-fy-2025-26.txt",
+          "physical_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            3,
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "topic": "Polymer prices",
+      "earlier": "Q1 says polymer spike followed prior EBITDA projections; management estimated price increase ₹1.50–₹1.75 per unit and recovery could lag by up to two quarters.",
+      "later": "Q2 says prices rose >70% briefly, were volatile, company absorbed increases/applied corrections and expects normalization in 3–6 months.",
+      "assessment": "Margin outcome depends on price pass-through and cost normalization; latter is forecast, not achieved by cutoff.",
+      "type": [
+        "management_reported",
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+          "physical_pages": [
+            12,
+            14
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "topic": "Prior export product correction",
+      "earlier": "Q1 says past Australia/Canada sales and capacity constraints affected market allocation.",
+      "later": "Q2 corrects an analyst: SteriPort was not supplied to Canada; past Canada/Australia exports were diluents/WFI. SteriPort is India-centric; SVP export growth requires registrations and product-specific capability.",
+      "assessment": "Do not attribute prior export track record to SteriPort.",
+      "type": [
+        "management_reported",
+        "discrepancy"
+      ],
+      "sources": [
+        {
+          "file": "docs/amanta-outcome-transcript-q1-fy-2026-27.txt",
+          "physical_pages": [
+            13,
+            15
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            10,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "topic": "Two-year aspiration vs FY27/FY28 targets",
+      "earlier": "Q3 call said ~₹400cr FY27 (~33% increase) and 20% CAGR over two years. Q4/Q1 investor decks show 20%+ revenue CAGR / 25%+ EBITDA margin over next two years.",
+      "later": "Q2 call sets the same two-year aim; separately states FY27 ₹420–430cr and confirms analyst-raised FY28 ₹400–420cr includes SVP.",
+      "assessment": "These are distinct horizons and bases. FY27 target has annualized/full-year wording ambiguity; FY28 includes unquantified SVP. No segment or margin bridge is given; these remain forecasts.",
+      "type": [
+        "management_forecast"
+      ],
+      "sources": [
+        {
+          "file": "docs/outcome-transcript-16-02-2026.txt",
+          "physical_pages": [
+            16
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-q4-fy-2025-26.txt",
+          "physical_pages": [
+            10
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q1.txt",
+          "physical_pages": [
+            10
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            4,
+            5,
+            10,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "topic": "Pre-expansion utilization evidence",
+      "earlier": "Original Reg. 30 investor deck reports SteriPort at 91% utilization and 5cr bottles produced with negligible rejection; Q4 FY26 and Q1 FY27 decks later claim 96% current plant utilization.",
+      "later": "Q2 deck reports Line 3 commissioned first-week September with installed capacity 6.6 to 11.6cr; Q2 call gives ~55% early utilization on Line 3.",
+      "assessment": "High utilization supports expansion rationale, but SteriPort, plantwide, and new-line utilization are different bases and not a like-for-like time series.",
+      "type": [
+        "management_reported"
+      ],
+      "sources": [
+        {
+          "file": "docs/intimation-under-regulation-30-investor-presentation.txt",
+          "physical_pages": [
+            13,
+            16
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-q4-fy-2025-26.txt",
+          "physical_pages": [
+            14
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q1.txt",
+          "physical_pages": [
+            14
+          ]
+        },
+        {
+          "file": "docs/amanta-investor-presentation-fy-2026-27-q2.txt",
+          "physical_pages": [
+            5
+          ]
+        },
+        {
+          "file": "docs/amanta-outcome-transcript-q2-fy-2026-27.txt",
+          "physical_pages": [
+            7
+          ]
+        }
+      ]
+    }
+  ],
+  "qa_takeaways": [
+    {
+      "id": 1,
+      "takeaway": "LVP commissioning expectation slipped from April commercialization to June expectation, then Q1 late-August target and Q2 first-week September retrospective; Q2 says about five months late.",
+      "source_refs": [
+        "outcome-transcript-16-02-2026.txt pp.6–7",
+        "amanta-outcome-transcript-q4-fy-2025-26.txt pp.3–4",
+        "amanta-outcome-transcript-q1-fy-2026-27.txt pp.4–5",
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.3, 10"
+      ]
+    },
+    {
+      "id": 2,
+      "takeaway": "Q1's late-August date was a target; Q2 later reported commissioning first week September. Q1 did not confirm an August actual date.",
+      "source_refs": [
+        "amanta-outcome-transcript-q1-fy-2026-27.txt p.4",
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.3"
+      ]
+    },
+    {
+      "id": 3,
+      "takeaway": "Use 11.6cr annual capacity as the explicit figure; 6.6 to 11.6 is +5.0cr / ~76% arithmetically and company rounds this to 75% / ~12cr.",
+      "source_refs": [
+        "amanta-investor-presentation-fy-2026-27-q2.txt p.5",
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.3"
+      ]
+    },
+    {
+      "id": 4,
+      "takeaway": "Q2 transcript says early utilization around 55%, with full operation by Nov 20 as forecast. Q2 deck provides no Sep-to-date unit-sales figure.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.7–8",
+        "amanta-investor-presentation-fy-2026-27-q2.txt pp.5, 9"
+      ]
+    },
+    {
+      "id": 5,
+      "takeaway": "FY26 ₹288cr versus FY25 ₹275cr implies ~4.7% growth arithmetically; sources do not establish a ~20% FY26 target. The Q3 call's ~₹400cr / ~33% statement referred to FY27.",
+      "source_refs": [
+        "outcome-transcript-16-02-2026.txt physical pp.3–5, 16",
+        "amanta-outcome-transcript-q4-fy-2025-26.txt physical pp.3–5"
+      ]
+    },
+    {
+      "id": 6,
+      "takeaway": "Q3 FY26 call hoped for ~₹400cr FY27 (~33% growth); Q2 FY27 later stated ₹420–430cr both as annualized Q3/Q4 run-rate and full-year expectation. Conditional arithmetic after H1 ₹151.9cr: H2 must be ₹268–278cr.",
+      "source_refs": [
+        "outcome-transcript-16-02-2026.txt physical p.16",
+        "amanta-outcome-transcript-q2-fy-2026-27.txt physical pp.5, 10"
+      ]
+    },
+    {
+      "id": 7,
+      "takeaway": "₹110cr annualized optimal SteriPort revenue is not the same as ₹60cr expected FY27 contribution.",
+      "source_refs": [
+        "outcome-transcript-16-02-2026.txt physical pp.11, 18",
+        "amanta-outcome-transcript-q2-fy-2026-27.txt physical p.5"
+      ]
+    },
+    {
+      "id": 8,
+      "takeaway": "SVP expansion moved from January 2027 to Q1 FY28; inhalation advanced-market filings were still pending and scheduled after commissioning/tech transfer.",
+      "source_refs": [
+        "outcome-transcript-16-02-2026.txt p.16",
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.4, 13, 16"
+      ]
+    },
+    {
+      "id": 9,
+      "takeaway": "New SVP line is product-specific: BFS inhalation tooling differs from conventional products, so capacity alone is insufficient without pipeline.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.6–7"
+      ]
+    },
+    {
+      "id": 10,
+      "takeaway": "Management says six inhalation products, two commercialized, and additional six to be developed; unclear whether six includes two or is incremental. Advanced-market filings pending.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.6"
+      ]
+    },
+    {
+      "id": 11,
+      "takeaway": "Ophthalmics are intended for licensing; management does not plan a dedicated marketing front-end, limiting cost but also direct value capture.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.13–14"
+      ]
+    },
+    {
+      "id": 12,
+      "takeaway": "No direct SteriPort export history to Canada was claimed; previous Canada/Australia supply was diluent/WFI.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.10–11"
+      ]
+    },
+    {
+      "id": 13,
+      "takeaway": "SteriPort's higher price means selective use in high-acuity indications; broad substitution is not assured.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.8"
+      ]
+    },
+    {
+      "id": 14,
+      "takeaway": "Management cites >35cr SteriPort bottles since 2016 without a fungal-contamination complaint; this is not independently audited comparative evidence.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.8"
+      ]
+    },
+    {
+      "id": 15,
+      "takeaway": "Management estimates Indian IV fluids at 190–200cr units and SteriPort share ~6%, plus BFS 2.5–3%; management itself calls category boundaries amorphous.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.7"
+      ]
+    },
+    {
+      "id": 16,
+      "takeaway": "Plantwide 95–97% utilization, new Line 3 ~55% and expected full rate by Nov 20 refer to different bases/timing.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.7–8"
+      ]
+    },
+    {
+      "id": 17,
+      "takeaway": "SVP goal is ₹100–120cr from current ₹55–65cr, dependent on product and market mix; no dated bridge was given.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.9"
+      ]
+    },
+    {
+      "id": 18,
+      "takeaway": "Solar has started generating, but ₹9cr annual saving is annualized; Q2 also bears solar-loan interest.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.3–5"
+      ]
+    },
+    {
+      "id": 19,
+      "takeaway": "Polymer cost increases were absorbed and price correction applied; management expects normalization within 3–6 months, still a forecast.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.7–8"
+      ]
+    },
+    {
+      "id": 20,
+      "takeaway": "Full depreciation for new capacity was provided in Q2 while it was still ramping; margin expansion must absorb this charge and solar interest.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.4"
+      ]
+    },
+    {
+      "id": 21,
+      "takeaway": "Management cites 200–250 channel partners and says next step is deeper hospital reach in critical-care micro-markets.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.8–9"
+      ]
+    },
+    {
+      "id": 22,
+      "takeaway": "No immediate further SteriPort capex planned; management says legacy plus SteriPort capacity can serve hospital demand, shifting focus to SVP.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt p.9"
+      ]
+    },
+    {
+      "id": 23,
+      "takeaway": "Capacity shortages forced trade-offs between UK and other export markets, according to Q1 management; new capacity is meant to broaden coverage.",
+      "source_refs": [
+        "amanta-outcome-transcript-q1-fy-2026-27.txt pp.15–16"
+      ]
+    },
+    {
+      "id": 24,
+      "takeaway": "25%+ EBITDA margin in two years lacks a quantitative bridge; Q2 achieved 21.6% quarterly margin with inflation, depreciation and interest headwinds.",
+      "source_refs": [
+        "amanta-outcome-transcript-q2-fy-2026-27.txt pp.3–5"
+      ]
+    }
+  ],
+  "follow_up_checks": [
+    "Verify actual SteriPort commissioning and reconcile Q1 target with Q2 retrospective date.",
+    "Check Q3/Q4 FY27 production, shipments, utilization and whether expected ₹60cr FY27 contribution remains achievable.",
+    "Measure realized solar savings over a full period against annualized ₹9cr estimate and associated interest expense.",
+    "Obtain revised SVP construction/commissioning schedule and validate Q1 FY28 target.",
+    "Track each product's tech transfer, dossier filing, approval, launch and commercial revenue separately by market.",
+    "Separate total company export mix from SVP export mix and distinguish prior WFI/diluent exports from SteriPort.",
+    "Validate SteriPort safety/contamination and market-share assertions independently where possible."
+  ]
+}

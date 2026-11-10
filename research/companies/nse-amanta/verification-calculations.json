@@ -1,0 +1,153 @@
+[
+  {
+    "name": "Q1 FY27 revenue crore",
+    "formula": "H1 revenue - Q2 revenue",
+    "inputs": {
+      "H1": 151.9,
+      "Q2": 83.1
+    },
+    "output": 68.8,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Q1 FY27 EBITDA crore",
+    "formula": "H1 EBITDA - Q2 EBITDA",
+    "inputs": {
+      "H1": 33,
+      "Q2": 18
+    },
+    "output": 15,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Q1 FY27 PAT crore",
+    "formula": "H1 PAT - Q2 PAT",
+    "inputs": {
+      "H1": 8.17,
+      "Q2": 4.86
+    },
+    "output": 3.31,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Q2 revenue YoY percent",
+    "formula": "(current / previous - 1) * 100",
+    "inputs": {
+      "current": 83.1,
+      "previous": 71
+    },
+    "output": 17.0423,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "SteriPort capacity increase percent",
+    "formula": "(current / previous - 1) * 100",
+    "inputs": {
+      "current": 11.6,
+      "previous": 6.6
+    },
+    "output": 75.7576,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "SVP capacity increase percent",
+    "formula": "(current / previous - 1) * 100",
+    "inputs": {
+      "current": 31,
+      "previous": 20.9
+    },
+    "output": 48.3254,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Q2 FY27 EBITDA margin percent",
+    "formula": "profit / revenue * 100",
+    "inputs": {
+      "profit": 18,
+      "revenue": 83.1
+    },
+    "output": 21.6606,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "H1 FY27 EBITDA margin percent",
+    "formula": "profit / revenue * 100",
+    "inputs": {
+      "profit": 33,
+      "revenue": 151.9
+    },
+    "output": 21.7248,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Q2 FY27 PAT margin percent",
+    "formula": "profit / revenue * 100",
+    "inputs": {
+      "profit": 4.86,
+      "revenue": 83.1
+    },
+    "output": 5.8484,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "H1 FY27 PAT margin percent",
+    "formula": "profit / revenue * 100",
+    "inputs": {
+      "profit": 8.17,
+      "revenue": 151.9
+    },
+    "output": 5.3785,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Q1 FY27 EBITDA margin percent",
+    "formula": "profit / revenue * 100",
+    "inputs": {
+      "profit": 15,
+      "revenue": 68.8
+    },
+    "output": 21.8023,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Q1 FY27 PAT margin percent",
+    "formula": "profit / revenue * 100",
+    "inputs": {
+      "profit": 3.31,
+      "revenue": 68.8
+    },
+    "output": 4.811,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Borrowings excluding working capital crore",
+    "formula": "total borrowing - working capital",
+    "inputs": {
+      "total": 190,
+      "working_capital": 45
+    },
+    "output": 145,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Illustrative FY28 term plus working capital crore",
+    "formula": "term loan + working capital",
+    "inputs": {
+      "term": 100,
+      "working_capital": 50
+    },
+    "output": 150,
+    "classification": "computed from rounded transcript figures; not reported"
+  },
+  {
+    "name": "Q2 FY27 approximate PBT crore cross-check",
+    "formula": "EBITDA - finance cost - depreciation",
+    "inputs": {
+      "EBITDA": 18,
+      "finance_cost": 6,
+      "depreciation": 5
+    },
+    "output": 7,
+    "classification": "computed rounded cross-check, not reconciliation of audited figures"
+  }
+]

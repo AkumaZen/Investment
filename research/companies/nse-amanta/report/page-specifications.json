@@ -1,0 +1,1235 @@
+[
+  {
+    "page": 1,
+    "page_id": "report-page-1",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Turning capacity into earnings and cash",
+    "answer": "A credible operating step-up is underway, but the current price already demands execution.",
+    "layout": "cover",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AS1",
+      "P2:5",
+      "R27:3-6",
+      "AR:52-53"
+    ],
+    "interpretation": "A credible operating step-up is underway, but the current price already demands execution.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The investment argument in four exhibits",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S1"
+    ],
+    "section_starts": [
+      {
+        "section": "S1",
+        "question": "Turning capacity into earnings and cash"
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "page_id": "report-page-2",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The investment argument in four exhibits",
+    "answer": "Revenue accelerated, but operating margin and capital productivity have more to prove.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "SC",
+      "AR:52-53",
+      "P2:5"
+    ],
+    "interpretation": "Revenue accelerated, but operating margin and capital productivity have more to prove.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "A sterile manufacturer sells reliability with each dose",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S1-2"
+    ],
+    "section_starts": [
+      {
+        "section": "S1",
+        "question": "The investment argument in four exhibits"
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "page_id": "report-page-3",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "A sterile manufacturer sells reliability with each dose",
+    "answer": "Amanta earns when qualified, usable sterile products are sold and collected, not when bottles are merely produced.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:8-9",
+      "P2:12-16",
+      "C2:5"
+    ],
+    "interpretation": "Amanta earns when qualified, usable sterile products are sold and collected, not when bottles are merely produced.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The product base is broad; fluid therapy still dominates",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S2"
+    ],
+    "section_starts": [
+      {
+        "section": "S2",
+        "question": "A sterile manufacturer sells reliability with each dose"
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "page_id": "report-page-4",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The product base is broad; fluid therapy still dominates",
+    "answer": "Most sales come from established sterile liquids. Higher-value ranges remain smaller and require product-specific proof.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "P2:13-14,29-33",
+      "C2:13-14"
+    ],
+    "interpretation": "Most sales come from established sterile liquids. Higher-value ranges remain smaller and require product-specific proof.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The SVP opportunity depends on product transfer, not just speed",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S3"
+    ],
+    "section_starts": [
+      {
+        "section": "S3",
+        "question": "The product base is broad; fluid therapy still dominates"
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "page_id": "report-page-5",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The SVP opportunity depends on product transfer, not just speed",
+    "answer": "Inhalation and preservative-free eye care have credible technical requirements; commercial receipts remain stage-dependent.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AS:1",
+      "C2:5-6,11,13-14"
+    ],
+    "interpretation": "Inhalation and preservative-free eye care have credible technical requirements; commercial receipts remain stage-dependent.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "One company, several overlapping views of the same revenue",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S3-5"
+    ],
+    "section_starts": [
+      {
+        "section": "S3",
+        "question": "The SVP opportunity depends on product transfer, not just speed"
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "page_id": "report-page-6",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The SVP opportunity depends on product transfer, not just speed / One company, several overlapping views of the same revenue",
+    "answer": "Inhalation and preservative-free eye care have credible technical requirements; commercial receipts remain stage-dependent.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AS:1",
+      "C2:5-6,11,13-14",
+      "AR:54,75",
+      "P2:19",
+      "C2:4,9,13,15"
+    ],
+    "interpretation": "Inhalation and preservative-free eye care have credible technical requirements; commercial receipts remain stage-dependent.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "One company, several overlapping views of the same revenue",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S3-5",
+      "S4"
+    ],
+    "section_starts": [
+      {
+        "section": "S4",
+        "question": "One company, several overlapping views of the same revenue"
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "page_id": "report-page-7",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "One company, several overlapping views of the same revenue / A distribution network helps; hospital conversion still matters",
+    "answer": "Therapy, manufacturing platform, geography and channel are different classifications. Adding them would overstate the business.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:54,75",
+      "P2:19",
+      "C2:4,9,13,15",
+      "AR:11,52,74",
+      "R27:4",
+      "C2:7-9,13,15"
+    ],
+    "interpretation": "Therapy, manufacturing platform, geography and channel are different classifications. Adding them would overstate the business.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "A distribution network helps; hospital conversion still matters",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S4",
+      "S5"
+    ],
+    "section_starts": [
+      {
+        "section": "S5",
+        "question": "A distribution network helps; hospital conversion still matters"
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "page_id": "report-page-8",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The moat is process-and-access, with limits to pricing power / High utilisation can hide different economic realities",
+    "answer": "Sterile manufacturing and established routes to market create friction for entrants; they do not create an unconstrained monopoly.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:9-10,52",
+      "P2:16",
+      "C2:3,5,7-8",
+      "AR:10",
+      "P2:5,18",
+      "C2:4,7,15"
+    ],
+    "interpretation": "Sterile manufacturing and established routes to market create friction for entrants; they do not create an unconstrained monopoly.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "High utilisation can hide different economic realities",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S6",
+      "S7"
+    ],
+    "section_starts": [
+      {
+        "section": "S6",
+        "question": "The moat is process-and-access, with limits to pricing power"
+      },
+      {
+        "section": "S7",
+        "question": "High utilisation can hide different economic realities"
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "page_id": "report-page-9",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "High utilisation can hide different economic realities / The \u00e2\u201a\u00b960 crore Line 3 target is commercially demanding",
+    "answer": "The old plant, the new line and newly qualified products must be measured separately.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:10",
+      "P2:5,18",
+      "C2:4,7,15",
+      "P2:5",
+      "C2:5,10"
+    ],
+    "interpretation": "The old plant, the new line and newly qualified products must be measured separately.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The \u00e2\u201a\u00b960 crore Line 3 target is commercially demanding",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S7",
+      "S8"
+    ],
+    "section_starts": [
+      {
+        "section": "S8",
+        "question": "The \u00e2\u201a\u00b960 crore Line 3 target is commercially demanding"
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "page_id": "report-page-10",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The \u00e2\u201a\u00b960 crore Line 3 target is commercially demanding / Three projects, three clocks, three funding profiles",
+    "answer": "The late FY27 start leaves little room for a slow ramp at the disclosed steady-state revenue rate.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "P2:5",
+      "C2:5,10",
+      "AR:12,30,53",
+      "AS:1",
+      "AP:1",
+      "C2:10-12,14"
+    ],
+    "interpretation": "The late FY27 start leaves little room for a slow ramp at the disclosed steady-state revenue rate.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Three projects, three clocks, three funding profiles",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S8",
+      "S9"
+    ],
+    "section_starts": [
+      {
+        "section": "S9",
+        "question": "Three projects, three clocks, three funding profiles"
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "page_id": "report-page-11",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Three projects, three clocks, three funding profiles / Solar improves operating cost, not rupee-for-rupee owner cash",
+    "answer": "SteriPort and solar are operating; SVP is still a project with a separate commercial qualification clock.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:12,30,53",
+      "AS:1",
+      "AP:1",
+      "C2:10-12,14",
+      "AR:12",
+      "C2:4-5"
+    ],
+    "interpretation": "SteriPort and solar are operating; SVP is still a project with a separate commercial qualification clock.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Solar improves operating cost, not rupee-for-rupee owner cash",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S9",
+      "S9-12"
+    ],
+    "section_starts": [
+      {
+        "section": "S9",
+        "question": "Solar improves operating cost, not rupee-for-rupee owner cash"
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "page_id": "report-page-12",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Solar improves operating cost, not rupee-for-rupee owner cash / Management has substantial ownership and a mixed execution record",
+    "answer": "At the disclosed project cost, the gross saving is attractive; funding, depreciation and actual generation reduce the benefit.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:12",
+      "AP:1",
+      "C2:4-5",
+      "P2:21-22",
+      "AR:32,42,70",
+      "AGM:1-2",
+      "COO:1",
+      "MA:9"
+    ],
+    "interpretation": "At the disclosed project cost, the gross saving is attractive; funding, depreciation and actual generation reduce the benefit.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Management has substantial ownership and a mixed execution record",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S9-12",
+      "S10"
+    ],
+    "section_starts": [
+      {
+        "section": "S10",
+        "question": "Management has substantial ownership and a mixed execution record"
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "page_id": "report-page-13",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Management has substantial ownership and a mixed execution record / The expansion was delivered later than first envisaged",
+    "answer": "The right governance label is WATCH: aligned ownership and formal oversight coexist with delays and related-party dealings.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "P2:21-22",
+      "AR:32,42,70",
+      "AGM:1-2",
+      "COO:1",
+      "MA:9",
+      "C3:6-7,16-17",
+      "C4:3",
+      "C1:8",
+      "AS:1",
+      "AP:1",
+      "C2:10,12,14"
+    ],
+    "interpretation": "The right governance label is WATCH: aligned ownership and formal oversight coexist with delays and related-party dealings.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The expansion was delivered later than first envisaged",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S10",
+      "S11"
+    ],
+    "section_starts": [
+      {
+        "section": "S11",
+        "question": "The expansion was delivered later than first envisaged"
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "page_id": "report-page-14",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The current guidance register needs explicit qualifiers / Growth has two routes: more bottles and more value per unit",
+    "answer": "The targets form a useful operating agenda; they do not supply a complete annual financial forecast.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "C2:3-7,9,13-15",
+      "P2:9",
+      "C2:3,5-6,9-15"
+    ],
+    "interpretation": "The targets form a useful operating agenda; they do not supply a complete annual financial forecast.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Growth has two routes: more bottles and more value per unit",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S12",
+      "S13"
+    ],
+    "section_starts": [
+      {
+        "section": "S12",
+        "question": "The current guidance register needs explicit qualifiers"
+      },
+      {
+        "section": "S13",
+        "question": "Growth has two routes: more bottles and more value per unit"
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "page_id": "report-page-15",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Growth has two routes: more bottles and more value per unit / Compare manufacturing economics before comparing P/E",
+    "answer": "SteriPort is the nearer volume driver; SVP must earn a higher-value product and market mix.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "C2:3,5-6,9-15",
+      "AR:52",
+      "P2:13,16",
+      "DR",
+      "GF",
+      "SC",
+      "DS",
+      "GS",
+      "C4:9"
+    ],
+    "interpretation": "SteriPort is the nearer volume driver; SVP must earn a higher-value product and market mix.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Compare manufacturing economics before comparing P/E",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S13",
+      "S14"
+    ],
+    "section_starts": [
+      {
+        "section": "S14",
+        "question": "Compare manufacturing economics before comparing P/E"
+      }
+    ]
+  },
+  {
+    "page": 16,
+    "page_id": "report-page-16",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Compare manufacturing economics before comparing P/E / Keep current earnings separate from future possibilities",
+    "answer": "No listed company is a clean twin: IV-fluid exposure, specialty mix and funding explain much of the valuation gap.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:52",
+      "P2:13,16",
+      "DR",
+      "GF",
+      "SC",
+      "DS",
+      "GS",
+      "C4:9",
+      "AR:65",
+      "P2:5",
+      "C2:5,9,11,15"
+    ],
+    "interpretation": "No listed company is a clean twin: IV-fluid exposure, specialty mix and funding explain much of the valuation gap.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Keep current earnings separate from future possibilities",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S14",
+      "S15"
+    ],
+    "section_starts": [
+      {
+        "section": "S15",
+        "question": "Keep current earnings separate from future possibilities"
+      }
+    ]
+  },
+  {
+    "page": 17,
+    "page_id": "report-page-17",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Keep current earnings separate from future possibilities / The causal chain shows where each thesis can break",
+    "answer": "The existing business earns today; unapproved markets and hypothetical projects must not be capitalized as accomplished facts.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:65",
+      "P2:5",
+      "C2:5,9,11,15",
+      "AS:1",
+      "AP:1",
+      "R27:4-5",
+      "C2:5-6,11,14"
+    ],
+    "interpretation": "The existing business earns today; unapproved markets and hypothetical projects must not be capitalized as accomplished facts.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The causal chain shows where each thesis can break",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S15",
+      "S16"
+    ],
+    "section_starts": [
+      {
+        "section": "S16",
+        "question": "The causal chain shows where each thesis can break"
+      }
+    ]
+  },
+  {
+    "page": 18,
+    "page_id": "report-page-18",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The causal chain shows where each thesis can break / Q2 improved; reported PAT growth needs an exceptional-item bridge",
+    "answer": "A growth driver becomes valuable only after product, customer, margin and cash tests all work.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AS:1",
+      "AP:1",
+      "R27:4-5",
+      "C2:5-6,11,14",
+      "R27:3,7",
+      "C2:4-5"
+    ],
+    "interpretation": "A growth driver becomes valuable only after product, customer, margin and cash tests all work.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Q2 improved; reported PAT growth needs an exceptional-item bridge",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S16",
+      "S17"
+    ],
+    "section_starts": [
+      {
+        "section": "S17",
+        "question": "Q2 improved; reported PAT growth needs an exceptional-item bridge"
+      }
+    ]
+  },
+  {
+    "page": 19,
+    "page_id": "report-page-19",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Q2 improved; reported PAT growth needs an exceptional-item bridge / A longer quarterly record shows why the new line matters",
+    "answer": "Revenue rose17.3%, while operating EBITDA margin was nearly flat. The prior-year IPO charge exaggerates reported PAT growth.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "R27:3,7",
+      "C2:4-5",
+      "SC",
+      "R27:3",
+      "C3:16"
+    ],
+    "interpretation": "Revenue rose17.3%, while operating EBITDA margin was nearly flat. The prior-year IPO charge exaggerates reported PAT growth.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "A longer quarterly record shows why the new line matters",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S17",
+      "S17-21"
+    ],
+    "section_starts": [
+      {
+        "section": "S17",
+        "question": "A longer quarterly record shows why the new line matters"
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "page_id": "report-page-20",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "FY26 PAT growth came mainly below operating EBITDA",
+    "answer": "Operating profit was flat, while lower financing cost and more other income supported shareholder earnings.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:52-53,65,70",
+      "SC"
+    ],
+    "interpretation": "Operating profit was flat, while lower financing cost and more other income supported shareholder earnings.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Cash generation has not funded the investment cycle",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S17-22"
+    ],
+    "section_starts": [
+      {
+        "section": "S17",
+        "question": "FY26 PAT growth came mainly below operating EBITDA"
+      }
+    ]
+  },
+  {
+    "page": 21,
+    "page_id": "report-page-21",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Cash generation has not funded the investment cycle / Leverage fell after March, but near-term liquidity remains important",
+    "answer": "Operating cash is real, but expansion and interest have required IPO liquidity and refinancing.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:53",
+      "R27:5-6",
+      "AR:52",
+      "C4:10",
+      "R27:4",
+      "SC"
+    ],
+    "interpretation": "Operating cash is real, but expansion and interest have required IPO liquidity and refinancing.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Leverage fell after March, but near-term liquidity remains important",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S17-23",
+      "S17-24"
+    ],
+    "section_starts": [
+      {
+        "section": "S17",
+        "question": "Cash generation has not funded the investment cycle"
+      },
+      {
+        "section": "S17",
+        "question": "Leverage fell after March, but near-term liquidity remains important"
+      }
+    ]
+  },
+  {
+    "page": 22,
+    "page_id": "report-page-22",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Leverage fell after March, but near-term liquidity remains important / An unmodified audit does not eliminate governance watchpoints",
+    "answer": "The debt definition is reconciled; the cash required to service it remains the central capital constraint.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:52",
+      "C4:10",
+      "R27:4",
+      "SC",
+      "AR:47-48,63,67-68,70-71",
+      "MA:3,9"
+    ],
+    "interpretation": "The debt definition is reconciled; the cash required to service it remains the central capital constraint.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "An unmodified audit does not eliminate governance watchpoints",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S17-24",
+      "S18"
+    ],
+    "section_starts": [
+      {
+        "section": "S18",
+        "question": "An unmodified audit does not eliminate governance watchpoints"
+      }
+    ]
+  },
+  {
+    "page": 23,
+    "page_id": "report-page-23",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "An unmodified audit does not eliminate governance watchpoints / The downside travels through margin, timing and cash",
+    "answer": "No audit qualification was identified; IPO timing, related-party transactions and contingent claims still warrant scrutiny.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:47-48,63,67-68,70-71",
+      "MA:3,9",
+      "SC",
+      "C2:7,10,12-13",
+      "R27:4-5",
+      "AR:65,67",
+      "MA:9",
+      "P2:12"
+    ],
+    "interpretation": "No audit qualification was identified; IPO timing, related-party transactions and contingent claims still warrant scrutiny.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The downside travels through margin, timing and cash",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S18",
+      "S19"
+    ],
+    "section_starts": [
+      {
+        "section": "S19",
+        "question": "The downside travels through margin, timing and cash"
+      }
+    ]
+  },
+  {
+    "page": 24,
+    "page_id": "report-page-24",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The downside travels through margin, timing and cash / A persuasive bear case does not require the factory to fail",
+    "answer": "Most risks reinforce each other: delayed high-value sales leave more fixed cost and debt against the existing business.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "C2:7,10,12-13",
+      "R27:4-5",
+      "AR:65,67",
+      "MA:9",
+      "P2:12",
+      "AS:1",
+      "C2:5,8,14",
+      "AR:52"
+    ],
+    "interpretation": "Most risks reinforce each other: delayed high-value sales leave more fixed cost and debt against the existing business.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "A persuasive bear case does not require the factory to fail",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S19",
+      "S19-27"
+    ],
+    "section_starts": [
+      {
+        "section": "S19",
+        "question": "A persuasive bear case does not require the factory to fail"
+      }
+    ]
+  },
+  {
+    "page": 25,
+    "page_id": "report-page-25",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "A persuasive bear case does not require the factory to fail / Value the operating ramp, then deduct its funding",
+    "answer": "A functioning plant can still deliver disappointing equity returns if sales ramp slowly and cash stays tied up.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AS:1",
+      "C2:5,8,14",
+      "AR:52",
+      "R27:4-5",
+      "AR:52,54,74",
+      "C2:5,14-15",
+      "R27:4"
+    ],
+    "interpretation": "A functioning plant can still deliver disappointing equity returns if sales ramp slowly and cash stays tied up.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Value the operating ramp, then deduct its funding",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S19-27",
+      "S20"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "Value the operating ramp, then deduct its funding"
+      }
+    ]
+  },
+  {
+    "page": 26,
+    "page_id": "report-page-26",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Bear case: earnings and per-share value by year",
+    "answer": "Slower Line 3 sales, limited SVP conversion and weak margin keep net debt high. The lower multiple compounds the operating disappointment.",
+    "layout": "scenario",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:52,70",
+      "R27:3",
+      "E:model"
+    ],
+    "interpretation": "Slower Line 3 sales, limited SVP conversion and weak margin keep net debt high. The lower multiple compounds the operating disappointment.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Base case: earnings and per-share value by year",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S20-29"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "Bear case: earnings and per-share value by year"
+      }
+    ]
+  },
+  {
+    "page": 27,
+    "page_id": "report-page-27",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Base case: earnings and per-share value by year",
+    "answer": "Line 3 reaches its disclosed revenue potential; SVP begins at the speculative \u00e2\u201a\u00b916cr illustration. A 25% ex-OI margin requires stronger mix and execution than demonstrated so far.",
+    "layout": "scenario",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:52,70",
+      "R27:3",
+      "E:model"
+    ],
+    "interpretation": "Line 3 reaches its disclosed revenue potential; SVP begins at the speculative \u00e2\u201a\u00b916cr illustration. A 25% ex-OI margin requires stronger mix and execution than demonstrated so far.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Bull case: earnings and per-share value by year",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S20-30"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "Base case: earnings and per-share value by year"
+      }
+    ]
+  },
+  {
+    "page": 28,
+    "page_id": "report-page-28",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Bull case: earnings and per-share value by year",
+    "answer": "Line 3 slightly exceeds the \u00e2\u201a\u00b9110cr potential, legacy sales grow and SVP ramps faster. A 28% margin and 17x multiple require sustained differentiation and cash delivery.",
+    "layout": "scenario",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR:52,70",
+      "R27:3",
+      "E:model"
+    ],
+    "interpretation": "Line 3 slightly exceeds the \u00e2\u201a\u00b9110cr potential, legacy sales grow and SVP ramps faster. A 28% margin and 17x multiple require sustained differentiation and cash delivery.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The equity bridge must carry the cash cost of growth",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S20-31"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "Bull case: earnings and per-share value by year"
+      }
+    ]
+  },
+  {
+    "page": 29,
+    "page_id": "report-page-29",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The equity bridge must carry the cash cost of growth",
+    "answer": "Profits do not automatically repay debt. Working capital and remaining capex can absorb most of the initial improvement.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "R27:4-6",
+      "MA:9",
+      "E:model"
+    ],
+    "interpretation": "Profits do not automatically repay debt. Working capital and remaining capex can absorb most of the initial improvement.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The multiple and margin matter more than false precision",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S20-32"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "The equity bridge must carry the cash cost of growth"
+      }
+    ]
+  },
+  {
+    "page": 30,
+    "page_id": "report-page-30",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The multiple and margin matter more than false precision",
+    "answer": "At the same FY28 revenue, a lower margin and multiple can erase much of the apparent upside.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "NSE",
+      "AR:52",
+      "R27:4",
+      "E:model"
+    ],
+    "interpretation": "At the same FY28 revenue, a lower margin and multiple can erase much of the apparent upside.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The original research questions, answered",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S20-33"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "The multiple and margin matter more than false precision"
+      }
+    ]
+  },
+  {
+    "page": 31,
+    "page_id": "report-page-31",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The original research questions, answered / The original research questions, answered (continued)",
+    "answer": "Each answer distinguishes reported evidence from the next assumption that an investor must test.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "C2:4-15",
+      "AR:12,52",
+      "P2:6",
+      "R27:3-5"
+    ],
+    "interpretation": "Each answer distinguishes reported evidence from the next assumption that an investor must test.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "The original research questions, answered (continued)",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S20-34",
+      "S20-35"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "The original research questions, answered"
+      },
+      {
+        "section": "S20",
+        "question": "The original research questions, answered (continued)"
+      }
+    ]
+  },
+  {
+    "page": 32,
+    "page_id": "report-page-32",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "The original research questions, answered (continued) / Verdict: attractive mechanisms, a demanding cash test",
+    "answer": "Each answer distinguishes reported evidence from the next assumption that an investor must test.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "C2:4-15",
+      "AR:12,52",
+      "P2:6",
+      "R27:3-5",
+      "AR",
+      "C3",
+      "C4",
+      "C1",
+      "C2",
+      "P3",
+      "P4",
+      "P1",
+      "P2",
+      "R27",
+      "MA"
+    ],
+    "interpretation": "Each answer distinguishes reported evidence from the next assumption that an investor must test.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Verdict: attractive mechanisms, a demanding cash test",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S20-35",
+      "S20-36"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "Verdict: attractive mechanisms, a demanding cash test"
+      }
+    ]
+  },
+  {
+    "page": 33,
+    "page_id": "report-page-33",
+    "report_type": "Comprehensive company research",
+    "family": "MQ",
+    "question": "Reading key and original document index",
+    "answer": "Original documents, reported facts, management ambitions and analyst estimates play different roles in this report.",
+    "layout": "standard",
+    "evidence_status": "Reported facts; G management targets; E estimates identified",
+    "source_refs": [
+      "AR",
+      "C3",
+      "C4",
+      "C1",
+      "C2",
+      "P3",
+      "P4",
+      "P1",
+      "P2",
+      "NSE",
+      "SC",
+      "EA",
+      "R27",
+      "ar_fy26",
+      "MA",
+      "AS",
+      "AP",
+      "COO",
+      "AGM",
+      "rating_feb26",
+      "md_pay",
+      "exchange_archive",
+      "GF",
+      "GS",
+      "DS",
+      "DR"
+    ],
+    "interpretation": "Original documents, reported facts, management ambitions and analyst estimates play different roles in this report.",
+    "limitation": "See page source notes and assumptions",
+    "next_question": "Monitor the dated thesis tests",
+    "qa": {
+      "arithmetic": true,
+      "source_checked": true,
+      "visual_checked": true,
+      "review_scope": "Primary-source review plus sampled independent source checks; model rows independently recalculated. Evidence gaps explicitly disclosed."
+    },
+    "original_sections": [
+      "S20-37"
+    ],
+    "section_starts": [
+      {
+        "section": "S20",
+        "question": "Reading key and original document index"
+      }
+    ]
+  }
+]

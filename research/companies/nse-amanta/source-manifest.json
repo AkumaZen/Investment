@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-11-10",
+  "currency": "INR",
+  "exchange": "NSE / BSE",
+  "ticker": "AMANTA / 544502",
+  "user_scope": "Use latest concall and transcript only",
+  "call_date": "2026-11-04",
+  "filing_date": "2026-11-09",
+  "period": "Q2/H1 FY27",
+  "transcript_url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/amanta-outcome-transcript-q2-fy-2026-27.pdf",
+  "exchange_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bf653e5-61f2-4843-a3d4-8d1b2430e855.pdf",
+  "local_path": "C:\\Users\\Rohit Negi\\Desktop\\Investment\\Investment\\research\\companies\\nse-amanta\\docs\\AMANTA\\AnnPdfOpen.aspx",
+  "sha256": "dfc56a063f47637a832062bc349e0e3db276ad7ac29759758c664e577f30edb4",
+  "audio_url": "https://www.amanta.co.in/public/assets/pdf/Investors/investor-meet/amanta-audio-recording-fy-2026-27-q2.mp3",
+  "audio_reviewed": false,
+  "physical_pages": 16,
+  "printed_pages": 15,
+  "page_offset": 1,
+  "excluded": "annual reports, RHP, presentations, releases, historical calls, Screener financials, prices and peer data"
+}

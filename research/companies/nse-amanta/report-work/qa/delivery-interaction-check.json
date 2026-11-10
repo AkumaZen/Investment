@@ -1,0 +1,28 @@
+[
+  {
+    "viewport": "1440 desktop",
+    "hash": "#S20",
+    "pages": 33,
+    "exhibits": 47,
+    "productGalleries": 2,
+    "productPhotos": 6,
+    "imagesLoaded": true,
+    "allNumericCellLabels": true,
+    "horizontalOverflow": false,
+    "scrollY": 28946,
+    "scrollResponds": true
+  },
+  {
+    "viewport": "390 touch",
+    "hash": "#S20",
+    "pages": 33,
+    "exhibits": 47,
+    "productGalleries": 2,
+    "productPhotos": 6,
+    "imagesLoaded": true,
+    "allNumericCellLabels": true,
+    "horizontalOverflow": false,
+    "scrollY": 48550,
+    "scrollResponds": true
+  }
+]

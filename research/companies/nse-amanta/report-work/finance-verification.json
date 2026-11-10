@@ -1,0 +1,144 @@
+{
+  "source_model": "../report/valuation-model.json",
+  "source": "build_report.py make_model formula independently recalculated; build script not executed",
+  "status": "all 9 rows reconcile within 1e-8 ₹ crore or ₹/share",
+  "market_close_inr": 202.15,
+  "issued_shares_crore": 3.8829351,
+  "opening_net_debt_including_leases_crore": 202.2177,
+  "working_capital": {
+    "march_2026_crore": 80.9638,
+    "september_2026_crore": 89.7662,
+    "base_fy27_increment_crore": 14.3756821918,
+    "base_fy28_increment_crore": 25.495890411,
+    "base_fy29_increment_crore": 11.7373170822,
+    "method": "FY27 target uses March WC plus full FY sales increment at scenario days; only difference to actual Sep opening WC is charged in H2; later years use incremental sales"
+  },
+  "scenario_fy28_values": {
+    "Bear": {
+      "sales_crore": 380.6767,
+      "operating_ebitda_crore": 79.942107,
+      "net_debt_crore": 180.5489832732183,
+      "value_per_share": 179.9706087610843
+    },
+    "Base": {
+      "sales_crore": 413.6767,
+      "operating_ebitda_crore": 103.419175,
+      "net_debt_crore": 161.04887513639355,
+      "value_per_share": 331.40383285407125
+    },
+    "Bull": {
+      "sales_crore": 454.937302,
+      "operating_ebitda_crore": 122.83307154,
+      "net_debt_crore": 150.25198868178612,
+      "value_per_share": 499.08385733725345
+    }
+  },
+  "checks": [
+    {
+      "scenario": "Bear",
+      "period": "FY27E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    },
+    {
+      "scenario": "Bear",
+      "period": "FY28E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    },
+    {
+      "scenario": "Bear",
+      "period": "FY29E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    },
+    {
+      "scenario": "Base",
+      "period": "FY27E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    },
+    {
+      "scenario": "Base",
+      "period": "FY28E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    },
+    {
+      "scenario": "Base",
+      "period": "FY29E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    },
+    {
+      "scenario": "Bull",
+      "period": "FY27E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    },
+    {
+      "scenario": "Bull",
+      "period": "FY28E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    },
+    {
+      "scenario": "Bull",
+      "period": "FY29E",
+      "sales_equals_legacy_plus_incremental": 0.0,
+      "op_equals_sales_times_margin": 0.0,
+      "pbt_bridge": 0.0,
+      "pat_after_tax": 0.0,
+      "ev_bridge": 0.0,
+      "equity_bridge": 0.0,
+      "price_per_share": 0.0
+    }
+  ],
+  "limitations": [
+    "The workbook is a conditional P&L and net-debt scenario bridge, not a balanced three-statement forecast.",
+    "FY27 cash bridge is H2 only and uses accrual finance cost and tax after subtracting H1 accruals.",
+    "Lease liabilities are included in opening net debt and held static; no future lease principal roll-forward.",
+    "Restricted bank deposits are excluded from opening cash-only net debt; assumed deposits used for capex are reflected as separate releases.",
+    "Scenario results depend on management opportunity figures and analyst assumptions for margins, WC days, capex, tax, interest and exit multiples."
+  ]
+}
