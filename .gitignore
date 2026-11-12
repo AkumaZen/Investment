@@ -42,3 +42,6 @@ research/companies/nse-concordbio/report/qa/pdf/
 research/companies/nse-indswftlab/report/qa/pw/
 research/companies/nse-indswftlab/report/qa/pdf/
 research/companies/nse-aplltd/report/qa/pw/
+
+# India CDMO execution caches (5.9 GB of downloaded PDFs and worker state; too large for git)
+research/sectors/india-cdmo/execution/
